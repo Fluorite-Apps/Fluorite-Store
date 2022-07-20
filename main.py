@@ -14,39 +14,18 @@ from PySide6.QtGui import *
 
 from PySide6.QtSvgWidgets import *
 
-from PySide6.QtWidgets import (
-    QApplication,
-    QCheckBox,
-    QComboBox,
-    QDateEdit,
-    QDateTimeEdit,
-    QDial,
-    QDoubleSpinBox,
-    QFontComboBox,
-    QLabel,
-    QLCDNumber,
-    QLineEdit,
-    QMainWindow,
-    QProgressBar,
-    QPushButton,
-    QRadioButton,
-    QSlider,
-    QSpinBox,
-    QTimeEdit,
-    QVBoxLayout,
-    QWidget,
-)
-
+from PySide6.QtWidgets import *
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, *args, obj=None, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
         self.setupUi(self)
-        self.search_page_button = QPushButton(
-            "background-color: rgb(255, 0, 0);"
-        )
-        self.ui.load_pages.enter_search_layout.addWidget(self.search_page_button, Qt.AlignCenter, Qt.AlignCenter)
-
+        # self.search_page_button = QPushButton(
+        #     "background-color: rgb(255, 0, 0);"
+        # )
+        # self.ui.load_pages.enter_search_layout.addWidget(self.search_page_button, Qt.AlignCenter, Qt.AlignCenter)
+        self.search_page_button = QtWidgets.QPushButton()
+        self.load_pages.enter_search_button.addWidget(self.search_page_button, Qt.AlignCenter, Qt.AlignCenter)
 
 app = QtWidgets.QApplication(sys.argv)
 # apply_stylesheet(app, theme='dark_teal.xml')
