@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguiNNihHp.ui'
+## Form generated from reading UI file 'scoopguiGdUikT.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -15,8 +15,9 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QMainWindow,
-    QSizePolicy, QStackedWidget, QStatusBar, QWidget)
+from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
+    QMainWindow, QSizePolicy, QStackedWidget, QStatusBar,
+    QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -63,6 +64,12 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.home)
         self.search = QWidget()
         self.search.setObjectName(u"search")
+        self.label = QLabel(self.search)
+        self.label.setObjectName(u"label")
+        self.label.setGeometry(QRect(190, 280, 631, 161))
+        font = QFont()
+        font.setPointSize(24)
+        self.label.setFont(font)
         self.stackedWidget.addWidget(self.search)
         self.frame_4 = QFrame(self.centralwidget)
         self.frame_4.setObjectName(u"frame_4")
@@ -86,5 +93,6 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"SEARCH", None))
     # retranslateUi
 
