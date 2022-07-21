@@ -24,11 +24,15 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.enter_search_layout.addWidget(self.search_page_button, Qt.AlignCenter, Qt.AlignCenter)
         self.enter_manage_apps_layout.addWidget(self.manage_apps_button, Qt.AlignCenter, Qt.AlignCenter)
         self.enter_manage_buckets_layout.addWidget(self.manage_buckets_button, Qt.AlignCenter, Qt.AlignCenter)
-        self.search_page_button.clicked.connect(lambda: print('Search'))
+        self.search_page_button.clicked.connect(self.goSearch)
         self.manage_apps_button.clicked.connect(lambda: print('Manage Apps'))
         self.manage_buckets_button.clicked.connect(lambda: print('Manage Buckets'))
         with open('widgets/push_button.qss', encoding='utf-8') as f:
             self.setStyleSheet(f.read())
+
+    def goSearch(self):
+        print("Search")
+        self.stackedWidget.setCurrentWidget(self.search)
 
 app = QtWidgets.QApplication(sys.argv)
 window = MainWindow()
