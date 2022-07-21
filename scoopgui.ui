@@ -133,7 +133,26 @@
       </layout>
      </widget>
     </widget>
-    <widget class="QWidget" name="search"/>
+    <widget class="QWidget" name="search">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>280</y>
+        <width>631</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>24</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>SEARCH</string>
+      </property>
+     </widget>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame_4">
     <property name="geometry">
