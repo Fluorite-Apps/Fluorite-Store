@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguiGdUikT.ui'
+## Form generated from reading UI file 'scoopguiGVrVtu.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -61,15 +61,24 @@ class Ui_MainWindow(object):
         self.enter_manage_buckets_layout.setSpacing(0)
         self.enter_manage_buckets_layout.setObjectName(u"enter_manage_buckets_layout")
         self.enter_manage_buckets_layout.setContentsMargins(0, 0, 0, 0)
+        self.title = QLabel(self.home)
+        self.title.setObjectName(u"title")
+        self.title.setGeometry(QRect(-20, 80, 1101, 41))
+        font = QFont()
+        font.setFamilies([u"Arial Black"])
+        font.setPointSize(18)
+        font.setBold(True)
+        self.title.setFont(font)
+        self.title.setAlignment(Qt.AlignCenter)
         self.stackedWidget.addWidget(self.home)
+        self.buckets = QWidget()
+        self.buckets.setObjectName(u"buckets")
+        self.stackedWidget.addWidget(self.buckets)
+        self.installed = QWidget()
+        self.installed.setObjectName(u"installed")
+        self.stackedWidget.addWidget(self.installed)
         self.search = QWidget()
         self.search.setObjectName(u"search")
-        self.label = QLabel(self.search)
-        self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(190, 280, 631, 161))
-        font = QFont()
-        font.setPointSize(24)
-        self.label.setFont(font)
         self.stackedWidget.addWidget(self.search)
         self.frame_4 = QFrame(self.centralwidget)
         self.frame_4.setObjectName(u"frame_4")
@@ -93,6 +102,6 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"SEARCH", None))
+        self.title.setText(QCoreApplication.translate("MainWindow", u"Scoop GUI", None))
     # retranslateUi
 
