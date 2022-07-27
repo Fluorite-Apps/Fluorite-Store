@@ -18,7 +18,26 @@ import subprocess
 
 import re
 
+from PySide6 import QtCore, QtWidgets, QtGui
+
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    _fromUtf8 = lambda s: s
+
 POWERSHELL_PATH = "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"
+
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QLabel, QMainWindow, QPushButton,
+    QSizePolicy, QStatusBar, QWidget, QMessageBox)
+
+
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, *args, obj=None, **kwargs):
@@ -45,40 +64,35 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.stackedWidget.setCurrentWidget(self.installed)
 
     def goBuckets(self):
-        print("Manage Buckets")
         self.stackedWidget.setCurrentWidget(self.buckets)
-        blayout = QFormLayout()
-        blayout.addWidget(QLabel(""))
         commandline_options = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop bucket list']
         process_result = subprocess.run(commandline_options, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                         universal_newlines=True)
         res = process_result.stdout.split()
 
-        # Remove numbers from list
+        # Manipulate list
+        ################################################################################################################
+
         res = [x for x in res if not (x.isdigit()
                                                  or x[0] == '-' and x[1:].isdigit())]
 
-        # Remove - from list
         for idx, ele in enumerate(res):
            res[idx] = ele.replace('-', '')
 
-        #Remove blank spaces in list
         while ("" in res):
             res.remove("")
 
-        # Remove dates from list
         res = list(filter(
             lambda ThisWord: not re.match('^(?:(?:[0-9]{2}[:\/,]){2}[0-9]{2,4}|am|pm)$', ThisWord),
             res))
 
-        # Remove needless detail from list
-        stopwords = ['Name', 'Source', 'Updates', 'Manifests', 'main', 'Updated']
+        stopwords = ['Name', 'Source', 'Manifests', 'main', 'Updated']
         for word in list(res):
             if word in stopwords:
                 res.remove(word)
 
+        res = [elements for elements in res if '/Main' not in elements]
 
-        # Only bucket names stay
         i = int(0)
         while True:
             try:
@@ -87,13 +101,62 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             except:
                 break
 
+
         print(res)
+
         endres = ""
         for ele in res:
-            endres += ele + " "
-        blayout.addWidget(QLabel(endres))
-        self.buckets.setLayout(blayout)
+            endres += ele + "\n"
 
+        ################################################################################################################
+
+
+        self.list_buckets_label = QLabel(endres, parent=self)
+        self.list_buckets_label.setFont(QFont('Arial', 12))
+        self.list_buckets_layout.addWidget(self.list_buckets_label, Qt.AlignLeft, Qt.AlignTop)
+        self.bucket_button_add.clicked.connect(self.addBucket)
+        self.bucket_button_remove.clicked.connect(self.removeBucket)
+        self.bucket_goback.clicked.connect(self.gohomeb)
+
+    def addBucket(self):
+        bucketname = self.bucket_input_add.text()
+        # self.stackedWidget.setCurrentWidget(self.buckets)
+        command = 'scoop bucket add ' + str(bucketname)
+        commandline_options = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', command]
+        process_result = subprocess.run(commandline_options, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                        universal_newlines=True)
+        choice = QtWidgets.QMessageBox.question(self, 'Finished',
+                                                "We're not sure if the process was successful \nReload Buckets?",
+                                                QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No)
+        if choice == QtWidgets.QMessageBox.Yes:
+            self.list_buckets_layout.removeWidget(self.list_buckets_label)
+            self.stackedWidget.setCurrentWidget(self.home)
+            self.stackedWidget.setCurrentWidget(self.buckets)
+        else:
+            self.list_buckets_layout.removeWidget(self.list_buckets_label)
+            self.stackedWidget.setCurrentWidget(self.home)
+
+    def removeBucket(self):
+        bucketname = self.bucket_input_remove.text()
+        command = 'scoop bucket rm ' + str(bucketname)
+        commandline_options = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', command]
+        process_result = subprocess.run(commandline_options, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                        universal_newlines=True)
+        choice = QtWidgets.QMessageBox.question(self, 'Finished',
+                                                "We're not sure if the process was successful \nReload Buckets?",
+                                                QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No)
+        if choice == QtWidgets.QMessageBox.Yes:
+            self.list_buckets_layout.removeWidget(self.list_buckets_label)
+            self.stackedWidget.setCurrentWidget(self.home)
+            self.stackedWidget.setCurrentWidget(self.buckets)
+        else:
+            self.list_buckets_layout.removeWidget(self.list_buckets_label)
+            self.stackedWidget.setCurrentWidget(self.home)
+
+
+    def gohomeb(self):
+        self.list_buckets_layout.removeWidget(self.list_buckets_label)
+        self.stackedWidget.setCurrentWidget(self.home)
 
 app = QtWidgets.QApplication(sys.argv)
 window = MainWindow()
