@@ -2,17 +2,7 @@ import sys
 
 from qt_pycode.ui_scoopgui import *
 
-from qt_material import *
-
-from PySide6 import QtWidgets
-
-from PySide6.QtCore import *
-
 from PySide6.QtGui import *
-
-from PySide6.QtSvgWidgets import *
-
-from PySide6.QtWidgets import *
 
 import subprocess
 
@@ -35,13 +25,15 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QLabel, QMainWindow, QPushButton,
-    QSizePolicy, QStatusBar, QWidget, QMessageBox)
+    QSizePolicy, QStatusBar, QWidget, QMessageBox, QComboBox)
+
+from state_tooltip import StateTooltip
 
 
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
-    def __init__(self, *args, obj=None, **kwargs):
-        super(MainWindow, self).__init__(*args, **kwargs)
+    def __init__(self, parent=None , *args, obj=None, **kwargs):
+        super(MainWindow, self).__init__(*args, **kwargs, parent=parent)
         self.setupUi(self)
         self.search_page_button = QPushButton('Search', parent=self)
         self.manage_apps_button = QtWidgets.QPushButton('Installed', parent=self)
@@ -52,7 +44,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.search_page_button.clicked.connect(self.goSearch)
         self.manage_apps_button.clicked.connect(self.goInstalled)
         self.manage_buckets_button.clicked.connect(self.goBuckets)
-        with open('widgets/push_button.qss', encoding='utf-8') as f:
+        # self.stateTooltip = None
+        with open('resource/pushbutton/push_button.qss', encoding='utf-8') as f:
             self.setStyleSheet(f.read())
 
     def goSearch(self):
@@ -117,8 +110,20 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.bucket_button_add.clicked.connect(self.addBucket)
         self.bucket_button_remove.clicked.connect(self.removeBucket)
         self.bucket_goback.clicked.connect(self.gohomeb)
+        self.cb.addItems(res)
+        # self.stateTooltip = None
+        with open('resource/statetooltip/style/demo.qss', encoding='utf-8') as f:
+            self.setStyleSheet(f.read())
 
     def addBucket(self):
+        # if self.stateTooltip:
+        #     self.stateTooltip.setContent('Complete')
+        #     self.stateTooltip.setState(True)
+        #     self.stateTooltip = None
+        # else:
+        #     self.stateTooltip = StateTooltip('Process', 'Loading', self)
+        #     self.stateTooltip.move(510, 30)
+        #     self.stateTooltip.show()
         bucketname = self.bucket_input_add.text()
         # self.stackedWidget.setCurrentWidget(self.buckets)
         command = 'scoop bucket add ' + str(bucketname)
@@ -137,7 +142,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.stackedWidget.setCurrentWidget(self.home)
 
     def removeBucket(self):
-        bucketname = self.bucket_input_remove.text()
+        bucketname = self.cb.currentText()
         command = 'scoop bucket rm ' + str(bucketname)
         commandline_options = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', command]
         process_result = subprocess.run(commandline_options, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
