@@ -5,7 +5,9 @@ An unofficial Graphical User Interface for [Scoop](https://scoop.sh/)
 
 V1 will be built with the pyqt and pyside library
 
-## Currently in development - no releases yet
+## First release only has working buckets
+
+## Project currently on hold
 
 ## Credits
 
