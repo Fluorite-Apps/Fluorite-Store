@@ -29,7 +29,19 @@ from PySide6.QtWidgets import (QApplication, QLabel, QMainWindow, QPushButton,
 
 from state_tooltip import StateTooltip
 
+from threading import Thread
 
+import time
+
+from py_toggle import *
+
+###################################################################################################################
+#####   https://tenor.com/view/calculating-puzzled-math-confused-confused-look-gif-14677181                    ####
+
+#####   U S E -  C O M M E N TS - literally me when i was trying to understand spaghetti without comments     #####
+
+#####   https://tenor.com/view/calculating-puzzled-math-confused-confused-look-gif-14677181                    ###
+###################################################################################################################
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None , *args, obj=None, **kwargs):
@@ -38,12 +50,40 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.search_page_button = QPushButton('Search', parent=self)
         self.manage_apps_button = QtWidgets.QPushButton('Installed', parent=self)
         self.manage_buckets_button = QtWidgets.QPushButton('Buckets', parent=self)
+
+        # settings page
+        self.settings_page_button = QtWidgets.QPushButton('le Settings', parent=self)
+        self.settings_page_layout.addWidget(self.settings_page_button, Qt.AlignCenter, Qt.AlignCenter)
+        self.settings_page_button.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.settings_page) )
+
+
         self.enter_search_layout.addWidget(self.search_page_button, Qt.AlignCenter, Qt.AlignCenter)
         self.enter_manage_apps_layout.addWidget(self.manage_apps_button, Qt.AlignCenter, Qt.AlignCenter)
         self.enter_manage_buckets_layout.addWidget(self.manage_buckets_button, Qt.AlignCenter, Qt.AlignCenter)
         self.search_page_button.clicked.connect(self.goSearch)
         self.manage_apps_button.clicked.connect(self.goInstalled)
         self.manage_buckets_button.clicked.connect(self.goBuckets)
+
+        # settings page
+
+        # download manager setting - aria2c
+        self.thing = PyToggle(
+            width=50
+        )
+        # fast search - scoop-search
+        self.another_thing = PyToggle(
+            width=50
+        )
+        # something else
+        self.a_thing = PyToggle(
+            width=50
+        )
+
+        self.settings_toggle_1_layout.addWidget(self.thing, Qt.AlignCenter, Qt.AlignCenter)
+        self.settings_toggle_2_layout.addWidget(self.another_thing, Qt.AlignCenter, Qt.AlignCenter)
+        self.settings_toggle_3_layout.addWidget(self.a_thing, Qt.AlignCenter, Qt.AlignCenter)
+
+
         # self.stateTooltip = None
         with open('resource/pushbutton/push_button.qss', encoding='utf-8') as f:
             self.setStyleSheet(f.read())
@@ -58,62 +98,74 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def goBuckets(self):
         self.stackedWidget.setCurrentWidget(self.buckets)
-        commandline_options = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop bucket list']
-        process_result = subprocess.run(commandline_options, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                        universal_newlines=True)
-        res = process_result.stdout.split()
-
-        # Manipulate list
-        ################################################################################################################
-
-        res = [x for x in res if not (x.isdigit()
-                                                 or x[0] == '-' and x[1:].isdigit())]
-
-        for idx, ele in enumerate(res):
-           res[idx] = ele.replace('-', '')
-
-        while ("" in res):
-            res.remove("")
-
-        res = list(filter(
-            lambda ThisWord: not re.match('^(?:(?:[0-9]{2}[:\/,]){2}[0-9]{2,4}|am|pm)$', ThisWord),
-            res))
-
-        stopwords = ['Name', 'Source', 'Manifests', 'main', 'Updated']
-        for word in list(res):
-            if word in stopwords:
-                res.remove(word)
-
-        res = [elements for elements in res if '/Main' not in elements]
-
-        i = int(0)
-        while True:
-            try:
-                i = i + 1
-                del res[i]
-            except:
-                break
 
 
-        print(res)
+        def function():
+            commandline_options = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop bucket list']
+            process_result = subprocess.run(commandline_options, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+            res = process_result.stdout.split()
 
-        endres = ""
-        for ele in res:
-            endres += ele + "\n"
+            # Manipulate list
+            ################################################################################################################
 
-        ################################################################################################################
+            res = [x for x in res if not (x.isdigit()
+                                                     or x[0] == '-' and x[1:].isdigit())]
+
+            for idx, ele in enumerate(res):
+               res[idx] = ele.replace('-', '')
+
+            while ("" in res):
+                res.remove("")
+
+            res = list(filter(
+                lambda ThisWord: not re.match('^(?:(?:[0-9]{2}[:\/,]){2}[0-9]{2,4}|am|pm)$', ThisWord),
+                res))
+
+            stopwords = ['Name', 'Source', 'Manifests', 'main', 'Updated']
+            for word in list(res):
+                if word in stopwords:
+                    res.remove(word)
+
+            res = [elements for elements in res if '/Main' not in elements]
+
+            i = int(0)
+            while True:
+                try:
+                    i = i + 1
+                    del res[i]
+                except:
+                    break
 
 
-        self.list_buckets_label = QLabel(endres, parent=self)
-        self.list_buckets_label.setFont(QFont('Arial', 12))
-        self.list_buckets_layout.addWidget(self.list_buckets_label, Qt.AlignLeft, Qt.AlignTop)
-        self.bucket_button_add.clicked.connect(self.addBucket)
-        self.bucket_button_remove.clicked.connect(self.removeBucket)
-        self.bucket_goback.clicked.connect(self.gohomeb)
-        self.cb.addItems(res)
-        # self.stateTooltip = None
-        with open('resource/statetooltip/style/demo.qss', encoding='utf-8') as f:
-            self.setStyleSheet(f.read())
+            print(res)
+
+            endres = ""
+            for ele in res:
+                endres += ele + "\n"
+
+            ################################################################################################################
+
+
+            self.list_buckets_label = QLabel(endres, parent=self)
+            self.list_buckets_label.setFont(QFont('Arial', 12))
+            self.list_buckets_layout.addWidget(self.list_buckets_label, Qt.AlignLeft, Qt.AlignTop)
+            self.bucket_button_add.clicked.connect(self.addBucket)
+            self.bucket_button_remove.clicked.connect(self.removeBucket)
+
+            # back button
+            self.bucket_goback.clicked.connect(self.gohomeb)
+            self.bucket_goback_2.clicked.connect(self.gohomeb)
+
+            self.cb.addItems(res)
+            # self.stateTooltip = None
+            with open('resource/statetooltip/style/demo.qss', encoding='utf-8') as f:
+                self.setStyleSheet(f.read())
+
+        # thread fixes hanging, daemon keep alive until finished
+        t = Thread(target=function)
+        t.daemon = True
+        t.start()
 
     def addBucket(self):
         # if self.stateTooltip:
