@@ -48,7 +48,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         super(MainWindow, self).__init__(*args, **kwargs, parent=parent)
         self.setupUi(self)
         self.search_page_button = QPushButton('Search', parent=self)
-        self.manage_apps_button = QtWidgets.QPushButton('Installed', parent=self)
         self.manage_buckets_button = QtWidgets.QPushButton('Buckets', parent=self)
 
         # settings page
@@ -58,10 +57,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
 
         self.enter_search_layout.addWidget(self.search_page_button, Qt.AlignCenter, Qt.AlignCenter)
-        self.enter_manage_apps_layout.addWidget(self.manage_apps_button, Qt.AlignCenter, Qt.AlignCenter)
         self.enter_manage_buckets_layout.addWidget(self.manage_buckets_button, Qt.AlignCenter, Qt.AlignCenter)
         self.search_page_button.clicked.connect(self.goSearch)
-        self.manage_apps_button.clicked.connect(self.goInstalled)
         self.manage_buckets_button.clicked.connect(self.goBuckets)
 
         # settings page
@@ -91,10 +88,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def goSearch(self):
         print("Search")
         self.stackedWidget.setCurrentWidget(self.search)
-
-    def goInstalled(self):
-        print("Manage Apps")
-        self.stackedWidget.setCurrentWidget(self.installed)
 
     def goBuckets(self):
         self.stackedWidget.setCurrentWidget(self.buckets)
