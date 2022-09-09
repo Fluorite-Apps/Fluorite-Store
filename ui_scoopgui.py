@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguiPOYHeL.ui'
+## Form generated from reading UI file 'scoopguiEikqiv.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -86,7 +86,8 @@ class Ui_MainWindow(object):
         self.settings_page.setObjectName(u"settings_page")
         self.manage_buckets_frame_2 = QFrame(self.settings_page)
         self.manage_buckets_frame_2.setObjectName(u"manage_buckets_frame_2")
-        self.manage_buckets_frame_2.setGeometry(QRect(470, 220, 131, 71))
+        self.manage_buckets_frame_2.setGeometry(QRect(530, 220, 131, 71))
+        self.manage_buckets_frame_2.setStyleSheet(u"background-color: rgb(230, 230, 230);")
         self.manage_buckets_frame_2.setFrameShape(QFrame.NoFrame)
         self.manage_buckets_frame_2.setFrameShadow(QFrame.Raised)
         self.manage_buckets_frame_2.setLineWidth(0)
@@ -126,7 +127,8 @@ class Ui_MainWindow(object):
 "        }")
         self.manage_buckets_frame_3 = QFrame(self.settings_page)
         self.manage_buckets_frame_3.setObjectName(u"manage_buckets_frame_3")
-        self.manage_buckets_frame_3.setGeometry(QRect(470, 320, 131, 71))
+        self.manage_buckets_frame_3.setGeometry(QRect(530, 320, 131, 71))
+        self.manage_buckets_frame_3.setStyleSheet(u"background-color: rgb(230, 230, 230);")
         self.manage_buckets_frame_3.setFrameShape(QFrame.NoFrame)
         self.manage_buckets_frame_3.setFrameShadow(QFrame.Raised)
         self.manage_buckets_frame_3.setLineWidth(0)
@@ -136,7 +138,8 @@ class Ui_MainWindow(object):
         self.settings_toggle_2_layout.setContentsMargins(0, 0, 0, 0)
         self.manage_buckets_frame_4 = QFrame(self.settings_page)
         self.manage_buckets_frame_4.setObjectName(u"manage_buckets_frame_4")
-        self.manage_buckets_frame_4.setGeometry(QRect(470, 420, 131, 71))
+        self.manage_buckets_frame_4.setGeometry(QRect(530, 420, 131, 71))
+        self.manage_buckets_frame_4.setStyleSheet(u"background-color: rgb(230, 230, 230);")
         self.manage_buckets_frame_4.setFrameShape(QFrame.NoFrame)
         self.manage_buckets_frame_4.setFrameShadow(QFrame.Raised)
         self.manage_buckets_frame_4.setLineWidth(0)
@@ -214,7 +217,61 @@ class Ui_MainWindow(object):
 "    background-color: rgb(204, 204, 204);\n"
 "    color: rgb(122, 122, 122);\n"
 "}")
+        self.label_15 = QLabel(self.settings_page)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setGeometry(QRect(470, 210, 251, 91))
+        self.label_15.setStyleSheet(u"QLabel {\n"
+"        	background-color: rgb(230, 230, 230);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.label_16 = QLabel(self.settings_page)
+        self.label_16.setObjectName(u"label_16")
+        self.label_16.setGeometry(QRect(470, 310, 251, 91))
+        self.label_16.setStyleSheet(u"QLabel {\n"
+"        	background-color: rgb(230, 230, 230);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.label_17 = QLabel(self.settings_page)
+        self.label_17.setObjectName(u"label_17")
+        self.label_17.setGeometry(QRect(470, 410, 251, 91))
+        self.label_17.setStyleSheet(u"QLabel {\n"
+"        	background-color: rgb(230, 230, 230);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.label_18 = QLabel(self.settings_page)
+        self.label_18.setObjectName(u"label_18")
+        self.label_18.setGeometry(QRect(250, 80, 521, 471))
+        self.label_18.setStyleSheet(u"QLabel {\n"
+"            color: yellow;\n"
+"			\n"
+"	background-color: rgb(247, 248, 240);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
         self.stackedWidget.addWidget(self.settings_page)
+        self.label_18.raise_()
+        self.label_17.raise_()
+        self.label_16.raise_()
+        self.label_15.raise_()
+        self.manage_buckets_frame_2.raise_()
+        self.label_11.raise_()
+        self.label_12.raise_()
+        self.label_13.raise_()
+        self.manage_buckets_frame_3.raise_()
+        self.manage_buckets_frame_4.raise_()
+        self.label_14.raise_()
+        self.title_2.raise_()
+        self.label.raise_()
+        self.label_2.raise_()
+        self.label_3.raise_()
+        self.bucket_goback_2.raise_()
         self.buckets = QWidget()
         self.buckets.setObjectName(u"buckets")
         self.title_buckets = QLabel(self.buckets)
@@ -464,6 +521,10 @@ class Ui_MainWindow(object):
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Use Download Manager", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Some other setting", None))
         self.bucket_goback_2.setText(QCoreApplication.translate("MainWindow", u"Back", None))
+        self.label_15.setText("")
+        self.label_16.setText("")
+        self.label_17.setText("")
+        self.label_18.setText("")
         self.title_buckets.setText(QCoreApplication.translate("MainWindow", u"Manage Buckets", None))
         self.add_bucket_title.setText(QCoreApplication.translate("MainWindow", u"Add Bucket", None))
         self.list_bucket_title.setText(QCoreApplication.translate("MainWindow", u"Bucket List", None))

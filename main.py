@@ -215,6 +215,17 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.list_buckets_layout.removeWidget(self.list_buckets_label)
         self.stackedWidget.setCurrentWidget(self.home)
 
+
+# dedicated gorilla function
+def dedicated_gorilla_function():
+    while True:
+        time.sleep(1)
+        print ("gorilla")
+
+t = Thread(target=dedicated_gorilla_function)
+t.daemon = True
+t.start()
+
 app = QtWidgets.QApplication(sys.argv)
 window = MainWindow()
 window.setWindowTitle('Scoop GUI')
