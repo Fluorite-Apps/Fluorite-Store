@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1083</width>
-    <height>600</height>
+    <height>661</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
       <x>9</x>
       <y>-21</y>
       <width>1071</width>
-      <height>601</height>
+      <height>661</height>
      </rect>
     </property>
     <widget class="QWidget" name="home">
@@ -66,7 +66,7 @@
        </property>
       </layout>
      </widget>
-     <widget class="QFrame" name="manage_appsbuckets_frame">
+     <widget class="QFrame" name="recommend_apps_frame">
       <property name="geometry">
        <rect>
         <x>480</x>
@@ -90,7 +90,7 @@
       <property name="lineWidth">
        <number>0</number>
       </property>
-      <layout class="QHBoxLayout" name="enter_manage_buckets_layout">
+      <layout class="QHBoxLayout" name="enter_recommended_apps_frame">
        <property name="spacing">
         <number>0</number>
        </property>
@@ -332,7 +332,7 @@
         <x>250</x>
         <y>90</y>
         <width>521</width>
-        <height>471</height>
+        <height>551</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -364,7 +364,7 @@
         }</string>
       </property>
       <property name="text">
-       <string>Add or remove scoop buckets/apps</string>
+       <string>Recommended Apps</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -412,6 +412,112 @@
        <string/>
       </property>
      </widget>
+     <widget class="QLabel" name="label_56">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>520</y>
+        <width>251</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	background-color: rgb(230, 230, 230);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>550</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            background-color: rgb(239, 239, 210);
+        }</string>
+      </property>
+      <property name="text">
+       <string>Add/remove/update scoop buckets/apps</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QFrame" name="manage_appsbuckets_frame_2">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>530</y>
+        <width>220</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(230, 230, 230);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="enter_manage_buckets_layout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_57">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>520</y>
+        <width>171</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
      <zorder>label_24</zorder>
      <zorder>label_26</zorder>
      <zorder>label_19</zorder>
@@ -425,8 +531,12 @@
      <zorder>label_6</zorder>
      <zorder>title_3</zorder>
      <zorder>search_layout</zorder>
-     <zorder>manage_appsbuckets_frame</zorder>
+     <zorder>recommend_apps_frame</zorder>
      <zorder>settings_frame</zorder>
+     <zorder>label_56</zorder>
+     <zorder>manage_appsbuckets_frame_2</zorder>
+     <zorder>label_57</zorder>
+     <zorder>label_10</zorder>
     </widget>
     <widget class="QWidget" name="settings_page">
      <widget class="QFrame" name="manage_buckets_frame_2">
@@ -1304,6 +1414,345 @@ QPushButton:disabled {
        <string/>
       </property>
      </widget>
+     <widget class="QLabel" name="label_50">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>150</y>
+        <width>151</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+			
+			
+	background-color: rgb(221, 232, 230);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_51">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>150</y>
+        <width>271</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	background-color: rgb(230, 230, 230);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_52">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>250</y>
+        <width>271</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	background-color: rgb(230, 230, 230);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_53">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>250</y>
+        <width>151</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+			
+			
+	background-color: rgb(221, 232, 230);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_54">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>350</y>
+        <width>271</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	background-color: rgb(230, 230, 230);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_55">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>350</y>
+        <width>151</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+			
+			
+	background-color: rgb(221, 232, 230);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="title_buckets_4">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>170</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(221, 232, 230);</string>
+      </property>
+      <property name="text">
+       <string>Update all</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="title_buckets_5">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>270</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(221, 232, 230);</string>
+      </property>
+      <property name="text">
+       <string>remove app</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="title_buckets_6">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>370</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(221, 232, 230);</string>
+      </property>
+      <property name="text">
+       <string>Update all</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QFrame" name="update_all_apps_frame">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>160</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(230, 230, 230);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="update_all_apps_layout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="remove_app_frame">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>260</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(230, 230, 230);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="remove_app_layout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="not_added_yet">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>360</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(230, 230, 230);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="placeholder_layout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
      <zorder>label_46</zorder>
      <zorder>add_bucket_title</zorder>
      <zorder>bucket_input_add</zorder>
@@ -1318,6 +1767,18 @@ QPushButton:disabled {
      <zorder>title_buckets</zorder>
      <zorder>label_49</zorder>
      <zorder>title_buckets_3</zorder>
+     <zorder>label_50</zorder>
+     <zorder>label_51</zorder>
+     <zorder>label_52</zorder>
+     <zorder>label_53</zorder>
+     <zorder>label_54</zorder>
+     <zorder>label_55</zorder>
+     <zorder>title_buckets_4</zorder>
+     <zorder>title_buckets_5</zorder>
+     <zorder>title_buckets_6</zorder>
+     <zorder>update_all_apps_frame</zorder>
+     <zorder>remove_app_frame</zorder>
+     <zorder>not_added_yet</zorder>
     </widget>
     <widget class="QWidget" name="installed"/>
     <widget class="QWidget" name="search">
@@ -1351,7 +1812,7 @@ QPushButton:disabled {
         <x>30</x>
         <y>50</y>
         <width>1011</width>
-        <height>551</height>
+        <height>601</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -1371,7 +1832,7 @@ QPushButton:disabled {
      <widget class="QFrame" name="search_box_frame">
       <property name="geometry">
        <rect>
-        <x>320</x>
+        <x>330</x>
         <y>70</y>
         <width>331</width>
         <height>51</height>
@@ -1410,10 +1871,10 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_29">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>90</x>
         <y>140</y>
         <width>891</width>
-        <height>441</height>
+        <height>491</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -1431,8 +1892,8 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_30">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>150</y>
+        <x>170</x>
+        <y>190</y>
         <width>91</width>
         <height>71</height>
        </rect>
@@ -1453,8 +1914,8 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_31">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>240</y>
+        <x>170</x>
+        <y>280</y>
         <width>91</width>
         <height>71</height>
        </rect>
@@ -1475,8 +1936,8 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_32">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>320</y>
+        <x>170</x>
+        <y>360</y>
         <width>91</width>
         <height>71</height>
        </rect>
@@ -1497,8 +1958,8 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_33">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>405</y>
+        <x>170</x>
+        <y>445</y>
         <width>91</width>
         <height>71</height>
        </rect>
@@ -1519,8 +1980,8 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_34">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>490</y>
+        <x>170</x>
+        <y>530</y>
         <width>91</width>
         <height>71</height>
        </rect>
@@ -1541,8 +2002,8 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_35">
       <property name="geometry">
        <rect>
-        <x>280</x>
-        <y>150</y>
+        <x>290</x>
+        <y>190</y>
         <width>450</width>
         <height>71</height>
        </rect>
@@ -1565,8 +2026,8 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_36">
       <property name="geometry">
        <rect>
-        <x>280</x>
-        <y>240</y>
+        <x>290</x>
+        <y>280</y>
         <width>450</width>
         <height>71</height>
        </rect>
@@ -1589,8 +2050,8 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_37">
       <property name="geometry">
        <rect>
-        <x>280</x>
-        <y>322</y>
+        <x>290</x>
+        <y>362</y>
         <width>450</width>
         <height>71</height>
        </rect>
@@ -1613,8 +2074,8 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_38">
       <property name="geometry">
        <rect>
-        <x>280</x>
-        <y>405</y>
+        <x>290</x>
+        <y>445</y>
         <width>450</width>
         <height>71</height>
        </rect>
@@ -1637,8 +2098,8 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_39">
       <property name="geometry">
        <rect>
-        <x>280</x>
-        <y>490</y>
+        <x>290</x>
+        <y>530</y>
         <width>450</width>
         <height>71</height>
        </rect>
@@ -1661,8 +2122,8 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_40">
       <property name="geometry">
        <rect>
-        <x>770</x>
-        <y>150</y>
+        <x>780</x>
+        <y>190</y>
         <width>131</width>
         <height>71</height>
        </rect>
@@ -1684,8 +2145,8 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_41">
       <property name="geometry">
        <rect>
-        <x>770</x>
-        <y>240</y>
+        <x>780</x>
+        <y>280</y>
         <width>131</width>
         <height>71</height>
        </rect>
@@ -1707,8 +2168,8 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_42">
       <property name="geometry">
        <rect>
-        <x>770</x>
-        <y>320</y>
+        <x>780</x>
+        <y>360</y>
         <width>131</width>
         <height>71</height>
        </rect>
@@ -1730,8 +2191,8 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_43">
       <property name="geometry">
        <rect>
-        <x>770</x>
-        <y>405</y>
+        <x>780</x>
+        <y>445</y>
         <width>131</width>
         <height>71</height>
        </rect>
@@ -1753,8 +2214,8 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_44">
       <property name="geometry">
        <rect>
-        <x>770</x>
-        <y>490</y>
+        <x>780</x>
+        <y>530</y>
         <width>131</width>
         <height>71</height>
        </rect>
@@ -1776,14 +2237,19 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_7">
       <property name="geometry">
        <rect>
-        <x>180</x>
-        <y>150</y>
+        <x>190</x>
+        <y>160</y>
         <width>49</width>
         <height>16</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(239, 239, 210);</string>
+       <string notr="true">background-color: rgb(230, 230, 230);</string>
       </property>
       <property name="text">
        <string>Apps</string>
@@ -1792,14 +2258,19 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_8">
       <property name="geometry">
        <rect>
-        <x>440</x>
-        <y>150</y>
+        <x>450</x>
+        <y>160</y>
         <width>91</width>
         <height>16</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(239, 239, 210);</string>
+       <string notr="true">background-color: rgb(230, 230, 230);</string>
       </property>
       <property name="text">
        <string>Description</string>
@@ -1808,14 +2279,19 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_9">
       <property name="geometry">
        <rect>
-        <x>800</x>
-        <y>160</y>
+        <x>810</x>
+        <y>163</y>
         <width>91</width>
         <height>16</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(194, 234, 189);</string>
+       <string notr="true">background-color: rgb(230, 230, 230);</string>
       </property>
       <property name="text">
        <string>Install</string>
@@ -1824,7 +2300,7 @@ QPushButton:disabled {
      <widget class="QLabel" name="label_45">
       <property name="geometry">
        <rect>
-        <x>650</x>
+        <x>660</x>
         <y>70</y>
         <width>91</width>
         <height>51</height>
@@ -1850,8 +2326,8 @@ QPushButton:disabled {
      <widget class="QFrame" name="app_desc_frame_1">
       <property name="geometry">
        <rect>
-        <x>310</x>
-        <y>170</y>
+        <x>320</x>
+        <y>210</y>
         <width>391</width>
         <height>51</height>
        </rect>
@@ -1889,8 +2365,8 @@ QPushButton:disabled {
      <widget class="QFrame" name="app_desc_frame_2">
       <property name="geometry">
        <rect>
-        <x>310</x>
-        <y>250</y>
+        <x>320</x>
+        <y>290</y>
         <width>391</width>
         <height>51</height>
        </rect>
@@ -1928,8 +2404,8 @@ QPushButton:disabled {
      <widget class="QFrame" name="app_desc_frame_3">
       <property name="geometry">
        <rect>
-        <x>310</x>
-        <y>330</y>
+        <x>320</x>
+        <y>370</y>
         <width>391</width>
         <height>51</height>
        </rect>
@@ -1967,8 +2443,8 @@ QPushButton:disabled {
      <widget class="QFrame" name="app_desc_frame_4">
       <property name="geometry">
        <rect>
-        <x>310</x>
-        <y>420</y>
+        <x>320</x>
+        <y>460</y>
         <width>391</width>
         <height>51</height>
        </rect>
@@ -2006,8 +2482,8 @@ QPushButton:disabled {
      <widget class="QFrame" name="app_desc_frame_5">
       <property name="geometry">
        <rect>
-        <x>310</x>
-        <y>500</y>
+        <x>320</x>
+        <y>540</y>
         <width>391</width>
         <height>51</height>
        </rect>
@@ -2045,8 +2521,8 @@ QPushButton:disabled {
      <widget class="QFrame" name="app_install_frame_1">
       <property name="geometry">
        <rect>
-        <x>780</x>
-        <y>160</y>
+        <x>790</x>
+        <y>200</y>
         <width>101</width>
         <height>51</height>
        </rect>
@@ -2087,8 +2563,8 @@ QPushButton:disabled {
      <widget class="QFrame" name="app_install_frame_2">
       <property name="geometry">
        <rect>
-        <x>780</x>
-        <y>250</y>
+        <x>790</x>
+        <y>290</y>
         <width>101</width>
         <height>51</height>
        </rect>
@@ -2129,8 +2605,8 @@ QPushButton:disabled {
      <widget class="QFrame" name="app_install_frame_3">
       <property name="geometry">
        <rect>
-        <x>780</x>
-        <y>330</y>
+        <x>790</x>
+        <y>370</y>
         <width>101</width>
         <height>51</height>
        </rect>
@@ -2171,8 +2647,8 @@ QPushButton:disabled {
      <widget class="QFrame" name="app_install_frame_4">
       <property name="geometry">
        <rect>
-        <x>780</x>
-        <y>410</y>
+        <x>790</x>
+        <y>450</y>
         <width>101</width>
         <height>51</height>
        </rect>
@@ -2213,8 +2689,8 @@ QPushButton:disabled {
      <widget class="QFrame" name="app_install_frame_5">
       <property name="geometry">
        <rect>
-        <x>780</x>
-        <y>500</y>
+        <x>790</x>
+        <y>540</y>
         <width>101</width>
         <height>51</height>
        </rect>
@@ -2255,7 +2731,7 @@ QPushButton:disabled {
      <widget class="QFrame" name="app_search_frame">
       <property name="geometry">
        <rect>
-        <x>660</x>
+        <x>670</x>
         <y>80</y>
         <width>71</width>
         <height>31</height>
@@ -2329,6 +2805,2790 @@ QPushButton:disabled {
      <zorder>app_install_frame_5</zorder>
      <zorder>label_45</zorder>
      <zorder>app_search_frame</zorder>
+    </widget>
+    <widget class="QWidget" name="recommended_apps_page_2">
+     <widget class="QLabel" name="label_58">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>1011</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(247, 248, 240);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_59">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>130</y>
+        <width>891</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	background-color: rgb(230, 230, 230);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_60">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>65</y>
+        <width>441</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	      background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 12px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="title_4">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>70</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            background-color: rgb(239, 239, 210);
+        }</string>
+      </property>
+      <property name="text">
+       <string>Recommended Apps - Page 2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_61">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>170</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_62">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_63">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>170</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_64">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>260</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_65">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>260</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_66">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>260</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_67">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>350</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_68">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>350</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_69">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>350</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_70">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>440</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_71">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>440</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_72">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>440</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_73">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>530</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_74">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>530</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_75">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>530</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_76">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>190</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Peazip</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_77">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Fast compression utility, also supports ARC which is the best algo for day to day usage</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_78">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>280</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Librewolf</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_79">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>280</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Fork of firefox - browser made with privacy and security in mind</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_80">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>370</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Freetube</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_81">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>370</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Desktop youtube client - no ads, skips sponsors </string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_82">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>450</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Geek uninstaller</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_83">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>460</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Fork of bcuninstaller but with a modern gui - actually good app uninstaller</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_84">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>540</y>
+        <width>81</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Simplewall</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_85">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>550</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Block internet access for apps, increases privacy/security, also prevents malware for example collecting data</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="recommended_apps_page_3">
+     <widget class="QLabel" name="label_114">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>260</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_115">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>350</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_116">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>280</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Playnite</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_117">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>170</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_118">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>370</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Check hdd/sdd life</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_119">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>530</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_120">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>180</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Sandboxxy Plus</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_121">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>550</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Stress test ram, gpu, cpu to check their max temperatures, or to check stability</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_122">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>530</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_123">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>440</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_124">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>1011</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(247, 248, 240);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_125">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>460</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Check hardware temperatures</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_126">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>130</y>
+        <width>891</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	background-color: rgb(230, 230, 230);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_127">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>530</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_128">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Because windows literally has no sandboxing on non-microsoft-store apps which is what makes malware so common, sandbox untrustworthy apps.</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_129">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>65</y>
+        <width>441</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	      background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 12px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_130">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_131">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>360</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Crystal Disk Info</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_132">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>450</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Hwinfo</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_133">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>440</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_134">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>170</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_135">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>260</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_136">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>540</y>
+        <width>81</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>OCCT</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_137">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>350</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_138">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>440</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_139">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>350</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_140">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>260</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_141">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>280</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Modern, extensible, game launcher</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="title_6">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>70</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            background-color: rgb(239, 239, 210);
+        }</string>
+      </property>
+      <property name="text">
+       <string>Recommended Apps - Page 3</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <zorder>label_124</zorder>
+     <zorder>label_126</zorder>
+     <zorder>label_127</zorder>
+     <zorder>label_129</zorder>
+     <zorder>label_130</zorder>
+     <zorder>label_133</zorder>
+     <zorder>label_134</zorder>
+     <zorder>label_135</zorder>
+     <zorder>label_137</zorder>
+     <zorder>label_138</zorder>
+     <zorder>label_139</zorder>
+     <zorder>label_140</zorder>
+     <zorder>label_114</zorder>
+     <zorder>label_115</zorder>
+     <zorder>label_116</zorder>
+     <zorder>label_117</zorder>
+     <zorder>label_118</zorder>
+     <zorder>label_119</zorder>
+     <zorder>label_120</zorder>
+     <zorder>label_122</zorder>
+     <zorder>label_121</zorder>
+     <zorder>label_123</zorder>
+     <zorder>label_125</zorder>
+     <zorder>label_128</zorder>
+     <zorder>label_131</zorder>
+     <zorder>label_132</zorder>
+     <zorder>label_136</zorder>
+     <zorder>label_141</zorder>
+     <zorder>title_6</zorder>
+    </widget>
+    <widget class="QWidget" name="recommended_apps_page_4">
+     <widget class="QLabel" name="label_142">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>260</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_143">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>350</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_144">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>280</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>MPV</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_145">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>170</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_146">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>370</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Modern ssh client</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_147">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>530</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_148">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>190</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>ShutUp10</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_149">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>550</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Very stable nintendo switch emulator, less graphical bugs than yuzu, also allows importing shader cache (gets rid of first time stutters entirely)</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_150">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>530</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_151">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>440</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_152">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>1011</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(247, 248, 240);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_153">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>460</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Control audio volume per apps, replaces windows audio button on taskbar, same design</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_154">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>130</y>
+        <width>891</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	background-color: rgb(230, 230, 230);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_155">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>530</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_156">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Tries to lessen the amount of telemetry collected by windows</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_157">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>65</y>
+        <width>441</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	      background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 12px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_158">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_159">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>370</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Tabby</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_160">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>450</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Ear Trumpet</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_161">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>440</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_162">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>170</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_163">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>260</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_164">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>540</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Ryujinx</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_165">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>350</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_166">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>440</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="title_7">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>70</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            background-color: rgb(239, 239, 210);
+        }</string>
+      </property>
+      <property name="text">
+       <string>Recommended Apps - Page 4</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_167">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>350</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_168">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>260</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_169">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>280</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Fast, minimal media player</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_152</zorder>
+     <zorder>label_154</zorder>
+     <zorder>label_155</zorder>
+     <zorder>label_157</zorder>
+     <zorder>label_158</zorder>
+     <zorder>label_161</zorder>
+     <zorder>label_162</zorder>
+     <zorder>label_163</zorder>
+     <zorder>label_165</zorder>
+     <zorder>label_166</zorder>
+     <zorder>title_7</zorder>
+     <zorder>label_167</zorder>
+     <zorder>label_168</zorder>
+     <zorder>label_160</zorder>
+     <zorder>label_159</zorder>
+     <zorder>label_156</zorder>
+     <zorder>label_153</zorder>
+     <zorder>label_151</zorder>
+     <zorder>label_150</zorder>
+     <zorder>label_149</zorder>
+     <zorder>label_148</zorder>
+     <zorder>label_147</zorder>
+     <zorder>label_145</zorder>
+     <zorder>label_144</zorder>
+     <zorder>label_143</zorder>
+     <zorder>label_146</zorder>
+     <zorder>label_142</zorder>
+     <zorder>label_169</zorder>
+     <zorder>label_164</zorder>
+    </widget>
+    <widget class="QWidget" name="recommended_apps_page_1">
+     <widget class="QLabel" name="label_86">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>260</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_87">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>350</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_88">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>270</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Fluent Reader</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_89">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>170</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_90">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>370</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Beautiful screenshot utility</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_91">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>530</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_92">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>190</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Portmaster</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_93">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>550</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Compress games without any impact on speed, saves huge amounts of storage on many games</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_94">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>530</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_95">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>440</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_96">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>1011</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(247, 248, 240);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_97">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>460</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Backup game saves easily</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_98">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>130</y>
+        <width>891</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	background-color: rgb(230, 230, 230);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_99">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>530</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_100">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>190</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Decent alternative to pihole/adguard home if you can't selfhost them, also replaces simplewall</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_101">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>65</y>
+        <width>441</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	      background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 12px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_102">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_103">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>370</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Flameshot</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_104">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>450</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Ludusavi</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_105">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>440</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_106">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>170</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_107">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>260</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_108">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>540</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Compact GUI</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_109">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>350</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_110">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>440</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="title_5">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>70</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            background-color: rgb(239, 239, 210);
+        }</string>
+      </property>
+      <property name="text">
+       <string>Recommended Apps - Page 1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_111">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>350</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(194, 234, 189);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_112">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>260</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_113">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>280</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(239, 239, 210);</string>
+      </property>
+      <property name="text">
+       <string>Modern RSS (news) client</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_96</zorder>
+     <zorder>label_98</zorder>
+     <zorder>label_99</zorder>
+     <zorder>label_101</zorder>
+     <zorder>label_102</zorder>
+     <zorder>label_105</zorder>
+     <zorder>label_106</zorder>
+     <zorder>label_107</zorder>
+     <zorder>label_109</zorder>
+     <zorder>label_110</zorder>
+     <zorder>title_5</zorder>
+     <zorder>label_111</zorder>
+     <zorder>label_112</zorder>
+     <zorder>label_100</zorder>
+     <zorder>label_87</zorder>
+     <zorder>label_88</zorder>
+     <zorder>label_89</zorder>
+     <zorder>label_90</zorder>
+     <zorder>label_92</zorder>
+     <zorder>label_91</zorder>
+     <zorder>label_94</zorder>
+     <zorder>label_93</zorder>
+     <zorder>label_95</zorder>
+     <zorder>label_97</zorder>
+     <zorder>label_108</zorder>
+     <zorder>label_104</zorder>
+     <zorder>label_103</zorder>
+     <zorder>label_86</zorder>
+     <zorder>label_113</zorder>
     </widget>
    </widget>
   </widget>
