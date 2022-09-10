@@ -36,6 +36,8 @@ from os.path import exists
 
 from py_toggle import *
 
+from Second_PushButton import *
+
 ###################################################################################################################
 #####   https://tenor.com/view/calculating-puzzled-math-confused-confused-look-gif-14677181                    ####
 
@@ -62,6 +64,90 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # attaching to function
         self.go_recommended_apps_page_button.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_1))
 
+        # install buttons - page 1
+        self.recc_app_install_button_1 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_2 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_3 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_4 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_5 = custompushbutton('install', parent=self)
+
+        # install buttons - page 2
+        self.recc_app_install_button_6 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_7 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_8 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_9 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_10 = custompushbutton('install', parent=self)
+
+        # install buttons - page 3
+        self.recc_app_install_button_11 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_12 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_13 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_14 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_15 = custompushbutton('install', parent=self)
+
+        # install buttons - page 4
+        self.recc_app_install_button_16 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_17 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_18 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_19 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_20 = custompushbutton('install', parent=self)
+
+        # attaching page 1 buttons to layouts
+        self.recc_app_install_layout_1.addWidget(self.recc_app_install_button_1, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_2.addWidget(self.recc_app_install_button_2, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_3.addWidget(self.recc_app_install_button_3, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_4.addWidget(self.recc_app_install_button_4, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_5.addWidget(self.recc_app_install_button_5, Qt.AlignCenter, Qt.AlignCenter)
+
+        # attaching page 1 buttons to layouts
+        self.recc_app_install_layout_6.addWidget(self.recc_app_install_button_6, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_7.addWidget(self.recc_app_install_button_7, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_8.addWidget(self.recc_app_install_button_8, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_9.addWidget(self.recc_app_install_button_9, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_10.addWidget(self.recc_app_install_button_10, Qt.AlignCenter, Qt.AlignCenter)
+
+        # attaching page 2 buttons to layouts
+        self.recc_app_install_layout_11.addWidget(self.recc_app_install_button_11, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_12.addWidget(self.recc_app_install_button_12, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_13.addWidget(self.recc_app_install_button_13, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_14.addWidget(self.recc_app_install_button_14, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_15.addWidget(self.recc_app_install_button_15, Qt.AlignCenter, Qt.AlignCenter)
+
+        # attaching page 3 buttons to layouts
+        self.recc_app_install_layout_16.addWidget(self.recc_app_install_button_16, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_17.addWidget(self.recc_app_install_button_17, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_18.addWidget(self.recc_app_install_button_18, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_19.addWidget(self.recc_app_install_button_19, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_20.addWidget(self.recc_app_install_button_20, Qt.AlignCenter, Qt.AlignCenter)
+
+        def do_nothing():
+            print ("coming soon")
+
+        # attaching all 20 to functions
+        # currently do nothing
+        self.recc_app_install_button_1.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_2.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_3.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_4.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_5.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_6.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_7.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_8.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_9.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_10.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_11.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_12.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_13.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_14.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_15.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_16.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_17.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_18.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_19.clicked.connect(lambda: do_nothing())
+        self.recc_app_install_button_20.clicked.connect(lambda: do_nothing())
+
+
+
 
         ###################################################################################################################
         # BUCKETS AND APPS PAGE
@@ -75,7 +161,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.update_all_apps_button.clicked.connect(self.update_all_apps_function)
 
         # settings page
-        self.settings_page_button = QtWidgets.QPushButton('le Settings', parent=self)
+        self.settings_page_button = QtWidgets.QPushButton('Settings', parent=self)
         self.settings_page_layout.addWidget(self.settings_page_button, Qt.AlignCenter, Qt.AlignCenter)
         self.settings_page_button.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.settings_page) )
 
