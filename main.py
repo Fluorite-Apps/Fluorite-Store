@@ -1,6 +1,6 @@
 import sys
 
-from qt_pycode.ui_scoopgui import *
+from ui_scoopgui import *
 
 from PySide6.QtGui import *
 
