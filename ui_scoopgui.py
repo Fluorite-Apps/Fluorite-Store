@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguiyeELTW.ui'
+## Form generated from reading UI file 'scoopguiLvjshM.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -2764,7 +2764,7 @@ class Ui_MainWindow(object):
         self.label_117.setText("")
         self.label_118.setText(QCoreApplication.translate("MainWindow", u"Check hdd/sdd life", None))
         self.label_119.setText("")
-        self.label_120.setText(QCoreApplication.translate("MainWindow", u"Sandboxxy Plus", None))
+        self.label_120.setText(QCoreApplication.translate("MainWindow", u"Sandboxie Plus", None))
         self.label_121.setText(QCoreApplication.translate("MainWindow", u"Stress test ram, gpu, cpu to check their max temperatures, or to check stability", None))
         self.label_122.setText("")
         self.label_123.setText("")

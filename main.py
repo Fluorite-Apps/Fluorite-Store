@@ -120,34 +120,220 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.recc_app_install_layout_19.addWidget(self.recc_app_install_button_19, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_20.addWidget(self.recc_app_install_button_20, Qt.AlignCenter, Qt.AlignCenter)
 
+        # functions for installing recommended apps on button click
+
+        def install_recc_app_1():
+            # toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install hwinfo']
+            # process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+            #                                 universal_newlines=True)
+            print ("unfortunately portmaster isn't on scoop yet, so i'll have to find some other way to install this later. Coming soon..")
+
+        def install_recc_app_2():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install fluent-reader']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_3():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install flameshot']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_4():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install ludusavi']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_5():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install compactgui']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_6():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install peazip']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_7():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install librewolf']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_8():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install freetube']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_9():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install geekuninstaller']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_10():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install simplewall']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_11():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install sandboxie-plus-np']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_12():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install playnite']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_13():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install crystaldiskinfo']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_14():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install hwinfo']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_15():
+            # toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install hwinfo']
+            # process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+            #                                 universal_newlines=True)
+            print(
+                "unfortunately OCCT isn't on scoop yet, so i'll have to find some other way to install this later. Coming soon..")
+
+        def install_recc_app_16():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install shutup10']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_17():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install mpv']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_18():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install tabby']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_19():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install eartrumpet']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_20():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install ryujinx']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+
+        # launching install functions in seperate thread = no gui hang
+        def thread_install_recc_app_1():
+            t = Thread(target=install_recc_app_1)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_2():
+            t = Thread(target=install_recc_app_2)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_3():
+            t = Thread(target=install_recc_app_3)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_4():
+            t = Thread(target=install_recc_app_4)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_5():
+            t = Thread(target=install_recc_app_5)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_6():
+            t = Thread(target=install_recc_app_6)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_7():
+            t = Thread(target=install_recc_app_7)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_8():
+            t = Thread(target=install_recc_app_8)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_9():
+            t = Thread(target=install_recc_app_9)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_10():
+            t = Thread(target=install_recc_app_10)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_11():
+            t = Thread(target=install_recc_app_11)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_12():
+            t = Thread(target=install_recc_app_12)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_13():
+            t = Thread(target=install_recc_app_13)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_14():
+            t = Thread(target=install_recc_app_14)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_15():
+            t = Thread(target=install_recc_app_15)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_16():
+            t = Thread(target=install_recc_app_16)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_17():
+            t = Thread(target=install_recc_app_17)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_18():
+            t = Thread(target=install_recc_app_18)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_19():
+            t = Thread(target=install_recc_app_19)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_20():
+            t = Thread(target=install_recc_app_20)
+            t.daemon = True
+            t.start()
+
         def do_nothing():
             print ("coming soon")
 
         # attaching all 20 to functions
         # currently do nothing
-        self.recc_app_install_button_1.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_2.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_3.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_4.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_5.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_6.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_7.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_8.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_9.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_10.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_11.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_12.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_13.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_14.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_15.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_16.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_17.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_18.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_19.clicked.connect(lambda: do_nothing())
-        self.recc_app_install_button_20.clicked.connect(lambda: do_nothing())
-
-
-
+        self.recc_app_install_button_1.clicked.connect(lambda: thread_install_recc_app_1())
+        self.recc_app_install_button_2.clicked.connect(lambda: thread_install_recc_app_2())
+        self.recc_app_install_button_3.clicked.connect(lambda: thread_install_recc_app_3())
+        self.recc_app_install_button_4.clicked.connect(lambda: thread_install_recc_app_4())
+        self.recc_app_install_button_5.clicked.connect(lambda: thread_install_recc_app_5())
+        self.recc_app_install_button_6.clicked.connect(lambda: thread_install_recc_app_6())
+        self.recc_app_install_button_7.clicked.connect(lambda: thread_install_recc_app_7())
+        self.recc_app_install_button_8.clicked.connect(lambda: thread_install_recc_app_8())
+        self.recc_app_install_button_9.clicked.connect(lambda: thread_install_recc_app_9())
+        self.recc_app_install_button_10.clicked.connect(lambda: thread_install_recc_app_10())
+        self.recc_app_install_button_11.clicked.connect(lambda: thread_install_recc_app_11())
+        self.recc_app_install_button_12.clicked.connect(lambda: thread_install_recc_app_12())
+        self.recc_app_install_button_13.clicked.connect(lambda: thread_install_recc_app_13())
+        self.recc_app_install_button_14.clicked.connect(lambda: thread_install_recc_app_14())
+        self.recc_app_install_button_15.clicked.connect(lambda: thread_install_recc_app_15())
+        self.recc_app_install_button_16.clicked.connect(lambda: thread_install_recc_app_16())
+        self.recc_app_install_button_17.clicked.connect(lambda: thread_install_recc_app_17())
+        self.recc_app_install_button_18.clicked.connect(lambda: thread_install_recc_app_18())
+        self.recc_app_install_button_19.clicked.connect(lambda: thread_install_recc_app_19())
+        self.recc_app_install_button_20.clicked.connect(lambda: thread_install_recc_app_20())
 
         ###################################################################################################################
         # BUCKETS AND APPS PAGE

@@ -3845,7 +3845,7 @@ QPushButton:disabled {
        <string notr="true">background-color: rgb(239, 239, 210);</string>
       </property>
       <property name="text">
-       <string>Sandboxxy Plus</string>
+       <string>Sandboxie Plus</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
