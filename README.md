@@ -18,7 +18,8 @@ GUI design help - [Faraz Ahary (t3dium)](https://github.com/t3dium)
 - [x] Managing installed buckets
 - [ ] Searching and installing apps - **TODO**
 - [ ] Faster searches using the unofficial scoop-search package - **TODO**
-- [ ] Faster downloads (optionally) using aria2c multithreaded download manager [experimental] - **TODO**
+- [ ] List of recommended apps and install buttons - **almost done**
+- [x] Faster downloads (optionally) using aria2c multithreaded download manager [experimental]
 - [x] Modern design and animations
 
 
