@@ -38,6 +38,8 @@ from py_toggle import *
 
 from Second_PushButton import *
 
+import resource_file_qt_rc
+
 ###################################################################################################################
 #####   https://tenor.com/view/calculating-puzzled-math-confused-confused-look-gif-14677181                    ####
 
@@ -53,44 +55,106 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.search_page_button = QPushButton('Search', parent=self)
         self.manage_buckets_button = QtWidgets.QPushButton('Buckets', parent=self)
 
+        # loading splashscreen
+        # self.stackedWidget.setCurrentWidget(self.splashscreen)
+
+
         ###################################################################################################################
         # RECOMMENDED APPS PAGE
         ###################################################################################################################
 
         # making widget and adding to layout
-        self.go_recommended_apps_page_button = QtWidgets.QPushButton('Recommended Apps', parent=self)
+        self.go_recommended_apps_page_button = QtWidgets.QPushButton('Starred', parent=self)
 
         self.enter_recommended_apps_frame.addWidget(self.go_recommended_apps_page_button, Qt.AlignCenter, Qt.AlignCenter)
+
         # attaching to function
         self.go_recommended_apps_page_button.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_1))
 
         # install buttons - page 1
-        self.recc_app_install_button_1 = custompushbutton('install', parent=self)
-        self.recc_app_install_button_2 = custompushbutton('install', parent=self)
-        self.recc_app_install_button_3 = custompushbutton('install', parent=self)
-        self.recc_app_install_button_4 = custompushbutton('install', parent=self)
-        self.recc_app_install_button_5 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_1 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_1.setMinimumHeight(71)
+        self.recc_app_install_button_1.setFixedWidth(131)
+
+        self.recc_app_install_button_2 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_2.setMinimumHeight(71)
+        self.recc_app_install_button_2.setFixedWidth(131)
+
+        self.recc_app_install_button_3 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_3.setMinimumHeight(71)
+        self.recc_app_install_button_3.setFixedWidth(131)
+
+        self.recc_app_install_button_4 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_4.setMinimumHeight(71)
+        self.recc_app_install_button_4.setFixedWidth(131)
+
+        self.recc_app_install_button_5 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_5.setMinimumHeight(71)
+        self.recc_app_install_button_5.setFixedWidth(131)
 
         # install buttons - page 2
-        self.recc_app_install_button_6 = custompushbutton('install', parent=self)
-        self.recc_app_install_button_7 = custompushbutton('install', parent=self)
-        self.recc_app_install_button_8 = custompushbutton('install', parent=self)
-        self.recc_app_install_button_9 = custompushbutton('install', parent=self)
-        self.recc_app_install_button_10 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_6 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_6.setMinimumHeight(71)
+        self.recc_app_install_button_6.setFixedWidth(131)
+
+        self.recc_app_install_button_7 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_7.setMinimumHeight(71)
+        self.recc_app_install_button_7.setFixedWidth(131)
+
+        self.recc_app_install_button_8 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_8.setMinimumHeight(71)
+        self.recc_app_install_button_8.setFixedWidth(131)
+
+        self.recc_app_install_button_9 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_9.setMinimumHeight(71)
+        self.recc_app_install_button_9.setFixedWidth(131)
+
+        self.recc_app_install_button_10 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_10.setMinimumHeight(71)
+        self.recc_app_install_button_10.setFixedWidth(131)
 
         # install buttons - page 3
-        self.recc_app_install_button_11 = custompushbutton('install', parent=self)
-        self.recc_app_install_button_12 = custompushbutton('install', parent=self)
-        self.recc_app_install_button_13 = custompushbutton('install', parent=self)
-        self.recc_app_install_button_14 = custompushbutton('install', parent=self)
-        self.recc_app_install_button_15 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_11 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_11.setMinimumHeight(71)
+        self.recc_app_install_button_11.setFixedWidth(131)
+
+        self.recc_app_install_button_12 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_12.setMinimumHeight(71)
+        self.recc_app_install_button_12.setFixedWidth(131)
+
+        self.recc_app_install_button_13 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_13.setMinimumHeight(71)
+        self.recc_app_install_button_13.setFixedWidth(131)
+
+        self.recc_app_install_button_14 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_14.setMinimumHeight(71)
+        self.recc_app_install_button_14.setFixedWidth(131)
+
+        self.recc_app_install_button_15 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_15.setMinimumHeight(71)
+        self.recc_app_install_button_15.setFixedWidth(131)
 
         # install buttons - page 4
-        self.recc_app_install_button_16 = custompushbutton('install', parent=self)
-        self.recc_app_install_button_17 = custompushbutton('install', parent=self)
-        self.recc_app_install_button_18 = custompushbutton('install', parent=self)
-        self.recc_app_install_button_19 = custompushbutton('install', parent=self)
-        self.recc_app_install_button_20 = custompushbutton('install', parent=self)
+        self.recc_app_install_button_16 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_16.setMinimumHeight(71)
+        self.recc_app_install_button_16.setFixedWidth(131)
+
+        self.recc_app_install_button_17 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_17.setMinimumHeight(71)
+        self.recc_app_install_button_17.setFixedWidth(131)
+
+        self.recc_app_install_button_18 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_18.setMinimumHeight(71)
+        self.recc_app_install_button_18.setFixedWidth(131)
+
+        self.recc_app_install_button_19 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_19.setMinimumHeight(71)
+        self.recc_app_install_button_19.setFixedWidth(131)
+
+        self.recc_app_install_button_20 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_20.setMinimumHeight(71)
+        self.recc_app_install_button_20.setFixedWidth(131)
+
 
         # attaching page 1 buttons to layouts
         self.recc_app_install_layout_1.addWidget(self.recc_app_install_button_1, Qt.AlignCenter, Qt.AlignCenter)
@@ -344,7 +408,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.update_all_apps_layout.addWidget(self.update_all_apps_button, Qt.AlignCenter, Qt.AlignCenter)
 
         # updating all apps function
-        self.update_all_apps_button.clicked.connect(self.update_all_apps_function)
+        self.update_all_apps_button.clicked.connect(self.update_all_apps_thread)
 
         # settings page
         self.settings_page_button = QtWidgets.QPushButton('Settings', parent=self)
@@ -379,6 +443,16 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.settings_toggle_2_layout.addWidget(self.another_thing, Qt.AlignCenter, Qt.AlignCenter)
         self.settings_toggle_3_layout.addWidget(self.a_thing, Qt.AlignCenter, Qt.AlignCenter)
 
+        def install_aria2c():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install aria2c']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+
+        def install_scoop_search():
+            toggle_command_2 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install scoop-search']
+            process_result = subprocess.run(toggle_command_2, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+
         # checking if toggle has been toggled, looped on thread
         # loop ends if ticked, only runs if never ran before
 
@@ -391,10 +465,10 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 if self.thing.isChecked() == True:
                     # checking if has_ran_before_one exists, if not runs and creates
                     if exists(has_ran_before_one):
-                        # code to enable download manager
-                        toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install aria2c']
-                        process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                        universal_newlines=True)
+                        # install aria2c in a seperate thread
+                        t = Thread(target=install_aria2c)
+                        t.daemon = True
+                        t.start()
 
                         # making has_ran_before_one file
                         file_one = open(r"has_ran_before_one", "w")
@@ -410,10 +484,10 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 if self.a_thing.isChecked() == True:
                     # checking if has_ran_before_two exists, if not runs and creates
                     if exists(has_ran_before_two):
-                        # code to enable fast search
-                        toggle_command_2 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install scoop-search']
-                        process_result = subprocess.run(toggle_command_2, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                        universal_newlines=True)
+                        # install scoop-search in a seperate thread
+                        t = Thread(target=install_scoop_search)
+                        t.daemon = True
+                        t.start()
 
                         # making has_ran_before_two file
                         file_two = open(r"has_ran_before_two", "w")
@@ -456,6 +530,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         update_all_apps_powershell = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop update *']
         update_all_apps_powershell2 = subprocess.run(update_all_apps_powershell, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                         universal_newlines=True)
+
+    def update_all_apps_thread(self):
+        t = Thread(target=self.update_all_apps_function)
+        t.daemon = True
+        t.start()
 
     def goSearch(self):
         self.stackedWidget.setCurrentWidget(self.search)
