@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguiBmVjQz.ui'
+## Form generated from reading UI file 'scoopguiYyexcp.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -646,34 +646,6 @@ class Ui_MainWindow(object):
 "    background-color: rgb(204, 204, 204);\n"
 "    color: rgb(122, 122, 122);\n"
 "}")
-        self.bucket_goback = QPushButton(self.buckets)
-        self.bucket_goback.setObjectName(u"bucket_goback")
-        self.bucket_goback.setGeometry(QRect(0, 530, 201, 41))
-        self.bucket_goback.setStyleSheet(u"QWidget{\n"
-"    background-color: white;\n"
-"}\n"
-"\n"
-"QPushButton {\n"
-"    background-color: rgb(204, 204, 204);\n"
-"    padding: 10px 64px 10px 64px;\n"
-"    font: 19px 'Microsoft YaHei';\n"
-"    border: transparent;\n"
-"    border-radius: 4px;\n"
-"    /* height: 40px; */\n"
-"}\n"
-"\n"
-"QPushButton:pressed:hover {\n"
-"    background-color: rgb(153, 153, 153);\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: rgb(230, 230, 230);\n"
-"}\n"
-"\n"
-"QPushButton:disabled {\n"
-"    background-color: rgb(204, 204, 204);\n"
-"    color: rgb(122, 122, 122);\n"
-"}")
         self.cb = QComboBox(self.buckets)
         self.cb.setObjectName(u"cb")
         self.cb.setGeometry(QRect(20, 280, 261, 41))
@@ -871,6 +843,18 @@ class Ui_MainWindow(object):
         self.placeholder_layout.setSpacing(0)
         self.placeholder_layout.setObjectName(u"placeholder_layout")
         self.placeholder_layout.setContentsMargins(0, 0, 0, 0)
+        self.not_added_yet_2 = QFrame(self.buckets)
+        self.not_added_yet_2.setObjectName(u"not_added_yet_2")
+        self.not_added_yet_2.setGeometry(QRect(0, 510, 251, 61))
+        self.not_added_yet_2.setCursor(QCursor(Qt.PointingHandCursor))
+        self.not_added_yet_2.setStyleSheet(u"")
+        self.not_added_yet_2.setFrameShape(QFrame.NoFrame)
+        self.not_added_yet_2.setFrameShadow(QFrame.Raised)
+        self.not_added_yet_2.setLineWidth(0)
+        self.bucket_back_layout = QHBoxLayout(self.not_added_yet_2)
+        self.bucket_back_layout.setSpacing(0)
+        self.bucket_back_layout.setObjectName(u"bucket_back_layout")
+        self.bucket_back_layout.setContentsMargins(0, 0, 0, 0)
         self.stackedWidget.addWidget(self.buckets)
         self.label_46.raise_()
         self.add_bucket_title.raise_()
@@ -878,7 +862,6 @@ class Ui_MainWindow(object):
         self.bucket_button_add.raise_()
         self.remove_bucket_title.raise_()
         self.bucket_button_remove.raise_()
-        self.bucket_goback.raise_()
         self.cb.raise_()
         self.title_buckets_2.raise_()
         self.label_47.raise_()
@@ -898,6 +881,7 @@ class Ui_MainWindow(object):
         self.update_all_apps_frame.raise_()
         self.remove_app_frame.raise_()
         self.not_added_yet.raise_()
+        self.not_added_yet_2.raise_()
         self.installed = QWidget()
         self.installed.setObjectName(u"installed")
         self.stackedWidget.addWidget(self.installed)
@@ -2982,7 +2966,6 @@ class Ui_MainWindow(object):
         self.bucket_button_add.setText(QCoreApplication.translate("MainWindow", u"Add", None))
         self.remove_bucket_title.setText(QCoreApplication.translate("MainWindow", u"Remove Bucket", None))
         self.bucket_button_remove.setText(QCoreApplication.translate("MainWindow", u"Remove", None))
-        self.bucket_goback.setText(QCoreApplication.translate("MainWindow", u"Back", None))
         self.title_buckets_2.setText(QCoreApplication.translate("MainWindow", u"Manage Buckets", None))
         self.label_46.setText("")
         self.label_47.setText("")

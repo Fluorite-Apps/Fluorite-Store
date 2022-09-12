@@ -43,8 +43,6 @@ import resource_file_qt_rc
 ###################################################################################################################
 #####   https://tenor.com/view/calculating-puzzled-math-confused-confused-look-gif-14677181                    ####
 
-#####   U S E -  C O M M E N TS txog - literally me when i was trying to understand spaghetti without comments     #####
-
 #####   https://tenor.com/view/calculating-puzzled-math-confused-confused-look-gif-14677181                    ###
 ###################################################################################################################
 
@@ -54,6 +52,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.setupUi(self)
         self.search_page_button = QPushButton('Search', parent=self)
         self.manage_buckets_button = QtWidgets.QPushButton('Buckets', parent=self)
+
 
         # loading splashscreen
         # self.stackedWidget.setCurrentWidget(self.splashscreen)
@@ -183,6 +182,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.recc_app_install_layout_18.addWidget(self.recc_app_install_button_18, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_19.addWidget(self.recc_app_install_button_19, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_20.addWidget(self.recc_app_install_button_20, Qt.AlignCenter, Qt.AlignCenter)
+
+        # back buttons
+        self.bucket_back = custompushbutton('Back', parent=self)
+        self.bucket_back.setMinimumHeight(71)
+        self.bucket_back.setFixedWidth(131)
+        self.bucket_back_layout.addWidget(self.bucket_back, Qt.AlignCenter, Qt.AlignCenter)
+
 
         # functions for installing recommended apps on button click
 
@@ -590,15 +596,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             ################################################################################################################
 
 
-            self.list_buckets_label = QLabel(endres, parent=self)
-            self.list_buckets_label.setFont(QFont('Arial', 12))
-            self.list_buckets_layout.addWidget(self.list_buckets_label, Qt.AlignLeft, Qt.AlignTop)
+            # self.list_buckets_label = QLabel(endres, parent=self)
+            # self.list_buckets_label.setFont(QFont('Arial', 12))
+            # self.list_buckets_layout.addWidget(self.list_buckets_label, Qt.AlignLeft, Qt.AlignTop)
             self.bucket_button_add.clicked.connect(self.addBucket)
             self.bucket_button_remove.clicked.connect(self.removeBucket)
 
-            # return to homepage
-            self.bucket_goback.clicked.connect(self.gohomeb)
-            self.bucket_goback_2.clicked.connect(self.gohomeb)
+            self.bucket_back.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
 
             self.cb.addItems(res)
             # self.stateTooltip = None
@@ -654,20 +658,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.stackedWidget.setCurrentWidget(self.home)
 
 
-    def gohomeb(self):
-        self.list_buckets_layout.removeWidget(self.list_buckets_label)
-        self.stackedWidget.setCurrentWidget(self.home)
-
-
-# dedicated gorilla function
-def dedicated_gorilla_function():
-    while True:
-        time.sleep(1)
-        print ("gorilla")
-
-t = Thread(target=dedicated_gorilla_function)
-t.daemon = True
-t.start()
 
 app = QtWidgets.QApplication(sys.argv)
 window = MainWindow()
