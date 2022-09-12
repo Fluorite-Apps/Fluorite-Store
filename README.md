@@ -1,4 +1,4 @@
-# Scoop-gui
+# Vanilla.py
 An unofficial Graphical User Interface for [Scoop](https://scoop.sh/)
 
 
