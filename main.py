@@ -40,19 +40,11 @@ from Second_PushButton import *
 
 import resource_file_qt_rc
 
-###################################################################################################################
-#####   https://tenor.com/view/calculating-puzzled-math-confused-confused-look-gif-14677181                    ####
-
-#####   https://tenor.com/view/calculating-puzzled-math-confused-confused-look-gif-14677181                    ###
-###################################################################################################################
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None , *args, obj=None, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs, parent=parent)
         self.setupUi(self)
-        self.search_page_button = QPushButton('Search', parent=self)
-        self.manage_buckets_button = QtWidgets.QPushButton('Buckets', parent=self)
-
 
         # loading splashscreen
         # self.stackedWidget.setCurrentWidget(self.splashscreen)
@@ -60,7 +52,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
 
         # making widget and adding to layout
-        self.go_recommended_apps_page_button = QtWidgets.QPushButton('Starred', parent=self)
+        self.go_recommended_apps_page_button = custompushbutton('Starred', parent=self)
+        self.go_recommended_apps_page_button.setMinimumHeight(91)
+        self.go_recommended_apps_page_button.setFixedWidth(251)
 
         self.enter_recommended_apps_frame.addWidget(self.go_recommended_apps_page_button, Qt.AlignCenter, Qt.AlignCenter)
 
@@ -107,8 +101,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         # defining the button
         self.return_home = custompushbutton('Back', parent=self)
-        self.return_home.setMinimumHeight(71)
-        self.return_home.setFixedWidth(131)
+        self.return_home.setMinimumHeight(61)
+        self.return_home.setFixedWidth(261)
 
         self.return_home_1 = custompushbutton('B\na\nc\nk', parent=self)
         self.return_home_1.setMinimumHeight(181)
@@ -128,6 +122,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         # Adding back button to layout
         self.bucket_back_layout_1.addWidget(self.return_home, Qt.AlignCenter, Qt.AlignCenter)
+
+        self.return_home_layout.addWidget(self.return_home, Qt.AlignCenter, Qt.AlignCenter)
 
         self.return_home_layout_1.addWidget(self.return_home_1, Qt.AlignCenter, Qt.AlignCenter)
         self.return_home_layout_two.addWidget(self.return_home_2, Qt.AlignCenter, Qt.AlignCenter)
@@ -495,13 +491,24 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.update_all_apps_button.clicked.connect(self.update_all_apps_thread)
 
         # settings page
-        self.settings_page_button = QtWidgets.QPushButton('Settings', parent=self)
+        self.settings_page_button = custompushbutton('Settings', parent=self)
+        self.settings_page_button.setMinimumHeight(91)
+        self.settings_page_button.setFixedWidth(251)
         self.settings_page_layout.addWidget(self.settings_page_button, Qt.AlignCenter, Qt.AlignCenter)
         self.settings_page_button.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.settings_page) )
 
-
-        self.enter_search_layout.addWidget(self.search_page_button, Qt.AlignCenter, Qt.AlignCenter)
+        # manage buckets button on home page
+        self.manage_buckets_button = custompushbutton('Buckets', parent=self)
+        self.manage_buckets_button.setMinimumHeight(91)
+        self.manage_buckets_button.setFixedWidth(251)
         self.enter_manage_buckets_layout.addWidget(self.manage_buckets_button, Qt.AlignCenter, Qt.AlignCenter)
+
+        # search page button on home page
+        self.search_page_button = custompushbutton('Search', parent=self)
+        self.search_page_button.setMinimumHeight(91)
+        self.search_page_button.setFixedWidth(251)
+        self.enter_search_layout.addWidget(self.search_page_button, Qt.AlignCenter, Qt.AlignCenter)
+
         self.search_page_button.clicked.connect(self.goSearch)
         self.manage_buckets_button.clicked.connect(self.goBuckets)
 
