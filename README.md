@@ -38,8 +38,8 @@ Resources liberated (not stolen):
 ## Settings - finished
 ![image](https://user-images.githubusercontent.com/83690012/189457521-2521a2e8-99df-4ee6-9e45-1ce4d80f5070.png)
 
-## Recommended Apps page - almost finished
-![image](https://user-images.githubusercontent.com/83690012/189527494-b2707ae3-0061-44f8-8133-12c47a856ed4.png)
+## Recommended Apps page - finished (will still add more apps in future)
+![image](https://user-images.githubusercontent.com/83690012/190257396-8e2b0095-16da-40e5-96f1-79aaaa93cb88.png)
 
 ## Splashscreen - almost finished
 
