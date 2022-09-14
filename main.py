@@ -58,9 +58,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # self.stackedWidget.setCurrentWidget(self.splashscreen)
 
 
-        ###################################################################################################################
-        # RECOMMENDED APPS PAGE
-        ###################################################################################################################
 
         # making widget and adding to layout
         self.go_recommended_apps_page_button = QtWidgets.QPushButton('Starred', parent=self)
@@ -70,7 +67,85 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # attaching to function
         self.go_recommended_apps_page_button.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_1))
 
-        # install buttons - page 1
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # NEXT PAGE BUTTON - STARRED/RECOMMENDED APPS PAGE    #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+        # defining the button
+        self.starred_next_page_1 = custompushbutton('N\ne\nx\nt\n\nP\na\ng\ne', parent=self)
+        self.starred_next_page_1.setMinimumHeight(241)
+        self.starred_next_page_1.setFixedWidth(51)
+
+        self.starred_next_page_2 = custompushbutton('N\ne\nx\nt\n\nP\na\ng\ne', parent=self)
+        self.starred_next_page_2.setMinimumHeight(241)
+        self.starred_next_page_2.setFixedWidth(51)
+
+        self.starred_next_page_3 = custompushbutton('N\ne\nx\nt\n\nP\na\ng\ne', parent=self)
+        self.starred_next_page_3.setMinimumHeight(241)
+        self.starred_next_page_3.setFixedWidth(51)
+
+        self.starred_next_page_4 = custompushbutton('N\ne\nx\nt\n\nP\na\ng\ne', parent=self)
+        self.starred_next_page_4.setMinimumHeight(241)
+        self.starred_next_page_4.setFixedWidth(51)
+
+        # Adding back button to layout
+        self.recc_next_page_layout_1.addWidget(self.starred_next_page_1, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_next_page_layout_two.addWidget(self.starred_next_page_2, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_next_page_layout_3.addWidget(self.starred_next_page_3, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_next_page_layout_4.addWidget(self.starred_next_page_4, Qt.AlignCenter, Qt.AlignCenter)
+
+        # connecting back button to function
+        self.starred_next_page_1.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_2))
+        self.starred_next_page_2.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_3))
+        self.starred_next_page_3.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_4))
+        self.starred_next_page_4.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_5))
+
+
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # BACK BUTTON - RETURNING TO HOMEPAGE                 #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+        # defining the button
+        self.return_home = custompushbutton('Back', parent=self)
+        self.return_home.setMinimumHeight(71)
+        self.return_home.setFixedWidth(131)
+
+        self.return_home_1 = custompushbutton('B\na\nc\nk', parent=self)
+        self.return_home_1.setMinimumHeight(181)
+        self.return_home_1.setFixedWidth(51)
+
+        self.return_home_2 = custompushbutton('B\na\nc\nk', parent=self)
+        self.return_home_2.setMinimumHeight(181)
+        self.return_home_2.setFixedWidth(51)
+
+        self.return_home_3 = custompushbutton('B\na\nc\nk', parent=self)
+        self.return_home_3.setMinimumHeight(181)
+        self.return_home_3.setFixedWidth(51)
+
+        self.return_home_4 = custompushbutton('B\na\nc\nk', parent=self)
+        self.return_home_4.setMinimumHeight(181)
+        self.return_home_4.setFixedWidth(51)
+
+        # Adding back button to layout
+        self.bucket_back_layout_1.addWidget(self.return_home, Qt.AlignCenter, Qt.AlignCenter)
+
+        self.return_home_layout_1.addWidget(self.return_home_1, Qt.AlignCenter, Qt.AlignCenter)
+        self.return_home_layout_two.addWidget(self.return_home_2, Qt.AlignCenter, Qt.AlignCenter)
+        self.return_home_layout_3.addWidget(self.return_home_3, Qt.AlignCenter, Qt.AlignCenter)
+        self.return_home_layout_4.addWidget(self.return_home_4, Qt.AlignCenter, Qt.AlignCenter)
+
+        # connecting back button to function
+        self.return_home.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
+
+        self.return_home_1.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
+        self.return_home_2.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
+        self.return_home_3.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
+        self.return_home_4.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
+
+
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # INSTALL BUTTONS PAGE  1  - STARRED APPS             #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         self.recc_app_install_button_1 = custompushbutton('Install', parent=self)
         self.recc_app_install_button_1.setMinimumHeight(71)
         self.recc_app_install_button_1.setFixedWidth(131)
@@ -91,7 +166,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.recc_app_install_button_5.setMinimumHeight(71)
         self.recc_app_install_button_5.setFixedWidth(131)
 
-        # install buttons - page 2
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # INSTALL BUTTONS PAGE  2  - STARRED APPS             #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         self.recc_app_install_button_6 = custompushbutton('Install', parent=self)
         self.recc_app_install_button_6.setMinimumHeight(71)
         self.recc_app_install_button_6.setFixedWidth(131)
@@ -112,7 +189,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.recc_app_install_button_10.setMinimumHeight(71)
         self.recc_app_install_button_10.setFixedWidth(131)
 
-        # install buttons - page 3
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # INSTALL BUTTONS PAGE  3  - STARRED APPS             #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         self.recc_app_install_button_11 = custompushbutton('Install', parent=self)
         self.recc_app_install_button_11.setMinimumHeight(71)
         self.recc_app_install_button_11.setFixedWidth(131)
@@ -133,7 +212,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.recc_app_install_button_15.setMinimumHeight(71)
         self.recc_app_install_button_15.setFixedWidth(131)
 
-        # install buttons - page 4
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # INSTALL BUTTONS PAGE  4  - STARRED APPS             #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         self.recc_app_install_button_16 = custompushbutton('Install', parent=self)
         self.recc_app_install_button_16.setMinimumHeight(71)
         self.recc_app_install_button_16.setFixedWidth(131)
@@ -154,6 +235,10 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.recc_app_install_button_20.setMinimumHeight(71)
         self.recc_app_install_button_20.setFixedWidth(131)
 
+
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # ATTACHING STARRED INSTALL BUTTONS TO LAYOUT         #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
         # attaching page 1 buttons to layouts
         self.recc_app_install_layout_1.addWidget(self.recc_app_install_button_1, Qt.AlignCenter, Qt.AlignCenter)
@@ -182,13 +267,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.recc_app_install_layout_18.addWidget(self.recc_app_install_button_18, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_19.addWidget(self.recc_app_install_button_19, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_20.addWidget(self.recc_app_install_button_20, Qt.AlignCenter, Qt.AlignCenter)
-
-        # back buttons
-        self.bucket_back = custompushbutton('Back', parent=self)
-        self.bucket_back.setMinimumHeight(71)
-        self.bucket_back.setFixedWidth(131)
-        self.bucket_back_layout.addWidget(self.bucket_back, Qt.AlignCenter, Qt.AlignCenter)
-
 
         # functions for installing recommended apps on button click
 
@@ -601,8 +679,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             # self.list_buckets_layout.addWidget(self.list_buckets_label, Qt.AlignLeft, Qt.AlignTop)
             self.bucket_button_add.clicked.connect(self.addBucket)
             self.bucket_button_remove.clicked.connect(self.removeBucket)
-
-            self.bucket_back.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
 
             self.cb.addItems(res)
             # self.stateTooltip = None

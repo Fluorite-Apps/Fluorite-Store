@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1083</width>
-    <height>661</height>
+    <width>1146</width>
+    <height>671</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,8 +22,8 @@
      <rect>
       <x>9</x>
       <y>-21</y>
-      <width>1071</width>
-      <height>661</height>
+      <width>1171</width>
+      <height>701</height>
      </rect>
     </property>
     <widget class="QWidget" name="home">
@@ -1125,7 +1125,7 @@ QPushButton:disabled {
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="resource_file_qt.qrc">:/images/scoop.png</pixmap>
+       <pixmap>:/images/scoop.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1379,46 +1379,6 @@ QPushButton:disabled {
       </property>
       <property name="text">
        <string>Remove</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="bucket_goback">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>530</y>
-        <width>201</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QWidget{
-    background-color: white;
-}
-
-QPushButton {
-    background-color: rgb(204, 204, 204);
-    padding: 10px 64px 10px 64px;
-    font: 19px 'Microsoft YaHei';
-    border: transparent;
-    border-radius: 4px;
-    /* height: 40px; */
-}
-
-QPushButton:pressed:hover {
-    background-color: rgb(153, 153, 153);
-}
-
-QPushButton:hover {
-    background-color: rgb(230, 230, 230);
-}
-
-QPushButton:disabled {
-    background-color: rgb(204, 204, 204);
-    color: rgb(122, 122, 122);
-}</string>
-      </property>
-      <property name="text">
-       <string>Back</string>
       </property>
      </widget>
      <widget class="QComboBox" name="cb">
@@ -1921,13 +1881,54 @@ QPushButton:disabled {
        </property>
       </layout>
      </widget>
+     <widget class="QFrame" name="back_button_frame">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>580</y>
+        <width>281</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="bucket_back_layout_1">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
      <zorder>label_46</zorder>
      <zorder>add_bucket_title</zorder>
      <zorder>bucket_input_add</zorder>
      <zorder>bucket_button_add</zorder>
      <zorder>remove_bucket_title</zorder>
      <zorder>bucket_button_remove</zorder>
-     <zorder>bucket_goback</zorder>
      <zorder>cb</zorder>
      <zorder>title_buckets_2</zorder>
      <zorder>label_47</zorder>
@@ -1947,6 +1948,7 @@ QPushButton:disabled {
      <zorder>update_all_apps_frame</zorder>
      <zorder>remove_app_frame</zorder>
      <zorder>not_added_yet</zorder>
+     <zorder>back_button_frame</zorder>
     </widget>
     <widget class="QWidget" name="installed"/>
     <widget class="QWidget" name="search">
@@ -2980,8 +2982,8 @@ QPushButton:disabled {
        <rect>
         <x>30</x>
         <y>50</y>
-        <width>1011</width>
-        <height>601</height>
+        <width>1071</width>
+        <height>611</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -3004,7 +3006,7 @@ QPushButton:disabled {
         <x>80</x>
         <y>130</y>
         <width>891</width>
-        <height>501</height>
+        <height>511</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -3501,7 +3503,7 @@ QPushButton:disabled {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -3558,7 +3560,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -3615,7 +3617,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -3672,7 +3674,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -3729,7 +3731,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -3900,7 +3902,194 @@ QPushButton:hover {
        </property>
       </layout>
      </widget>
+     <widget class="QLabel" name="label_331">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>140</y>
+        <width>71</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	
+	background-color: rgb(197, 197, 197);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QFrame" name="back_button_frame_5">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>150</y>
+        <width>51</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	
+	font: 16pt &quot;Montserrat&quot;;
+	background-color: rgb(130, 144, 142);
+	padding: 12px;
+	border-radius: 15px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(238, 255, 231);
+	padding: 12px;
+	border-radius: 25px;
+}
+
+QPushButton:hover {
+	background-color: rgb(166, 197, 163);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="return_home_layout_two">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_332">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>350</y>
+        <width>71</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	
+	background-color: rgb(197, 197, 197);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_333">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>130</y>
+        <width>111</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	
+			
+	background-color: rgb(212, 212, 212);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QFrame" name="recc_next_page_frame_3">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>360</y>
+        <width>51</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	font: 16pt &quot;Montserrat&quot;;
+	background-color: rgb(130, 144, 142);
+	padding: 12px;
+	border-radius: 15px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(238, 255, 231);
+	padding: 12px;
+	border-radius: 25px;
+}
+
+QPushButton:hover {
+	background-color: rgb(166, 197, 163);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="recc_next_page_layout_two">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
      <zorder>label_58</zorder>
+     <zorder>label_333</zorder>
      <zorder>label_59</zorder>
      <zorder>label_61</zorder>
      <zorder>label_62</zorder>
@@ -3932,6 +4121,10 @@ QPushButton:hover {
      <zorder>status_indicator_frame_2</zorder>
      <zorder>label_172</zorder>
      <zorder>title_8</zorder>
+     <zorder>label_331</zorder>
+     <zorder>back_button_frame_5</zorder>
+     <zorder>label_332</zorder>
+     <zorder>recc_next_page_frame_3</zorder>
     </widget>
     <widget class="QWidget" name="recommended_apps_page_3">
      <widget class="QLabel" name="label_114">
@@ -4126,8 +4319,8 @@ QPushButton:hover {
        <rect>
         <x>30</x>
         <y>50</y>
-        <width>1011</width>
-        <height>601</height>
+        <width>1071</width>
+        <height>611</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -4174,7 +4367,7 @@ QPushButton:hover {
         <x>80</x>
         <y>130</y>
         <width>891</width>
-        <height>501</height>
+        <height>511</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -4466,7 +4659,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -4523,7 +4716,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -4580,7 +4773,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -4637,7 +4830,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -4694,7 +4887,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -4865,7 +5058,194 @@ QPushButton:hover {
        <string/>
       </property>
      </widget>
+     <widget class="QFrame" name="recc_next_page_frame_4">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>360</y>
+        <width>51</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	font: 16pt &quot;Montserrat&quot;;
+	background-color: rgb(130, 144, 142);
+	padding: 12px;
+	border-radius: 15px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(238, 255, 231);
+	padding: 12px;
+	border-radius: 25px;
+}
+
+QPushButton:hover {
+	background-color: rgb(166, 197, 163);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="recc_next_page_layout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_334">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>130</y>
+        <width>111</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	
+			
+	background-color: rgb(212, 212, 212);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_335">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>140</y>
+        <width>71</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	
+	background-color: rgb(197, 197, 197);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QFrame" name="back_button_frame_6">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>150</y>
+        <width>51</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	
+	font: 16pt &quot;Montserrat&quot;;
+	background-color: rgb(130, 144, 142);
+	padding: 12px;
+	border-radius: 15px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(238, 255, 231);
+	padding: 12px;
+	border-radius: 25px;
+}
+
+QPushButton:hover {
+	background-color: rgb(166, 197, 163);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="return_home_layout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_336">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>350</y>
+        <width>71</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	
+	background-color: rgb(197, 197, 197);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
      <zorder>label_124</zorder>
+     <zorder>label_334</zorder>
      <zorder>label_126</zorder>
      <zorder>label_130</zorder>
      <zorder>label_133</zorder>
@@ -4897,6 +5277,10 @@ QPushButton:hover {
      <zorder>title_9</zorder>
      <zorder>label_175</zorder>
      <zorder>status_indicator_frame_3</zorder>
+     <zorder>label_335</zorder>
+     <zorder>back_button_frame_6</zorder>
+     <zorder>label_336</zorder>
+     <zorder>recc_next_page_frame_4</zorder>
     </widget>
     <widget class="QWidget" name="recommended_apps_page_4">
      <widget class="QLabel" name="label_142">
@@ -5088,8 +5472,8 @@ QPushButton:hover {
        <rect>
         <x>30</x>
         <y>50</y>
-        <width>1011</width>
-        <height>601</height>
+        <width>1071</width>
+        <height>611</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -5136,7 +5520,7 @@ QPushButton:hover {
         <x>80</x>
         <y>130</y>
         <width>891</width>
-        <height>501</height>
+        <height>511</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -5425,7 +5809,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -5482,7 +5866,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -5539,7 +5923,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -5596,7 +5980,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -5653,7 +6037,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -5794,7 +6178,7 @@ QPushButton:hover {
        <string notr="true"/>
       </property>
       <property name="text">
-       <string>Recommended Apps - Page 3</string>
+       <string>Recommended Apps - Page 4</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -5824,7 +6208,195 @@ QPushButton:hover {
        <string/>
       </property>
      </widget>
+     <widget class="QFrame" name="recc_next_page_frame_5">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>360</y>
+        <width>51</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	font: 16pt &quot;Montserrat&quot;;
+	background-color: rgb(130, 144, 142);
+	padding: 12px;
+	border-radius: 15px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(238, 255, 231);
+	padding: 12px;
+	border-radius: 25px;
+}
+
+QPushButton:hover {
+	background-color: rgb(166, 197, 163);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="recc_next_page_layout_4">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_337">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>130</y>
+        <width>111</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	
+			
+	background-color: rgb(212, 212, 212);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_338">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>140</y>
+        <width>71</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	
+	background-color: rgb(197, 197, 197);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QFrame" name="back_button_frame_7">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>150</y>
+        <width>51</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	
+	font: 16pt &quot;Montserrat&quot;;
+	background-color: rgb(130, 144, 142);
+	padding: 12px;
+	border-radius: 15px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(238, 255, 231);
+	padding: 12px;
+	border-radius: 25px;
+}
+
+QPushButton:hover {
+	background-color: rgb(166, 197, 163);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="return_home_layout_4">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_339">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>350</y>
+        <width>71</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	
+	background-color: rgb(197, 197, 197);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
      <zorder>label_152</zorder>
+     <zorder>label_337</zorder>
+     <zorder>label_339</zorder>
      <zorder>label_154</zorder>
      <zorder>label_158</zorder>
      <zorder>label_161</zorder>
@@ -5856,6 +6428,9 @@ QPushButton:hover {
      <zorder>label_180</zorder>
      <zorder>status_indicator_frame_4</zorder>
      <zorder>label_178</zorder>
+     <zorder>recc_next_page_frame_5</zorder>
+     <zorder>label_338</zorder>
+     <zorder>back_button_frame_7</zorder>
     </widget>
     <widget class="QWidget" name="recommended_apps_page_1">
      <widget class="QLabel" name="label_86">
@@ -6050,8 +6625,8 @@ QPushButton:hover {
        <rect>
         <x>30</x>
         <y>50</y>
-        <width>1011</width>
-        <height>601</height>
+        <width>1071</width>
+        <height>611</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -6098,7 +6673,7 @@ QPushButton:hover {
         <x>80</x>
         <y>130</y>
         <width>891</width>
-        <height>501</height>
+        <height>511</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -6435,7 +7010,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -6492,7 +7067,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -6549,7 +7124,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -6606,7 +7181,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -6750,7 +7325,7 @@ QPushButton:hover {
 QPushButton:pressed:hover{
 	background-color: rgb(238, 255, 231);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 35px;
 }
 
 QPushButton:hover {
@@ -6786,7 +7361,194 @@ QPushButton:hover {
        </property>
       </layout>
      </widget>
+     <widget class="QFrame" name="back_button_frame_2">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>150</y>
+        <width>51</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	
+	font: 16pt &quot;Montserrat&quot;;
+	background-color: rgb(130, 144, 142);
+	padding: 12px;
+	border-radius: 15px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(238, 255, 231);
+	padding: 12px;
+	border-radius: 25px;
+}
+
+QPushButton:hover {
+	background-color: rgb(166, 197, 163);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="return_home_layout_1">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="recc_next_page_frame_1">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>360</y>
+        <width>51</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	font: 16pt &quot;Montserrat&quot;;
+	background-color: rgb(130, 144, 142);
+	padding: 12px;
+	border-radius: 15px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(238, 255, 231);
+	padding: 12px;
+	border-radius: 25px;
+}
+
+QPushButton:hover {
+	background-color: rgb(166, 197, 163);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="recc_next_page_layout_1">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_99">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>140</y>
+        <width>71</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	
+	background-color: rgb(197, 197, 197);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_107">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>350</y>
+        <width>71</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	
+	background-color: rgb(197, 197, 197);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_111">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>130</y>
+        <width>111</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	
+			
+	background-color: rgb(212, 212, 212);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
      <zorder>label_96</zorder>
+     <zorder>label_111</zorder>
      <zorder>label_98</zorder>
      <zorder>label_101</zorder>
      <zorder>label_102</zorder>
@@ -6818,6 +7580,10 @@ QPushButton:hover {
      <zorder>label_171</zorder>
      <zorder>status_indicator_frame_1</zorder>
      <zorder>recc_app_install_frame_1</zorder>
+     <zorder>label_99</zorder>
+     <zorder>label_107</zorder>
+     <zorder>back_button_frame_2</zorder>
+     <zorder>recc_next_page_frame_1</zorder>
     </widget>
    </widget>
   </widget>

@@ -1,7 +1,9 @@
 QLabel#titleLabel {
     font: 17px 'Microsoft YaHei';
+    border: transparent;
 }
 
 QLabel#contentLabel {
     font: 16px 'Microsoft YaHei';
+    border: transparent;
 }
