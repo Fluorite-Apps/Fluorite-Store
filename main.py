@@ -108,16 +108,32 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.return_home_1.setMinimumHeight(181)
         self.return_home_1.setFixedWidth(51)
 
+        self.return_home_2 = custompushbutton('B\na\nc\nk', parent=self)
+        self.return_home_2.setMinimumHeight(181)
+        self.return_home_2.setFixedWidth(51)
+
+        self.return_home_3 = custompushbutton('B\na\nc\nk', parent=self)
+        self.return_home_3.setMinimumHeight(181)
+        self.return_home_3.setFixedWidth(51)
+
+        self.return_home_4 = custompushbutton('B\na\nc\nk', parent=self)
+        self.return_home_4.setMinimumHeight(181)
+        self.return_home_4.setFixedWidth(51)
+
+        self.return_home_5 = custompushbutton('B\na\nc\nk', parent=self)
+        self.return_home_5.setMinimumHeight(181)
+        self.return_home_5.setFixedWidth(51)
+
         # Adding back button to layout
         self.bucket_back_layout.addWidget(self.return_home, Qt.AlignCenter, Qt.AlignCenter)
 
         self.return_home_layout.addWidget(self.return_home, Qt.AlignCenter, Qt.AlignCenter)
 
         self.return_home_layout_1.addWidget(self.return_home_1, Qt.AlignCenter, Qt.AlignCenter)
-        self.return_home_layout_two.addWidget(self.return_home_1, Qt.AlignCenter, Qt.AlignCenter)
-        self.return_home_layout_3.addWidget(self.return_home_1, Qt.AlignCenter, Qt.AlignCenter)
-        self.return_home_layout_4.addWidget(self.return_home_1, Qt.AlignCenter, Qt.AlignCenter)
-        self.return_home_layout_5.addWidget(self.return_home_1, Qt.AlignCenter, Qt.AlignCenter)
+        self.return_home_layout_two.addWidget(self.return_home_2, Qt.AlignCenter, Qt.AlignCenter)
+        self.return_home_layout_3.addWidget(self.return_home_3, Qt.AlignCenter, Qt.AlignCenter)
+        self.return_home_layout_4.addWidget(self.return_home_4, Qt.AlignCenter, Qt.AlignCenter)
+        self.return_home_layout_5.addWidget(self.return_home_5, Qt.AlignCenter, Qt.AlignCenter)
 
         # connecting back button to function
         self.return_home.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
@@ -511,20 +527,23 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.recc_app_install_button_18.clicked.connect(lambda: thread_install_recc_app_18())
         self.recc_app_install_button_19.clicked.connect(lambda: thread_install_recc_app_19())
         self.recc_app_install_button_20.clicked.connect(lambda: thread_install_recc_app_20())
-        self.recc_app_install_button_21.clicked.connect(lambda: thread_install_recc_app_18())
-        self.recc_app_install_button_22.clicked.connect(lambda: thread_install_recc_app_19())
-        self.recc_app_install_button_23.clicked.connect(lambda: thread_install_recc_app_20())
+        self.recc_app_install_button_21.clicked.connect(lambda: thread_install_recc_app_21())
+        self.recc_app_install_button_22.clicked.connect(lambda: thread_install_recc_app_22())
+        self.recc_app_install_button_23.clicked.connect(lambda: thread_install_recc_app_23())
 
         ###################################################################################################################
         # BUCKETS AND APPS PAGE
         ###################################################################################################################
         self.update_all_apps_button = QtWidgets.QPushButton('update', parent=self)
+        self.cleanup_old_app_versions_button = QtWidgets.QPushButton('update', parent=self)
 
         # adding widgets to layout
         self.update_all_apps_layout.addWidget(self.update_all_apps_button, Qt.AlignCenter, Qt.AlignCenter)
+        self.cleanup_old_app_versions_layout.addWidget(self.cleanup_old_app_versions_button, Qt.AlignCenter, Qt.AlignCenter)
 
         # updating all apps function
         self.update_all_apps_button.clicked.connect(self.update_all_apps_thread)
+        self.cleanup_old_app_versions_button.clicked.connect(self.cleanup_old_app_versions_thread)
 
         # settings page
         self.settings_page_button = custompushbutton('Settings', parent=self)
@@ -660,6 +679,17 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def update_all_apps_thread(self):
         t = Thread(target=self.update_all_apps_function)
+        t.daemon = True
+        t.start()
+
+    # update all apps
+    def cleanup_old_app_versions_function(self):
+        update_all_apps_powershell = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop cleanup *']
+        update_all_apps_powershell2 = subprocess.run(update_all_apps_powershell, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                        universal_newlines=True)
+
+    def cleanup_old_app_versions_thread(self):
+        t = Thread(target=self.cleanup_old_app_versions_function)
         t.daemon = True
         t.start()
 
