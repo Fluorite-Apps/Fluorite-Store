@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1146</width>
-    <height>671</height>
+    <height>667</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -1042,6 +1042,7 @@ QPushButton:hover {
        <font>
         <family>Segoe UI</family>
         <pointsize>11</pointsize>
+        <weight>50</weight>
         <italic>false</italic>
         <bold>false</bold>
        </font>
@@ -1357,6 +1358,7 @@ QPushButton:disabled {
        <font>
         <family>Arial Black</family>
         <pointsize>22</pointsize>
+        <weight>75</weight>
         <bold>true</bold>
        </font>
       </property>
@@ -1868,7 +1870,7 @@ QPushButton:hover {
       <property name="lineWidth">
        <number>0</number>
       </property>
-      <layout class="QHBoxLayout" name="bucket_back_layout_1">
+      <layout class="QHBoxLayout" name="bucket_back_layout">
        <property name="spacing">
         <number>0</number>
        </property>
@@ -6391,6 +6393,1079 @@ QPushButton:hover {
      <zorder>recc_next_page_frame_5</zorder>
      <zorder>label_338</zorder>
      <zorder>back_button_frame_7</zorder>
+    </widget>
+    <widget class="QWidget" name="recommended_apps_page_5">
+     <widget class="QFrame" name="recc_app_install_frame_21">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>410</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgb(194, 234, 189);
+	padding: 12px;
+	border-radius: 25px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(238, 255, 231);
+	padding: 12px;
+	border-radius: 35px;
+}
+
+QPushButton:hover {
+	background-color: rgb(166, 197, 163);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="recc_app_install_layout_21">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_117">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>250</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Useful text expander for keyboard warriors</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_95">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>340</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_123">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>100</y>
+        <width>891</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	background-color: rgb(230, 230, 230);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_181">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>40</y>
+        <width>51</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Status:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_127">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>340</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QFrame" name="recc_app_install_frame_22">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>500</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgb(194, 234, 189);
+	padding: 12px;
+	border-radius: 25px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(238, 255, 231);
+	padding: 12px;
+	border-radius: 35px;
+}
+
+QPushButton:hover {
+	background-color: rgb(166, 197, 163);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="recc_app_install_layout_22">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_129">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>320</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_135">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>140</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_139">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>100</y>
+        <width>111</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	
+			
+	background-color: rgb(212, 212, 212);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_145">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>110</y>
+        <width>71</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+        	
+	background-color: rgb(197, 197, 197);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_151">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>520</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_155">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>150</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Modern Flyouts</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_157">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>1071</width>
+        <height>611</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(247, 248, 240);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QFrame" name="status_indicator_frame_5">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>30</y>
+        <width>281</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="status_indicator_layout_5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="recc_app_install_frame_23">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>140</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgb(194, 234, 189);
+	padding: 12px;
+	border-radius: 25px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(238, 255, 231);
+	padding: 12px;
+	border-radius: 35px;
+}
+
+QPushButton:hover {
+	background-color: rgb(166, 197, 163);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="recc_app_install_layout_1_21">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="recc_app_install_frame_24">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>320</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgb(194, 234, 189);
+	padding: 12px;
+	border-radius: 25px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(238, 255, 231);
+	padding: 12px;
+	border-radius: 35px;
+}
+
+QPushButton:hover {
+	background-color: rgb(166, 197, 163);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="recc_app_install_layout_1_23">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="title_7">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>35</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Recommended Apps - Page 5</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_163">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>500</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_167">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>510</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_182">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>410</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QFrame" name="back_button_frame_3">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>120</y>
+        <width>51</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	
+	font: 16pt &quot;Montserrat&quot;;
+	background-color: rgb(197, 238, 203);
+	padding: 12px;
+	border-radius: 15px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(238, 255, 231);
+	padding: 12px;
+	border-radius: 25px;
+}
+
+QPushButton:hover {
+	background-color: rgb(166, 197, 163);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="return_home_layout_5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_89">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>240</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Espanso</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_183">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>500</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_184">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>320</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_185">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>30</y>
+        <width>441</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	      background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 12px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_186">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>230</y>
+        <width>450</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_187">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Modern replacment for the ugly windows media flyout/widget</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QFrame" name="recc_app_install_frame_25">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>230</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: rgb(194, 234, 189);
+	padding: 12px;
+	border-radius: 25px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(238, 255, 231);
+	padding: 12px;
+	border-radius: 35px;
+}
+
+QPushButton:hover {
+	background-color: rgb(166, 197, 163);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="recc_app_install_layout_1_22">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_188">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>230</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_189">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>410</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_190">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>30</y>
+        <width>361</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	      background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 12px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_191">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>91</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			background-color: rgb(239, 239, 210);
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_192">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>420</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_193">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>430</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>label_157</zorder>
+     <zorder>label_123</zorder>
+     <zorder>recc_app_install_frame_21</zorder>
+     <zorder>label_181</zorder>
+     <zorder>recc_app_install_frame_22</zorder>
+     <zorder>recc_app_install_frame_23</zorder>
+     <zorder>recc_app_install_frame_24</zorder>
+     <zorder>label_163</zorder>
+     <zorder>label_167</zorder>
+     <zorder>label_182</zorder>
+     <zorder>label_183</zorder>
+     <zorder>label_184</zorder>
+     <zorder>label_185</zorder>
+     <zorder>label_186</zorder>
+     <zorder>label_188</zorder>
+     <zorder>label_189</zorder>
+     <zorder>label_190</zorder>
+     <zorder>label_191</zorder>
+     <zorder>label_192</zorder>
+     <zorder>label_193</zorder>
+     <zorder>label_155</zorder>
+     <zorder>label_151</zorder>
+     <zorder>label_139</zorder>
+     <zorder>label_145</zorder>
+     <zorder>label_135</zorder>
+     <zorder>label_129</zorder>
+     <zorder>label_127</zorder>
+     <zorder>label_117</zorder>
+     <zorder>title_7</zorder>
+     <zorder>status_indicator_frame_5</zorder>
+     <zorder>recc_app_install_frame_25</zorder>
+     <zorder>label_95</zorder>
+     <zorder>label_89</zorder>
+     <zorder>label_187</zorder>
+     <zorder>back_button_frame_3</zorder>
     </widget>
     <widget class="QWidget" name="recommended_apps_page_1">
      <widget class="QLabel" name="label_86">

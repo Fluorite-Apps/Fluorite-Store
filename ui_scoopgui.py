@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguiVLKMjs.ui'
+## Form generated from reading UI file 'scoopgui.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.3.1
+## Created by: Qt User Interface Compiler version 6.3.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -24,7 +24,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1146, 671)
+        MainWindow.resize(1146, 667)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.centralwidget.setStyleSheet(u"")
@@ -844,10 +844,10 @@ class Ui_MainWindow(object):
         self.back_button_frame.setFrameShape(QFrame.NoFrame)
         self.back_button_frame.setFrameShadow(QFrame.Raised)
         self.back_button_frame.setLineWidth(0)
-        self.bucket_back_layout_1 = QHBoxLayout(self.back_button_frame)
-        self.bucket_back_layout_1.setSpacing(0)
-        self.bucket_back_layout_1.setObjectName(u"bucket_back_layout_1")
-        self.bucket_back_layout_1.setContentsMargins(0, 0, 0, 0)
+        self.bucket_back_layout = QHBoxLayout(self.back_button_frame)
+        self.bucket_back_layout.setSpacing(0)
+        self.bucket_back_layout.setObjectName(u"bucket_back_layout")
+        self.bucket_back_layout.setContentsMargins(0, 0, 0, 0)
         self.stackedWidget.addWidget(self.buckets)
         self.label_46.raise_()
         self.add_bucket_title.raise_()
@@ -2780,6 +2780,466 @@ class Ui_MainWindow(object):
         self.recc_next_page_frame_5.raise_()
         self.label_338.raise_()
         self.back_button_frame_7.raise_()
+        self.recommended_apps_page_5 = QWidget()
+        self.recommended_apps_page_5.setObjectName(u"recommended_apps_page_5")
+        self.recc_app_install_frame_21 = QFrame(self.recommended_apps_page_5)
+        self.recc_app_install_frame_21.setObjectName(u"recc_app_install_frame_21")
+        self.recc_app_install_frame_21.setGeometry(QRect(770, 410, 131, 71))
+        self.recc_app_install_frame_21.setCursor(QCursor(Qt.PointingHandCursor))
+        self.recc_app_install_frame_21.setStyleSheet(u"QPushButton{\n"
+"	background-color: rgb(194, 234, 189);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(238, 255, 231);\n"
+"	padding: 12px;\n"
+"	border-radius: 35px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(166, 197, 163);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"}")
+        self.recc_app_install_frame_21.setFrameShape(QFrame.NoFrame)
+        self.recc_app_install_frame_21.setFrameShadow(QFrame.Raised)
+        self.recc_app_install_frame_21.setLineWidth(0)
+        self.recc_app_install_layout_21 = QHBoxLayout(self.recc_app_install_frame_21)
+        self.recc_app_install_layout_21.setSpacing(0)
+        self.recc_app_install_layout_21.setObjectName(u"recc_app_install_layout_21")
+        self.recc_app_install_layout_21.setContentsMargins(0, 0, 0, 0)
+        self.label_117 = QLabel(self.recommended_apps_page_5)
+        self.label_117.setObjectName(u"label_117")
+        self.label_117.setGeometry(QRect(300, 250, 411, 31))
+        self.label_117.setFont(font7)
+        self.label_117.setStyleSheet(u"")
+        self.label_117.setWordWrap(True)
+        self.label_95 = QLabel(self.recommended_apps_page_5)
+        self.label_95.setObjectName(u"label_95")
+        self.label_95.setGeometry(QRect(300, 340, 411, 31))
+        self.label_95.setFont(font7)
+        self.label_95.setStyleSheet(u"")
+        self.label_95.setWordWrap(True)
+        self.label_123 = QLabel(self.recommended_apps_page_5)
+        self.label_123.setObjectName(u"label_123")
+        self.label_123.setGeometry(QRect(80, 100, 891, 511))
+        self.label_123.setStyleSheet(u"QLabel {\n"
+"        	background-color: rgb(230, 230, 230);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.label_181 = QLabel(self.recommended_apps_page_5)
+        self.label_181.setObjectName(u"label_181")
+        self.label_181.setGeometry(QRect(610, 40, 51, 31))
+        self.label_181.setFont(font6)
+        self.label_181.setStyleSheet(u"")
+        self.label_127 = QLabel(self.recommended_apps_page_5)
+        self.label_127.setObjectName(u"label_127")
+        self.label_127.setGeometry(QRect(170, 340, 71, 31))
+        self.label_127.setFont(font6)
+        self.label_127.setStyleSheet(u"")
+        self.recc_app_install_frame_22 = QFrame(self.recommended_apps_page_5)
+        self.recc_app_install_frame_22.setObjectName(u"recc_app_install_frame_22")
+        self.recc_app_install_frame_22.setGeometry(QRect(770, 500, 131, 71))
+        self.recc_app_install_frame_22.setCursor(QCursor(Qt.PointingHandCursor))
+        self.recc_app_install_frame_22.setStyleSheet(u"QPushButton{\n"
+"	background-color: rgb(194, 234, 189);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(238, 255, 231);\n"
+"	padding: 12px;\n"
+"	border-radius: 35px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(166, 197, 163);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"}")
+        self.recc_app_install_frame_22.setFrameShape(QFrame.NoFrame)
+        self.recc_app_install_frame_22.setFrameShadow(QFrame.Raised)
+        self.recc_app_install_frame_22.setLineWidth(0)
+        self.recc_app_install_layout_22 = QHBoxLayout(self.recc_app_install_frame_22)
+        self.recc_app_install_layout_22.setSpacing(0)
+        self.recc_app_install_layout_22.setObjectName(u"recc_app_install_layout_22")
+        self.recc_app_install_layout_22.setContentsMargins(0, 0, 0, 0)
+        self.label_129 = QLabel(self.recommended_apps_page_5)
+        self.label_129.setObjectName(u"label_129")
+        self.label_129.setGeometry(QRect(160, 320, 91, 71))
+        self.label_129.setStyleSheet(u"QLabel {\n"
+"            color: yellow;\n"
+"			background-color: rgb(239, 239, 210);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.label_135 = QLabel(self.recommended_apps_page_5)
+        self.label_135.setObjectName(u"label_135")
+        self.label_135.setGeometry(QRect(280, 140, 450, 71))
+        self.label_135.setStyleSheet(u"QLabel {\n"
+"            color: yellow;\n"
+"			\n"
+"	background-color: rgb(239, 239, 210);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }\n"
+"")
+        self.label_139 = QLabel(self.recommended_apps_page_5)
+        self.label_139.setObjectName(u"label_139")
+        self.label_139.setGeometry(QRect(980, 100, 111, 511))
+        self.label_139.setStyleSheet(u"QLabel {\n"
+"        	\n"
+"			\n"
+"	background-color: rgb(212, 212, 212);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.label_145 = QLabel(self.recommended_apps_page_5)
+        self.label_145.setObjectName(u"label_145")
+        self.label_145.setGeometry(QRect(1000, 110, 71, 201))
+        self.label_145.setStyleSheet(u"QLabel {\n"
+"        	\n"
+"	background-color: rgb(197, 197, 197);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.label_151 = QLabel(self.recommended_apps_page_5)
+        self.label_151.setObjectName(u"label_151")
+        self.label_151.setGeometry(QRect(290, 520, 411, 31))
+        self.label_151.setFont(font7)
+        self.label_151.setStyleSheet(u"")
+        self.label_151.setWordWrap(True)
+        self.label_155 = QLabel(self.recommended_apps_page_5)
+        self.label_155.setObjectName(u"label_155")
+        self.label_155.setGeometry(QRect(170, 150, 71, 51))
+        self.label_155.setFont(font6)
+        self.label_155.setStyleSheet(u"")
+        self.label_155.setWordWrap(True)
+        self.label_157 = QLabel(self.recommended_apps_page_5)
+        self.label_157.setObjectName(u"label_157")
+        self.label_157.setGeometry(QRect(30, 20, 1071, 611))
+        self.label_157.setStyleSheet(u"QLabel {\n"
+"            color: yellow;\n"
+"			\n"
+"	background-color: rgb(247, 248, 240);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.status_indicator_frame_5 = QFrame(self.recommended_apps_page_5)
+        self.status_indicator_frame_5.setObjectName(u"status_indicator_frame_5")
+        self.status_indicator_frame_5.setGeometry(QRect(660, 30, 281, 51))
+        self.status_indicator_frame_5.setCursor(QCursor(Qt.PointingHandCursor))
+        self.status_indicator_frame_5.setStyleSheet(u"")
+        self.status_indicator_frame_5.setFrameShape(QFrame.NoFrame)
+        self.status_indicator_frame_5.setFrameShadow(QFrame.Raised)
+        self.status_indicator_frame_5.setLineWidth(0)
+        self.status_indicator_layout_5 = QHBoxLayout(self.status_indicator_frame_5)
+        self.status_indicator_layout_5.setSpacing(0)
+        self.status_indicator_layout_5.setObjectName(u"status_indicator_layout_5")
+        self.status_indicator_layout_5.setContentsMargins(0, 0, 0, 0)
+        self.recc_app_install_frame_23 = QFrame(self.recommended_apps_page_5)
+        self.recc_app_install_frame_23.setObjectName(u"recc_app_install_frame_23")
+        self.recc_app_install_frame_23.setGeometry(QRect(770, 140, 131, 71))
+        self.recc_app_install_frame_23.setCursor(QCursor(Qt.PointingHandCursor))
+        self.recc_app_install_frame_23.setStyleSheet(u"QPushButton{\n"
+"	background-color: rgb(194, 234, 189);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(238, 255, 231);\n"
+"	padding: 12px;\n"
+"	border-radius: 35px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(166, 197, 163);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"}")
+        self.recc_app_install_frame_23.setFrameShape(QFrame.NoFrame)
+        self.recc_app_install_frame_23.setFrameShadow(QFrame.Raised)
+        self.recc_app_install_frame_23.setLineWidth(0)
+        self.recc_app_install_layout_1_21 = QHBoxLayout(self.recc_app_install_frame_23)
+        self.recc_app_install_layout_1_21.setSpacing(0)
+        self.recc_app_install_layout_1_21.setObjectName(u"recc_app_install_layout_1_21")
+        self.recc_app_install_layout_1_21.setContentsMargins(0, 0, 0, 0)
+        self.recc_app_install_frame_24 = QFrame(self.recommended_apps_page_5)
+        self.recc_app_install_frame_24.setObjectName(u"recc_app_install_frame_24")
+        self.recc_app_install_frame_24.setGeometry(QRect(770, 320, 131, 71))
+        self.recc_app_install_frame_24.setCursor(QCursor(Qt.PointingHandCursor))
+        self.recc_app_install_frame_24.setStyleSheet(u"QPushButton{\n"
+"	background-color: rgb(194, 234, 189);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(238, 255, 231);\n"
+"	padding: 12px;\n"
+"	border-radius: 35px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(166, 197, 163);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"}")
+        self.recc_app_install_frame_24.setFrameShape(QFrame.NoFrame)
+        self.recc_app_install_frame_24.setFrameShadow(QFrame.Raised)
+        self.recc_app_install_frame_24.setLineWidth(0)
+        self.recc_app_install_layout_1_23 = QHBoxLayout(self.recc_app_install_frame_24)
+        self.recc_app_install_layout_1_23.setSpacing(0)
+        self.recc_app_install_layout_1_23.setObjectName(u"recc_app_install_layout_1_23")
+        self.recc_app_install_layout_1_23.setContentsMargins(0, 0, 0, 0)
+        self.title_7 = QLabel(self.recommended_apps_page_5)
+        self.title_7.setObjectName(u"title_7")
+        self.title_7.setGeometry(QRect(180, 35, 331, 41))
+        self.title_7.setFont(font8)
+        self.title_7.setStyleSheet(u"")
+        self.title_7.setAlignment(Qt.AlignCenter)
+        self.label_163 = QLabel(self.recommended_apps_page_5)
+        self.label_163.setObjectName(u"label_163")
+        self.label_163.setGeometry(QRect(160, 500, 91, 71))
+        self.label_163.setStyleSheet(u"QLabel {\n"
+"            color: yellow;\n"
+"			background-color: rgb(239, 239, 210);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.label_167 = QLabel(self.recommended_apps_page_5)
+        self.label_167.setObjectName(u"label_167")
+        self.label_167.setGeometry(QRect(170, 510, 71, 51))
+        self.label_167.setFont(font6)
+        self.label_167.setStyleSheet(u"")
+        self.label_167.setWordWrap(True)
+        self.label_182 = QLabel(self.recommended_apps_page_5)
+        self.label_182.setObjectName(u"label_182")
+        self.label_182.setGeometry(QRect(280, 410, 450, 71))
+        self.label_182.setStyleSheet(u"QLabel {\n"
+"            color: yellow;\n"
+"			\n"
+"	background-color: rgb(239, 239, 210);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }\n"
+"")
+        self.back_button_frame_3 = QFrame(self.recommended_apps_page_5)
+        self.back_button_frame_3.setObjectName(u"back_button_frame_3")
+        self.back_button_frame_3.setGeometry(QRect(1010, 120, 51, 181))
+        self.back_button_frame_3.setCursor(QCursor(Qt.PointingHandCursor))
+        self.back_button_frame_3.setStyleSheet(u"QPushButton{\n"
+"	\n"
+"	\n"
+"	font: 16pt \"Montserrat\";\n"
+"	background-color: rgb(197, 238, 203);\n"
+"	padding: 12px;\n"
+"	border-radius: 15px;\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(238, 255, 231);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(166, 197, 163);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"}")
+        self.back_button_frame_3.setFrameShape(QFrame.NoFrame)
+        self.back_button_frame_3.setFrameShadow(QFrame.Raised)
+        self.back_button_frame_3.setLineWidth(0)
+        self.return_home_layout_5 = QHBoxLayout(self.back_button_frame_3)
+        self.return_home_layout_5.setSpacing(0)
+        self.return_home_layout_5.setObjectName(u"return_home_layout_5")
+        self.return_home_layout_5.setContentsMargins(0, 0, 0, 0)
+        self.label_89 = QLabel(self.recommended_apps_page_5)
+        self.label_89.setObjectName(u"label_89")
+        self.label_89.setGeometry(QRect(170, 240, 71, 51))
+        self.label_89.setFont(font6)
+        self.label_89.setStyleSheet(u"")
+        self.label_89.setWordWrap(True)
+        self.label_183 = QLabel(self.recommended_apps_page_5)
+        self.label_183.setObjectName(u"label_183")
+        self.label_183.setGeometry(QRect(280, 500, 450, 71))
+        self.label_183.setStyleSheet(u"QLabel {\n"
+"            color: yellow;\n"
+"			\n"
+"	background-color: rgb(239, 239, 210);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }\n"
+"")
+        self.label_184 = QLabel(self.recommended_apps_page_5)
+        self.label_184.setObjectName(u"label_184")
+        self.label_184.setGeometry(QRect(280, 320, 450, 71))
+        self.label_184.setStyleSheet(u"QLabel {\n"
+"            color: yellow;\n"
+"			\n"
+"	background-color: rgb(239, 239, 210);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }\n"
+"")
+        self.label_185 = QLabel(self.recommended_apps_page_5)
+        self.label_185.setObjectName(u"label_185")
+        self.label_185.setGeometry(QRect(130, 30, 441, 51))
+        self.label_185.setStyleSheet(u"QLabel {\n"
+"            color: yellow;\n"
+"			\n"
+"	      background-color: rgb(239, 239, 210);\n"
+"			padding: 12px;\n"
+"			border-radius: 12px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }\n"
+"")
+        self.label_186 = QLabel(self.recommended_apps_page_5)
+        self.label_186.setObjectName(u"label_186")
+        self.label_186.setGeometry(QRect(280, 230, 450, 71))
+        self.label_186.setStyleSheet(u"QLabel {\n"
+"            color: yellow;\n"
+"			\n"
+"	background-color: rgb(239, 239, 210);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }\n"
+"")
+        self.label_187 = QLabel(self.recommended_apps_page_5)
+        self.label_187.setObjectName(u"label_187")
+        self.label_187.setGeometry(QRect(300, 160, 411, 31))
+        self.label_187.setFont(font7)
+        self.label_187.setStyleSheet(u"")
+        self.label_187.setWordWrap(True)
+        self.recc_app_install_frame_25 = QFrame(self.recommended_apps_page_5)
+        self.recc_app_install_frame_25.setObjectName(u"recc_app_install_frame_25")
+        self.recc_app_install_frame_25.setGeometry(QRect(770, 230, 131, 71))
+        self.recc_app_install_frame_25.setCursor(QCursor(Qt.PointingHandCursor))
+        self.recc_app_install_frame_25.setStyleSheet(u"QPushButton{\n"
+"	background-color: rgb(194, 234, 189);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(238, 255, 231);\n"
+"	padding: 12px;\n"
+"	border-radius: 35px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(166, 197, 163);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"}")
+        self.recc_app_install_frame_25.setFrameShape(QFrame.NoFrame)
+        self.recc_app_install_frame_25.setFrameShadow(QFrame.Raised)
+        self.recc_app_install_frame_25.setLineWidth(0)
+        self.recc_app_install_layout_1_22 = QHBoxLayout(self.recc_app_install_frame_25)
+        self.recc_app_install_layout_1_22.setSpacing(0)
+        self.recc_app_install_layout_1_22.setObjectName(u"recc_app_install_layout_1_22")
+        self.recc_app_install_layout_1_22.setContentsMargins(0, 0, 0, 0)
+        self.label_188 = QLabel(self.recommended_apps_page_5)
+        self.label_188.setObjectName(u"label_188")
+        self.label_188.setGeometry(QRect(160, 230, 91, 71))
+        self.label_188.setStyleSheet(u"QLabel {\n"
+"            color: yellow;\n"
+"			background-color: rgb(239, 239, 210);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.label_189 = QLabel(self.recommended_apps_page_5)
+        self.label_189.setObjectName(u"label_189")
+        self.label_189.setGeometry(QRect(160, 410, 91, 71))
+        self.label_189.setStyleSheet(u"QLabel {\n"
+"            color: yellow;\n"
+"			background-color: rgb(239, 239, 210);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.label_190 = QLabel(self.recommended_apps_page_5)
+        self.label_190.setObjectName(u"label_190")
+        self.label_190.setGeometry(QRect(600, 30, 361, 51))
+        self.label_190.setStyleSheet(u"QLabel {\n"
+"            color: yellow;\n"
+"			\n"
+"	      background-color: rgb(239, 239, 210);\n"
+"			padding: 12px;\n"
+"			border-radius: 12px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }\n"
+"")
+        self.label_191 = QLabel(self.recommended_apps_page_5)
+        self.label_191.setObjectName(u"label_191")
+        self.label_191.setGeometry(QRect(160, 140, 91, 71))
+        self.label_191.setStyleSheet(u"QLabel {\n"
+"            color: yellow;\n"
+"			background-color: rgb(239, 239, 210);\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.label_192 = QLabel(self.recommended_apps_page_5)
+        self.label_192.setObjectName(u"label_192")
+        self.label_192.setGeometry(QRect(170, 420, 71, 51))
+        self.label_192.setFont(font6)
+        self.label_192.setStyleSheet(u"")
+        self.label_192.setWordWrap(True)
+        self.label_193 = QLabel(self.recommended_apps_page_5)
+        self.label_193.setObjectName(u"label_193")
+        self.label_193.setGeometry(QRect(290, 430, 411, 31))
+        self.label_193.setFont(font7)
+        self.label_193.setStyleSheet(u"")
+        self.label_193.setWordWrap(True)
+        self.stackedWidget.addWidget(self.recommended_apps_page_5)
+        self.label_157.raise_()
+        self.label_123.raise_()
+        self.recc_app_install_frame_21.raise_()
+        self.label_181.raise_()
+        self.recc_app_install_frame_22.raise_()
+        self.recc_app_install_frame_23.raise_()
+        self.recc_app_install_frame_24.raise_()
+        self.label_163.raise_()
+        self.label_167.raise_()
+        self.label_182.raise_()
+        self.label_183.raise_()
+        self.label_184.raise_()
+        self.label_185.raise_()
+        self.label_186.raise_()
+        self.label_188.raise_()
+        self.label_189.raise_()
+        self.label_190.raise_()
+        self.label_191.raise_()
+        self.label_192.raise_()
+        self.label_193.raise_()
+        self.label_155.raise_()
+        self.label_151.raise_()
+        self.label_139.raise_()
+        self.label_145.raise_()
+        self.label_135.raise_()
+        self.label_129.raise_()
+        self.label_127.raise_()
+        self.label_117.raise_()
+        self.title_7.raise_()
+        self.status_indicator_frame_5.raise_()
+        self.recc_app_install_frame_25.raise_()
+        self.label_95.raise_()
+        self.label_89.raise_()
+        self.label_187.raise_()
+        self.back_button_frame_3.raise_()
         self.recommended_apps_page_1 = QWidget()
         self.recommended_apps_page_1.setObjectName(u"recommended_apps_page_1")
         self.label_86 = QLabel(self.recommended_apps_page_1)
@@ -3455,6 +3915,34 @@ class Ui_MainWindow(object):
         self.label_337.setText("")
         self.label_338.setText("")
         self.label_339.setText("")
+        self.label_117.setText(QCoreApplication.translate("MainWindow", u"Useful text expander for keyboard warriors", None))
+        self.label_95.setText("")
+        self.label_123.setText("")
+        self.label_181.setText(QCoreApplication.translate("MainWindow", u"Status:", None))
+        self.label_127.setText("")
+        self.label_129.setText("")
+        self.label_135.setText("")
+        self.label_139.setText("")
+        self.label_145.setText("")
+        self.label_151.setText("")
+        self.label_155.setText(QCoreApplication.translate("MainWindow", u"Modern Flyouts", None))
+        self.label_157.setText("")
+        self.title_7.setText(QCoreApplication.translate("MainWindow", u"Recommended Apps - Page 5", None))
+        self.label_163.setText("")
+        self.label_167.setText("")
+        self.label_182.setText("")
+        self.label_89.setText(QCoreApplication.translate("MainWindow", u"Espanso", None))
+        self.label_183.setText("")
+        self.label_184.setText("")
+        self.label_185.setText("")
+        self.label_186.setText("")
+        self.label_187.setText(QCoreApplication.translate("MainWindow", u"Modern replacment for the ugly windows media flyout/widget", None))
+        self.label_188.setText("")
+        self.label_189.setText("")
+        self.label_190.setText("")
+        self.label_191.setText("")
+        self.label_192.setText("")
+        self.label_193.setText("")
         self.label_86.setText("")
         self.label_87.setText("")
         self.label_88.setText(QCoreApplication.translate("MainWindow", u"Fluent Reader", None))
