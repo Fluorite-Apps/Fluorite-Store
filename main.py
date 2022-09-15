@@ -82,17 +82,23 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.starred_next_page_4.setMinimumHeight(241)
         self.starred_next_page_4.setFixedWidth(51)
 
+        self.starred_next_page_5 = custompushbutton('N\ne\nx\nt\n\nP\na\ng\ne', parent=self)
+        self.starred_next_page_5.setMinimumHeight(241)
+        self.starred_next_page_5.setFixedWidth(51)
+
         # Adding back button to layout
         self.recc_next_page_layout_1.addWidget(self.starred_next_page_1, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_next_page_layout_two.addWidget(self.starred_next_page_2, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_next_page_layout_3.addWidget(self.starred_next_page_3, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_next_page_layout_4.addWidget(self.starred_next_page_4, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_next_page_layout_5.addWidget(self.starred_next_page_5, Qt.AlignCenter, Qt.AlignCenter)
 
         # connecting back button to function
         self.starred_next_page_1.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_2))
         self.starred_next_page_2.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_3))
         self.starred_next_page_3.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_4))
         self.starred_next_page_4.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_5))
+        self.starred_next_page_5.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_6))
 
 
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -124,6 +130,10 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.return_home_5.setMinimumHeight(181)
         self.return_home_5.setFixedWidth(51)
 
+        self.return_home_6 = custompushbutton('B\na\nc\nk', parent=self)
+        self.return_home_6.setMinimumHeight(181)
+        self.return_home_6.setFixedWidth(51)
+
         # Adding back button to layout
         self.bucket_back_layout.addWidget(self.return_home, Qt.AlignCenter, Qt.AlignCenter)
 
@@ -134,11 +144,17 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.return_home_layout_3.addWidget(self.return_home_3, Qt.AlignCenter, Qt.AlignCenter)
         self.return_home_layout_4.addWidget(self.return_home_4, Qt.AlignCenter, Qt.AlignCenter)
         self.return_home_layout_5.addWidget(self.return_home_5, Qt.AlignCenter, Qt.AlignCenter)
+        self.return_home_layout_6.addWidget(self.return_home_6, Qt.AlignCenter, Qt.AlignCenter)
 
         # connecting back button to function
         self.return_home.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
 
         self.return_home_1.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
+        self.return_home_2.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
+        self.return_home_3.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
+        self.return_home_4.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
+        self.return_home_5.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
+        self.return_home_6.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
 
 
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -248,6 +264,37 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.recc_app_install_button_23.setMinimumHeight(71)
         self.recc_app_install_button_23.setFixedWidth(131)
 
+        self.recc_app_install_button_24 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_24.setMinimumHeight(71)
+        self.recc_app_install_button_24.setFixedWidth(131)
+
+        self.recc_app_install_button_25 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_25.setMinimumHeight(71)
+        self.recc_app_install_button_25.setFixedWidth(131)
+
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # INSTALL BUTTONS PAGE  6  - STARRED APPS             #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        self.recc_app_install_button_26 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_26.setMinimumHeight(71)
+        self.recc_app_install_button_26.setFixedWidth(131)
+
+        self.recc_app_install_button_27 = custompushbutton('Install', parent=self)
+        self.recc_app_install_button_27.setMinimumHeight(71)
+        self.recc_app_install_button_27.setFixedWidth(131)
+
+        # self.recc_app_install_button_28 = custompushbutton('Install', parent=self)
+        # self.recc_app_install_button_28.setMinimumHeight(71)
+        # self.recc_app_install_button_28.setFixedWidth(131)
+        #
+        # self.recc_app_install_button_29 = custompushbutton('Install', parent=self)
+        # self.recc_app_install_button_29.setMinimumHeight(71)
+        # self.recc_app_install_button_29.setFixedWidth(131)
+        #
+        # self.recc_app_install_button_30 = custompushbutton('Install', parent=self)
+        # self.recc_app_install_button_30.setMinimumHeight(71)
+        # self.recc_app_install_button_30.setFixedWidth(131)
+
 
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         # ATTACHING STARRED INSTALL BUTTONS TO LAYOUT         #
@@ -260,30 +307,37 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.recc_app_install_layout_4.addWidget(self.recc_app_install_button_4, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_5.addWidget(self.recc_app_install_button_5, Qt.AlignCenter, Qt.AlignCenter)
 
-        # attaching page 1 buttons to layouts
+        # attaching page 2 buttons to layouts
         self.recc_app_install_layout_6.addWidget(self.recc_app_install_button_6, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_7.addWidget(self.recc_app_install_button_7, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_8.addWidget(self.recc_app_install_button_8, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_9.addWidget(self.recc_app_install_button_9, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_10.addWidget(self.recc_app_install_button_10, Qt.AlignCenter, Qt.AlignCenter)
 
-        # attaching page 2 buttons to layouts
+        # attaching page 3 buttons to layouts
         self.recc_app_install_layout_11.addWidget(self.recc_app_install_button_11, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_12.addWidget(self.recc_app_install_button_12, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_13.addWidget(self.recc_app_install_button_13, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_14.addWidget(self.recc_app_install_button_14, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_15.addWidget(self.recc_app_install_button_15, Qt.AlignCenter, Qt.AlignCenter)
 
-        # attaching page 3 buttons to layouts
+        # attaching page 4 buttons to layouts
         self.recc_app_install_layout_16.addWidget(self.recc_app_install_button_16, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_17.addWidget(self.recc_app_install_button_17, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_18.addWidget(self.recc_app_install_button_18, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_19.addWidget(self.recc_app_install_button_19, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_20.addWidget(self.recc_app_install_button_20, Qt.AlignCenter, Qt.AlignCenter)
 
+        # attaching page 5 buttons to layouts
         self.recc_app_install_layout_1_21.addWidget(self.recc_app_install_button_21, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_1_22.addWidget(self.recc_app_install_button_22, Qt.AlignCenter, Qt.AlignCenter)
         self.recc_app_install_layout_1_23.addWidget(self.recc_app_install_button_23, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_1_24.addWidget(self.recc_app_install_button_24, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_1_25.addWidget(self.recc_app_install_button_25, Qt.AlignCenter, Qt.AlignCenter)
+
+        # attaching page 6 buttons to layouts
+        self.recc_app_install_layout_1_26.addWidget(self.recc_app_install_button_26, Qt.AlignCenter, Qt.AlignCenter)
+        self.recc_app_install_layout_1_27.addWidget(self.recc_app_install_button_27, Qt.AlignCenter, Qt.AlignCenter)
 
         # functions for installing recommended apps on button click
 
@@ -384,6 +438,23 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop bucket add HUMORCE_nuke https://github.com/HUMORCE/nuke; scoop install lively-wallpaper']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+        def install_recc_app_24():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install obsidian']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_25():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install snappy-driver-installer-origin']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_26():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', "scoop bucket add ACooper81_scoop-apps https://github.com/ACooper81/scoop-apps; scoop install FanControl-Portable"]
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+        def install_recc_app_27():
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install openrgb']
+            process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+
 
         # launching install functions in seperate thread = no gui hang
         def thread_install_recc_app_1():
@@ -501,6 +572,26 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             t.daemon = True
             t.start()
 
+        def thread_install_recc_app_24():
+            t = Thread(target=install_recc_app_24)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_25():
+            t = Thread(target=install_recc_app_25)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_26():
+            t = Thread(target=install_recc_app_26)
+            t.daemon = True
+            t.start()
+
+        def thread_install_recc_app_27():
+            t = Thread(target=install_recc_app_27)
+            t.daemon = True
+            t.start()
+
 
         def do_nothing():
             print ("coming soon")
@@ -530,6 +621,10 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.recc_app_install_button_21.clicked.connect(lambda: thread_install_recc_app_21())
         self.recc_app_install_button_22.clicked.connect(lambda: thread_install_recc_app_22())
         self.recc_app_install_button_23.clicked.connect(lambda: thread_install_recc_app_23())
+        self.recc_app_install_button_24.clicked.connect(lambda: thread_install_recc_app_24())
+        self.recc_app_install_button_25.clicked.connect(lambda: thread_install_recc_app_25())
+        self.recc_app_install_button_26.clicked.connect(lambda: thread_install_recc_app_26())
+        self.recc_app_install_button_27.clicked.connect(lambda: thread_install_recc_app_27())
 
         ###################################################################################################################
         # BUCKETS AND APPS PAGE
