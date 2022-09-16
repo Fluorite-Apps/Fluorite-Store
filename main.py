@@ -414,80 +414,115 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                                             universal_newlines=True)
             self.status_indicator_2.setText("Installed")
         def install_recc_app_10():
+            self.status_indicator_2.setText("Installing... simplewall")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install simplewall']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_2.setText("Installed")
         def install_recc_app_11():
+            self.status_indicator_3.setText("Installing... sandboxie-plus-np")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install sandboxie-plus-np']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_3.setText("Installed")
         def install_recc_app_12():
+            self.status_indicator_3.setText("Installing... playnite")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install playnite']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_3.setText("Installed")
         def install_recc_app_13():
+            self.status_indicator_3.setText("Installing... crystaldiskinfo")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install crystaldiskinfo']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_3.setText("Installed")
         def install_recc_app_14():
+            self.status_indicator_3.setText("Installing... hwinfo")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install hwinfo']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_3.setText("Installed")
         def install_recc_app_15():
             # toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install hwinfo']
             # process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
             #                                 universal_newlines=True)
+            self.status_indicator_3.setText("OOCT is unavaliable")
             print(
                 "unfortunately OCCT isn't on scoop yet, so i'll have to find some other way to install this later. Coming soon..")
 
         def install_recc_app_16():
+            self.status_indicator_4.setText("Installing... shutup10")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install shutup10']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_4.setText("Installed")
         def install_recc_app_17():
+            self.status_indicator_4.setText("Installing... mpv")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install mpv']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_4.setText("Installed")
         def install_recc_app_18():
+            self.status_indicator_4.setText("Installing... tabby")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install tabby']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_4.setText("Installed")
         def install_recc_app_19():
+            self.status_indicator_4.setText("Installing... eartrumpet")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install eartrumpet']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_4.setText("Installed")
         def install_recc_app_20():
+            self.status_indicator_4.setText("Installing... ryujinx")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install ryujinx']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_4.setText("Installed")
         def install_recc_app_21():
+            self.status_indicator_5.setText("Installing... modernflouts")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install modernflyouts']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_5.setText("Installed")
         def install_recc_app_22():
+            self.status_indicator_5.setText("Installing... espanso-pre")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install espanso-pre']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_5.setText("Installed")
         def install_recc_app_23():
+            self.status_indicator_5.setText("Installing... lively-wallpaper")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop bucket add HUMORCE_nuke https://github.com/HUMORCE/nuke; scoop install lively-wallpaper']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_5.setText("Installed")
         def install_recc_app_24():
+            self.status_indicator_5.setText("Installing... obsiodion")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install obsidian']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_5.setText("Installed")
         def install_recc_app_25():
+            self.status_indicator_5.setText("Installing... snappy-driver-installer-origin")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install snappy-driver-installer-origin']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_5.setText("Installed")
         def install_recc_app_26():
+            self.status_indicator_6.setText("Installing... Fancontrol-Portable")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', "scoop bucket add ACooper81_scoop-apps https://github.com/ACooper81/scoop-apps; scoop install FanControl-Portable"]
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_6.setText("Installed")
         def install_recc_app_27():
+            self.status_indicator_6.setText("Installing... openrgb")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install openrgb']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_6.setText("Installed")
 
 
         # launching install functions in seperate thread = no gui hang

@@ -8684,7 +8684,6 @@ QPushButton:hover {
      </widget>
      <zorder>label_200</zorder>
      <zorder>label_208</zorder>
-     <zorder>status_indicator_frame_6</zorder>
      <zorder>label_197</zorder>
      <zorder>label_198</zorder>
      <zorder>recc_app_install_frame_26</zorder>
@@ -8719,6 +8718,7 @@ QPushButton:hover {
      <zorder>title_11</zorder>
      <zorder>back_button_frame_9</zorder>
      <zorder>recc_next_page_frame_7</zorder>
+     <zorder>status_indicator_frame_6</zorder>
     </widget>
     <widget class="QWidget" name="recommended_apps_page_1">
      <widget class="QLabel" name="label_86">

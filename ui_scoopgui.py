@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguitNbWrd.ui'
+## Form generated from reading UI file 'scoopguiTvrcEd.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -3751,7 +3751,6 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.recommended_apps_page_6)
         self.label_200.raise_()
         self.label_208.raise_()
-        self.status_indicator_frame_6.raise_()
         self.label_197.raise_()
         self.label_198.raise_()
         self.recc_app_install_frame_26.raise_()
@@ -3786,6 +3785,7 @@ class Ui_MainWindow(object):
         self.title_11.raise_()
         self.back_button_frame_9.raise_()
         self.recc_next_page_frame_7.raise_()
+        self.status_indicator_frame_6.raise_()
         self.recommended_apps_page_1 = QWidget()
         self.recommended_apps_page_1.setObjectName(u"recommended_apps_page_1")
         self.label_86 = QLabel(self.recommended_apps_page_1)
