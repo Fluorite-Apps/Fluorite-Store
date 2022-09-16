@@ -431,7 +431,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
         def install_recc_app_22():
-            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install espanso']
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install espanso-pre']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
         def install_recc_app_23():
