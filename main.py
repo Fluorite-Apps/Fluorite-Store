@@ -71,12 +71,18 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.status_indicator_4 = QLabel("", parent=self)
         self.status_indicator_5 = QLabel("", parent=self)
         self.status_indicator_6 = QLabel("", parent=self)
+
+        # bucket add or remove status indicator
+        self.status_indicator_bucket= QLabel("", parent=self)
+
         self.status_indicator_layout_1.addWidget(self.status_indicator_1, Qt.AlignCenter, Qt.AlignCenter)
         self.status_indicator_layout_2.addWidget(self.status_indicator_2, Qt.AlignCenter, Qt.AlignCenter)
         self.status_indicator_layout_3.addWidget(self.status_indicator_3, Qt.AlignCenter, Qt.AlignCenter)
         self.status_indicator_layout_4.addWidget(self.status_indicator_4, Qt.AlignCenter, Qt.AlignCenter)
         self.status_indicator_layout_5.addWidget(self.status_indicator_5, Qt.AlignCenter, Qt.AlignCenter)
         self.status_indicator_layout_6.addWidget(self.status_indicator_6, Qt.AlignCenter, Qt.AlignCenter)
+
+        self.status_indicator_layout_buckets.addWidget(self.status_indicator_bucket, Qt.AlignCenter, Qt.AlignCenter)
 
 
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -914,7 +920,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             # self.list_buckets_label = QLabel(endres, parent=self)
             # self.list_buckets_label.setFont(QFont('Arial', 12))
             # self.list_buckets_layout.addWidget(self.list_buckets_label, Qt.AlignLeft, Qt.AlignTop)
-            self.bucket_button_add.clicked.connect(self.addBucket)
+            self.bucket_button_add.clicked.connect(self.thread_add_bucket)
             self.bucket_button_remove.clicked.connect(self.removeBucket)
 
             self.cb.addItems(res)
@@ -928,30 +934,29 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         t.start()
 
     def addBucket(self):
-        # if self.stateTooltip:
-        #     self.stateTooltip.setContent('Complete')
-        #     self.stateTooltip.setState(True)
-        #     self.stateTooltip = None
-        # else:
-        #     self.stateTooltip = StateTooltip('Process', 'Loading', self)
-        #     self.stateTooltip.move(510, 30)
-        #     self.stateTooltip.show()
         bucketname = self.bucket_input_add.text()
+        self.status_indicator_bucket.setText("Adding bucket: " + str(bucketname))
         # self.stackedWidget.setCurrentWidget(self.buckets)
         command = 'scoop bucket add ' + str(bucketname)
         commandline_options = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', command]
         process_result = subprocess.run(commandline_options, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                         universal_newlines=True)
-        choice = QtWidgets.QMessageBox.question(self, 'Finished',
-                                                "We're not sure if the process was successful \nReload Buckets?",
-                                                QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No)
-        if choice == QtWidgets.QMessageBox.Yes:
-            self.list_buckets_layout.removeWidget(self.list_buckets_label)
-            self.stackedWidget.setCurrentWidget(self.home)
-            self.stackedWidget.setCurrentWidget(self.buckets)
-        else:
-            self.list_buckets_layout.removeWidget(self.list_buckets_label)
-            self.stackedWidget.setCurrentWidget(self.home)
+        self.status_indicator_bucket.setText("Added: " + str(bucketname))
+
+    def thread_add_bucket(self):
+        t = Thread(target=self.addBucket)
+        t.daemon = True
+        t.start()
+        # choice = QtWidgets.QMessageBox.question(self, 'Finished',
+        #                                         "We're not sure if the process was successful \nReload Buckets?",
+        #                                         QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No)
+        # if choice == QtWidgets.QMessageBox.Yes:
+        #     self.list_buckets_layout.removeWidget(self.list_buckets_label)
+        #     self.stackedWidget.setCurrentWidget(self.home)
+        #     self.stackedWidget.setCurrentWidget(self.buckets)
+        # else:
+        #     self.list_buckets_layout.removeWidget(self.list_buckets_label)
+        #     self.stackedWidget.setCurrentWidget(self.home)
 
     def removeBucket(self):
         bucketname = self.cb.currentText()

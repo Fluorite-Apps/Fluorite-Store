@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguiTvrcEd.ui'
+## Form generated from reading UI file 'scoopguiAIecjX.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -849,6 +849,38 @@ class Ui_MainWindow(object):
         self.bucket_back_layout.setSpacing(0)
         self.bucket_back_layout.setObjectName(u"bucket_back_layout")
         self.bucket_back_layout.setContentsMargins(0, 0, 0, 0)
+        self.label_219 = QLabel(self.buckets)
+        self.label_219.setObjectName(u"label_219")
+        self.label_219.setGeometry(QRect(60, 450, 71, 31))
+        font6 = QFont()
+        font6.setPointSize(11)
+        self.label_219.setFont(font6)
+        self.label_219.setStyleSheet(u"")
+        self.status_indicator_buckets_1 = QFrame(self.buckets)
+        self.status_indicator_buckets_1.setObjectName(u"status_indicator_buckets_1")
+        self.status_indicator_buckets_1.setGeometry(QRect(110, 440, 401, 51))
+        self.status_indicator_buckets_1.setCursor(QCursor(Qt.PointingHandCursor))
+        self.status_indicator_buckets_1.setStyleSheet(u"")
+        self.status_indicator_buckets_1.setFrameShape(QFrame.NoFrame)
+        self.status_indicator_buckets_1.setFrameShadow(QFrame.Raised)
+        self.status_indicator_buckets_1.setLineWidth(0)
+        self.status_indicator_layout_buckets = QHBoxLayout(self.status_indicator_buckets_1)
+        self.status_indicator_layout_buckets.setSpacing(0)
+        self.status_indicator_layout_buckets.setObjectName(u"status_indicator_layout_buckets")
+        self.status_indicator_layout_buckets.setContentsMargins(0, 0, 0, 0)
+        self.label_220 = QLabel(self.buckets)
+        self.label_220.setObjectName(u"label_220")
+        self.label_220.setGeometry(QRect(50, 440, 481, 51))
+        self.label_220.setStyleSheet(u"QLabel {\n"
+"            color: yellow;\n"
+"			\n"
+"	      	\n"
+"	background-color: rgb(248, 248, 218);\n"
+"			padding: 12px;\n"
+"			border-radius: 12px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }\n"
+"")
         self.stackedWidget.addWidget(self.buckets)
         self.label_46.raise_()
         self.add_bucket_title.raise_()
@@ -876,6 +908,9 @@ class Ui_MainWindow(object):
         self.remove_app_frame.raise_()
         self.not_added_yet.raise_()
         self.back_button_frame.raise_()
+        self.label_220.raise_()
+        self.label_219.raise_()
+        self.status_indicator_buckets_1.raise_()
         self.installed = QWidget()
         self.installed.setObjectName(u"installed")
         self.stackedWidget.addWidget(self.installed)
@@ -1092,8 +1127,6 @@ class Ui_MainWindow(object):
         self.label_7 = QLabel(self.search)
         self.label_7.setObjectName(u"label_7")
         self.label_7.setGeometry(QRect(220, 160, 49, 16))
-        font6 = QFont()
-        font6.setPointSize(11)
         self.label_7.setFont(font6)
         self.label_7.setStyleSheet(u"")
         self.label_8 = QLabel(self.search)
@@ -4352,6 +4385,8 @@ class Ui_MainWindow(object):
         self.title_buckets_4.setText(QCoreApplication.translate("MainWindow", u"Update all", None))
         self.title_buckets_5.setText(QCoreApplication.translate("MainWindow", u"remove app", None))
         self.title_buckets_6.setText(QCoreApplication.translate("MainWindow", u"Cleanup old app versions", None))
+        self.label_219.setText(QCoreApplication.translate("MainWindow", u"Status:", None))
+        self.label_220.setText("")
         self.label_27.setText("")
         self.label_28.setText("")
         self.label_29.setText("")

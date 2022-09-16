@@ -1889,6 +1889,94 @@ QPushButton:hover {
        </property>
       </layout>
      </widget>
+     <widget class="QLabel" name="label_219">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>450</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Status:</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="status_indicator_buckets_1">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>440</y>
+        <width>401</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="status_indicator_layout_buckets">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_220">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>440</y>
+        <width>481</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+            color: yellow;
+			
+	      	
+	background-color: rgb(248, 248, 218);
+			padding: 12px;
+			border-radius: 12px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
      <zorder>label_46</zorder>
      <zorder>add_bucket_title</zorder>
      <zorder>bucket_input_add</zorder>
@@ -1915,6 +2003,9 @@ QPushButton:hover {
      <zorder>remove_app_frame</zorder>
      <zorder>not_added_yet</zorder>
      <zorder>back_button_frame</zorder>
+     <zorder>label_220</zorder>
+     <zorder>label_219</zorder>
+     <zorder>status_indicator_buckets_1</zorder>
     </widget>
     <widget class="QWidget" name="installed"/>
     <widget class="QWidget" name="search">
