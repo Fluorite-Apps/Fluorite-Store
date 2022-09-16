@@ -62,6 +62,24 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.go_recommended_apps_page_button.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_1))
 
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # STATUS INDICATOR                                    #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+        self.status_indicator_1 = QLabel("", parent=self)
+        self.status_indicator_2 = QLabel("", parent=self)
+        self.status_indicator_3 = QLabel("", parent=self)
+        self.status_indicator_4 = QLabel("", parent=self)
+        self.status_indicator_5 = QLabel("", parent=self)
+        self.status_indicator_6 = QLabel("", parent=self)
+        self.status_indicator_layout_1.addWidget(self.status_indicator_1, Qt.AlignCenter, Qt.AlignCenter)
+        self.status_indicator_layout_2.addWidget(self.status_indicator_2, Qt.AlignCenter, Qt.AlignCenter)
+        self.status_indicator_layout_3.addWidget(self.status_indicator_3, Qt.AlignCenter, Qt.AlignCenter)
+        self.status_indicator_layout_4.addWidget(self.status_indicator_4, Qt.AlignCenter, Qt.AlignCenter)
+        self.status_indicator_layout_5.addWidget(self.status_indicator_5, Qt.AlignCenter, Qt.AlignCenter)
+        self.status_indicator_layout_6.addWidget(self.status_indicator_6, Qt.AlignCenter, Qt.AlignCenter)
+
+
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         # NEXT PAGE BUTTON - STARRED/RECOMMENDED APPS PAGE    #
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
@@ -348,37 +366,53 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             print ("unfortunately portmaster isn't on scoop yet, so i'll have to find some other way to install this later. Coming soon..")
 
         def install_recc_app_2():
+            self.status_indicator_1.setText("Installing... fluent-reader")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install fluent-reader']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_1.setText("Installed")
         def install_recc_app_3():
+            self.status_indicator_1.setText("Installing... flameshot")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install flameshot']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_1.setText("Installed")
         def install_recc_app_4():
+            self.status_indicator_1.setText("Installing... ludusavi")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install ludusavi']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_1.setText("Installed")
         def install_recc_app_5():
+            self.status_indicator_1.setText("Installing... compactgui")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install compactgui']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_1.setText("Installed")
         def install_recc_app_6():
+            self.status_indicator_2.setText("Installing... peazip")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install peazip']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_2.setText("Installed")
         def install_recc_app_7():
+            self.status_indicator_2.setText("Installing... librewolf")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install librewolf']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_2.setText("Installed")
         def install_recc_app_8():
+            self.status_indicator_2.setText("Installing... freetube")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install freetube']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_2.setText("Installed")
         def install_recc_app_9():
+            self.status_indicator_2.setText("Installing... geekuninstaller")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install geekuninstaller']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            self.status_indicator_2.setText("Installed")
         def install_recc_app_10():
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install simplewall']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
