@@ -110,7 +110,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.return_home.setMinimumHeight(61)
         self.return_home.setFixedWidth(261)
 
-        self.return_home_1 = custompushbutton('B\na\nc\nk', parent=self)
+        self.return_home_1 = custompushbutton('H\no\nm\ne', parent=self)
         self.return_home_1.setMinimumHeight(181)
         self.return_home_1.setFixedWidth(51)
 
@@ -150,11 +150,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.return_home.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
 
         self.return_home_1.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
-        self.return_home_2.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
-        self.return_home_3.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
-        self.return_home_4.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
-        self.return_home_5.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
-        self.return_home_6.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
+        self.return_home_2.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_1))
+        self.return_home_3.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_2))
+        self.return_home_4.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_3))
+        self.return_home_5.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_4))
+        self.return_home_6.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_5))
 
 
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
