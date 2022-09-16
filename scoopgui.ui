@@ -41,7 +41,9 @@
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton {
-        	background-color: rgb(230, 230, 230);
+
+
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -88,7 +90,9 @@
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton {
-        	background-color: rgb(230, 230, 230);
+
+
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -135,7 +139,9 @@
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton {
-        	background-color: rgb(230, 230, 230);
+
+
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -179,14 +185,13 @@
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+
+
+			background-color: #21252d;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -203,8 +208,9 @@
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+
+
+			background-color: #272c36;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -224,9 +230,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QLabel {
-            background-color: rgb(239, 239, 210);
-        }</string>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Search and install apps</string>
@@ -250,9 +254,7 @@
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">QLabel {
-            background-color: rgb(239, 239, 210);
-        }</string>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Home Page</string>
@@ -271,9 +273,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QLabel {
-            background-color: rgb(239, 239, 210);
-        }</string>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Manage settings</string>
@@ -290,8 +290,9 @@
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+
+
+			background-color: #272c36;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -312,8 +313,9 @@
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+
+
+			background-color: #272c36;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -334,9 +336,9 @@
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(247, 248, 240);
+
+
+			background-color: #3C4052;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -356,9 +358,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QLabel {
-            background-color: rgb(239, 239, 210);
-        }</string>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Recommended Apps</string>
@@ -377,9 +377,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QLabel {
-            background-color: rgb(239, 239, 210);
-        }</string>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Add/remove/update scoop buckets/apps</string>
@@ -402,7 +400,9 @@
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton {
-        	background-color: rgb(230, 230, 230);
+
+
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -446,8 +446,9 @@
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+
+
+			background-color: #272c36;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -457,6 +458,99 @@
        <string/>
       </property>
      </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>380</y>
+        <width>91</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+
+
+			background-color: #595D75;
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>450</y>
+        <width>71</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+
+
+			background-color: #272c36;
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_75">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>310</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+
+
+			background-color: #21252d;
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_221">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>290</y>
+        <width>151</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+
+
+			background-color: #3C4052;
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_221</zorder>
      <zorder>label_24</zorder>
      <zorder>label_19</zorder>
      <zorder>label_20</zorder>
@@ -472,6 +566,9 @@
      <zorder>label_57</zorder>
      <zorder>label_10</zorder>
      <zorder>recommend_apps_frame</zorder>
+     <zorder>label_25</zorder>
+     <zorder>label_26</zorder>
+     <zorder>label_75</zorder>
     </widget>
     <widget class="QWidget" name="settings_page">
      <widget class="QFrame" name="manage_buckets_frame_2">
@@ -1893,9 +1990,9 @@ QPushButton:hover {
       <property name="geometry">
        <rect>
         <x>60</x>
-        <y>450</y>
+        <y>440</y>
         <width>71</width>
-        <height>31</height>
+        <height>51</height>
        </rect>
       </property>
       <property name="font">
@@ -1977,7 +2074,32 @@ QPushButton:hover {
        <string/>
       </property>
      </widget>
+     <widget class="QLabel" name="label_56">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>425</y>
+        <width>521</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+			
+	background-color: rgb(238, 238, 209);
+			padding: 12px;
+			border-bottom-left-radius: 25px;
+			border-bottom-right-radius: 25px;
+			border-bottom: 30px shadow;
+        }
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
      <zorder>label_46</zorder>
+     <zorder>label_56</zorder>
      <zorder>add_bucket_title</zorder>
      <zorder>bucket_input_add</zorder>
      <zorder>bucket_button_add</zorder>
@@ -3045,9 +3167,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(247, 248, 240);
+			background-color: #3C4052;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -3068,7 +3188,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	background-color: rgb(230, 230, 230);
+	        background-color: rgb(70, 74, 95);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -3089,14 +3209,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -3113,8 +3230,9 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+
+
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -3135,14 +3253,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -3159,8 +3274,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -3181,14 +3295,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -3205,8 +3316,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -3227,14 +3337,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -3251,8 +3358,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -3273,14 +3379,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -3297,8 +3400,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -3344,7 +3446,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Fast compression utility, also supports ARC which is the best algo for day to day usage - (foss)</string>
@@ -3389,7 +3491,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(239, 239, 210);</string>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Fork of firefox - browser made with privacy and security in mind - (foss)</string>
@@ -3434,7 +3536,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Desktop youtube client - no ads, skips sponsors - (foss)</string>
@@ -3482,7 +3584,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Fork of bcuninstaller but with a modern gui - actually good app uninstaller</string>
@@ -3530,7 +3632,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Block internet access for apps, increases privacy/security, also prevents malware for example collecting data - (foss)</string>
@@ -3553,20 +3655,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -3610,20 +3715,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -3667,20 +3775,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -3724,20 +3835,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -3781,20 +3895,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -3839,7 +3956,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Status:</string>
@@ -3860,7 +3977,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Recommended Apps - Page 2/6</string>
@@ -3880,14 +3997,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	      background-color: rgb(239, 239, 210);
+			background-color: #21252d;
 			padding: 12px;
 			border-radius: 12px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -3904,14 +4018,13 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	      background-color: rgb(239, 239, 210);
+
+
+			background-color: #21252d;
 			padding: 12px;
 			border-radius: 12px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -3970,8 +4083,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	
-	background-color: rgb(197, 197, 197);
+			background-color: rgb(60, 64, 82);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -3997,18 +4109,19 @@ QPushButton:hover {
        <string notr="true">QPushButton{
 	
 	font: 16pt &quot;Montserrat&quot;;
-	background-color: rgb(197, 238, 203);
-	padding: 12px;
+	background-color: 462e2e;
 	border-radius: 15px;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	
+	background-color: rgb(134, 88, 88);
 	padding: 12px;
 	border-radius: 25px;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	
+	background-color: rgb(129, 87, 83);
 	padding: 12px;
 	border-radius: 25px;
 }</string>
@@ -4051,8 +4164,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	
-	background-color: rgb(197, 197, 197);
+			background-color: rgb(60, 64, 82);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -4075,7 +4187,7 @@ QPushButton:hover {
        <string notr="true">QLabel {
         	
 			
-	background-color: rgb(212, 212, 212);
+	        background-color: rgb(70, 74, 95);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -4101,18 +4213,19 @@ QPushButton:hover {
        <string notr="true">QPushButton{
 	
 	font: 16pt &quot;Montserrat&quot;;
-	background-color: rgb(197, 238, 203);
-	padding: 12px;
+	background-color: 462e2e;
 	border-radius: 15px;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	
+	background-color: rgb(134, 88, 88);
 	padding: 12px;
 	border-radius: 25px;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	
+	background-color: rgb(66, 134, 132);
 	padding: 12px;
 	border-radius: 25px;
 }</string>
@@ -4194,14 +4307,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -4218,14 +4328,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -4287,8 +4394,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -4357,14 +4463,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -4381,9 +4484,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(247, 248, 240);
+			background-color: #3C4052;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -4428,7 +4529,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	background-color: rgb(230, 230, 230);
+	        background-color: rgb(70, 74, 95);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -4473,8 +4574,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -4543,14 +4643,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -4567,14 +4664,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -4615,8 +4709,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -4637,8 +4730,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -4659,8 +4751,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -4708,20 +4799,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -4765,20 +4859,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -4822,20 +4919,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -4879,20 +4979,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -4936,20 +5039,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -4983,7 +5089,7 @@ QPushButton:hover {
       <property name="geometry">
        <rect>
         <x>590</x>
-        <y>75</y>
+        <y>80</y>
         <width>51</width>
         <height>31</height>
        </rect>
@@ -4994,7 +5100,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(239, 239, 210);</string>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Status:</string>
@@ -5004,7 +5110,7 @@ QPushButton:hover {
       <property name="geometry">
        <rect>
         <x>160</x>
-        <y>70</y>
+        <y>75</y>
         <width>331</width>
         <height>41</height>
        </rect>
@@ -5015,7 +5121,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Recommended Apps - Page 3/6</string>
@@ -5028,7 +5134,7 @@ QPushButton:hover {
       <property name="geometry">
        <rect>
         <x>640</x>
-        <y>65</y>
+        <y>70</y>
         <width>281</width>
         <height>51</height>
        </rect>
@@ -5070,21 +5176,20 @@ QPushButton:hover {
       <property name="geometry">
        <rect>
         <x>110</x>
-        <y>65</y>
+        <y>70</y>
         <width>441</width>
         <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	      background-color: rgb(239, 239, 210);
+
+
+			background-color: #21252d;
 			padding: 12px;
 			border-radius: 12px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -5094,21 +5199,20 @@ QPushButton:hover {
       <property name="geometry">
        <rect>
         <x>580</x>
-        <y>65</y>
+        <y>70</y>
         <width>361</width>
         <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	      background-color: rgb(239, 239, 210);
+
+
+			background-color: #21252d;
 			padding: 12px;
 			border-radius: 12px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -5130,18 +5234,19 @@ QPushButton:hover {
        <string notr="true">QPushButton{
 	
 	font: 16pt &quot;Montserrat&quot;;
-	background-color: rgb(197, 238, 203);
-	padding: 12px;
+	background-color: 462e2e;
 	border-radius: 15px;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	
+	background-color: rgb(134, 88, 88);
 	padding: 12px;
 	border-radius: 25px;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	
+	background-color: rgb(66, 134, 132);
 	padding: 12px;
 	border-radius: 25px;
 }</string>
@@ -5186,7 +5291,7 @@ QPushButton:hover {
        <string notr="true">QLabel {
         	
 			
-	background-color: rgb(212, 212, 212);
+	        background-color: rgb(70, 74, 95);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -5207,8 +5312,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	
-	background-color: rgb(197, 197, 197);
+			background-color: rgb(60, 64, 82);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -5234,18 +5338,19 @@ QPushButton:hover {
        <string notr="true">QPushButton{
 	
 	font: 16pt &quot;Montserrat&quot;;
-	background-color: rgb(197, 238, 203);
-	padding: 12px;
+	background-color: 462e2e;
 	border-radius: 15px;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	
+	background-color: rgb(134, 88, 88);
 	padding: 12px;
 	border-radius: 25px;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	
+	background-color: rgb(129, 87, 83);
 	padding: 12px;
 	border-radius: 25px;
 }</string>
@@ -5288,8 +5393,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	
-	background-color: rgb(197, 197, 197);
+			background-color: rgb(60, 64, 82);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -5349,14 +5453,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -5373,14 +5474,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -5422,7 +5520,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Modern ssh client - (foss)</string>
@@ -5442,8 +5540,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -5489,7 +5586,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Very stable nintendo switch emulator, less graphical bugs than yuzu, also allows importing shader cache (gets rid of first time stutters entirely) - (foss)</string>
@@ -5509,14 +5606,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -5533,9 +5627,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(247, 248, 240);
+			background-color: #3C4052;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -5560,7 +5652,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Control audio volume per apps, replaces windows audio button on taskbar, same design - (foss)</string>
@@ -5580,7 +5672,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	background-color: rgb(230, 230, 230);
+	        background-color: rgb(70, 74, 95);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -5605,7 +5697,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Tries to lessen the amount of telemetry collected by windows</string>
@@ -5625,8 +5717,9 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+
+
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -5692,14 +5785,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -5716,14 +5806,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -5764,8 +5851,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -5786,8 +5872,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -5808,8 +5893,9 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+
+
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -5834,7 +5920,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Fast, minimal media player - (foss)</string>
@@ -5857,20 +5943,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -5914,20 +6003,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -5971,20 +6063,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -6028,20 +6123,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -6085,20 +6183,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -6143,7 +6244,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Status:</string>
@@ -6202,14 +6303,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	      background-color: rgb(239, 239, 210);
+			background-color: #21252d;
 			padding: 12px;
 			border-radius: 12px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -6230,7 +6328,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Recommended Apps - Page 4/6</string>
@@ -6250,14 +6348,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	      background-color: rgb(239, 239, 210);
+			background-color: #21252d;
 			padding: 12px;
 			border-radius: 12px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -6279,18 +6374,19 @@ QPushButton:hover {
        <string notr="true">QPushButton{
 	
 	font: 16pt &quot;Montserrat&quot;;
-	background-color: rgb(197, 238, 203);
-	padding: 12px;
+	background-color: 462e2e;
 	border-radius: 15px;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	
+	background-color: rgb(134, 88, 88);
 	padding: 12px;
 	border-radius: 25px;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	
+	background-color: rgb(66, 134, 132);
 	padding: 12px;
 	border-radius: 25px;
 }</string>
@@ -6335,7 +6431,7 @@ QPushButton:hover {
        <string notr="true">QLabel {
         	
 			
-	background-color: rgb(212, 212, 212);
+	        background-color: rgb(70, 74, 95);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -6356,8 +6452,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	
-	background-color: rgb(197, 197, 197);
+			background-color: rgb(60, 64, 82);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -6383,18 +6478,19 @@ QPushButton:hover {
        <string notr="true">QPushButton{
 	
 	font: 16pt &quot;Montserrat&quot;;
-	background-color: rgb(197, 238, 203);
-	padding: 12px;
+	background-color: 462e2e;
 	border-radius: 15px;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	
+	background-color: rgb(134, 88, 88);
 	padding: 12px;
 	border-radius: 25px;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	
+	background-color: rgb(129, 87, 83);
 	padding: 12px;
 	border-radius: 25px;
 }</string>
@@ -6437,8 +6533,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	
-	background-color: rgb(197, 197, 197);
+			background-color: rgb(60, 64, 82);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -6501,20 +6596,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -6559,7 +6657,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Useful text expander for keyboard warriors - for e.g typing :q in a messaging application which pastes a custom piece of text - (foss)</string>
@@ -6583,7 +6681,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Foss alternative to wallpaper engine - animated desktop background - (foss)</string>
@@ -6603,7 +6701,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	background-color: rgb(230, 230, 230);
+	        background-color: rgb(70, 74, 95);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -6616,8 +6714,8 @@ QPushButton:hover {
      <widget class="QLabel" name="label_181">
       <property name="geometry">
        <rect>
-        <x>610</x>
-        <y>70</y>
+        <x>590</x>
+        <y>80</y>
         <width>51</width>
         <height>31</height>
        </rect>
@@ -6628,7 +6726,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Status:</string>
@@ -6669,20 +6767,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -6723,8 +6824,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -6745,14 +6845,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -6771,7 +6868,7 @@ QPushButton:hover {
        <string notr="true">QLabel {
         	
 			
-	background-color: rgb(212, 212, 212);
+	        background-color: rgb(70, 74, 95);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -6792,8 +6889,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	
-	background-color: rgb(197, 197, 197);
+			background-color: rgb(60, 64, 82);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -6818,7 +6914,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Foss and non-intrusive tool to update drivers, most useful if encountering issues/BSOD's, or for updating gpu drivers for better performance. </string>
@@ -6862,9 +6958,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(247, 248, 240);
+			background-color: #3C4052;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -6877,8 +6971,8 @@ QPushButton:hover {
      <widget class="QFrame" name="status_indicator_frame_5">
       <property name="geometry">
        <rect>
-        <x>660</x>
-        <y>60</y>
+        <x>640</x>
+        <y>70</y>
         <width>281</width>
         <height>51</height>
        </rect>
@@ -6930,20 +7024,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -6987,20 +7084,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -7033,8 +7133,8 @@ QPushButton:hover {
      <widget class="QLabel" name="title_7">
       <property name="geometry">
        <rect>
-        <x>180</x>
-        <y>65</y>
+        <x>160</x>
+        <y>75</y>
         <width>331</width>
         <height>41</height>
        </rect>
@@ -7045,7 +7145,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Recommended Apps - Page 5/6</string>
@@ -7065,8 +7165,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -7111,14 +7210,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -7139,20 +7235,20 @@ QPushButton:hover {
       <property name="styleSheet">
        <string notr="true">QPushButton{
 	
-	
 	font: 16pt &quot;Montserrat&quot;;
-	background-color: rgb(197, 238, 203);
-	padding: 12px;
+	background-color: 462e2e;
 	border-radius: 15px;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	
+	background-color: rgb(134, 88, 88);
 	padding: 12px;
 	border-radius: 25px;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	
+	background-color: rgb(129, 87, 83);
 	padding: 12px;
 	border-radius: 25px;
 }</string>
@@ -7219,14 +7315,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -7243,14 +7336,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -7259,22 +7349,21 @@ QPushButton:hover {
      <widget class="QLabel" name="label_185">
       <property name="geometry">
        <rect>
-        <x>130</x>
-        <y>60</y>
+        <x>110</x>
+        <y>70</y>
         <width>441</width>
         <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	      background-color: rgb(239, 239, 210);
+
+
+			background-color: #21252d;
 			padding: 12px;
 			border-radius: 12px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -7291,14 +7380,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -7319,7 +7405,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Modern replacment for the ancient windows media flyout/widget - (foss)</string>
@@ -7342,20 +7428,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -7396,8 +7485,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -7418,8 +7506,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -7432,22 +7519,21 @@ QPushButton:hover {
      <widget class="QLabel" name="label_190">
       <property name="geometry">
        <rect>
-        <x>600</x>
-        <y>60</y>
+        <x>580</x>
+        <y>70</y>
         <width>361</width>
         <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	      background-color: rgb(239, 239, 210);
+
+
+			background-color: #21252d;
 			padding: 12px;
 			border-radius: 12px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -7464,8 +7550,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -7514,7 +7599,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Modern and very powerful knowledge organiser/note client - uses LaTeX or md</string>
@@ -7539,18 +7624,19 @@ QPushButton:hover {
        <string notr="true">QPushButton{
 	
 	font: 16pt &quot;Montserrat&quot;;
-	background-color: rgb(197, 238, 203);
-	padding: 12px;
+	background-color: 462e2e;
 	border-radius: 15px;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	
+	background-color: rgb(134, 88, 88);
 	padding: 12px;
 	border-radius: 25px;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	
+	background-color: rgb(66, 134, 132);
 	padding: 12px;
 	border-radius: 25px;
 }</string>
@@ -7593,8 +7679,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	
-	background-color: rgb(197, 197, 197);
+			background-color: rgb(60, 64, 82);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -7614,7 +7699,7 @@ QPushButton:hover {
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: teal</string>
+       <string notr="true">color: rgb(80, 107, 107);</string>
       </property>
       <property name="text">
        <string>NOTE: that SDIO uses the torrent protocol to download drivers, whilst this is perfectly legal since the actual material downloaded is legal, it may still trigger red flags for some pedantic isp's</string>
@@ -7626,7 +7711,6 @@ QPushButton:hover {
      <zorder>label_157</zorder>
      <zorder>label_123</zorder>
      <zorder>recc_app_install_frame_21</zorder>
-     <zorder>label_181</zorder>
      <zorder>recc_app_install_frame_22</zorder>
      <zorder>recc_app_install_frame_23</zorder>
      <zorder>recc_app_install_frame_24</zorder>
@@ -7661,6 +7745,7 @@ QPushButton:hover {
      <zorder>label_340</zorder>
      <zorder>recc_next_page_frame_6</zorder>
      <zorder>label_22</zorder>
+     <zorder>label_181</zorder>
     </widget>
     <widget class="QWidget" name="recommended_apps_page_6">
      <widget class="QFrame" name="status_indicator_frame_6">
@@ -7716,8 +7801,9 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+
+
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -7783,14 +7869,13 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+
+
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -7807,14 +7892,13 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+
+
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -7834,20 +7918,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -7892,7 +7979,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Recommended Apps - Page 6/6</string>
@@ -7912,8 +7999,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -7939,18 +8025,19 @@ QPushButton:hover {
        <string notr="true">QPushButton{
 	
 	font: 16pt &quot;Montserrat&quot;;
-	background-color: rgb(197, 238, 203);
-	padding: 12px;
+	background-color: 462e2e;
 	border-radius: 15px;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	
+	background-color: rgb(134, 88, 88);
 	padding: 12px;
 	border-radius: 25px;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	
+	background-color: rgb(129, 87, 83);
 	padding: 12px;
 	border-radius: 25px;
 }</string>
@@ -7993,9 +8080,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(247, 248, 240);
+			background-color: #3C4052;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -8016,14 +8101,13 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+
+
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -8069,18 +8153,19 @@ QPushButton:hover {
        <string notr="true">QPushButton{
 	
 	font: 16pt &quot;Montserrat&quot;;
-	background-color: rgb(197, 238, 203);
-	padding: 12px;
+	background-color: 462e2e;
 	border-radius: 15px;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	
+	background-color: rgb(134, 88, 88);
 	padding: 12px;
 	border-radius: 25px;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	
+	background-color: rgb(66, 134, 132);
 	padding: 12px;
 	border-radius: 25px;
 }</string>
@@ -8123,8 +8208,9 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+
+
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -8169,8 +8255,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -8191,8 +8276,9 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+
+
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -8240,20 +8326,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -8297,20 +8386,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -8353,7 +8445,7 @@ QPushButton:hover {
        <string notr="true">QLabel {
         	
 			
-	background-color: rgb(212, 212, 212);
+	        background-color: rgb(70, 74, 95);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -8374,7 +8466,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	background-color: rgb(230, 230, 230);
+	        background-color: rgb(70, 74, 95);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -8419,8 +8511,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	
-	background-color: rgb(197, 197, 197);
+			background-color: rgb(60, 64, 82);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -8445,7 +8536,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Status:</string>
@@ -8462,14 +8553,13 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+
+
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -8510,14 +8600,13 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+
+
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -8558,20 +8647,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -8612,14 +8704,13 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	      background-color: rgb(239, 239, 210);
+
+
+			background-color: #21252d;
 			padding: 12px;
 			border-radius: 12px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -8636,14 +8727,13 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	      background-color: rgb(239, 239, 210);
+
+
+			background-color: #21252d;
 			padding: 12px;
 			border-radius: 12px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -8708,20 +8798,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -8762,8 +8855,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	
-	background-color: rgb(197, 197, 197);
+			background-color: rgb(60, 64, 82);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -8823,14 +8915,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -8847,14 +8936,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -8899,7 +8985,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Beautiful screenshot utility - (foss)</string>
@@ -8919,8 +9005,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -8966,7 +9051,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Compress games without any impact on speed, saves huge amounts of storage on many games - (foss)</string>
@@ -8986,14 +9071,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -9010,9 +9092,9 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(247, 248, 240);
+
+
+			background-color: #3C4052;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -9037,7 +9119,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Backup game saves easily - (foss)</string>
@@ -9057,7 +9139,8 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	background-color: rgb(230, 230, 230);
+        	
+	background-color: rgb(70, 74, 95);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -9082,7 +9165,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Decent alternative to pihole/adguard home if you can't selfhost them, also replaces simplewall. - (foss)</string>
@@ -9094,22 +9177,19 @@ QPushButton:hover {
      <widget class="QLabel" name="label_101">
       <property name="geometry">
        <rect>
-        <x>130</x>
-        <y>60</y>
+        <x>110</x>
+        <y>70</y>
         <width>441</width>
         <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	      background-color: rgb(239, 239, 210);
+			background-color: #21252d;
 			padding: 12px;
 			border-radius: 12px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -9126,8 +9206,9 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+
+
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -9193,14 +9274,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -9217,14 +9295,11 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -9265,8 +9340,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -9287,8 +9361,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -9301,8 +9374,8 @@ QPushButton:hover {
      <widget class="QLabel" name="title_5">
       <property name="geometry">
        <rect>
-        <x>180</x>
-        <y>65</y>
+        <x>160</x>
+        <y>75</y>
         <width>331</width>
         <height>41</height>
        </rect>
@@ -9313,7 +9386,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Recommended Apps - Page 1/6</string>
@@ -9333,8 +9406,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			background-color: rgb(239, 239, 210);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -9359,7 +9431,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Modern RSS (news) client - (foss)</string>
@@ -9382,20 +9454,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -9439,20 +9514,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -9496,20 +9574,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -9553,20 +9634,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -9599,22 +9683,19 @@ QPushButton:hover {
      <widget class="QLabel" name="label_170">
       <property name="geometry">
        <rect>
-        <x>600</x>
-        <y>60</y>
+        <x>580</x>
+        <y>70</y>
         <width>361</width>
         <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	      background-color: rgb(239, 239, 210);
+			background-color: #21252d;
 			padding: 12px;
 			border-radius: 12px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -9623,8 +9704,8 @@ QPushButton:hover {
      <widget class="QLabel" name="label_171">
       <property name="geometry">
        <rect>
-        <x>610</x>
-        <y>70</y>
+        <x>590</x>
+        <y>80</y>
         <width>51</width>
         <height>31</height>
        </rect>
@@ -9635,7 +9716,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Status:</string>
@@ -9644,8 +9725,8 @@ QPushButton:hover {
      <widget class="QFrame" name="status_indicator_frame_1">
       <property name="geometry">
        <rect>
-        <x>660</x>
-        <y>60</y>
+        <x>640</x>
+        <y>70</y>
         <width>281</width>
         <height>51</height>
        </rect>
@@ -9697,20 +9778,23 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: rgb(194, 234, 189);
+	background-color: #595D75;
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	background-color: rgb(46, 49, 63);
 	padding: 12px;
-	border-radius: 35px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	background-color: rgb(60, 64, 82);
 	padding: 12px;
 	border-radius: 25px;
+	border-bottom: 30px shadow;
 }</string>
       </property>
       <property name="frameShape">
@@ -9755,20 +9839,20 @@ QPushButton:hover {
       <property name="styleSheet">
        <string notr="true">QPushButton{
 	
-	
 	font: 16pt &quot;Montserrat&quot;;
-	background-color: rgb(197, 238, 203);
-	padding: 12px;
+	background-color: 462e2e;
 	border-radius: 15px;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	
+	background-color: rgb(134, 88, 88);
 	padding: 12px;
 	border-radius: 25px;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	
+	background-color: rgb(129, 87, 83);
 	padding: 12px;
 	border-radius: 25px;
 }</string>
@@ -9816,18 +9900,19 @@ QPushButton:hover {
        <string notr="true">QPushButton{
 	
 	font: 16pt &quot;Montserrat&quot;;
-	background-color: rgb(197, 238, 203);
-	padding: 12px;
+	background-color: 462e2e;
 	border-radius: 15px;
 }
 QPushButton:pressed:hover{
-	background-color: rgb(238, 255, 231);
+	
+	background-color: rgb(134, 88, 88);
 	padding: 12px;
 	border-radius: 25px;
 }
 
 QPushButton:hover {
-	background-color: rgb(166, 197, 163);
+	
+	background-color: rgb(66, 134, 132);
 	padding: 12px;
 	border-radius: 25px;
 }</string>
@@ -9870,8 +9955,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	
-	background-color: rgb(197, 197, 197);
+			background-color: rgb(60, 64, 82);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -9892,8 +9976,7 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	
-	background-color: rgb(197, 197, 197);
+			background-color: rgb(60, 64, 82);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -9916,7 +9999,7 @@ QPushButton:hover {
        <string notr="true">QLabel {
         	
 			
-	background-color: rgb(212, 212, 212);
+	        background-color: rgb(70, 74, 95);
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;

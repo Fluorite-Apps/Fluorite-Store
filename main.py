@@ -38,6 +38,9 @@ from py_toggle import *
 
 from Second_PushButton import *
 
+from BlurWindow.blurWindow import blur
+
+from BlurWindow.blurWindow import GlobalBlur
 import resource_file_qt_rc
 
 
@@ -45,6 +48,23 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None , *args, obj=None, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs, parent=parent)
         self.setupUi(self)
+
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.resize(1150, 700)
+
+        GlobalBlur(self.winId(),Dark=True,QWidget=self)
+
+        self.setStyleSheet("background-color: rgba(0, 0, 0, 0)")
+
+
+        # self.setAttribute(Qt.WA_TranslucentBackground)
+        # self.resize(1050, 700)
+        #
+        # hWnd = self.winId()
+        # print(hWnd)
+        # blur(hWnd)
+
+        # self.setStyleSheet("background-color: rgba(0, 0, 0, 0)")
 
         # loading splashscreen
         # self.stackedWidget.setCurrentWidget(self.splashscreen)
@@ -979,7 +999,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
 app = QtWidgets.QApplication(sys.argv)
 window = MainWindow()
-window.setWindowTitle('Scoop GUI')
+window.setWindowTitle('  ')
 my_pixmap = QPixmap("scoopicon.ico")
 my_icon = QIcon(my_pixmap)
 window.setWindowIcon(my_icon)
