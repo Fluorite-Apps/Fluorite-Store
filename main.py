@@ -526,7 +526,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                                             universal_newlines=True)
             self.status_indicator_5.setText("Installed")
         def install_recc_app_24():
-            self.status_indicator_5.setText("Installing... obsiodion")
+            self.status_indicator_5.setText("Installing... obsidian")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install obsidian']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
@@ -945,8 +945,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
             self.cb.addItems(res)
             # self.stateTooltip = None
-            with open('resource/statetooltip/style/demo.qss', encoding='utf-8') as f:
-                self.setStyleSheet(f.read())
+            # with open('resource/statetooltip/style/demo.qss', encoding='utf-8') as f:
+            #     self.setStyleSheet(f.read())
 
         # thread fixes hanging, daemon keep alive until finished
         t = Thread(target=function)

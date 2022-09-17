@@ -1199,7 +1199,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Manage Buckets</string>
@@ -1208,111 +1208,19 @@ QPushButton:hover {
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QLabel" name="add_bucket_title">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>130</y>
-        <width>221</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>14</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="text">
-       <string>Add Bucket</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
      <widget class="QLineEdit" name="bucket_input_add">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>170</y>
-        <width>261</width>
-        <height>41</height>
+        <x>40</x>
+        <y>150</y>
+        <width>341</width>
+        <height>81</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">QWidget{
-    background-color: white;
-}
-
-/* 单行输入框 */
-QLineEdit {
-    padding: 8px 13px 7px 13px;
-    font: 17px 'Microsoft YaHei';
-    selection-background-color: rgb(0, 153, 188);
-}
-
-QLineEdit:focus {
-    border: 1px solid rgb(0, 153, 188);
-}
-
-QLineEdit:disabled {
-    color: rgb(122, 122, 122);
-    border: none;
-    background-color: rgb(204, 204, 204);
-}
-
-
-/* 右击菜单 */
-QMenu {
-    width: 1px;
-    height: 1px;
-    background-color: rgb(242, 242, 242);
-    font-size: 18px;
-    font: 18px &quot;Microsoft YaHei&quot;;
-    padding: 5px 0px 5px 0px;
-    border: 1px solid rgb(196, 199, 200);
-}
-
-
-QMenu::right-arrow {
-    width: 16px;
-    height: 16px;
-    right: 16px;
-    border-border-image: url(resource/images/子菜单右箭头.png);
-
-}
-
-QMenu::separator {
-    height: 1px;
-    width: 140px;
-    background: rgba(0, 0, 0, 104);
-    margin-right: 13px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 13;
-}
-
-QMenu::item {
-    padding: 7px 20px 7px 26px;
-}
-
-QMenu::item:selected {
-    border-width: 1px;
-    border-color: rgb(212, 212, 212);
-    background: rgba(0, 0, 0, 25);
-    color: black;
-}
-
-QMenu[hasCancelAct='true'] {
-    width: 1px;
-}
-
-QMenu::icon {
-    position: absolute;
-    left: 16px;
-}</string>
+       <string notr="true">background-color: rgb(89, 93, 117);
+border-radius: 25px;
+border-bottom: 30px shadow;</string>
       </property>
       <property name="text">
        <string>Bucket Name / URL</string>
@@ -1321,116 +1229,47 @@ QMenu::icon {
      <widget class="QPushButton" name="bucket_button_add">
       <property name="geometry">
        <rect>
-        <x>320</x>
-        <y>170</y>
-        <width>201</width>
-        <height>41</height>
+        <x>410</x>
+        <y>160</y>
+        <width>91</width>
+        <height>61</height>
        </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="toolTip">
        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;test&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="styleSheet">
-       <string notr="true">QWidget{
-    background-color: white;
+       <string notr="true">QPushButton{
+	font: 16pt &quot;Montserrat&quot;;
+	border-radius: 15px;
 }
-
-QPushButton {
-    background-color: rgb(204, 204, 204);
-    padding: 10px 64px 10px 64px;
-    font: 19px 'Microsoft YaHei';
-    border: transparent;
-    border-radius: 4px;
-    /* height: 40px; */
-}
-
-QPushButton:pressed:hover {
-    background-color: rgb(153, 153, 153);
+QPushButton:pressed:hover{
+	
+	background-color: rgb(134, 88, 88);
+	padding: 12px;
+	border-radius: 25px;
 }
 
 QPushButton:hover {
-    background-color: rgb(230, 230, 230);
-}
-
-QPushButton:disabled {
-    background-color: rgb(204, 204, 204);
-    color: rgb(122, 122, 122);
+	
+	background-color: rgb(66, 134, 132);
+	padding: 12px;
+	border-radius: 25px;
 }</string>
       </property>
       <property name="text">
-       <string>Add</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="remove_bucket_title">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>230</y>
-        <width>321</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>14</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="text">
-       <string>Remove Bucket</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="bucket_button_remove">
-      <property name="geometry">
-       <rect>
-        <x>320</x>
-        <y>280</y>
-        <width>201</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QWidget{
-    background-color: white;
-}
-
-QPushButton {
-    background-color: rgb(204, 204, 204);
-    padding: 10px 64px 10px 64px;
-    font: 19px 'Microsoft YaHei';
-    border: transparent;
-    border-radius: 4px;
-    /* height: 40px; */
-}
-
-QPushButton:pressed:hover {
-    background-color: rgb(153, 153, 153);
-}
-
-QPushButton:hover {
-    background-color: rgb(230, 230, 230);
-}
-
-QPushButton:disabled {
-    background-color: rgb(204, 204, 204);
-    color: rgb(122, 122, 122);
-}</string>
-      </property>
-      <property name="text">
-       <string>Remove</string>
+       <string/>
       </property>
      </widget>
      <widget class="QComboBox" name="cb">
       <property name="geometry">
        <rect>
         <x>50</x>
-        <y>280</y>
-        <width>261</width>
+        <y>270</y>
+        <width>311</width>
         <height>41</height>
        </rect>
       </property>
@@ -1439,6 +1278,11 @@ QPushButton:disabled {
         <family>Arial</family>
         <pointsize>12</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(89, 93, 117);
+border-radius: 25px;
+border-bottom: 30px shadow;</string>
       </property>
      </widget>
      <widget class="QLabel" name="title_buckets_2">
@@ -1475,9 +1319,7 @@ QPushButton:disabled {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(247, 248, 240);
+			background-color: #3C4052;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -1498,11 +1340,7 @@ QPushButton:disabled {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-			
-			
-	background-color: rgb(240, 249, 243);
+			background-color: #3C4052;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -1523,14 +1361,13 @@ QPushButton:disabled {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-	background-color: rgb(239, 239, 210);
+
+
+			background-color: #21252d;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -1551,7 +1388,7 @@ QPushButton:disabled {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Manage Apps</string>
@@ -1571,16 +1408,13 @@ QPushButton:disabled {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-			
-			
-	background-color: rgb(221, 232, 230);
+
+
+			background-color: #21252d;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -1597,16 +1431,11 @@ QPushButton:disabled {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-			
-			
-	background-color: rgb(221, 232, 230);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -1623,7 +1452,7 @@ QPushButton:disabled {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	background-color: rgb(230, 230, 230);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -1644,7 +1473,7 @@ QPushButton:disabled {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	background-color: rgb(230, 230, 230);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -1665,16 +1494,11 @@ QPushButton:disabled {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-			
-			
-	background-color: rgb(221, 232, 230);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -1691,7 +1515,7 @@ QPushButton:disabled {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-        	background-color: rgb(230, 230, 230);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
@@ -1712,16 +1536,11 @@ QPushButton:disabled {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
-			
-			
-			
-	background-color: rgb(221, 232, 230);
+			background-color: #595D75;
 			padding: 12px;
 			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
@@ -1815,7 +1634,21 @@ QPushButton:disabled {
        <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">QPushButton{
+	background-color: 462e2e;
+	border-radius: 15px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(134, 88, 88);
+	padding: 12px;
+	border-radius: 25px;
+}
+
+QPushButton:hover {
+	background-color: rgb(66, 134, 132);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -1857,7 +1690,21 @@ QPushButton:disabled {
        <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">QPushButton{
+	background-color: 462e2e;
+	border-radius: 15px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(134, 88, 88);
+	padding: 12px;
+	border-radius: 25px;
+}
+
+QPushButton:hover {
+	background-color: rgb(66, 134, 132);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -1899,7 +1746,21 @@ QPushButton:disabled {
        <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">QPushButton{
+	background-color: 462e2e;
+	border-radius: 15px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(134, 88, 88);
+	padding: 12px;
+	border-radius: 25px;
+}
+
+QPushButton:hover {
+	background-color: rgb(66, 134, 132);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -2060,15 +1921,143 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-            color: yellow;
 			
-	      	
-	background-color: rgb(248, 248, 218);
+	background-color: rgb(65, 69, 88);
 			padding: 12px;
-			border-radius: 12px;
+			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_223">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>250</y>
+        <width>111</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+			background-color: #595D75;
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_224">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>150</y>
+        <width>111</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+			background-color: #595D75;
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="title_buckets_7">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>170</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Add Bucket</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="title_buckets_8">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>270</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Remove Bucket</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bucket_button_remove">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>260</y>
+        <width>91</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 16pt &quot;Montserrat&quot;;
+	border-radius: 15px;
+}
+QPushButton:pressed:hover{
+	
+	background-color: rgb(134, 88, 88);
+	padding: 12px;
+	border-radius: 25px;
+}
+
+QPushButton:hover {
+	
+	background-color: rgb(66, 134, 132);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
       </property>
       <property name="text">
        <string/>
@@ -2077,35 +2066,25 @@ QPushButton:hover {
      <widget class="QLabel" name="label_56">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>425</y>
-        <width>521</width>
+        <x>40</x>
+        <y>250</y>
+        <width>341</width>
         <height>81</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-			
-	background-color: rgb(238, 238, 209);
+			background-color: #595D75;
 			padding: 12px;
-			border-bottom-left-radius: 25px;
-			border-bottom-right-radius: 25px;
+			border-radius: 25px;
 			border-bottom: 30px shadow;
-        }
-</string>
+        }</string>
       </property>
       <property name="text">
        <string/>
       </property>
      </widget>
      <zorder>label_46</zorder>
-     <zorder>label_56</zorder>
-     <zorder>add_bucket_title</zorder>
-     <zorder>bucket_input_add</zorder>
-     <zorder>bucket_button_add</zorder>
-     <zorder>remove_bucket_title</zorder>
-     <zorder>bucket_button_remove</zorder>
-     <zorder>cb</zorder>
      <zorder>title_buckets_2</zorder>
      <zorder>label_47</zorder>
      <zorder>label_48</zorder>
@@ -2128,6 +2107,15 @@ QPushButton:hover {
      <zorder>label_220</zorder>
      <zorder>label_219</zorder>
      <zorder>status_indicator_buckets_1</zorder>
+     <zorder>label_223</zorder>
+     <zorder>label_224</zorder>
+     <zorder>bucket_input_add</zorder>
+     <zorder>title_buckets_7</zorder>
+     <zorder>bucket_button_add</zorder>
+     <zorder>title_buckets_8</zorder>
+     <zorder>bucket_button_remove</zorder>
+     <zorder>label_56</zorder>
+     <zorder>cb</zorder>
     </widget>
     <widget class="QWidget" name="installed"/>
     <widget class="QWidget" name="search">
@@ -4374,7 +4362,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Check hdd/sdd life - (foss)</string>
@@ -4443,7 +4431,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Stress test ram, gpu, cpu to check their max temperatures, or to check stability</string>
@@ -4509,7 +4497,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Check hardware temperatures</string>
@@ -4554,7 +4542,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Because windows literally has no sandboxing on non-microsoft-store apps which is what makes malware so common, sandbox untrustworthy apps. - (foss)</string>
@@ -4776,7 +4764,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Modern, extensible, game launcher - (foss)</string>
@@ -7828,7 +7816,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Modern and foss utility to modify fan curves</string>
@@ -8754,7 +8742,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">color: gray</string>
       </property>
       <property name="text">
        <string>Change rgb without installing annoying manufacterer apps - foss</string>
