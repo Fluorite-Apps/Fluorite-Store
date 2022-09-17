@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguizrYyXT.ui'
+## Form generated from reading UI file 'scoopguiHUnZge.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -202,52 +202,7 @@ class Ui_MainWindow(object):
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
-        self.label_25 = QLabel(self.home)
-        self.label_25.setObjectName(u"label_25")
-        self.label_25.setGeometry(QRect(40, 380, 91, 51))
-        self.label_25.setStyleSheet(u"QLabel {\n"
-"\n"
-"\n"
-"			background-color: #595D75;\n"
-"			padding: 12px;\n"
-"			border-radius: 25px;\n"
-"			border-bottom: 30px shadow;\n"
-"        }")
-        self.label_26 = QLabel(self.home)
-        self.label_26.setObjectName(u"label_26")
-        self.label_26.setGeometry(QRect(50, 450, 71, 91))
-        self.label_26.setStyleSheet(u"QLabel {\n"
-"\n"
-"\n"
-"			background-color: #272c36;\n"
-"			padding: 12px;\n"
-"			border-radius: 25px;\n"
-"			border-bottom: 30px shadow;\n"
-"        }")
-        self.label_75 = QLabel(self.home)
-        self.label_75.setObjectName(u"label_75")
-        self.label_75.setGeometry(QRect(30, 310, 131, 51))
-        self.label_75.setStyleSheet(u"QLabel {\n"
-"\n"
-"\n"
-"			background-color: #21252d;\n"
-"			padding: 12px;\n"
-"			border-radius: 25px;\n"
-"			border-bottom: 30px shadow;\n"
-"        }")
-        self.label_221 = QLabel(self.home)
-        self.label_221.setObjectName(u"label_221")
-        self.label_221.setGeometry(QRect(20, 290, 151, 301))
-        self.label_221.setStyleSheet(u"QLabel {\n"
-"\n"
-"\n"
-"			background-color: #3C4052;\n"
-"			padding: 12px;\n"
-"			border-radius: 25px;\n"
-"			border-bottom: 30px shadow;\n"
-"        }")
         self.stackedWidget.addWidget(self.home)
-        self.label_221.raise_()
         self.label_24.raise_()
         self.label_19.raise_()
         self.label_20.raise_()
@@ -263,9 +218,6 @@ class Ui_MainWindow(object):
         self.label_57.raise_()
         self.label_10.raise_()
         self.recommend_apps_frame.raise_()
-        self.label_25.raise_()
-        self.label_26.raise_()
-        self.label_75.raise_()
         self.settings_page = QWidget()
         self.settings_page.setObjectName(u"settings_page")
         self.manage_buckets_frame_2 = QFrame(self.settings_page)
@@ -283,8 +235,9 @@ class Ui_MainWindow(object):
         self.label_11.setObjectName(u"label_11")
         self.label_11.setGeometry(QRect(330, 230, 171, 91))
         self.label_11.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			background-color: rgb(239, 239, 210);\n"
+"\n"
+"\n"
+"			background-color: #272c36;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
@@ -293,8 +246,9 @@ class Ui_MainWindow(object):
         self.label_12.setObjectName(u"label_12")
         self.label_12.setGeometry(QRect(330, 330, 171, 91))
         self.label_12.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			background-color: rgb(239, 239, 210);\n"
+"\n"
+"\n"
+"			background-color: #272c36;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
@@ -303,8 +257,9 @@ class Ui_MainWindow(object):
         self.label_13.setObjectName(u"label_13")
         self.label_13.setGeometry(QRect(330, 430, 171, 91))
         self.label_13.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			background-color: rgb(239, 239, 210);\n"
+"\n"
+"\n"
+"			background-color: #272c36;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
@@ -335,39 +290,36 @@ class Ui_MainWindow(object):
         self.label_14.setObjectName(u"label_14")
         self.label_14.setGeometry(QRect(330, 120, 441, 91))
         self.label_14.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			\n"
-"	background-color: rgb(239, 239, 210);\n"
+"\n"
+"\n"
+"			background-color: #21252d;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
-"        }\n"
-"")
+"        }")
         self.title_2 = QLabel(self.settings_page)
         self.title_2.setObjectName(u"title_2")
         self.title_2.setGeometry(QRect(370, 150, 351, 41))
         self.title_2.setFont(font)
-        self.title_2.setStyleSheet(u"QLabel {\n"
-"            background-color: rgb(239, 239, 210);\n"
-"        }")
+        self.title_2.setStyleSheet(u"color: gray")
         self.title_2.setAlignment(Qt.AlignCenter)
         self.label = QLabel(self.settings_page)
         self.label.setObjectName(u"label")
         self.label.setGeometry(QRect(380, 260, 81, 31))
-        self.label.setStyleSheet(u"")
+        self.label.setStyleSheet(u"color: gray")
         self.label_2 = QLabel(self.settings_page)
         self.label_2.setObjectName(u"label_2")
         self.label_2.setGeometry(QRect(350, 360, 141, 31))
-        self.label_2.setStyleSheet(u"")
+        self.label_2.setStyleSheet(u"color: gray")
         self.label_3 = QLabel(self.settings_page)
         self.label_3.setObjectName(u"label_3")
         self.label_3.setGeometry(QRect(360, 460, 131, 31))
-        self.label_3.setStyleSheet(u"")
+        self.label_3.setStyleSheet(u"color: gray")
         self.label_15 = QLabel(self.settings_page)
         self.label_15.setObjectName(u"label_15")
         self.label_15.setGeometry(QRect(510, 230, 251, 91))
         self.label_15.setStyleSheet(u"QLabel {\n"
-"        	background-color: rgb(230, 230, 230);\n"
+"			background-color: #595D75;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
@@ -376,7 +328,7 @@ class Ui_MainWindow(object):
         self.label_16.setObjectName(u"label_16")
         self.label_16.setGeometry(QRect(510, 330, 251, 91))
         self.label_16.setStyleSheet(u"QLabel {\n"
-"        	background-color: rgb(230, 230, 230);\n"
+"			background-color: #595D75;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
@@ -385,7 +337,7 @@ class Ui_MainWindow(object):
         self.label_17.setObjectName(u"label_17")
         self.label_17.setGeometry(QRect(510, 430, 251, 91))
         self.label_17.setStyleSheet(u"QLabel {\n"
-"        	background-color: rgb(230, 230, 230);\n"
+"			background-color: #595D75;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
@@ -394,9 +346,7 @@ class Ui_MainWindow(object):
         self.label_18.setObjectName(u"label_18")
         self.label_18.setGeometry(QRect(290, 100, 521, 471))
         self.label_18.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			\n"
-"	background-color: rgb(247, 248, 240);\n"
+"			background-color: #3C4052;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
@@ -406,18 +356,21 @@ class Ui_MainWindow(object):
         self.back_button_frame_8.setGeometry(QRect(860, 580, 261, 61))
         self.back_button_frame_8.setCursor(QCursor(Qt.PointingHandCursor))
         self.back_button_frame_8.setStyleSheet(u"QPushButton{\n"
-"	background-color: rgb(227, 219, 192);\n"
-"	padding: 12px;\n"
+"\n"
+"	background-color: rgb(60, 64, 82);\n"
+"	font: 16pt \"Montserrat\";\n"
+"	background-color: 462e2e;\n"
 "	border-radius: 15px;\n"
 "}\n"
 "QPushButton:pressed:hover{\n"
-"	background-color: rgb(238, 255, 231);\n"
+"	background-color: rgb(134, 88, 88);\n"
 "	padding: 12px;\n"
 "	border-radius: 25px;\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
-"	background-color: rgb(166, 197, 163);\n"
+"	\n"
+"	background-color: rgb(66, 134, 132);\n"
 "	padding: 12px;\n"
 "	border-radius: 25px;\n"
 "}")
@@ -772,34 +725,6 @@ class Ui_MainWindow(object):
         self.cleanup_old_app_versions_layout.setSpacing(0)
         self.cleanup_old_app_versions_layout.setObjectName(u"cleanup_old_app_versions_layout")
         self.cleanup_old_app_versions_layout.setContentsMargins(0, 0, 0, 0)
-        self.back_button_frame = QFrame(self.buckets)
-        self.back_button_frame.setObjectName(u"back_button_frame")
-        self.back_button_frame.setGeometry(QRect(820, 550, 261, 61))
-        self.back_button_frame.setCursor(QCursor(Qt.PointingHandCursor))
-        self.back_button_frame.setStyleSheet(u"QPushButton{\n"
-"	\n"
-"	background-color: rgb(204, 222, 211);\n"
-"	padding: 12px;\n"
-"	border-radius: 15px;\n"
-"}\n"
-"QPushButton:pressed:hover{\n"
-"	background-color: rgb(238, 255, 231);\n"
-"	padding: 12px;\n"
-"	border-radius: 25px;\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"	background-color: rgb(166, 197, 163);\n"
-"	padding: 12px;\n"
-"	border-radius: 25px;\n"
-"}")
-        self.back_button_frame.setFrameShape(QFrame.NoFrame)
-        self.back_button_frame.setFrameShadow(QFrame.Raised)
-        self.back_button_frame.setLineWidth(0)
-        self.bucket_back_layout = QHBoxLayout(self.back_button_frame)
-        self.bucket_back_layout.setSpacing(0)
-        self.bucket_back_layout.setObjectName(u"bucket_back_layout")
-        self.bucket_back_layout.setContentsMargins(0, 0, 0, 0)
         self.label_219 = QLabel(self.buckets)
         self.label_219.setObjectName(u"label_219")
         self.label_219.setGeometry(QRect(60, 440, 71, 51))
@@ -856,7 +781,7 @@ class Ui_MainWindow(object):
         self.title_buckets_7.setWordWrap(True)
         self.title_buckets_8 = QLabel(self.buckets)
         self.title_buckets_8.setObjectName(u"title_buckets_8")
-        self.title_buckets_8.setGeometry(QRect(400, 270, 111, 41))
+        self.title_buckets_8.setGeometry(QRect(410, 270, 91, 41))
         self.title_buckets_8.setFont(font4)
         self.title_buckets_8.setStyleSheet(u"")
         self.title_buckets_8.setAlignment(Qt.AlignCenter)
@@ -891,6 +816,37 @@ class Ui_MainWindow(object):
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
+        self.bucket_back_frame = QFrame(self.buckets)
+        self.bucket_back_frame.setObjectName(u"bucket_back_frame")
+        self.bucket_back_frame.setEnabled(True)
+        self.bucket_back_frame.setGeometry(QRect(810, 560, 261, 61))
+        self.bucket_back_frame.setCursor(QCursor(Qt.PointingHandCursor))
+        self.bucket_back_frame.setStyleSheet(u"QPushButton{\n"
+"\n"
+"	background-color: rgb(60, 64, 82);\n"
+"	font: 16pt \"Montserrat\";\n"
+"	background-color: 462e2e;\n"
+"	border-radius: 15px;\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(134, 88, 88);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	\n"
+"	background-color: rgb(66, 134, 132);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"}")
+        self.bucket_back_frame.setFrameShape(QFrame.NoFrame)
+        self.bucket_back_frame.setFrameShadow(QFrame.Raised)
+        self.bucket_back_frame.setLineWidth(0)
+        self.bucket_back_layout = QHBoxLayout(self.bucket_back_frame)
+        self.bucket_back_layout.setSpacing(0)
+        self.bucket_back_layout.setObjectName(u"bucket_back_layout")
+        self.bucket_back_layout.setContentsMargins(0, 0, 0, 0)
         self.stackedWidget.addWidget(self.buckets)
         self.label_46.raise_()
         self.title_buckets_2.raise_()
@@ -911,7 +867,6 @@ class Ui_MainWindow(object):
         self.update_all_apps_frame.raise_()
         self.remove_app_frame.raise_()
         self.not_added_yet.raise_()
-        self.back_button_frame.raise_()
         self.label_220.raise_()
         self.label_219.raise_()
         self.status_indicator_buckets_1.raise_()
@@ -924,6 +879,7 @@ class Ui_MainWindow(object):
         self.bucket_button_remove.raise_()
         self.label_56.raise_()
         self.cb.raise_()
+        self.bucket_back_frame.raise_()
         self.installed = QWidget()
         self.installed.setObjectName(u"installed")
         self.stackedWidget.addWidget(self.installed)
@@ -933,21 +889,16 @@ class Ui_MainWindow(object):
         self.label_27.setObjectName(u"label_27")
         self.label_27.setGeometry(QRect(330, 70, 441, 51))
         self.label_27.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			\n"
-"	background-color: rgb(239, 239, 210);\n"
+"			background-color: #21252d;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
-"        }\n"
-"")
+"        }")
         self.label_28 = QLabel(self.search)
         self.label_28.setObjectName(u"label_28")
-        self.label_28.setGeometry(QRect(60, 50, 1011, 601))
+        self.label_28.setGeometry(QRect(60, 50, 1011, 611))
         self.label_28.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			\n"
-"	background-color: rgb(247, 248, 240);\n"
+"			background-color: #3C4052;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
@@ -955,7 +906,7 @@ class Ui_MainWindow(object):
         self.search_box_frame = QFrame(self.search)
         self.search_box_frame.setObjectName(u"search_box_frame")
         self.search_box_frame.setGeometry(QRect(360, 70, 331, 51))
-        self.search_box_frame.setStyleSheet(u"")
+        self.search_box_frame.setStyleSheet(u"color: gray;")
         self.search_box_frame.setFrameShape(QFrame.NoFrame)
         self.search_box_frame.setFrameShadow(QFrame.Raised)
         self.search_box_frame.setLineWidth(0)
@@ -965,9 +916,10 @@ class Ui_MainWindow(object):
         self.settings_toggle_1_layout_2.setContentsMargins(0, 0, 0, 0)
         self.label_29 = QLabel(self.search)
         self.label_29.setObjectName(u"label_29")
-        self.label_29.setGeometry(QRect(120, 140, 891, 491))
+        self.label_29.setGeometry(QRect(120, 140, 891, 501))
         self.label_29.setStyleSheet(u"QLabel {\n"
-"        	background-color: rgb(230, 230, 230);\n"
+"        	\n"
+"	background-color: rgb(70, 74, 95);\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
@@ -976,8 +928,9 @@ class Ui_MainWindow(object):
         self.label_30.setObjectName(u"label_30")
         self.label_30.setGeometry(QRect(200, 190, 91, 71))
         self.label_30.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			background-color: rgb(239, 239, 210);\n"
+"\n"
+"\n"
+"			background-color: #595D75;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
@@ -986,38 +939,34 @@ class Ui_MainWindow(object):
         self.label_31.setObjectName(u"label_31")
         self.label_31.setGeometry(QRect(200, 280, 91, 71))
         self.label_31.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			background-color: rgb(239, 239, 210);\n"
+"			background-color: #595D75;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
         self.label_32 = QLabel(self.search)
         self.label_32.setObjectName(u"label_32")
-        self.label_32.setGeometry(QRect(200, 360, 91, 71))
+        self.label_32.setGeometry(QRect(200, 370, 91, 71))
         self.label_32.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			background-color: rgb(239, 239, 210);\n"
+"			background-color: #595D75;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
         self.label_33 = QLabel(self.search)
         self.label_33.setObjectName(u"label_33")
-        self.label_33.setGeometry(QRect(200, 445, 91, 71))
+        self.label_33.setGeometry(QRect(200, 460, 91, 71))
         self.label_33.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			background-color: rgb(239, 239, 210);\n"
+"			background-color: #595D75;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
         self.label_34 = QLabel(self.search)
         self.label_34.setObjectName(u"label_34")
-        self.label_34.setGeometry(QRect(200, 530, 91, 71))
+        self.label_34.setGeometry(QRect(200, 550, 91, 71))
         self.label_34.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			background-color: rgb(239, 239, 210);\n"
+"			background-color: #595D75;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
@@ -1026,69 +975,52 @@ class Ui_MainWindow(object):
         self.label_35.setObjectName(u"label_35")
         self.label_35.setGeometry(QRect(320, 190, 450, 71))
         self.label_35.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			\n"
-"	background-color: rgb(239, 239, 210);\n"
+"			background-color: #595D75;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
-"        }\n"
-"")
+"        }")
         self.label_36 = QLabel(self.search)
         self.label_36.setObjectName(u"label_36")
         self.label_36.setGeometry(QRect(320, 280, 450, 71))
         self.label_36.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			\n"
-"	background-color: rgb(239, 239, 210);\n"
+"			background-color: #595D75;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
-"        }\n"
-"")
+"        }")
         self.label_37 = QLabel(self.search)
         self.label_37.setObjectName(u"label_37")
-        self.label_37.setGeometry(QRect(320, 362, 450, 71))
+        self.label_37.setGeometry(QRect(320, 370, 450, 71))
         self.label_37.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			\n"
-"	background-color: rgb(239, 239, 210);\n"
+"			background-color: #595D75;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
-"        }\n"
-"")
+"        }")
         self.label_38 = QLabel(self.search)
         self.label_38.setObjectName(u"label_38")
-        self.label_38.setGeometry(QRect(320, 445, 450, 71))
+        self.label_38.setGeometry(QRect(320, 460, 450, 71))
         self.label_38.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			\n"
-"	background-color: rgb(239, 239, 210);\n"
+"			background-color: #595D75;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
-"        }\n"
-"")
+"        }")
         self.label_39 = QLabel(self.search)
         self.label_39.setObjectName(u"label_39")
-        self.label_39.setGeometry(QRect(320, 530, 450, 71))
+        self.label_39.setGeometry(QRect(320, 550, 450, 71))
         self.label_39.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			\n"
-"	background-color: rgb(239, 239, 210);\n"
+"			background-color: #595D75;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
-"        }\n"
-"")
+"        }")
         self.label_40 = QLabel(self.search)
         self.label_40.setObjectName(u"label_40")
         self.label_40.setGeometry(QRect(810, 190, 131, 71))
         self.label_40.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			\n"
-"	background-color: rgb(194, 234, 189);\n"
+"			background-color: rgb(60, 64, 82);\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
@@ -1097,42 +1029,34 @@ class Ui_MainWindow(object):
         self.label_41.setObjectName(u"label_41")
         self.label_41.setGeometry(QRect(810, 280, 131, 71))
         self.label_41.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			\n"
-"	background-color: rgb(194, 234, 189);\n"
+"			background-color: rgb(60, 64, 82);\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
         self.label_42 = QLabel(self.search)
         self.label_42.setObjectName(u"label_42")
-        self.label_42.setGeometry(QRect(810, 360, 131, 71))
+        self.label_42.setGeometry(QRect(810, 370, 131, 71))
         self.label_42.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			\n"
-"	background-color: rgb(194, 234, 189);\n"
+"			background-color: rgb(60, 64, 82);\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
         self.label_43 = QLabel(self.search)
         self.label_43.setObjectName(u"label_43")
-        self.label_43.setGeometry(QRect(810, 445, 131, 71))
+        self.label_43.setGeometry(QRect(810, 460, 131, 71))
         self.label_43.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			\n"
-"	background-color: rgb(194, 234, 189);\n"
+"			background-color: rgb(60, 64, 82);\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
         self.label_44 = QLabel(self.search)
         self.label_44.setObjectName(u"label_44")
-        self.label_44.setGeometry(QRect(810, 530, 131, 71))
+        self.label_44.setGeometry(QRect(810, 550, 131, 71))
         self.label_44.setStyleSheet(u"QLabel {\n"
-"            color: yellow;\n"
-"			\n"
-"	background-color: rgb(194, 234, 189);\n"
+"			background-color: rgb(60, 64, 82);\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
@@ -1141,24 +1065,25 @@ class Ui_MainWindow(object):
         self.label_7.setObjectName(u"label_7")
         self.label_7.setGeometry(QRect(220, 160, 49, 16))
         self.label_7.setFont(font5)
-        self.label_7.setStyleSheet(u"")
+        self.label_7.setStyleSheet(u"color: gray")
         self.label_8 = QLabel(self.search)
         self.label_8.setObjectName(u"label_8")
-        self.label_8.setGeometry(QRect(480, 160, 91, 16))
+        self.label_8.setGeometry(QRect(490, 160, 91, 16))
         self.label_8.setFont(font5)
-        self.label_8.setStyleSheet(u"")
+        self.label_8.setStyleSheet(u"color: gray")
         self.label_9 = QLabel(self.search)
         self.label_9.setObjectName(u"label_9")
-        self.label_9.setGeometry(QRect(840, 163, 91, 16))
+        self.label_9.setGeometry(QRect(840, 165, 91, 16))
         self.label_9.setFont(font5)
-        self.label_9.setStyleSheet(u"")
+        self.label_9.setStyleSheet(u"color: gray")
         self.label_45 = QLabel(self.search)
         self.label_45.setObjectName(u"label_45")
         self.label_45.setGeometry(QRect(690, 70, 91, 51))
         self.label_45.setCursor(QCursor(Qt.ArrowCursor))
         self.label_45.setStyleSheet(u"QLabel {\n"
 "			\n"
-"			background-color: rgb(214, 193, 157);\n"
+"			\n"
+"	background-color: rgb(89, 93, 117);\n"
 "			padding: 12px;\n"
 "			border-bottom-right-radius: 25px;\n"
 "			border-top-right-radius: 25px;\n"
@@ -1166,7 +1091,7 @@ class Ui_MainWindow(object):
 "        }")
         self.app_desc_frame_1 = QFrame(self.search)
         self.app_desc_frame_1.setObjectName(u"app_desc_frame_1")
-        self.app_desc_frame_1.setGeometry(QRect(320, 210, 391, 51))
+        self.app_desc_frame_1.setGeometry(QRect(350, 200, 391, 51))
         self.app_desc_frame_1.setStyleSheet(u"")
         self.app_desc_frame_1.setFrameShape(QFrame.NoFrame)
         self.app_desc_frame_1.setFrameShadow(QFrame.Raised)
@@ -1177,7 +1102,7 @@ class Ui_MainWindow(object):
         self.app_desc_1_layout.setContentsMargins(0, 0, 0, 0)
         self.app_desc_frame_2 = QFrame(self.search)
         self.app_desc_frame_2.setObjectName(u"app_desc_frame_2")
-        self.app_desc_frame_2.setGeometry(QRect(320, 290, 391, 51))
+        self.app_desc_frame_2.setGeometry(QRect(350, 290, 391, 51))
         self.app_desc_frame_2.setStyleSheet(u"")
         self.app_desc_frame_2.setFrameShape(QFrame.NoFrame)
         self.app_desc_frame_2.setFrameShadow(QFrame.Raised)
@@ -1188,7 +1113,7 @@ class Ui_MainWindow(object):
         self.app_desc_2_layout.setContentsMargins(0, 0, 0, 0)
         self.app_desc_frame_3 = QFrame(self.search)
         self.app_desc_frame_3.setObjectName(u"app_desc_frame_3")
-        self.app_desc_frame_3.setGeometry(QRect(320, 370, 391, 51))
+        self.app_desc_frame_3.setGeometry(QRect(350, 380, 391, 51))
         self.app_desc_frame_3.setStyleSheet(u"")
         self.app_desc_frame_3.setFrameShape(QFrame.NoFrame)
         self.app_desc_frame_3.setFrameShadow(QFrame.Raised)
@@ -1199,7 +1124,7 @@ class Ui_MainWindow(object):
         self.app_desc_3_layout.setContentsMargins(0, 0, 0, 0)
         self.app_desc_frame_4 = QFrame(self.search)
         self.app_desc_frame_4.setObjectName(u"app_desc_frame_4")
-        self.app_desc_frame_4.setGeometry(QRect(320, 460, 391, 51))
+        self.app_desc_frame_4.setGeometry(QRect(360, 470, 391, 51))
         self.app_desc_frame_4.setStyleSheet(u"")
         self.app_desc_frame_4.setFrameShape(QFrame.NoFrame)
         self.app_desc_frame_4.setFrameShadow(QFrame.Raised)
@@ -1210,7 +1135,7 @@ class Ui_MainWindow(object):
         self.app_desc_4_layout.setContentsMargins(0, 0, 0, 0)
         self.app_desc_frame_5 = QFrame(self.search)
         self.app_desc_frame_5.setObjectName(u"app_desc_frame_5")
-        self.app_desc_frame_5.setGeometry(QRect(320, 540, 391, 51))
+        self.app_desc_frame_5.setGeometry(QRect(360, 560, 391, 51))
         self.app_desc_frame_5.setStyleSheet(u"")
         self.app_desc_frame_5.setFrameShape(QFrame.NoFrame)
         self.app_desc_frame_5.setFrameShadow(QFrame.Raised)
@@ -1223,7 +1148,24 @@ class Ui_MainWindow(object):
         self.app_install_frame_1.setObjectName(u"app_install_frame_1")
         self.app_install_frame_1.setGeometry(QRect(820, 200, 101, 51))
         self.app_install_frame_1.setCursor(QCursor(Qt.PointingHandCursor))
-        self.app_install_frame_1.setStyleSheet(u"")
+        self.app_install_frame_1.setStyleSheet(u"QPushButton{\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(46, 49, 63);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(60, 64, 82);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}")
         self.app_install_frame_1.setFrameShape(QFrame.NoFrame)
         self.app_install_frame_1.setFrameShadow(QFrame.Raised)
         self.app_install_frame_1.setLineWidth(0)
@@ -1235,7 +1177,24 @@ class Ui_MainWindow(object):
         self.app_install_frame_2.setObjectName(u"app_install_frame_2")
         self.app_install_frame_2.setGeometry(QRect(820, 290, 101, 51))
         self.app_install_frame_2.setCursor(QCursor(Qt.PointingHandCursor))
-        self.app_install_frame_2.setStyleSheet(u"")
+        self.app_install_frame_2.setStyleSheet(u"QPushButton{\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(46, 49, 63);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(60, 64, 82);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}")
         self.app_install_frame_2.setFrameShape(QFrame.NoFrame)
         self.app_install_frame_2.setFrameShadow(QFrame.Raised)
         self.app_install_frame_2.setLineWidth(0)
@@ -1245,9 +1204,26 @@ class Ui_MainWindow(object):
         self.app_install_2_layout.setContentsMargins(0, 0, 0, 0)
         self.app_install_frame_3 = QFrame(self.search)
         self.app_install_frame_3.setObjectName(u"app_install_frame_3")
-        self.app_install_frame_3.setGeometry(QRect(820, 370, 101, 51))
+        self.app_install_frame_3.setGeometry(QRect(820, 380, 101, 51))
         self.app_install_frame_3.setCursor(QCursor(Qt.PointingHandCursor))
-        self.app_install_frame_3.setStyleSheet(u"")
+        self.app_install_frame_3.setStyleSheet(u"QPushButton{\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(46, 49, 63);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(60, 64, 82);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}")
         self.app_install_frame_3.setFrameShape(QFrame.NoFrame)
         self.app_install_frame_3.setFrameShadow(QFrame.Raised)
         self.app_install_frame_3.setLineWidth(0)
@@ -1257,9 +1233,26 @@ class Ui_MainWindow(object):
         self.app_install_3_layout.setContentsMargins(0, 0, 0, 0)
         self.app_install_frame_4 = QFrame(self.search)
         self.app_install_frame_4.setObjectName(u"app_install_frame_4")
-        self.app_install_frame_4.setGeometry(QRect(820, 450, 101, 51))
+        self.app_install_frame_4.setGeometry(QRect(820, 470, 101, 51))
         self.app_install_frame_4.setCursor(QCursor(Qt.PointingHandCursor))
-        self.app_install_frame_4.setStyleSheet(u"")
+        self.app_install_frame_4.setStyleSheet(u"QPushButton{\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(46, 49, 63);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(60, 64, 82);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}")
         self.app_install_frame_4.setFrameShape(QFrame.NoFrame)
         self.app_install_frame_4.setFrameShadow(QFrame.Raised)
         self.app_install_frame_4.setLineWidth(0)
@@ -1269,9 +1262,26 @@ class Ui_MainWindow(object):
         self.app_install_4_layout.setContentsMargins(0, 0, 0, 0)
         self.app_install_frame_5 = QFrame(self.search)
         self.app_install_frame_5.setObjectName(u"app_install_frame_5")
-        self.app_install_frame_5.setGeometry(QRect(820, 540, 101, 51))
+        self.app_install_frame_5.setGeometry(QRect(820, 560, 101, 51))
         self.app_install_frame_5.setCursor(QCursor(Qt.PointingHandCursor))
-        self.app_install_frame_5.setStyleSheet(u"")
+        self.app_install_frame_5.setStyleSheet(u"QPushButton{\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(46, 49, 63);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(60, 64, 82);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}")
         self.app_install_frame_5.setFrameShape(QFrame.NoFrame)
         self.app_install_frame_5.setFrameShadow(QFrame.Raised)
         self.app_install_frame_5.setLineWidth(0)
@@ -1283,8 +1293,7 @@ class Ui_MainWindow(object):
         self.app_search_frame.setObjectName(u"app_search_frame")
         self.app_search_frame.setGeometry(QRect(700, 80, 71, 31))
         self.app_search_frame.setCursor(QCursor(Qt.PointingHandCursor))
-        self.app_search_frame.setStyleSheet(u"background-color: rgb(214, 193, 157);\n"
-"")
+        self.app_search_frame.setStyleSheet(u"")
         self.app_search_frame.setFrameShape(QFrame.NoFrame)
         self.app_search_frame.setFrameShadow(QFrame.Raised)
         self.app_search_frame.setLineWidth(0)
@@ -4316,10 +4325,6 @@ class Ui_MainWindow(object):
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Recommended Apps", None))
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"Add/remove/update scoop buckets/apps", None))
         self.label_57.setText("")
-        self.label_25.setText("")
-        self.label_26.setText("")
-        self.label_75.setText("")
-        self.label_221.setText("")
         self.label_11.setText("")
         self.label_12.setText("")
         self.label_13.setText("")
@@ -4340,7 +4345,7 @@ class Ui_MainWindow(object):
         self.title_6.setText(QCoreApplication.translate("MainWindow", u"An app by Faraz Ahary and Thomas Kerby", None))
         self.label_72.setText("")
         self.title_buckets.setText(QCoreApplication.translate("MainWindow", u"Manage Buckets", None))
-        self.bucket_input_add.setText(QCoreApplication.translate("MainWindow", u"Bucket Name / URL", None))
+        self.bucket_input_add.setText(QCoreApplication.translate("MainWindow", u"     Enter a bucket url here", None))
 #if QT_CONFIG(tooltip)
         self.bucket_button_add.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p>test</p></body></html>", None))
 #endif // QT_CONFIG(tooltip)

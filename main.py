@@ -725,7 +725,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # BUCKETS AND APPS PAGE
         ###################################################################################################################
         self.update_all_apps_button = QtWidgets.QPushButton('update', parent=self)
-        self.cleanup_old_app_versions_button = QtWidgets.QPushButton('update', parent=self)
+        self.update_all_apps_button.setMinimumHeight(61)
+        self.update_all_apps_button.setFixedWidth(251)
+        self.cleanup_old_app_versions_button = QtWidgets.QPushButton('cleanup', parent=self)
+        self.cleanup_old_app_versions_button.setMinimumHeight(61)
+        self.cleanup_old_app_versions_button.setFixedWidth(251)
 
         # adding widgets to layout
         self.update_all_apps_layout.addWidget(self.update_all_apps_button, Qt.AlignCenter, Qt.AlignCenter)
