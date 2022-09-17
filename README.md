@@ -1,4 +1,4 @@
-# Halogen.py
+# Fluorite Store
 An unofficial Graphical User Interface for [Scoop](https://scoop.sh/)
 
 
