@@ -190,6 +190,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.return_home_layout_5.addWidget(self.return_home_5, Qt.AlignCenter, Qt.AlignCenter)
         self.return_home_layout_6.addWidget(self.return_home_6, Qt.AlignCenter, Qt.AlignCenter)
 
+        self.bucket_back_layout.addWidget(self.return_home, Qt.AlignCenter, Qt.AlignCenter)
+
         # connecting back button to function
         self.return_home.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
 
@@ -760,6 +762,14 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         self.search_page_button.clicked.connect(self.goSearch)
         self.manage_buckets_button.clicked.connect(self.goBuckets)
+
+        # Back button on Search page
+        self.search_back_button = custompushbutton('Back', parent=self)
+        self.search_back_button.setMinimumHeight(50)
+        self.search_back_button.setFixedWidth(100)
+        self.back_button_search_layout.addWidget(self.search_back_button, Qt.AlignCenter, Qt.AlignCenter)
+
+        self.search_back_button.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
 
         ###################################################################################################################
         # SETTINGS PAGE

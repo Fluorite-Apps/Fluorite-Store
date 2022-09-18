@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguiHUnZge.ui'
+## Form generated from reading UI file 'scoopguiaxzuuz.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -1301,6 +1301,36 @@ class Ui_MainWindow(object):
         self.app_search_layout_.setSpacing(0)
         self.app_search_layout_.setObjectName(u"app_search_layout_")
         self.app_search_layout_.setContentsMargins(0, 0, 0, 0)
+        self.back_button_search = QFrame(self.search)
+        self.back_button_search.setObjectName(u"back_button_search")
+        self.back_button_search.setGeometry(QRect(140, 60, 131, 71))
+        self.back_button_search.setCursor(QCursor(Qt.PointingHandCursor))
+        self.back_button_search.setStyleSheet(u"QPushButton{\n"
+"	background-color: #595D75;\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(46, 49, 63);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(60, 64, 82);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}")
+        self.back_button_search.setFrameShape(QFrame.NoFrame)
+        self.back_button_search.setFrameShadow(QFrame.Raised)
+        self.back_button_search.setLineWidth(0)
+        self.back_button_search_layout = QHBoxLayout(self.back_button_search)
+        self.back_button_search_layout.setSpacing(0)
+        self.back_button_search_layout.setObjectName(u"back_button_search_layout")
+        self.back_button_search_layout.setContentsMargins(0, 0, 0, 0)
         self.stackedWidget.addWidget(self.search)
         self.label_28.raise_()
         self.label_29.raise_()
@@ -1336,6 +1366,7 @@ class Ui_MainWindow(object):
         self.app_install_frame_5.raise_()
         self.label_45.raise_()
         self.app_search_frame.raise_()
+        self.back_button_search.raise_()
         self.recommended_apps_page_2 = QWidget()
         self.recommended_apps_page_2.setObjectName(u"recommended_apps_page_2")
         self.label_58 = QLabel(self.recommended_apps_page_2)

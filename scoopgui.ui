@@ -593,8 +593,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">
-</string>
+       <string notr="true"/>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -3072,6 +3071,66 @@ QPushButton:hover {
        </property>
       </layout>
      </widget>
+     <widget class="QFrame" name="back_button_search">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>60</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: #595D75;
+	padding: 12px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(46, 49, 63);
+	padding: 12px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
+}
+
+QPushButton:hover {
+	background-color: rgb(60, 64, 82);
+	padding: 12px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="back_button_search_layout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
      <zorder>label_28</zorder>
      <zorder>label_29</zorder>
      <zorder>label_27</zorder>
@@ -3106,6 +3165,7 @@ QPushButton:hover {
      <zorder>app_install_frame_5</zorder>
      <zorder>label_45</zorder>
      <zorder>app_search_frame</zorder>
+     <zorder>back_button_search</zorder>
     </widget>
     <widget class="QWidget" name="recommended_apps_page_2">
      <widget class="QLabel" name="label_58">
