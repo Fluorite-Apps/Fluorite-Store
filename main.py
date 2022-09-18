@@ -747,7 +747,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.settings_page_button.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.settings_page) )
 
         # manage buckets button on home page
-        self.manage_buckets_button = custompushbutton('Buckets', parent=self)
+        self.manage_buckets_button = custompushbutton('Manage', parent=self)
         self.manage_buckets_button.setMinimumHeight(91)
         self.manage_buckets_button.setFixedWidth(251)
         self.enter_manage_buckets_layout.addWidget(self.manage_buckets_button, Qt.AlignCenter, Qt.AlignCenter)
