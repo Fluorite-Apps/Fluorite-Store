@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguiaxzuuz.ui'
+## Form generated from reading UI file 'scoopguiVdJTUj.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -377,10 +377,10 @@ class Ui_MainWindow(object):
         self.back_button_frame_8.setFrameShape(QFrame.NoFrame)
         self.back_button_frame_8.setFrameShadow(QFrame.Raised)
         self.back_button_frame_8.setLineWidth(0)
-        self.return_home_layout = QHBoxLayout(self.back_button_frame_8)
-        self.return_home_layout.setSpacing(0)
-        self.return_home_layout.setObjectName(u"return_home_layout")
-        self.return_home_layout.setContentsMargins(0, 0, 0, 0)
+        self.return_home_layout_settings = QHBoxLayout(self.back_button_frame_8)
+        self.return_home_layout_settings.setSpacing(0)
+        self.return_home_layout_settings.setObjectName(u"return_home_layout_settings")
+        self.return_home_layout_settings.setContentsMargins(0, 0, 0, 0)
         self.stackedWidget.addWidget(self.settings_page)
         self.label_18.raise_()
         self.label_17.raise_()

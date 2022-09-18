@@ -882,7 +882,7 @@ QPushButton:hover {
       <property name="lineWidth">
        <number>0</number>
       </property>
-      <layout class="QHBoxLayout" name="return_home_layout">
+      <layout class="QHBoxLayout" name="return_home_layout_settings">
        <property name="spacing">
         <number>0</number>
        </property>

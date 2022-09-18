@@ -178,10 +178,14 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.return_home_6.setMinimumHeight(181)
         self.return_home_6.setFixedWidth(51)
 
+        self.return_home_7 = custompushbutton('Back', parent=self)
+        self.return_home_7.setMinimumHeight(61)
+        self.return_home_7.setFixedWidth(261)
+
         # Adding back button to layout
         self.bucket_back_layout.addWidget(self.return_home, Qt.AlignCenter, Qt.AlignCenter)
 
-        self.return_home_layout.addWidget(self.return_home, Qt.AlignCenter, Qt.AlignCenter)
+        self.return_home_layout_settings.addWidget(self.return_home, Qt.AlignCenter, Qt.AlignCenter)
 
         self.return_home_layout_1.addWidget(self.return_home_1, Qt.AlignCenter, Qt.AlignCenter)
         self.return_home_layout_two.addWidget(self.return_home_2, Qt.AlignCenter, Qt.AlignCenter)
@@ -190,7 +194,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.return_home_layout_5.addWidget(self.return_home_5, Qt.AlignCenter, Qt.AlignCenter)
         self.return_home_layout_6.addWidget(self.return_home_6, Qt.AlignCenter, Qt.AlignCenter)
 
-        self.bucket_back_layout.addWidget(self.return_home, Qt.AlignCenter, Qt.AlignCenter)
+        self.bucket_back_layout.addWidget(self.return_home_7, Qt.AlignCenter, Qt.AlignCenter)
 
         # connecting back button to function
         self.return_home.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
@@ -201,6 +205,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.return_home_4.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_3))
         self.return_home_5.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_4))
         self.return_home_6.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_5))
+
+        self.return_home_7.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
 
 
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
