@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguiVdJTUj.ui'
+## Form generated from reading UI file 'scoopguiRhBxth.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -608,15 +608,6 @@ class Ui_MainWindow(object):
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
-        self.label_54 = QLabel(self.buckets)
-        self.label_54.setObjectName(u"label_54")
-        self.label_54.setGeometry(QRect(780, 350, 271, 81))
-        self.label_54.setStyleSheet(u"QLabel {\n"
-"			background-color: #595D75;\n"
-"			padding: 12px;\n"
-"			border-radius: 25px;\n"
-"			border-bottom: 30px shadow;\n"
-"        }")
         self.label_55 = QLabel(self.buckets)
         self.label_55.setObjectName(u"label_55")
         self.label_55.setGeometry(QRect(610, 350, 151, 81))
@@ -634,12 +625,6 @@ class Ui_MainWindow(object):
         self.title_buckets_4.setFont(font4)
         self.title_buckets_4.setStyleSheet(u"")
         self.title_buckets_4.setAlignment(Qt.AlignCenter)
-        self.title_buckets_5 = QLabel(self.buckets)
-        self.title_buckets_5.setObjectName(u"title_buckets_5")
-        self.title_buckets_5.setGeometry(QRect(620, 370, 131, 41))
-        self.title_buckets_5.setFont(font4)
-        self.title_buckets_5.setStyleSheet(u"")
-        self.title_buckets_5.setAlignment(Qt.AlignCenter)
         self.title_buckets_6 = QLabel(self.buckets)
         self.title_buckets_6.setObjectName(u"title_buckets_6")
         self.title_buckets_6.setGeometry(QRect(620, 270, 131, 41))
@@ -673,32 +658,6 @@ class Ui_MainWindow(object):
         self.update_all_apps_layout.setSpacing(0)
         self.update_all_apps_layout.setObjectName(u"update_all_apps_layout")
         self.update_all_apps_layout.setContentsMargins(0, 0, 0, 0)
-        self.remove_app_frame = QFrame(self.buckets)
-        self.remove_app_frame.setObjectName(u"remove_app_frame")
-        self.remove_app_frame.setGeometry(QRect(790, 360, 251, 61))
-        self.remove_app_frame.setCursor(QCursor(Qt.PointingHandCursor))
-        self.remove_app_frame.setStyleSheet(u"QPushButton{\n"
-"	background-color: 462e2e;\n"
-"	border-radius: 15px;\n"
-"}\n"
-"QPushButton:pressed:hover{\n"
-"	background-color: rgb(134, 88, 88);\n"
-"	padding: 12px;\n"
-"	border-radius: 25px;\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"	background-color: rgb(66, 134, 132);\n"
-"	padding: 12px;\n"
-"	border-radius: 25px;\n"
-"}")
-        self.remove_app_frame.setFrameShape(QFrame.NoFrame)
-        self.remove_app_frame.setFrameShadow(QFrame.Raised)
-        self.remove_app_frame.setLineWidth(0)
-        self.remove_app_layout = QHBoxLayout(self.remove_app_frame)
-        self.remove_app_layout.setSpacing(0)
-        self.remove_app_layout.setObjectName(u"remove_app_layout")
-        self.remove_app_layout.setContentsMargins(0, 0, 0, 0)
         self.not_added_yet = QFrame(self.buckets)
         self.not_added_yet.setObjectName(u"not_added_yet")
         self.not_added_yet.setGeometry(QRect(790, 260, 251, 61))
@@ -847,6 +806,40 @@ class Ui_MainWindow(object):
         self.bucket_back_layout.setSpacing(0)
         self.bucket_back_layout.setObjectName(u"bucket_back_layout")
         self.bucket_back_layout.setContentsMargins(0, 0, 0, 0)
+        self.remove_app_input = QLineEdit(self.buckets)
+        self.remove_app_input.setObjectName(u"remove_app_input")
+        self.remove_app_input.setGeometry(QRect(780, 350, 271, 81))
+        self.remove_app_input.setStyleSheet(u"background-color: rgb(89, 93, 117);\n"
+"border-radius: 25px;\n"
+"border-bottom: 30px shadow;")
+        self.remove_app_button_frame = QFrame(self.buckets)
+        self.remove_app_button_frame.setObjectName(u"remove_app_button_frame")
+        self.remove_app_button_frame.setGeometry(QRect(620, 360, 131, 61))
+        self.remove_app_button_frame.setCursor(QCursor(Qt.PointingHandCursor))
+        self.remove_app_button_frame.setStyleSheet(u"QPushButton{\n"
+"	\n"
+"	font: 9pt \"Segoe UI\";\n"
+"	background-color: 462e2e;\n"
+"	border-radius: 15px;\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(134, 88, 88);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(66, 134, 132);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"}")
+        self.remove_app_button_frame.setFrameShape(QFrame.NoFrame)
+        self.remove_app_button_frame.setFrameShadow(QFrame.Raised)
+        self.remove_app_button_frame.setLineWidth(0)
+        self.remove_app_button_layout = QHBoxLayout(self.remove_app_button_frame)
+        self.remove_app_button_layout.setSpacing(0)
+        self.remove_app_button_layout.setObjectName(u"remove_app_button_layout")
+        self.remove_app_button_layout.setContentsMargins(0, 0, 0, 0)
         self.stackedWidget.addWidget(self.buckets)
         self.label_46.raise_()
         self.title_buckets_2.raise_()
@@ -859,13 +852,10 @@ class Ui_MainWindow(object):
         self.label_51.raise_()
         self.label_52.raise_()
         self.label_53.raise_()
-        self.label_54.raise_()
         self.label_55.raise_()
         self.title_buckets_4.raise_()
-        self.title_buckets_5.raise_()
         self.title_buckets_6.raise_()
         self.update_all_apps_frame.raise_()
-        self.remove_app_frame.raise_()
         self.not_added_yet.raise_()
         self.label_220.raise_()
         self.label_219.raise_()
@@ -880,20 +870,13 @@ class Ui_MainWindow(object):
         self.label_56.raise_()
         self.cb.raise_()
         self.bucket_back_frame.raise_()
+        self.remove_app_input.raise_()
+        self.remove_app_button_frame.raise_()
         self.installed = QWidget()
         self.installed.setObjectName(u"installed")
         self.stackedWidget.addWidget(self.installed)
         self.search = QWidget()
         self.search.setObjectName(u"search")
-        self.label_27 = QLabel(self.search)
-        self.label_27.setObjectName(u"label_27")
-        self.label_27.setGeometry(QRect(330, 70, 441, 51))
-        self.label_27.setStyleSheet(u"QLabel {\n"
-"			background-color: #21252d;\n"
-"			padding: 12px;\n"
-"			border-radius: 25px;\n"
-"			border-bottom: 30px shadow;\n"
-"        }")
         self.label_28 = QLabel(self.search)
         self.label_28.setObjectName(u"label_28")
         self.label_28.setGeometry(QRect(60, 50, 1011, 611))
@@ -903,17 +886,6 @@ class Ui_MainWindow(object):
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
-        self.search_box_frame = QFrame(self.search)
-        self.search_box_frame.setObjectName(u"search_box_frame")
-        self.search_box_frame.setGeometry(QRect(360, 70, 331, 51))
-        self.search_box_frame.setStyleSheet(u"color: gray;")
-        self.search_box_frame.setFrameShape(QFrame.NoFrame)
-        self.search_box_frame.setFrameShadow(QFrame.Raised)
-        self.search_box_frame.setLineWidth(0)
-        self.settings_toggle_1_layout_2 = QHBoxLayout(self.search_box_frame)
-        self.settings_toggle_1_layout_2.setSpacing(0)
-        self.settings_toggle_1_layout_2.setObjectName(u"settings_toggle_1_layout_2")
-        self.settings_toggle_1_layout_2.setContentsMargins(0, 0, 0, 0)
         self.label_29 = QLabel(self.search)
         self.label_29.setObjectName(u"label_29")
         self.label_29.setGeometry(QRect(120, 140, 891, 501))
@@ -1076,19 +1048,6 @@ class Ui_MainWindow(object):
         self.label_9.setGeometry(QRect(840, 165, 91, 16))
         self.label_9.setFont(font5)
         self.label_9.setStyleSheet(u"color: gray")
-        self.label_45 = QLabel(self.search)
-        self.label_45.setObjectName(u"label_45")
-        self.label_45.setGeometry(QRect(690, 70, 91, 51))
-        self.label_45.setCursor(QCursor(Qt.ArrowCursor))
-        self.label_45.setStyleSheet(u"QLabel {\n"
-"			\n"
-"			\n"
-"	background-color: rgb(89, 93, 117);\n"
-"			padding: 12px;\n"
-"			border-bottom-right-radius: 25px;\n"
-"			border-top-right-radius: 25px;\n"
-"			border-bottom: 30px shadow;\n"
-"        }")
         self.app_desc_frame_1 = QFrame(self.search)
         self.app_desc_frame_1.setObjectName(u"app_desc_frame_1")
         self.app_desc_frame_1.setGeometry(QRect(350, 200, 391, 51))
@@ -1291,22 +1250,9 @@ class Ui_MainWindow(object):
         self.app_install_5_layout.setContentsMargins(0, 0, 0, 0)
         self.app_search_frame = QFrame(self.search)
         self.app_search_frame.setObjectName(u"app_search_frame")
-        self.app_search_frame.setGeometry(QRect(700, 80, 71, 31))
+        self.app_search_frame.setGeometry(QRect(690, 70, 91, 51))
         self.app_search_frame.setCursor(QCursor(Qt.PointingHandCursor))
-        self.app_search_frame.setStyleSheet(u"")
-        self.app_search_frame.setFrameShape(QFrame.NoFrame)
-        self.app_search_frame.setFrameShadow(QFrame.Raised)
-        self.app_search_frame.setLineWidth(0)
-        self.app_search_layout_ = QHBoxLayout(self.app_search_frame)
-        self.app_search_layout_.setSpacing(0)
-        self.app_search_layout_.setObjectName(u"app_search_layout_")
-        self.app_search_layout_.setContentsMargins(0, 0, 0, 0)
-        self.back_button_search = QFrame(self.search)
-        self.back_button_search.setObjectName(u"back_button_search")
-        self.back_button_search.setGeometry(QRect(140, 60, 131, 71))
-        self.back_button_search.setCursor(QCursor(Qt.PointingHandCursor))
-        self.back_button_search.setStyleSheet(u"QPushButton{\n"
-"	background-color: #595D75;\n"
+        self.app_search_frame.setStyleSheet(u"QPushButton{\n"
 "	padding: 12px;\n"
 "	border-radius: 25px;\n"
 "	border-bottom: 30px shadow;\n"
@@ -1324,6 +1270,36 @@ class Ui_MainWindow(object):
 "	border-radius: 25px;\n"
 "	border-bottom: 30px shadow;\n"
 "}")
+        self.app_search_frame.setFrameShape(QFrame.NoFrame)
+        self.app_search_frame.setFrameShadow(QFrame.Raised)
+        self.app_search_frame.setLineWidth(0)
+        self.app_search_layout_ = QHBoxLayout(self.app_search_frame)
+        self.app_search_layout_.setSpacing(0)
+        self.app_search_layout_.setObjectName(u"app_search_layout_")
+        self.app_search_layout_.setContentsMargins(0, 0, 0, 0)
+        self.back_button_search = QFrame(self.search)
+        self.back_button_search.setObjectName(u"back_button_search")
+        self.back_button_search.setGeometry(QRect(1020, 510, 41, 121))
+        self.back_button_search.setCursor(QCursor(Qt.PointingHandCursor))
+        self.back_button_search.setStyleSheet(u"QPushButton{\n"
+"	\n"
+"	font: 12pt \"Montserrat\";\n"
+"	border-radius: 12px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(46, 49, 63);\n"
+"	padding: 12px;\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(89, 93, 117);\n"
+"	padding: 12px;\n"
+"	border-radius: 12px;\n"
+"	border-bottom: 30px shadow;\n"
+"}")
         self.back_button_search.setFrameShape(QFrame.NoFrame)
         self.back_button_search.setFrameShadow(QFrame.Raised)
         self.back_button_search.setLineWidth(0)
@@ -1331,11 +1307,48 @@ class Ui_MainWindow(object):
         self.back_button_search_layout.setSpacing(0)
         self.back_button_search_layout.setObjectName(u"back_button_search_layout")
         self.back_button_search_layout.setContentsMargins(0, 0, 0, 0)
+        self.search_bar_input = QLineEdit(self.search)
+        self.search_bar_input.setObjectName(u"search_bar_input")
+        self.search_bar_input.setGeometry(QRect(330, 70, 441, 51))
+        self.search_bar_input.setStyleSheet(u"color: gray;\n"
+"background-color: #21252d;\n"
+"border-radius: 25px;")
+        self.app_install_frame_6 = QFrame(self.search)
+        self.app_install_frame_6.setObjectName(u"app_install_frame_6")
+        self.app_install_frame_6.setGeometry(QRect(690, 70, 91, 51))
+        self.app_install_frame_6.setCursor(QCursor(Qt.PointingHandCursor))
+        self.app_install_frame_6.setStyleSheet(u"QPushButton{\n"
+"	\n"
+"	font: 9pt \"Segoe UI\";\n"
+"	background-color: rgb(89, 93, 117);\n"
+"	border-bottom-right-radius: 25px;\n"
+"	border-top-right-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(46, 49, 63);\n"
+"	border-bottom-right-radius: 25px;\n"
+"	border-top-right-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(66, 134, 132);\n"
+"	border-bottom-right-radius: 25px;\n"
+"	border-top-right-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}")
+        self.app_install_frame_6.setFrameShape(QFrame.NoFrame)
+        self.app_install_frame_6.setFrameShadow(QFrame.Raised)
+        self.app_install_frame_6.setLineWidth(0)
+        self.enter_search_term_layout = QHBoxLayout(self.app_install_frame_6)
+        self.enter_search_term_layout.setSpacing(0)
+        self.enter_search_term_layout.setObjectName(u"enter_search_term_layout")
+        self.enter_search_term_layout.setContentsMargins(0, 0, 0, 0)
         self.stackedWidget.addWidget(self.search)
         self.label_28.raise_()
+        self.search_bar_input.raise_()
         self.label_29.raise_()
-        self.label_27.raise_()
-        self.search_box_frame.raise_()
         self.label_30.raise_()
         self.label_31.raise_()
         self.label_32.raise_()
@@ -1364,9 +1377,9 @@ class Ui_MainWindow(object):
         self.app_install_frame_3.raise_()
         self.app_install_frame_4.raise_()
         self.app_install_frame_5.raise_()
-        self.label_45.raise_()
         self.app_search_frame.raise_()
         self.back_button_search.raise_()
+        self.app_install_frame_6.raise_()
         self.recommended_apps_page_2 = QWidget()
         self.recommended_apps_page_2.setObjectName(u"recommended_apps_page_2")
         self.label_58 = QLabel(self.recommended_apps_page_2)
@@ -4391,10 +4404,8 @@ class Ui_MainWindow(object):
         self.label_51.setText("")
         self.label_52.setText("")
         self.label_53.setText("")
-        self.label_54.setText("")
         self.label_55.setText("")
         self.title_buckets_4.setText(QCoreApplication.translate("MainWindow", u"Update all", None))
-        self.title_buckets_5.setText(QCoreApplication.translate("MainWindow", u"remove app", None))
         self.title_buckets_6.setText(QCoreApplication.translate("MainWindow", u"Cleanup old app versions", None))
         self.label_219.setText(QCoreApplication.translate("MainWindow", u"Status:", None))
         self.label_220.setText("")
@@ -4404,7 +4415,7 @@ class Ui_MainWindow(object):
         self.title_buckets_8.setText(QCoreApplication.translate("MainWindow", u"Remove Bucket", None))
         self.bucket_button_remove.setText("")
         self.label_56.setText("")
-        self.label_27.setText("")
+        self.remove_app_input.setText(QCoreApplication.translate("MainWindow", u"                       Enter an app name here:", None))
         self.label_28.setText("")
         self.label_29.setText("")
         self.label_30.setText("")
@@ -4425,7 +4436,7 @@ class Ui_MainWindow(object):
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Apps", None))
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"Description", None))
         self.label_9.setText(QCoreApplication.translate("MainWindow", u"Install", None))
-        self.label_45.setText(QCoreApplication.translate("MainWindow", u"Enter", None))
+        self.search_bar_input.setText(QCoreApplication.translate("MainWindow", u"     Search for an app here...", None))
         self.label_58.setText("")
         self.label_59.setText("")
         self.label_61.setText("")

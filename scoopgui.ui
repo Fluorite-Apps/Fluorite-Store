@@ -1409,27 +1409,6 @@ border-bottom: 30px shadow;</string>
        <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label_54">
-      <property name="geometry">
-       <rect>
-        <x>780</x>
-        <y>350</y>
-        <width>271</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel {
-			background-color: #595D75;
-			padding: 12px;
-			border-radius: 25px;
-			border-bottom: 30px shadow;
-        }</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_55">
       <property name="geometry">
        <rect>
@@ -1470,30 +1449,6 @@ border-bottom: 30px shadow;</string>
       </property>
       <property name="text">
        <string>Update all</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-     </widget>
-     <widget class="QLabel" name="title_buckets_5">
-      <property name="geometry">
-       <rect>
-        <x>620</x>
-        <y>370</y>
-        <width>131</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="text">
-       <string>remove app</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -1565,62 +1520,6 @@ QPushButton:hover {
        <number>0</number>
       </property>
       <layout class="QHBoxLayout" name="update_all_apps_layout">
-       <property name="spacing">
-        <number>0</number>
-       </property>
-       <property name="leftMargin">
-        <number>0</number>
-       </property>
-       <property name="topMargin">
-        <number>0</number>
-       </property>
-       <property name="rightMargin">
-        <number>0</number>
-       </property>
-       <property name="bottomMargin">
-        <number>0</number>
-       </property>
-      </layout>
-     </widget>
-     <widget class="QFrame" name="remove_app_frame">
-      <property name="geometry">
-       <rect>
-        <x>790</x>
-        <y>360</y>
-        <width>251</width>
-        <height>61</height>
-       </rect>
-      </property>
-      <property name="cursor">
-       <cursorShape>PointingHandCursor</cursorShape>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton{
-	background-color: 462e2e;
-	border-radius: 15px;
-}
-QPushButton:pressed:hover{
-	background-color: rgb(134, 88, 88);
-	padding: 12px;
-	border-radius: 25px;
-}
-
-QPushButton:hover {
-	background-color: rgb(66, 134, 132);
-	padding: 12px;
-	border-radius: 25px;
-}</string>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::NoFrame</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <property name="lineWidth">
-       <number>0</number>
-      </property>
-      <layout class="QHBoxLayout" name="remove_app_layout">
        <property name="spacing">
         <number>0</number>
        </property>
@@ -1994,6 +1893,82 @@ QPushButton:hover {
        </property>
       </layout>
      </widget>
+     <widget class="QLineEdit" name="remove_app_input">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>350</y>
+        <width>271</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(89, 93, 117);
+border-radius: 25px;
+border-bottom: 30px shadow;</string>
+      </property>
+      <property name="text">
+       <string>                       Enter an app name here:</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="remove_app_button_frame">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>360</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	font: 9pt &quot;Segoe UI&quot;;
+	background-color: 462e2e;
+	border-radius: 15px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(134, 88, 88);
+	padding: 12px;
+	border-radius: 25px;
+}
+
+QPushButton:hover {
+	background-color: rgb(66, 134, 132);
+	padding: 12px;
+	border-radius: 25px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="remove_app_button_layout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
      <zorder>label_46</zorder>
      <zorder>title_buckets_2</zorder>
      <zorder>label_47</zorder>
@@ -2005,13 +1980,10 @@ QPushButton:hover {
      <zorder>label_51</zorder>
      <zorder>label_52</zorder>
      <zorder>label_53</zorder>
-     <zorder>label_54</zorder>
      <zorder>label_55</zorder>
      <zorder>title_buckets_4</zorder>
-     <zorder>title_buckets_5</zorder>
      <zorder>title_buckets_6</zorder>
      <zorder>update_all_apps_frame</zorder>
-     <zorder>remove_app_frame</zorder>
      <zorder>not_added_yet</zorder>
      <zorder>label_220</zorder>
      <zorder>label_219</zorder>
@@ -2026,30 +1998,11 @@ QPushButton:hover {
      <zorder>label_56</zorder>
      <zorder>cb</zorder>
      <zorder>bucket_back_frame</zorder>
+     <zorder>remove_app_input</zorder>
+     <zorder>remove_app_button_frame</zorder>
     </widget>
     <widget class="QWidget" name="installed"/>
     <widget class="QWidget" name="search">
-     <widget class="QLabel" name="label_27">
-      <property name="geometry">
-       <rect>
-        <x>330</x>
-        <y>70</y>
-        <width>441</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel {
-			background-color: #21252d;
-			padding: 12px;
-			border-radius: 25px;
-			border-bottom: 30px shadow;
-        }</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_28">
       <property name="geometry">
        <rect>
@@ -2070,45 +2023,6 @@ QPushButton:hover {
       <property name="text">
        <string/>
       </property>
-     </widget>
-     <widget class="QFrame" name="search_box_frame">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>70</y>
-        <width>331</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: gray;</string>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::NoFrame</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <property name="lineWidth">
-       <number>0</number>
-      </property>
-      <layout class="QHBoxLayout" name="settings_toggle_1_layout_2">
-       <property name="spacing">
-        <number>0</number>
-       </property>
-       <property name="leftMargin">
-        <number>0</number>
-       </property>
-       <property name="topMargin">
-        <number>0</number>
-       </property>
-       <property name="rightMargin">
-        <number>0</number>
-       </property>
-       <property name="bottomMargin">
-        <number>0</number>
-       </property>
-      </layout>
      </widget>
      <widget class="QLabel" name="label_29">
       <property name="geometry">
@@ -2510,33 +2424,6 @@ QPushButton:hover {
       </property>
       <property name="text">
        <string>Install</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_45">
-      <property name="geometry">
-       <rect>
-        <x>690</x>
-        <y>70</y>
-        <width>91</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="cursor">
-       <cursorShape>ArrowCursor</cursorShape>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel {
-			
-			
-	background-color: rgb(89, 93, 117);
-			padding: 12px;
-			border-bottom-right-radius: 25px;
-			border-top-right-radius: 25px;
-			border-bottom: 30px shadow;
-        }</string>
-      </property>
-      <property name="text">
-       <string>Enter</string>
       </property>
      </widget>
      <widget class="QFrame" name="app_desc_frame_1">
@@ -3032,17 +2919,34 @@ QPushButton:hover {
      <widget class="QFrame" name="app_search_frame">
       <property name="geometry">
        <rect>
-        <x>700</x>
-        <y>80</y>
-        <width>71</width>
-        <height>31</height>
+        <x>690</x>
+        <y>70</y>
+        <width>91</width>
+        <height>51</height>
        </rect>
       </property>
       <property name="cursor">
        <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">QPushButton{
+	padding: 12px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(46, 49, 63);
+	padding: 12px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
+}
+
+QPushButton:hover {
+	background-color: rgb(60, 64, 82);
+	padding: 12px;
+	border-radius: 25px;
+	border-bottom: 30px shadow;
+}</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
@@ -3074,10 +2978,10 @@ QPushButton:hover {
      <widget class="QFrame" name="back_button_search">
       <property name="geometry">
        <rect>
-        <x>140</x>
-        <y>60</y>
-        <width>131</width>
-        <height>71</height>
+        <x>1020</x>
+        <y>510</y>
+        <width>41</width>
+        <height>121</height>
        </rect>
       </property>
       <property name="cursor">
@@ -3085,9 +2989,9 @@ QPushButton:hover {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	background-color: #595D75;
-	padding: 12px;
-	border-radius: 25px;
+	
+	font: 12pt &quot;Montserrat&quot;;
+	border-radius: 12px;
 	border-bottom: 30px shadow;
 }
 QPushButton:pressed:hover{
@@ -3098,9 +3002,9 @@ QPushButton:pressed:hover{
 }
 
 QPushButton:hover {
-	background-color: rgb(60, 64, 82);
+	background-color: rgb(89, 93, 117);
 	padding: 12px;
-	border-radius: 25px;
+	border-radius: 12px;
 	border-bottom: 30px shadow;
 }</string>
       </property>
@@ -3131,10 +3035,89 @@ QPushButton:hover {
        </property>
       </layout>
      </widget>
+     <widget class="QLineEdit" name="search_bar_input">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>70</y>
+        <width>441</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: gray;
+background-color: #21252d;
+border-radius: 25px;</string>
+      </property>
+      <property name="text">
+       <string>     Search for an app here...</string>
+      </property>
+     </widget>
+     <widget class="QFrame" name="app_install_frame_6">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>70</y>
+        <width>91</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	
+	font: 9pt &quot;Segoe UI&quot;;
+	background-color: rgb(89, 93, 117);
+	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
+	border-bottom: 30px shadow;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(46, 49, 63);
+	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
+	border-bottom: 30px shadow;
+}
+
+QPushButton:hover {
+	background-color: rgb(66, 134, 132);
+	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
+	border-bottom: 30px shadow;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="enter_search_term_layout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
      <zorder>label_28</zorder>
+     <zorder>search_bar_input</zorder>
      <zorder>label_29</zorder>
-     <zorder>label_27</zorder>
-     <zorder>search_box_frame</zorder>
      <zorder>label_30</zorder>
      <zorder>label_31</zorder>
      <zorder>label_32</zorder>
@@ -3163,9 +3146,9 @@ QPushButton:hover {
      <zorder>app_install_frame_3</zorder>
      <zorder>app_install_frame_4</zorder>
      <zorder>app_install_frame_5</zorder>
-     <zorder>label_45</zorder>
      <zorder>app_search_frame</zorder>
      <zorder>back_button_search</zorder>
+     <zorder>app_install_frame_6</zorder>
     </widget>
     <widget class="QWidget" name="recommended_apps_page_2">
      <widget class="QLabel" name="label_58">

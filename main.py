@@ -43,6 +43,7 @@ from BlurWindow.blurWindow import blur
 from BlurWindow.blurWindow import GlobalBlur
 import resource_file_qt_rc
 
+from plyer import notification
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None , *args, obj=None, **kwargs):
@@ -70,7 +71,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # self.stackedWidget.setCurrentWidget(self.splashscreen)
 
 
-
         # making widget and adding to layout
         self.go_recommended_apps_page_button = custompushbutton('Starred', parent=self)
         self.go_recommended_apps_page_button.setMinimumHeight(91)
@@ -80,6 +80,71 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         # attaching to function
         self.go_recommended_apps_page_button.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_1))
+
+
+        def do_search():
+
+            # getting search bar text
+            search_bar_text = self.search_bar_input.text()
+            print (search_bar_text)
+
+            # making scoop search command
+            scoop_search_command = ("scoop-search" + str(search_bar_text))
+            print (scoop_search_command)
+
+            powershell_scoop_search_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_search_command)]
+            powershell_scoop_search_2 = subprocess.run(powershell_scoop_search_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+
+            print (powershell_scoop_search_2)
+
+
+        def remove_app_function():
+            remove_app_input_text = self.remove_app_input.text()
+            print (remove_app_input_text)
+
+            # making scoop remove command
+            scoop_remove_command = ("scoop uninstall" + str(remove_app_input_text))
+            print (scoop_remove_command)
+
+            powershell_scoop_remove_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_remove_command)]
+            powershell_scoop_remove_2 = subprocess.run(powershell_scoop_remove_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+
+            notification.notify(
+                title='Finished',
+                message='uninstalled app',
+                app_icon="fluorite.ico",
+                timeout=10,
+            )
+
+        def remove_app_function_thread():
+            t = Thread(target=remove_app_function)
+            t.daemon = True
+            t.start()
+
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # REMOVE APP AND INPUT BOX                            #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        self.remove_app_button = custompushbutton('Remove App (click)', parent=self)
+        self.remove_app_button.setMinimumHeight(61)
+        self.remove_app_button.setFixedWidth(131)
+
+        self.remove_app_button_layout.addWidget(self.remove_app_button, Qt.AlignCenter, Qt.AlignCenter)
+        self.remove_app_button.clicked.connect(lambda: remove_app_function_thread())
+
+
+
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # SEARCH BAR AND BUTTON                                #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        self.enter_search_term_button = custompushbutton('Enter', parent=self)
+        self.enter_search_term_button.setMinimumHeight(51)
+        self.enter_search_term_button.setFixedWidth(91)
+
+        self.enter_search_term_layout.addWidget(self.enter_search_term_button, Qt.AlignCenter, Qt.AlignCenter)
+        self.enter_search_term_button.clicked.connect(lambda: do_search())
+
 
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         # STATUS INDICATOR                                    #
@@ -393,11 +458,20 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         # functions for installing recommended apps on button click
 
+        def installed_app_notif():
+            notification.notify(
+                title='Finished',
+                message='Installed app',
+                app_icon="fluorite.ico",
+                timeout=10,
+            )
+
         def install_recc_app_1():
             # toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install hwinfo']
             # process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
             #                                 universal_newlines=True)
             print ("unfortunately portmaster isn't on scoop yet, so i'll have to find some other way to install this later. Coming soon..")
+            installed_app_notif()
 
         def install_recc_app_2():
             self.status_indicator_1.setText("Installing... fluent-reader")
@@ -405,78 +479,104 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_1.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_3():
             self.status_indicator_1.setText("Installing... flameshot")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install flameshot']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_1.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_4():
             self.status_indicator_1.setText("Installing... ludusavi")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install ludusavi']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_1.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_5():
             self.status_indicator_1.setText("Installing... compactgui")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install compactgui']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_1.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_6():
             self.status_indicator_2.setText("Installing... peazip")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install peazip']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_2.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_7():
             self.status_indicator_2.setText("Installing... librewolf")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install librewolf']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_2.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_8():
             self.status_indicator_2.setText("Installing... freetube")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install freetube']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_2.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_9():
             self.status_indicator_2.setText("Installing... geekuninstaller")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install geekuninstaller']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_2.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_10():
             self.status_indicator_2.setText("Installing... simplewall")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install simplewall']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_2.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_11():
             self.status_indicator_3.setText("Installing... sandboxie-plus-np")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install sandboxie-plus-np']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_3.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_12():
             self.status_indicator_3.setText("Installing... playnite")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install playnite']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_3.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_13():
             self.status_indicator_3.setText("Installing... crystaldiskinfo")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install crystaldiskinfo']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_3.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_14():
             self.status_indicator_3.setText("Installing... hwinfo")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install hwinfo']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_3.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_15():
             # toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install hwinfo']
             # process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
@@ -484,6 +584,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_3.setText("OOCT is unavaliable")
             print(
                 "unfortunately OCCT isn't on scoop yet, so i'll have to find some other way to install this later. Coming soon..")
+            installed_app_notif()
 
         def install_recc_app_16():
             self.status_indicator_4.setText("Installing... shutup10")
@@ -491,72 +592,95 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_4.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_17():
             self.status_indicator_4.setText("Installing... mpv")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install mpv']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_4.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_18():
             self.status_indicator_4.setText("Installing... tabby")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install tabby']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_4.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_19():
             self.status_indicator_4.setText("Installing... eartrumpet")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install eartrumpet']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_4.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_20():
             self.status_indicator_4.setText("Installing... ryujinx")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install ryujinx']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_4.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_21():
             self.status_indicator_5.setText("Installing... modernflouts")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install modernflyouts']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_5.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_22():
             self.status_indicator_5.setText("Installing... espanso-pre")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install espanso-pre']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_5.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_23():
             self.status_indicator_5.setText("Installing... lively-wallpaper")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop bucket add HUMORCE_nuke https://github.com/HUMORCE/nuke; scoop install lively-wallpaper']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_5.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_24():
             self.status_indicator_5.setText("Installing... obsidian")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install obsidian']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_5.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_25():
             self.status_indicator_5.setText("Installing... snappy-driver-installer-origin")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install snappy-driver-installer-origin']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_5.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_26():
             self.status_indicator_6.setText("Installing... Fancontrol-Portable")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', "scoop bucket add ACooper81_scoop-apps https://github.com/ACooper81/scoop-apps; scoop install FanControl-Portable"]
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_6.setText("Installed")
+            installed_app_notif()
+
         def install_recc_app_27():
             self.status_indicator_6.setText("Installing... openrgb")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install openrgb']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
             self.status_indicator_6.setText("Installed")
+            installed_app_notif()
 
 
         # launching install functions in seperate thread = no gui hang
@@ -770,9 +894,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.manage_buckets_button.clicked.connect(self.goBuckets)
 
         # Back button on Search page
-        self.search_back_button = custompushbutton('Back', parent=self)
-        self.search_back_button.setMinimumHeight(50)
-        self.search_back_button.setFixedWidth(100)
+        self.search_back_button = custompushbutton('B\na\nc\nk', parent=self)
+        self.search_back_button.setMinimumHeight(121)
+        self.search_back_button.setFixedWidth(61)
         self.back_button_search_layout.addWidget(self.search_back_button, Qt.AlignCenter, Qt.AlignCenter)
 
         self.search_back_button.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
@@ -897,6 +1021,12 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         update_all_apps_powershell = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop cleanup *']
         update_all_apps_powershell2 = subprocess.run(update_all_apps_powershell, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                         universal_newlines=True)
+        notification.notify(
+            title='Finished',
+            message='Cleaned up old app versions',
+            app_icon="fluorite.ico",
+            timeout=10,
+        )
 
     def cleanup_old_app_versions_thread(self):
         t = Thread(target=self.cleanup_old_app_versions_function)
@@ -982,6 +1112,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         process_result = subprocess.run(commandline_options, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                         universal_newlines=True)
         self.status_indicator_bucket.setText("Added: " + str(bucketname))
+
+        notification.notify(
+            title='Finished',
+            message='Added Bucket',
+            app_icon="fluorite.ico",
+            timeout=10,
+        )
 
     def thread_add_bucket(self):
         t = Thread(target=self.addBucket)
