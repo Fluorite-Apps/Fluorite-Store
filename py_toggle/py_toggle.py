@@ -3,7 +3,8 @@
 from PySide6.QtCore import *
 from PySide6.QtGui import *
 from PySide6.QtWidgets import *
-from PySide6.QtSvgWidgets import *
+import PySide6.QtSvg
+# from PySide6.QtSvgWidgets import *
 
 # PLAYING SOUNDS
 # ///////////////////////////////////////////////////////////////
