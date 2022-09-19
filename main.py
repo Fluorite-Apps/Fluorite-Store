@@ -97,6 +97,15 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         def do_search():
 
+            # setting previous app names to blank, so if the user searches again, it'll remove previous searches
+            final_app_one = ""
+            final_app_two = ""
+            final_app_three = ""
+            final_app_four = ""
+            final_app_five = ""
+
+            print ("1")
+
             # getting search bar text
             search_bar_text = self.search_bar_input.text()
             print (search_bar_text)
@@ -138,7 +147,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
             # only keeping the left of the bracket, which is the appname
             try:
-                global final_app_one,final_app_two,final_app_three,final_app_four,final_app_five
                 final_app_one = (simplified[0].split("(")[0]).strip()
                 final_app_one = final_app_one.strip("'")
                 final_app_one = final_app_one.strip('"')
