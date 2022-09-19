@@ -2046,7 +2046,7 @@ QPushButton:hover {
        <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label_30">
+     <widget class="QLabel" name="app_label_1">
       <property name="geometry">
        <rect>
         <x>200</x>
@@ -2069,7 +2069,7 @@ QPushButton:hover {
        <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label_31">
+     <widget class="QLabel" name="app_label_2">
       <property name="geometry">
        <rect>
         <x>200</x>
@@ -2090,7 +2090,7 @@ QPushButton:hover {
        <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label_32">
+     <widget class="QLabel" name="app_label_3">
       <property name="geometry">
        <rect>
         <x>200</x>
@@ -2111,7 +2111,7 @@ QPushButton:hover {
        <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label_33">
+     <widget class="QLabel" name="app_label_4">
       <property name="geometry">
        <rect>
         <x>200</x>
@@ -2132,7 +2132,7 @@ QPushButton:hover {
        <string/>
       </property>
      </widget>
-     <widget class="QLabel" name="label_34">
+     <widget class="QLabel" name="app_label_5">
       <property name="geometry">
        <rect>
         <x>200</x>
@@ -3118,11 +3118,11 @@ QPushButton:hover {
      <zorder>label_28</zorder>
      <zorder>search_bar_input</zorder>
      <zorder>label_29</zorder>
-     <zorder>label_30</zorder>
-     <zorder>label_31</zorder>
-     <zorder>label_32</zorder>
-     <zorder>label_33</zorder>
-     <zorder>label_34</zorder>
+     <zorder>app_label_1</zorder>
+     <zorder>app_label_2</zorder>
+     <zorder>app_label_3</zorder>
+     <zorder>app_label_4</zorder>
+     <zorder>app_label_5</zorder>
      <zorder>label_35</zorder>
      <zorder>label_36</zorder>
      <zorder>label_37</zorder>

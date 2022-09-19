@@ -89,14 +89,137 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             print (search_bar_text)
 
             # making scoop search command
-            scoop_search_command = ("scoop-search" + str(search_bar_text))
+            scoop_search_command = ("scoop-search " + str(search_bar_text))
             print (scoop_search_command)
+            notification.notify(
+                title='Searching...',
+                message='please wait',
+                app_icon="fluorite.ico",
+                timeout=10,)
 
             powershell_scoop_search_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_search_command)]
             powershell_scoop_search_2 = subprocess.run(powershell_scoop_search_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
 
             print (powershell_scoop_search_2)
+            powershell_scoop_search_2 = str(powershell_scoop_search_2)
+            split_result = powershell_scoop_search_2.split('\\n')
+            print (split_result)
+
+            split_result = str(split_result).split(',')
+            print (split_result)
+
+            del split_result[0]
+            del split_result[0]
+            del split_result[0]
+            del split_result[0]
+            del split_result[0]
+            del split_result[0]
+
+            # removing all items which don't contain a bracket
+            # because apps have a bracket with the version beside em, so this'll remove all non-apps
+
+            stringVal = '('
+            simplified = [x for x in split_result if stringVal in x]
+            print (simplified)
+
+            # only keeping the left of the bracket, which is the appname
+            try:
+                global final_app_one,final_app_two,final_app_three,final_app_four,final_app_five
+                final_app_one = simplified[0].split("(")[0]
+                print (final_app_one)
+
+                final_app_two = simplified[1].split("(")[0]
+                print (final_app_two)
+
+                final_app_three = simplified[2].split("(")[0]
+                print (final_app_three)
+
+                final_app_four = simplified[3].split("(")[0]
+                print (final_app_four)
+
+                final_app_five = simplified[4].split("(")[0]
+                print (final_app_five)
+            except:
+                pass
+
+            try:
+                global scoop_install_command_1,scoop_install_command_2,scoop_install_command_3,scoop_install_command_4,scoop_install_command_5
+                # making scoop install commands
+                scoop_install_command_1 =  ("scoop install "+final_app_one)
+                scoop_install_command_2 =  ("scoop install "+final_app_two)
+                scoop_install_command_3 =  ("scoop install "+final_app_three)
+                scoop_install_command_4 =  ("scoop install "+final_app_four)
+                scoop_install_command_5 =  ("scoop install "+final_app_five)
+            except:
+                pass
+
+            # updating GUI with these appnames
+            try:
+                self.app_label_1.setText(str(final_app_one))
+                self.app_label_2.setText(str(final_app_two))
+                self.app_label_3.setText(str(final_app_three))
+                self.app_label_4.setText(str(final_app_four))
+                self.app_label_5.setText(str(final_app_five))
+            except:
+                pass
+
+            # installing corresponding apps when install button is pressed
+            def install_search_app_one():
+                powershell_install_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_1)]
+                powershell_do_install_1 = subprocess.run(powershell_install_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                                universal_newlines=True)
+
+            def install_search_app_two():
+                powershell_install_2 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_2)]
+                powershell_do_install_2 = subprocess.run(powershell_install_2, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                                universal_newlines=True)
+            def install_search_app_three():
+                powershell_install_3 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_3)]
+                powershell_do_install_3 = subprocess.run(powershell_install_3, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                                universal_newlines=True)
+            def install_search_app_four():
+                powershell_install_4 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_4)]
+                powershell_do_install_4 = subprocess.run(powershell_install_4, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                                universal_newlines=True)
+            def install_search_app_five():
+                powershell_install_5 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_5)]
+                powershell_do_install_5 = subprocess.run(powershell_install_5, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                                universal_newlines=True)
+
+            # making search page install buttons and adding to layout
+            self.install_search_app_btn_1 = custompushbutton('install', parent=self)
+            self.install_search_app_btn_1.setMinimumHeight(51)
+            self.install_search_app_btn_1.setFixedWidth(101)
+
+            self.install_search_app_btn_2 = custompushbutton('install', parent=self)
+            self.install_search_app_btn_2.setMinimumHeight(51)
+            self.install_search_app_btn_2.setFixedWidth(101)
+
+            self.install_search_app_btn_3 = custompushbutton('install', parent=self)
+            self.install_search_app_btn_3.setMinimumHeight(51)
+            self.install_search_app_btn_3.setFixedWidth(101)
+
+            self.install_search_app_btn_4 = custompushbutton('install', parent=self)
+            self.install_search_app_btn_4.setMinimumHeight(51)
+            self.install_search_app_btn_4.setFixedWidth(101)
+
+            self.install_search_app_btn_5 = custompushbutton('install', parent=self)
+            self.install_search_app_btn_5.setMinimumHeight(51)
+            self.install_search_app_btn_5.setFixedWidth(101)
+
+            self.app_install_1_layout.addWidget(self.install_search_app_btn_1, Qt.AlignCenter, Qt.AlignCenter)
+            self.app_install_2_layout.addWidget(self.install_search_app_btn_2, Qt.AlignCenter, Qt.AlignCenter)
+            self.app_install_3_layout.addWidget(self.install_search_app_btn_3, Qt.AlignCenter, Qt.AlignCenter)
+            self.app_install_4_layout.addWidget(self.install_search_app_btn_4, Qt.AlignCenter, Qt.AlignCenter)
+            self.app_install_5_layout.addWidget(self.install_search_app_btn_5, Qt.AlignCenter, Qt.AlignCenter)
+
+            # connecting search page install buttons to install function
+            self.install_search_app_btn_1.clicked.connect(lambda: install_search_app_one())
+            self.install_search_app_btn_2.clicked.connect(lambda: install_search_app_two())
+            self.install_search_app_btn_3.clicked.connect(lambda: install_search_app_three())
+            self.install_search_app_btn_4.clicked.connect(lambda: install_search_app_four())
+            self.install_search_app_btn_5.clicked.connect(lambda: install_search_app_five())
 
 
         def remove_app_function():

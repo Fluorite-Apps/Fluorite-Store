@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguiRhBxth.ui'
+## Form generated from reading UI file 'scoopguiDbqnJi.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -896,10 +896,10 @@ class Ui_MainWindow(object):
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
-        self.label_30 = QLabel(self.search)
-        self.label_30.setObjectName(u"label_30")
-        self.label_30.setGeometry(QRect(200, 190, 91, 71))
-        self.label_30.setStyleSheet(u"QLabel {\n"
+        self.app_label_1 = QLabel(self.search)
+        self.app_label_1.setObjectName(u"app_label_1")
+        self.app_label_1.setGeometry(QRect(200, 190, 91, 71))
+        self.app_label_1.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
 "			background-color: #595D75;\n"
@@ -907,37 +907,37 @@ class Ui_MainWindow(object):
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
-        self.label_31 = QLabel(self.search)
-        self.label_31.setObjectName(u"label_31")
-        self.label_31.setGeometry(QRect(200, 280, 91, 71))
-        self.label_31.setStyleSheet(u"QLabel {\n"
+        self.app_label_2 = QLabel(self.search)
+        self.app_label_2.setObjectName(u"app_label_2")
+        self.app_label_2.setGeometry(QRect(200, 280, 91, 71))
+        self.app_label_2.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
-        self.label_32 = QLabel(self.search)
-        self.label_32.setObjectName(u"label_32")
-        self.label_32.setGeometry(QRect(200, 370, 91, 71))
-        self.label_32.setStyleSheet(u"QLabel {\n"
+        self.app_label_3 = QLabel(self.search)
+        self.app_label_3.setObjectName(u"app_label_3")
+        self.app_label_3.setGeometry(QRect(200, 370, 91, 71))
+        self.app_label_3.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
-        self.label_33 = QLabel(self.search)
-        self.label_33.setObjectName(u"label_33")
-        self.label_33.setGeometry(QRect(200, 460, 91, 71))
-        self.label_33.setStyleSheet(u"QLabel {\n"
+        self.app_label_4 = QLabel(self.search)
+        self.app_label_4.setObjectName(u"app_label_4")
+        self.app_label_4.setGeometry(QRect(200, 460, 91, 71))
+        self.app_label_4.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
 "			border-bottom: 30px shadow;\n"
 "        }")
-        self.label_34 = QLabel(self.search)
-        self.label_34.setObjectName(u"label_34")
-        self.label_34.setGeometry(QRect(200, 550, 91, 71))
-        self.label_34.setStyleSheet(u"QLabel {\n"
+        self.app_label_5 = QLabel(self.search)
+        self.app_label_5.setObjectName(u"app_label_5")
+        self.app_label_5.setGeometry(QRect(200, 550, 91, 71))
+        self.app_label_5.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
 "			border-radius: 25px;\n"
@@ -1349,11 +1349,11 @@ class Ui_MainWindow(object):
         self.label_28.raise_()
         self.search_bar_input.raise_()
         self.label_29.raise_()
-        self.label_30.raise_()
-        self.label_31.raise_()
-        self.label_32.raise_()
-        self.label_33.raise_()
-        self.label_34.raise_()
+        self.app_label_1.raise_()
+        self.app_label_2.raise_()
+        self.app_label_3.raise_()
+        self.app_label_4.raise_()
+        self.app_label_5.raise_()
         self.label_35.raise_()
         self.label_36.raise_()
         self.label_37.raise_()
@@ -4418,11 +4418,11 @@ class Ui_MainWindow(object):
         self.remove_app_input.setText(QCoreApplication.translate("MainWindow", u"                       Enter an app name here:", None))
         self.label_28.setText("")
         self.label_29.setText("")
-        self.label_30.setText("")
-        self.label_31.setText("")
-        self.label_32.setText("")
-        self.label_33.setText("")
-        self.label_34.setText("")
+        self.app_label_1.setText("")
+        self.app_label_2.setText("")
+        self.app_label_3.setText("")
+        self.app_label_4.setText("")
+        self.app_label_5.setText("")
         self.label_35.setText("")
         self.label_36.setText("")
         self.label_37.setText("")
