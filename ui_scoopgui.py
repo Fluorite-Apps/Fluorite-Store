@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguiDbqnJi.ui'
+## Form generated from reading UI file 'scoopguidnCosd.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -1108,6 +1108,8 @@ class Ui_MainWindow(object):
         self.app_install_frame_1.setGeometry(QRect(820, 200, 101, 51))
         self.app_install_frame_1.setCursor(QCursor(Qt.PointingHandCursor))
         self.app_install_frame_1.setStyleSheet(u"QPushButton{\n"
+"	\n"
+"	background-color: rgb(60, 64, 82);\n"
 "	padding: 12px;\n"
 "	border-radius: 25px;\n"
 "	border-bottom: 30px shadow;\n"
@@ -1137,6 +1139,8 @@ class Ui_MainWindow(object):
         self.app_install_frame_2.setGeometry(QRect(820, 290, 101, 51))
         self.app_install_frame_2.setCursor(QCursor(Qt.PointingHandCursor))
         self.app_install_frame_2.setStyleSheet(u"QPushButton{\n"
+"	\n"
+"	background-color: rgb(60, 64, 82);\n"
 "	padding: 12px;\n"
 "	border-radius: 25px;\n"
 "	border-bottom: 30px shadow;\n"
@@ -1166,6 +1170,8 @@ class Ui_MainWindow(object):
         self.app_install_frame_3.setGeometry(QRect(820, 380, 101, 51))
         self.app_install_frame_3.setCursor(QCursor(Qt.PointingHandCursor))
         self.app_install_frame_3.setStyleSheet(u"QPushButton{\n"
+"	\n"
+"	background-color: rgb(60, 64, 82);\n"
 "	padding: 12px;\n"
 "	border-radius: 25px;\n"
 "	border-bottom: 30px shadow;\n"
@@ -1195,6 +1201,8 @@ class Ui_MainWindow(object):
         self.app_install_frame_4.setGeometry(QRect(820, 470, 101, 51))
         self.app_install_frame_4.setCursor(QCursor(Qt.PointingHandCursor))
         self.app_install_frame_4.setStyleSheet(u"QPushButton{\n"
+"	\n"
+"	background-color: rgb(60, 64, 82);\n"
 "	padding: 12px;\n"
 "	border-radius: 25px;\n"
 "	border-bottom: 30px shadow;\n"
@@ -1224,6 +1232,8 @@ class Ui_MainWindow(object):
         self.app_install_frame_5.setGeometry(QRect(820, 560, 101, 51))
         self.app_install_frame_5.setCursor(QCursor(Qt.PointingHandCursor))
         self.app_install_frame_5.setStyleSheet(u"QPushButton{\n"
+"	\n"
+"	background-color: rgb(60, 64, 82);\n"
 "	padding: 12px;\n"
 "	border-radius: 25px;\n"
 "	border-bottom: 30px shadow;\n"

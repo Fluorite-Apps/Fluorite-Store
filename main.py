@@ -126,19 +126,19 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             # only keeping the left of the bracket, which is the appname
             try:
                 global final_app_one,final_app_two,final_app_three,final_app_four,final_app_five
-                final_app_one = simplified[0].split("(")[0]
+                final_app_one = (simplified[0].split("(")[0]).strip(" '    ")
                 print (final_app_one)
 
-                final_app_two = simplified[1].split("(")[0]
+                final_app_two = (simplified[1].split("(")[0]).strip(" '    ")
                 print (final_app_two)
 
-                final_app_three = simplified[2].split("(")[0]
+                final_app_three = (simplified[2].split("(")[0]).strip(" '    ")
                 print (final_app_three)
 
-                final_app_four = simplified[3].split("(")[0]
+                final_app_four = (simplified[3].split("(")[0]).strip(" '    ")
                 print (final_app_four)
 
-                final_app_five = simplified[4].split("(")[0]
+                final_app_five = (simplified[4].split("(")[0]).strip(" '    ")
                 print (final_app_five)
             except:
                 pass
