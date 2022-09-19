@@ -81,6 +81,19 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # attaching to function
         self.go_recommended_apps_page_button.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_1))
 
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # UPDATING SCOOP REPO WHEN LAUNCHING                    #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+        def do_update():
+            powershell_do_update = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', "scoop update"]
+            powershell_do_update_1 = subprocess.run(powershell_do_update, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                                     universal_newlines=True)
+
+        t = Thread(target=do_update)
+        t.daemon = True
+        t.start()
+
 
         def do_search():
 
@@ -228,33 +241,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 t.daemon = True
                 t.start()
 
-            # making search page install buttons and adding to layout
-            self.install_search_app_btn_1 = custompushbutton('install', parent=self)
-            self.install_search_app_btn_1.setMinimumHeight(51)
-            self.install_search_app_btn_1.setFixedWidth(101)
-
-            self.install_search_app_btn_2 = custompushbutton('install', parent=self)
-            self.install_search_app_btn_2.setMinimumHeight(51)
-            self.install_search_app_btn_2.setFixedWidth(101)
-
-            self.install_search_app_btn_3 = custompushbutton('install', parent=self)
-            self.install_search_app_btn_3.setMinimumHeight(51)
-            self.install_search_app_btn_3.setFixedWidth(101)
-
-            self.install_search_app_btn_4 = custompushbutton('install', parent=self)
-            self.install_search_app_btn_4.setMinimumHeight(51)
-            self.install_search_app_btn_4.setFixedWidth(101)
-
-            self.install_search_app_btn_5 = custompushbutton('install', parent=self)
-            self.install_search_app_btn_5.setMinimumHeight(51)
-            self.install_search_app_btn_5.setFixedWidth(101)
-
-            self.app_install_1_layout.addWidget(self.install_search_app_btn_1, Qt.AlignCenter, Qt.AlignCenter)
-            self.app_install_2_layout.addWidget(self.install_search_app_btn_2, Qt.AlignCenter, Qt.AlignCenter)
-            self.app_install_3_layout.addWidget(self.install_search_app_btn_3, Qt.AlignCenter, Qt.AlignCenter)
-            self.app_install_4_layout.addWidget(self.install_search_app_btn_4, Qt.AlignCenter, Qt.AlignCenter)
-            self.app_install_5_layout.addWidget(self.install_search_app_btn_5, Qt.AlignCenter, Qt.AlignCenter)
-
             # connecting search page install buttons to install function
             self.install_search_app_btn_1.clicked.connect(lambda: install_search_app_one_thread())
             self.install_search_app_btn_2.clicked.connect(lambda: install_search_app_two_thread())
@@ -286,6 +272,37 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             t = Thread(target=remove_app_function)
             t.daemon = True
             t.start()
+
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # INSTALL BUTTONS ON SEARCH PAGE                         #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+        # making search page install buttons and adding to layout
+        self.install_search_app_btn_1 = custompushbutton('install', parent=self)
+        self.install_search_app_btn_1.setMinimumHeight(51)
+        self.install_search_app_btn_1.setFixedWidth(101)
+
+        self.install_search_app_btn_2 = custompushbutton('install', parent=self)
+        self.install_search_app_btn_2.setMinimumHeight(51)
+        self.install_search_app_btn_2.setFixedWidth(101)
+
+        self.install_search_app_btn_3 = custompushbutton('install', parent=self)
+        self.install_search_app_btn_3.setMinimumHeight(51)
+        self.install_search_app_btn_3.setFixedWidth(101)
+
+        self.install_search_app_btn_4 = custompushbutton('install', parent=self)
+        self.install_search_app_btn_4.setMinimumHeight(51)
+        self.install_search_app_btn_4.setFixedWidth(101)
+
+        self.install_search_app_btn_5 = custompushbutton('install', parent=self)
+        self.install_search_app_btn_5.setMinimumHeight(51)
+        self.install_search_app_btn_5.setFixedWidth(101)
+
+        self.app_install_1_layout.addWidget(self.install_search_app_btn_1, Qt.AlignCenter, Qt.AlignCenter)
+        self.app_install_2_layout.addWidget(self.install_search_app_btn_2, Qt.AlignCenter, Qt.AlignCenter)
+        self.app_install_3_layout.addWidget(self.install_search_app_btn_3, Qt.AlignCenter, Qt.AlignCenter)
+        self.app_install_4_layout.addWidget(self.install_search_app_btn_4, Qt.AlignCenter, Qt.AlignCenter)
+        self.app_install_5_layout.addWidget(self.install_search_app_btn_5, Qt.AlignCenter, Qt.AlignCenter)
 
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         # REMOVE APP AND INPUT BOX                            #
