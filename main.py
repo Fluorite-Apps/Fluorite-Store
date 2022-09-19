@@ -45,6 +45,7 @@ import resource_file_qt_rc
 
 from plyer import notification
 
+
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None , *args, obj=None, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs, parent=parent)
@@ -56,7 +57,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         GlobalBlur(self.winId(),Dark=True,QWidget=self)
 
         self.setStyleSheet("background-color: rgba(0, 0, 0, 0)")
-
 
         # self.setAttribute(Qt.WA_TranslucentBackground)
         # self.resize(1050, 700)
@@ -140,28 +140,28 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             try:
                 global final_app_one,final_app_two,final_app_three,final_app_four,final_app_five
                 final_app_one = (simplified[0].split("(")[0]).strip(" ")
-                final_app_one = (simplified[0].split("(")[0]).strip("'")
-                final_app_one = (simplified[0].split("(")[0]).strip('"')
+                final_app_one = final_app_one.strip("'")
+                final_app_one = final_app_one.strip('"')
                 print (final_app_one)
 
-                final_app_two = (simplified[1].split("(")[0]).strip(" '    ")
-                final_app_two = (simplified[1].split("(")[0]).strip("'")
-                final_app_two = (simplified[1].split("(")[0]).strip('"')
+                final_app_two = (simplified[1].split("(")[0]).strip(" ")
+                final_app_two = final_app_two.strip("'")
+                final_app_two = final_app_two.strip('"')
                 print (final_app_two)
 
-                final_app_three = (simplified[2].split("(")[0]).strip(" '    ")
-                final_app_three = (simplified[2].split("(")[0]).strip("'")
-                final_app_three = (simplified[2].split("(")[0]).strip('"')
+                final_app_three = (simplified[2].split("(")[0]).strip(" ")
+                final_app_three = final_app_three.strip("'")
+                final_app_three = final_app_three.strip('"')
                 print (final_app_three)
 
-                final_app_four = (simplified[3].split("(")[0]).strip(" '    ")
-                final_app_four = (simplified[3].split("(")[0]).strip("'")
-                final_app_four = (simplified[3].split("(")[0]).strip('"')
+                final_app_four = (simplified[3].split("(")[0]).strip(" ")
+                final_app_four = final_app_four.strip("'")
+                final_app_four = final_app_four.strip('"')
                 print (final_app_four)
 
-                final_app_five = (simplified[4].split("(")[0]).strip(" '    ")
-                final_app_five = (simplified[4].split("(")[0]).strip("'")
-                final_app_five = (simplified[4].split("(")[0]).strip('"')
+                final_app_five = (simplified[4].split("(")[0]).strip(" ")
+                final_app_five = final_app_five.strip("'")
+                final_app_five = final_app_five.strip('"')
                 print (final_app_five)
             except:
                 pass
