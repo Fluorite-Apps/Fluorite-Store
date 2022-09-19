@@ -1157,7 +1157,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 app = QtWidgets.QApplication(sys.argv)
 window = MainWindow()
 window.setWindowTitle('  ')
-my_pixmap = QPixmap("scoopicon.ico")
+my_pixmap = QPixmap("fluorite.ico")
 my_icon = QIcon(my_pixmap)
 window.setWindowIcon(my_icon)
 window.show()
