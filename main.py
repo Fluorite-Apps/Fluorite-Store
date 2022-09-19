@@ -164,28 +164,69 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             except:
                 pass
 
+            def installed_app_notif_1():
+                notification.notify(
+                    title='Finished',
+                    message='Installed app',
+                    app_icon="fluorite.ico",
+                    timeout=10,
+                )
+
             # installing corresponding apps when install button is pressed
             def install_search_app_one():
                 powershell_install_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_1)]
                 powershell_do_install_1 = subprocess.run(powershell_install_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                                 universal_newlines=True)
+                installed_app_notif_1()
 
             def install_search_app_two():
                 powershell_install_2 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_2)]
                 powershell_do_install_2 = subprocess.run(powershell_install_2, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                                 universal_newlines=True)
+                installed_app_notif_1()
+
             def install_search_app_three():
                 powershell_install_3 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_3)]
                 powershell_do_install_3 = subprocess.run(powershell_install_3, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                                 universal_newlines=True)
+                installed_app_notif_1()
+
             def install_search_app_four():
                 powershell_install_4 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_4)]
                 powershell_do_install_4 = subprocess.run(powershell_install_4, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                                 universal_newlines=True)
+                installed_app_notif_1()
+
             def install_search_app_five():
                 powershell_install_5 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_5)]
                 powershell_do_install_5 = subprocess.run(powershell_install_5, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                                 universal_newlines=True)
+                installed_app_notif_1()
+
+            def install_search_app_one_thread():
+                t = Thread(target=install_search_app_one)
+                t.daemon = True
+                t.start()
+
+            def install_search_app_two_thread():
+                t = Thread(target=install_search_app_two)
+                t.daemon = True
+                t.start()
+
+            def install_search_app_three_thread():
+                t = Thread(target=install_search_app_three)
+                t.daemon = True
+                t.start()
+
+            def install_search_app_four_thread():
+                t = Thread(target=install_search_app_four)
+                t.daemon = True
+                t.start()
+
+            def install_search_app_five_thread():
+                t = Thread(target=install_search_app_five)
+                t.daemon = True
+                t.start()
 
             # making search page install buttons and adding to layout
             self.install_search_app_btn_1 = custompushbutton('install', parent=self)
@@ -215,11 +256,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.app_install_5_layout.addWidget(self.install_search_app_btn_5, Qt.AlignCenter, Qt.AlignCenter)
 
             # connecting search page install buttons to install function
-            self.install_search_app_btn_1.clicked.connect(lambda: install_search_app_one())
-            self.install_search_app_btn_2.clicked.connect(lambda: install_search_app_two())
-            self.install_search_app_btn_3.clicked.connect(lambda: install_search_app_three())
-            self.install_search_app_btn_4.clicked.connect(lambda: install_search_app_four())
-            self.install_search_app_btn_5.clicked.connect(lambda: install_search_app_five())
+            self.install_search_app_btn_1.clicked.connect(lambda: install_search_app_one_thread())
+            self.install_search_app_btn_2.clicked.connect(lambda: install_search_app_two_thread())
+            self.install_search_app_btn_3.clicked.connect(lambda: install_search_app_three_thread())
+            self.install_search_app_btn_4.clicked.connect(lambda: install_search_app_four_thread())
+            self.install_search_app_btn_5.clicked.connect(lambda: install_search_app_five_thread())
 
 
         def remove_app_function():
