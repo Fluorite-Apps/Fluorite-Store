@@ -1141,16 +1141,16 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         commandline_options = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', command]
         process_result = subprocess.run(commandline_options, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                         universal_newlines=True)
-        choice = QtWidgets.QMessageBox.question(self, 'Finished',
-                                                "We're not sure if the process was successful \nReload Buckets?",
-                                                QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No)
-        if choice == QtWidgets.QMessageBox.Yes:
-            self.list_buckets_layout.removeWidget(self.list_buckets_label)
-            self.stackedWidget.setCurrentWidget(self.home)
-            self.stackedWidget.setCurrentWidget(self.buckets)
-        else:
-            self.list_buckets_layout.removeWidget(self.list_buckets_label)
-            self.stackedWidget.setCurrentWidget(self.home)
+        # choice = QtWidgets.QMessageBox.question(self, 'Finished',
+        #                                         "We're not sure if the process was successful \nReload Buckets?",
+        #                                         QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No)
+        # if choice == QtWidgets.QMessageBox.Yes:
+        #     self.list_buckets_layout.removeWidget(self.list_buckets_label)
+        #     self.stackedWidget.setCurrentWidget(self.home)
+        #     self.stackedWidget.setCurrentWidget(self.buckets)
+        # else:
+        #     self.list_buckets_layout.removeWidget(self.list_buckets_label)
+        #     self.stackedWidget.setCurrentWidget(self.home)
 
 
 
