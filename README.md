@@ -8,20 +8,18 @@ Main Devs:
 - [Thomas Kerby (TXOG)](https://github.com/TXOG)
 - [Faraz Ahary (t3dium)](https://github.com/t3dium)
 
-Also previously known as scoop-gui, and Vanilla.py which was re-designed to Halogen.py
+Also previously known as scoop-gui, and Vanilla.py which was re-designed to Fluorite Store
 
 # Features 
 
-- [ ] Managing installed scoop apps - **TODO**
+- [x] Managing installed scoop apps - (plan to make a better interface for it though)
 - [x] Managing installed buckets
-- [ ] Searching and installing apps - **TODO**
-- [ ] Faster searches using the unofficial scoop-search package - **TODO**
+- [x] Searching and installing apps
 - [x] List of recommended apps and install buttons
 - [x] Faster downloads (optionally) using aria2c multithreaded download manager [experimental]
 - [x] Modern design and animations
 
-## Possible Features 
-May be added once the base application is fully functional
+## Possible Features to be added
 - [ ] Chocolately integration
 - [ ] VirusTotal check button next to each app
 - [ ] Scheduled, auto updates
