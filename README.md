@@ -20,6 +20,12 @@ Also previously known as scoop-gui, and Vanilla.py which was re-designed to Halo
 - [x] Faster downloads (optionally) using aria2c multithreaded download manager [experimental]
 - [x] Modern design and animations
 
+## Possible Features 
+May be added once the base application is fully functional
+- [ ] Chocolately integration
+- [ ] VirusTotal check button next to each app
+- [ ] Scheduled, auto updates
+
 # Fluorite Store
 https://user-images.githubusercontent.com/83690012/190864219-1a7856e3-d629-4103-9063-aa05eb71d0ea.mp4
 
