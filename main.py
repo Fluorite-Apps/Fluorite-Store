@@ -1171,21 +1171,18 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             while True:
                 time.sleep(1)
                 if self.fast_search_toggle.isChecked() == True:
-                    print("Test")
                     # checking if has_ran_before_two exists, if not runs and creates
-                    if exists(has_ran_before_two):
-                        # install scoop-search in a seperate thread
+                    with open('fastsearch.txt', 'w') as file:
+                        file.truncate(0)
+                        file.write(str(1))
+                    check_fast_command = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop-search firefox']
+                    process_result = subprocess.run(check_fast_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                                    universal_newlines=True)
+                    check_install = process_result.stdout
+                    if str(check_install) == (""):
                         t = Thread(target=install_scoop_search)
                         t.daemon = True
                         t.start()
-
-                        # making has_ran_before_two file
-                        file_two = open(r"has_ran_before_two", "w")
-                        file_two.write(" ")
-                        break
-                    else:
-                        print("already ran before, skipping")
-                        break
 
         def continuous_checking_other_toggle_status():
             while True:
@@ -1361,6 +1358,20 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # else:
         #     self.list_buckets_layout.removeWidget(self.list_buckets_label)
         #     self.stackedWidget.setCurrentWidget(self.home)
+
+
+if exists('fastsearch.txt'):
+    pass
+else:
+    file = open('fastsearch.txt', 'w+')
+    file.write('1')
+    file.close()
+if exists('downloadmanager.txt'):
+    pass
+else:
+    file = open('downloadmanager.txt', 'w+')
+    file.write('0')
+    file.close()
 
 
 
