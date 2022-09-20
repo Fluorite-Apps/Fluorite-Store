@@ -352,6 +352,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         self.enter_search_term_layout.addWidget(self.enter_search_term_button, Qt.AlignCenter, Qt.AlignCenter)
         self.enter_search_term_button.clicked.connect(lambda: do_search())
+        self.search_bar_input.returnPressed.connect(lambda: do_search())
 
 
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
