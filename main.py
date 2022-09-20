@@ -1115,11 +1115,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         ###################################################################################################################
 
         # download manager setting - aria2c
-        self.thing = PyToggle(
+        self.fast_search_toggle = PyToggle(
             width=50
         )
         # fast search - scoop-search
-        self.another_thing = PyToggle(
+        self.download_manager_toggle = PyToggle(
             width=50
         )
         # something else
@@ -1128,8 +1128,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         )
 
         # adding widgets to layout
-        self.settings_toggle_1_layout.addWidget(self.thing, Qt.AlignCenter, Qt.AlignCenter)
-        self.settings_toggle_2_layout.addWidget(self.another_thing, Qt.AlignCenter, Qt.AlignCenter)
+        self.settings_toggle_1_layout.addWidget(self.fast_search_toggle, Qt.AlignCenter, Qt.AlignCenter)
+        self.settings_toggle_2_layout.addWidget(self.download_manager_toggle, Qt.AlignCenter, Qt.AlignCenter)
         self.settings_toggle_3_layout.addWidget(self.a_thing, Qt.AlignCenter, Qt.AlignCenter)
 
         def install_aria2c():
@@ -1151,7 +1151,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         def continuous_checking_downloadmanager_toggle_status():
             while True:
                 time.sleep(1)
-                if self.thing.isChecked() == True:
+                if self.download_manager_toggle.isChecked() == True:
                     # checking if has_ran_before_one exists, if not runs and creates
                     if exists(has_ran_before_one):
                         # install aria2c in a seperate thread
@@ -1170,7 +1170,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         def continuous_checking_fastsearch_toggle_status():
             while True:
                 time.sleep(1)
-                if self.a_thing.isChecked() == True:
+                if self.fast_search_toggle.isChecked() == True:
+                    print("Test")
                     # checking if has_ran_before_two exists, if not runs and creates
                     if exists(has_ran_before_two):
                         # install scoop-search in a seperate thread
@@ -1189,7 +1190,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         def continuous_checking_other_toggle_status():
             while True:
                 time.sleep(1)
-                if self.another_thing.isChecked() == True:
+                if self.a_thing.isChecked() == True:
                     # placeholder for future 3rd toggle
                     print ("thing 3")
                     break
