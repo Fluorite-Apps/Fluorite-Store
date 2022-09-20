@@ -117,11 +117,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             # making scoop search command
             scoop_search_command = ("scoop-search " + str(search_bar_text))
             print (scoop_search_command)
-            notification.notify(
-                title='Searching...',
-                message='please wait',
-                app_icon="fluorite.ico",
-                timeout=10,)
+            # notification.notify(
+            #     title='Searching...',
+            #     message='please wait',
+            #     app_icon="fluorite.ico",
+            #     timeout=10,)
 
             powershell_scoop_search_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_search_command)]
             powershell_scoop_search_2 = subprocess.run(powershell_scoop_search_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
