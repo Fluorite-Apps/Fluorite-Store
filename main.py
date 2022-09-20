@@ -43,6 +43,10 @@ from BlurWindow.blurWindow import blur
 from BlurWindow.blurWindow import GlobalBlur
 import resource_file_qt_rc
 
+import plyer
+
+from plyer import *
+
 from plyer import notification
 
 
