@@ -278,11 +278,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
 
         def remove_app_function():
-            remove_app_input_text = self.remove_app_input.text()
+            remove_app_input_text = self.apps_list.currentText()
             print (remove_app_input_text)
 
             # making scoop remove command
-            scoop_remove_command = ("scoop uninstall" + str(remove_app_input_text))
+            scoop_remove_command = ("scoop uninstall " + str(remove_app_input_text))
             print (scoop_remove_command)
 
             powershell_scoop_remove_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_remove_command)]
@@ -1311,9 +1311,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     del res[i]
                 except:
                     break
-
-
-            print(res)
 
             endres = ""
             for ele in res:
