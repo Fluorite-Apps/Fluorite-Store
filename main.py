@@ -1142,9 +1142,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.settings_toggle_3_layout.addWidget(self.a_thing, Qt.AlignCenter, Qt.AlignCenter)
 
         def install_aria2c():
-            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install aria2c']
+            print("Installing")
+            toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install aria2']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True)
+            print("Installed")
 
         def install_scoop_search():
             toggle_command_2 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install scoop-search']
@@ -1161,20 +1163,25 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             while True:
                 time.sleep(1)
                 if self.download_manager_toggle.isChecked() == True:
+                    with open('downloadmanager.txt', 'w') as file:
+                        file.truncate(0)
+                        file.write(str(1))
                     # checking if has_ran_before_one exists, if not runs and creates
-                    if exists(has_ran_before_one):
+                    check_manager_command = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop list']
+                    process_result = subprocess.run(check_manager_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                                    universal_newlines=True)
+                    check_installed = process_result.stdout
+                    word = ("aria2")
+                    if word not in check_installed:
                         # install aria2c in a seperate thread
                         t = Thread(target=install_aria2c)
                         t.daemon = True
                         t.start()
+                if self.download_manager_toggle.isChecked() == False:
+                    with open('downloadmanager.txt', 'w') as file:
+                        file.truncate(0)
+                        file.write(str(0))
 
-                        # making has_ran_before_one file
-                        file_one = open(r"has_ran_before_one", "w")
-                        file_one.write(" ")
-                        break
-                    else:
-                        print ("already ran before, skipping")
-                        break
 
         def continuous_checking_fastsearch_toggle_status():
             while True:
