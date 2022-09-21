@@ -90,12 +90,43 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # UPDATING SCOOP REPO WHEN LAUNCHING                    #
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-        def do_update():
+
+        def do_update_and_show_status():
+            #update scoop repo
             powershell_do_update = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', "scoop update"]
             powershell_do_update_1 = subprocess.run(powershell_do_update, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                                      universal_newlines=True)
 
-        t = Thread(target=do_update)
+            powershell_do_update2 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', "scoop status"]
+            powershell_do_update_2 = subprocess.run(powershell_do_update2, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                                     universal_newlines=True)
+            status_output = powershell_do_update_2.stdout
+
+            # check number of updates
+            # does scoop status, counts lines and minuses 6 (non app lines)
+            number = len(status_output.splitlines())
+            number = number - 6
+
+            if number == 0:
+                notification.notify(
+                    title='Scoop is up to date',
+                    message="All apps up to date, no need to update",
+                    app_icon="fluorite.ico",
+                    timeout=10,
+                )
+            else:
+                number = str(number)
+                message = (number+" out of date apps found, please update")
+                message = str(message)
+                print (message)
+                notification.notify(
+                    title='Out of date apps',
+                    message=message,
+                    app_icon="fluorite.ico",
+                    timeout=10,
+                )
+
+        t = Thread(target=do_update_and_show_status)
         t.daemon = True
         t.start()
 
@@ -352,9 +383,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.enter_search_term_button.setFixedWidth(91)
 
         self.enter_search_term_layout.addWidget(self.enter_search_term_button, Qt.AlignCenter, Qt.AlignCenter)
-        self.enter_search_term_button.clicked.connect(lambda: do_search())
-        self.search_bar_input.returnPressed.connect(lambda: do_search())
+        self.enter_search_term_button.clicked.connect(lambda: threaded_do_search())
+        self.search_bar_input.returnPressed.connect(lambda: threaded_do_search())
 
+        def threaded_do_search():
+            t = Thread(target=do_search)
+            t.daemon = True
+            t.start()
 
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         # STATUS INDICATOR                                    #
