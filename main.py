@@ -1136,6 +1136,14 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             else:
                 self.fast_search_toggle.setChecked(False)
 
+        with open('downloadmanager.txt', 'r') as file:
+            dmToggled = file.read()
+            dmToggled = str(dmToggled)
+            if dmToggled == str(1):
+                self.download_manager_toggle.setChecked(True)
+            else:
+                self.download_manager_toggle.setChecked(False)
+
         # adding widgets to layout
         self.settings_toggle_1_layout.addWidget(self.fast_search_toggle, Qt.AlignCenter, Qt.AlignCenter)
         self.settings_toggle_2_layout.addWidget(self.download_manager_toggle, Qt.AlignCenter, Qt.AlignCenter)
