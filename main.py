@@ -62,6 +62,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         self.setStyleSheet("background-color: rgba(0, 0, 0, 0)")
 
+
         # self.setAttribute(Qt.WA_TranslucentBackground)
         # self.resize(1050, 700)
         #
@@ -1127,6 +1128,14 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             width=50
         )
 
+        with open('fastsearch.txt', 'r') as file:
+            fastsearchToggled = file.read()
+            fastsearchToggled = str(fastsearchToggled)
+            if fastsearchToggled == str(1):
+                self.fast_search_toggle.setChecked(True)
+            else:
+                self.fast_search_toggle.setChecked(False)
+
         # adding widgets to layout
         self.settings_toggle_1_layout.addWidget(self.fast_search_toggle, Qt.AlignCenter, Qt.AlignCenter)
         self.settings_toggle_2_layout.addWidget(self.download_manager_toggle, Qt.AlignCenter, Qt.AlignCenter)
@@ -1183,6 +1192,10 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                         t = Thread(target=install_scoop_search)
                         t.daemon = True
                         t.start()
+                if self.fast_search_toggle.isChecked() == False:
+                    with open('fastsearch.txt', 'w') as file:
+                        file.truncate(0)
+                        file.write(str(0))
 
         def continuous_checking_other_toggle_status():
             while True:
