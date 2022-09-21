@@ -1893,24 +1893,6 @@ QPushButton:hover {
        </property>
       </layout>
      </widget>
-     <widget class="QLineEdit" name="remove_app_input">
-      <property name="geometry">
-       <rect>
-        <x>780</x>
-        <y>350</y>
-        <width>271</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(89, 93, 117);
-border-radius: 25px;
-border-bottom: 30px shadow;</string>
-      </property>
-      <property name="text">
-       <string>                       Enter an app name here:</string>
-      </property>
-     </widget>
      <widget class="QFrame" name="remove_app_button_frame">
       <property name="geometry">
        <rect>
@@ -1969,6 +1951,48 @@ QPushButton:hover {
        </property>
       </layout>
      </widget>
+     <widget class="QLabel" name="label_75">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>350</y>
+        <width>281</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+			background-color: #595D75;
+			padding: 12px;
+			border-radius: 25px;
+			border-bottom: 30px shadow;
+        }</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="apps_list">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>370</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(89, 93, 117);
+border-radius: 25px;
+border-bottom: 30px shadow;</string>
+      </property>
+     </widget>
      <zorder>label_46</zorder>
      <zorder>title_buckets_2</zorder>
      <zorder>label_47</zorder>
@@ -1998,8 +2022,9 @@ QPushButton:hover {
      <zorder>label_56</zorder>
      <zorder>cb</zorder>
      <zorder>bucket_back_frame</zorder>
-     <zorder>remove_app_input</zorder>
      <zorder>remove_app_button_frame</zorder>
+     <zorder>label_75</zorder>
+     <zorder>apps_list</zorder>
     </widget>
     <widget class="QWidget" name="installed"/>
     <widget class="QWidget" name="search">

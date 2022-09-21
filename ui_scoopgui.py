@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguidnCosd.ui'
+## Form generated from reading UI file 'scoopguiuYlkUr.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -806,12 +806,6 @@ class Ui_MainWindow(object):
         self.bucket_back_layout.setSpacing(0)
         self.bucket_back_layout.setObjectName(u"bucket_back_layout")
         self.bucket_back_layout.setContentsMargins(0, 0, 0, 0)
-        self.remove_app_input = QLineEdit(self.buckets)
-        self.remove_app_input.setObjectName(u"remove_app_input")
-        self.remove_app_input.setGeometry(QRect(780, 350, 271, 81))
-        self.remove_app_input.setStyleSheet(u"background-color: rgb(89, 93, 117);\n"
-"border-radius: 25px;\n"
-"border-bottom: 30px shadow;")
         self.remove_app_button_frame = QFrame(self.buckets)
         self.remove_app_button_frame.setObjectName(u"remove_app_button_frame")
         self.remove_app_button_frame.setGeometry(QRect(620, 360, 131, 61))
@@ -840,6 +834,22 @@ class Ui_MainWindow(object):
         self.remove_app_button_layout.setSpacing(0)
         self.remove_app_button_layout.setObjectName(u"remove_app_button_layout")
         self.remove_app_button_layout.setContentsMargins(0, 0, 0, 0)
+        self.label_75 = QLabel(self.buckets)
+        self.label_75.setObjectName(u"label_75")
+        self.label_75.setGeometry(QRect(770, 350, 281, 81))
+        self.label_75.setStyleSheet(u"QLabel {\n"
+"			background-color: #595D75;\n"
+"			padding: 12px;\n"
+"			border-radius: 25px;\n"
+"			border-bottom: 30px shadow;\n"
+"        }")
+        self.apps_list = QComboBox(self.buckets)
+        self.apps_list.setObjectName(u"apps_list")
+        self.apps_list.setGeometry(QRect(780, 370, 261, 41))
+        self.apps_list.setFont(font2)
+        self.apps_list.setStyleSheet(u"background-color: rgb(89, 93, 117);\n"
+"border-radius: 25px;\n"
+"border-bottom: 30px shadow;")
         self.stackedWidget.addWidget(self.buckets)
         self.label_46.raise_()
         self.title_buckets_2.raise_()
@@ -870,8 +880,9 @@ class Ui_MainWindow(object):
         self.label_56.raise_()
         self.cb.raise_()
         self.bucket_back_frame.raise_()
-        self.remove_app_input.raise_()
         self.remove_app_button_frame.raise_()
+        self.label_75.raise_()
+        self.apps_list.raise_()
         self.installed = QWidget()
         self.installed.setObjectName(u"installed")
         self.stackedWidget.addWidget(self.installed)
@@ -1108,8 +1119,6 @@ class Ui_MainWindow(object):
         self.app_install_frame_1.setGeometry(QRect(820, 200, 101, 51))
         self.app_install_frame_1.setCursor(QCursor(Qt.PointingHandCursor))
         self.app_install_frame_1.setStyleSheet(u"QPushButton{\n"
-"	\n"
-"	background-color: rgb(60, 64, 82);\n"
 "	padding: 12px;\n"
 "	border-radius: 25px;\n"
 "	border-bottom: 30px shadow;\n"
@@ -1139,8 +1148,6 @@ class Ui_MainWindow(object):
         self.app_install_frame_2.setGeometry(QRect(820, 290, 101, 51))
         self.app_install_frame_2.setCursor(QCursor(Qt.PointingHandCursor))
         self.app_install_frame_2.setStyleSheet(u"QPushButton{\n"
-"	\n"
-"	background-color: rgb(60, 64, 82);\n"
 "	padding: 12px;\n"
 "	border-radius: 25px;\n"
 "	border-bottom: 30px shadow;\n"
@@ -1170,8 +1177,6 @@ class Ui_MainWindow(object):
         self.app_install_frame_3.setGeometry(QRect(820, 380, 101, 51))
         self.app_install_frame_3.setCursor(QCursor(Qt.PointingHandCursor))
         self.app_install_frame_3.setStyleSheet(u"QPushButton{\n"
-"	\n"
-"	background-color: rgb(60, 64, 82);\n"
 "	padding: 12px;\n"
 "	border-radius: 25px;\n"
 "	border-bottom: 30px shadow;\n"
@@ -1201,8 +1206,6 @@ class Ui_MainWindow(object):
         self.app_install_frame_4.setGeometry(QRect(820, 470, 101, 51))
         self.app_install_frame_4.setCursor(QCursor(Qt.PointingHandCursor))
         self.app_install_frame_4.setStyleSheet(u"QPushButton{\n"
-"	\n"
-"	background-color: rgb(60, 64, 82);\n"
 "	padding: 12px;\n"
 "	border-radius: 25px;\n"
 "	border-bottom: 30px shadow;\n"
@@ -1232,8 +1235,6 @@ class Ui_MainWindow(object):
         self.app_install_frame_5.setGeometry(QRect(820, 560, 101, 51))
         self.app_install_frame_5.setCursor(QCursor(Qt.PointingHandCursor))
         self.app_install_frame_5.setStyleSheet(u"QPushButton{\n"
-"	\n"
-"	background-color: rgb(60, 64, 82);\n"
 "	padding: 12px;\n"
 "	border-radius: 25px;\n"
 "	border-bottom: 30px shadow;\n"
@@ -4425,7 +4426,7 @@ class Ui_MainWindow(object):
         self.title_buckets_8.setText(QCoreApplication.translate("MainWindow", u"Remove Bucket", None))
         self.bucket_button_remove.setText("")
         self.label_56.setText("")
-        self.remove_app_input.setText(QCoreApplication.translate("MainWindow", u"                       Enter an app name here:", None))
+        self.label_75.setText("")
         self.label_28.setText("")
         self.label_29.setText("")
         self.app_label_1.setText("")

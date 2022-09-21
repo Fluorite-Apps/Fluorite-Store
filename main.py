@@ -1321,13 +1321,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
             ################################################################################################################
 
-
-            # self.list_buckets_label = QLabel(endres, parent=self)
-            # self.list_buckets_label.setFont(QFont('Arial', 12))
-            # self.list_buckets_layout.addWidget(self.list_buckets_label, Qt.AlignLeft, Qt.AlignTop)
-            self.bucket_button_add.clicked.connect(self.thread_add_bucket)
-            self.bucket_button_remove.clicked.connect(self.removeBucket)
-
             self.cb.addItems(res)
             # self.stateTooltip = None
             # with open('resource/statetooltip/style/demo.qss', encoding='utf-8') as f:
