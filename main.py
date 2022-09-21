@@ -1246,6 +1246,14 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         update_all_apps_powershell2 = subprocess.run(update_all_apps_powershell, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                         universal_newlines=True)
 
+
+        notification.notify(
+            title='Finished',
+            message='Updated Apps',
+            app_icon="fluorite.ico",
+            timeout=10,
+        )
+
     def update_all_apps_thread(self):
         t = Thread(target=self.update_all_apps_function)
         t.daemon = True
@@ -1316,15 +1324,85 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             for ele in res:
                 endres += ele + "\n"
 
+            self.cb.addItems(res)
+
+        ################################################################################################################
+
+        def function2():
+            commandline_options = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop list']
+            process_result = subprocess.run(commandline_options, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+
+            res2 = process_result.stdout
+            res2 = str(res2)
+            res2 = res2.split("\n")
+
+            # Manipulate list
             ################################################################################################################
 
-            self.cb.addItems(res)
-            # self.stateTooltip = None
-            # with open('resource/statetooltip/style/demo.qss', encoding='utf-8') as f:
-            #     self.setStyleSheet(f.read())
+
+            del res2[0]
+            del res2[0]
+            del res2[0]
+            del res2[0]
+
+            simplified = ""
+
+            # converting list to str
+            for x in res2:
+                simplified += x
+
+            simplified = simplified.split(' ')
+
+            # remove blank spaces
+            while ("" in simplified):
+                simplified.remove("")
+
+            counter = int(0)
+            newlist = []
+
+            # as every app is the 5th item in the list
+            for x in simplified:
+                try:
+                    counter = counter + 5
+                    newlist.append(simplified[counter])
+                except:
+                    pass
+
+            # adding app names to dropdown
+            self.apps_list.addItems(newlist)
+
+
+
+
+
+
+            # stringVal = '.'
+            # res2 = [x for x in res2 if stringVal in x]
+            #
+            # stringVal = ':'
+            # simplified = [x for x in res2 if stringVal in x]
+            #
+            # simplified = str(res2)
+            # simplified = simplified.strip("")
+            # simplified = simplified.strip(" ")
+            # simplified = simplified.strip("'")
+            # simplified = simplified.strip('"')
+            # simplified = simplified.strip(":")
+            # print(simplified)
+
+
+            ################################################################################################################
+
+            # self.apps_list.addItems(res2)
 
         # thread fixes hanging, daemon keep alive until finished
         t = Thread(target=function)
+        t.daemon = True
+        t.start()
+
+        # thread fixes hanging, daemon keep alive until finished
+        t = Thread(target=function2)
         t.daemon = True
         t.start()
 
