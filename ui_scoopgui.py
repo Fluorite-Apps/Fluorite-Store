@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguiuYlkUr.ui'
+## Form generated from reading UI file 'scoopguikiIryW.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -836,7 +836,7 @@ class Ui_MainWindow(object):
         self.remove_app_button_layout.setContentsMargins(0, 0, 0, 0)
         self.label_75 = QLabel(self.buckets)
         self.label_75.setObjectName(u"label_75")
-        self.label_75.setGeometry(QRect(770, 350, 281, 81))
+        self.label_75.setGeometry(QRect(780, 350, 271, 81))
         self.label_75.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -845,7 +845,7 @@ class Ui_MainWindow(object):
 "        }")
         self.apps_list = QComboBox(self.buckets)
         self.apps_list.setObjectName(u"apps_list")
-        self.apps_list.setGeometry(QRect(780, 370, 261, 41))
+        self.apps_list.setGeometry(QRect(790, 370, 251, 41))
         self.apps_list.setFont(font2)
         self.apps_list.setStyleSheet(u"background-color: rgb(89, 93, 117);\n"
 "border-radius: 25px;\n"

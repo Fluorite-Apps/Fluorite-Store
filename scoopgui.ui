@@ -1954,9 +1954,9 @@ QPushButton:hover {
      <widget class="QLabel" name="label_75">
       <property name="geometry">
        <rect>
-        <x>770</x>
+        <x>780</x>
         <y>350</y>
-        <width>281</width>
+        <width>271</width>
         <height>81</height>
        </rect>
       </property>
@@ -1975,9 +1975,9 @@ QPushButton:hover {
      <widget class="QComboBox" name="apps_list">
       <property name="geometry">
        <rect>
-        <x>780</x>
+        <x>790</x>
         <y>370</y>
-        <width>261</width>
+        <width>251</width>
         <height>41</height>
        </rect>
       </property>

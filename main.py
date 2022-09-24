@@ -130,17 +130,144 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         t.daemon = True
         t.start()
 
-
         def do_search():
 
-            # setting previous app names to blank, so if the user searches again, it'll remove previous searches
-            final_app_one = ""
-            final_app_two = ""
-            final_app_three = ""
-            final_app_four = ""
-            final_app_five = ""
+            # as this part is rather slow, there'll be one function for each app
 
-            print ("1")
+            def app_desc_1_function():
+                try:
+                    # making scoop cat commands
+                    scoop_cat_command_1 = ("scoop cat "+final_app_one)
+                    powershell_cat_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_cat_command_1)]
+                    powershell_do_cat_1 = subprocess.run(powershell_cat_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                                     universal_newlines=True)
+                except:
+                    pass
+
+                try:
+                    # getting app description from the scoop cat commands
+                    app_desc_1 = powershell_do_cat_1.stdout
+                    app_desc_1 = app_desc_1.split('\n')
+                    app_desc_1 = app_desc_1[2]
+                    app_desc_1 = app_desc_1.strip(" ")
+                    app_desc_1 = app_desc_1.strip('",')
+                    app_desc_1 = app_desc_1.strip('description": ')
+                except:
+                    pass
+
+                # putting app description onto qt description box
+                try:
+                    self.app_desc_1_lbl.setText(str(app_desc_1))
+                except:
+                    pass
+
+            def app_desc_2_function():
+                try:
+                    scoop_cat_command_2 = ("scoop cat "+final_app_two)
+                    powershell_cat_2 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_cat_command_2)]
+                    powershell_do_cat_2 = subprocess.run(powershell_cat_2, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                                         universal_newlines=True)
+                except:
+                    pass
+
+                try:
+                    app_desc_2 = powershell_do_cat_2.stdout
+                    app_desc_2 = app_desc_2.split('\n')
+                    app_desc_2 = app_desc_2[2]
+                    app_desc_2 = app_desc_2.strip(" ")
+                    app_desc_2 = app_desc_2.strip('",')
+                    app_desc_2 = app_desc_2.strip('description": ')
+                except:
+                    pass
+
+                try:
+                    self.app_desc_2_lbl.setText(str(app_desc_2))
+                except:
+                    pass
+
+
+            def app_desc_3_function():
+                try:
+                    scoop_cat_command_3 = ("scoop cat "+final_app_three)
+                    powershell_cat_3 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_cat_command_3)]
+                    powershell_do_cat_3 = subprocess.run(powershell_cat_3, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                                     universal_newlines=True)
+                except:
+                    pass
+
+                try:
+                    app_desc_3 = powershell_do_cat_3.stdout
+                    app_desc_3 = app_desc_3.split('\n')
+                    app_desc_3 = app_desc_3[2]
+                    app_desc_3 = app_desc_3.strip(" ")
+                    app_desc_3 = app_desc_3.strip('",')
+                    app_desc_3 = app_desc_3.strip('description": ')
+                except:
+                    pass
+
+                try:
+                    self.app_desc_3_lbl.setText(str(app_desc_3))
+                except:
+                    pass
+
+
+            def app_desc_4_function():
+                try:
+                    scoop_cat_command_4 = ("scoop cat "+final_app_four)
+                    powershell_cat_4 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_cat_command_4)]
+                    powershell_do_cat_4 = subprocess.run(powershell_cat_4, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                                     universal_newlines=True)
+                except:
+                    pass
+
+                try:
+                    app_desc_4 = powershell_do_cat_4.stdout
+                    app_desc_4 = app_desc_4.split('\n')
+                    print(app_desc_4)
+                    app_desc_4 = app_desc_4[2]
+                    app_desc_4 = app_desc_4.strip(" ")
+                    app_desc_4 = app_desc_4.strip('",')
+                    app_desc_4 = app_desc_4.strip('description": ')
+                except:
+                    pass
+
+                try:
+                    self.app_desc_4_lbl.setText(str(app_desc_4))
+                except:
+                    pass
+
+
+            def app_desc_5_function():
+                try:
+                    scoop_cat_command_5 = ("scoop cat "+final_app_five)
+                    powershell_cat_5 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_cat_command_5)]
+                    powershell_do_cat_5 = subprocess.run(powershell_cat_5, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                                     universal_newlines=True)
+                except:
+                    pass
+
+                try:
+                    app_desc_5 = powershell_do_cat_5.stdout
+                    app_desc_5 = app_desc_5.split('\n')
+                    print(app_desc_5)
+                    app_desc_5 = app_desc_5[2]
+                    app_desc_5 = app_desc_5.strip(" ")
+                    app_desc_5 = app_desc_5.strip('",')
+                    app_desc_5 = app_desc_5.strip('description": ')
+                except:
+                    pass
+
+                try:
+                    self.app_desc_5_lbl.setText(str(app_desc_5))
+                except:
+                    pass
+
+            # setting previous app names to blank, so if the user searches again, it'll remove previous searches
+            final_app_one = " "
+            final_app_two = " "
+            final_app_three = " "
+            final_app_four = " "
+            final_app_five = " "
 
             # getting search bar text
             search_bar_text = self.search_bar_input.text()
@@ -216,7 +343,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 pass
 
             try:
-                global scoop_install_command_1,scoop_install_command_2,scoop_install_command_3,scoop_install_command_4,scoop_install_command_5
                 # making scoop install commands
                 scoop_install_command_1 =  ("scoop install "+final_app_one)
                 scoop_install_command_2 =  ("scoop install "+final_app_two)
@@ -235,6 +361,28 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 self.app_label_5.setText(str(final_app_five))
             except:
                 pass
+
+
+            # getting app descriptions - to speed this part up as its quite slow, there'll be 5 threads, 1 for getting each app description
+            t = Thread(target=app_desc_1_function)
+            t.daemon = True
+            t.start()
+
+            z = Thread(target=app_desc_2_function)
+            z.daemon = True
+            z.start()
+
+            x = Thread(target=app_desc_3_function)
+            x.daemon = True
+            x.start()
+
+            y = Thread(target=app_desc_4_function)
+            y.daemon = True
+            y.start()
+
+            c = Thread(target=app_desc_5_function)
+            c.daemon = True
+            c.start()
 
             def installed_app_notif_1():
                 notification.notify(
@@ -415,6 +563,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.status_indicator_layout_buckets.addWidget(self.status_indicator_bucket, Qt.AlignCenter, Qt.AlignCenter)
 
 
+
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         # NEXT PAGE BUTTON - STARRED/RECOMMENDED APPS PAGE    #
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -518,6 +667,21 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         self.return_home_7.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
 
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # DESCRIPTION LABELS ON SEARCH APPS PAGE             #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+        self.app_desc_1_lbl = QLabel("", parent=self)
+        self.app_desc_2_lbl = QLabel("", parent=self)
+        self.app_desc_3_lbl = QLabel("", parent=self)
+        self.app_desc_4_lbl = QLabel("", parent=self)
+        self.app_desc_5_lbl = QLabel("", parent=self)
+
+        self.app_desc_1_layout.addWidget(self.app_desc_1_lbl, Qt.AlignCenter, Qt.AlignCenter)
+        self.app_desc_2_layout.addWidget(self.app_desc_2_lbl, Qt.AlignCenter, Qt.AlignCenter)
+        self.app_desc_3_layout.addWidget(self.app_desc_3_lbl, Qt.AlignCenter, Qt.AlignCenter)
+        self.app_desc_4_layout.addWidget(self.app_desc_4_lbl, Qt.AlignCenter, Qt.AlignCenter)
+        self.app_desc_5_layout.addWidget(self.app_desc_5_lbl, Qt.AlignCenter, Qt.AlignCenter)
 
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         # INSTALL BUTTONS PAGE  1  - STARRED APPS             #
