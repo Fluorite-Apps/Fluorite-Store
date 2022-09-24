@@ -138,6 +138,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 self.app_desc_3_lbl.setText(" ")
                 self.app_desc_4_lbl.setText(" ")
                 self.app_desc_5_lbl.setText(" ")
+                self.app_label_1.setText(" ")
+                self.app_label_2.setText(" ")
+                self.app_label_3.setText(" ")
+                self.app_label_4.setText(" ")
+                self.app_label_5.setText(" ")
 
             t = Thread(target=clear_previous_description)
             t.daemon = True
@@ -169,6 +174,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 # putting app description onto qt description box
                 try:
                     self.app_desc_1_lbl.setText(str(app_desc_1))
+                    self.app_label_1.setText(str(final_app_one))
                 except:
                     pass
 
@@ -193,6 +199,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
                 try:
                     self.app_desc_2_lbl.setText(str(app_desc_2))
+                    self.app_label_2.setText(str(final_app_two))
                 except:
                     pass
 
@@ -218,6 +225,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
                 try:
                     self.app_desc_3_lbl.setText(str(app_desc_3))
+                    self.app_label_3.setText(str(final_app_three))
                 except:
                     pass
 
@@ -243,6 +251,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
                 try:
                     self.app_desc_4_lbl.setText(str(app_desc_4))
+                    self.app_label_4.setText(str(final_app_four))
                 except:
                     pass
 
@@ -268,6 +277,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
                 try:
                     self.app_desc_5_lbl.setText(str(app_desc_5))
+                    self.app_label_5.setText(str(final_app_five))
                 except:
                     pass
 
@@ -352,16 +362,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 scoop_install_command_3 =  ("scoop install "+final_app_three)
                 scoop_install_command_4 =  ("scoop install "+final_app_four)
                 scoop_install_command_5 =  ("scoop install "+final_app_five)
-            except:
-                pass
-
-            # updating GUI with these appnames
-            try:
-                self.app_label_1.setText(str(final_app_one))
-                self.app_label_2.setText(str(final_app_two))
-                self.app_label_3.setText(str(final_app_three))
-                self.app_label_4.setText(str(final_app_four))
-                self.app_label_5.setText(str(final_app_five))
             except:
                 pass
 
