@@ -132,6 +132,17 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         def do_search():
 
+            def clear_previous_description():
+                self.app_desc_1_lbl.setText(" ")
+                self.app_desc_2_lbl.setText(" ")
+                self.app_desc_3_lbl.setText(" ")
+                self.app_desc_4_lbl.setText(" ")
+                self.app_desc_5_lbl.setText(" ")
+
+            t = Thread(target=clear_previous_description)
+            t.daemon = True
+            t.start()
+
             # as this part is rather slow, there'll be one function for each app
 
             def app_desc_1_function():
@@ -223,7 +234,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 try:
                     app_desc_4 = powershell_do_cat_4.stdout
                     app_desc_4 = app_desc_4.split('\n')
-                    print(app_desc_4)
                     app_desc_4 = app_desc_4[2]
                     app_desc_4 = app_desc_4.strip(" ")
                     app_desc_4 = app_desc_4.strip('",')
@@ -249,7 +259,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 try:
                     app_desc_5 = powershell_do_cat_5.stdout
                     app_desc_5 = app_desc_5.split('\n')
-                    print(app_desc_5)
                     app_desc_5 = app_desc_5[2]
                     app_desc_5 = app_desc_5.strip(" ")
                     app_desc_5 = app_desc_5.strip('",')
@@ -275,7 +284,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
             # making scoop search command
             scoop_search_command = ("scoop-search " + str(search_bar_text))
-            print (scoop_search_command)
             # notification.notify(
             #     title='Searching...',
             #     message='please wait',
@@ -314,31 +322,26 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 final_app_one = final_app_one.strip("'")
                 final_app_one = final_app_one.strip('"')
                 final_app_one = final_app_one.strip(" ")
-                print (final_app_one)
 
                 final_app_two = (simplified[1].split("(")[0]).strip()
                 final_app_two = final_app_two.strip("'")
                 final_app_two = final_app_two.strip('"')
                 final_app_two = final_app_two.strip(" ")
-                print (final_app_two)
 
                 final_app_three = (simplified[2].split("(")[0]).strip()
                 final_app_three = final_app_three.strip("'")
                 final_app_three = final_app_three.strip('"')
                 final_app_three = final_app_three.strip(" ")
-                print (final_app_three)
 
                 final_app_four = (simplified[3].split("(")[0]).strip()
                 final_app_four = final_app_four.strip("'")
                 final_app_four = final_app_four.strip('"')
                 final_app_four = final_app_four.strip(" ")
-                print (final_app_four)
 
                 final_app_five = (simplified[4].split("(")[0]).strip()
                 final_app_five = final_app_five.strip("'")
                 final_app_five = final_app_five.strip('"')
                 final_app_five = final_app_five.strip(" ")
-                print (final_app_five)
             except:
                 pass
 
@@ -1570,27 +1573,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
             # adding app names to dropdown
             self.apps_list.addItems(newlist)
-
-
-
-
-
-
-            # stringVal = '.'
-            # res2 = [x for x in res2 if stringVal in x]
-            #
-            # stringVal = ':'
-            # simplified = [x for x in res2 if stringVal in x]
-            #
-            # simplified = str(res2)
-            # simplified = simplified.strip("")
-            # simplified = simplified.strip(" ")
-            # simplified = simplified.strip("'")
-            # simplified = simplified.strip('"')
-            # simplified = simplified.strip(":")
-            # print(simplified)
-
-
             ################################################################################################################
 
             # self.apps_list.addItems(res2)
