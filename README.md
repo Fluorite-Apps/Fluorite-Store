@@ -12,17 +12,22 @@ Also previously known as scoop-gui, and Vanilla.py which was re-designed to Fluo
 
 # Features 
 
-- [x] Managing installed scoop apps - (plan to make a better interface for it though)
+- [x] Managing installed scoop apps
 - [x] Managing installed buckets
 - [x] Searching and installing apps
 - [x] List of recommended apps and install buttons
-- [x] Faster downloads (optionally) using aria2c multithreaded download manager [experimental]
+- [x] Faster downloads (optionally) using aria2 multithreaded download manager [experimental]
 - [x] Modern design and animations
+
+### Misc Features
+- [x] App descriptions
+- [ ] Clicking on description box opens the app's homepage in a browser
+- [x] Notifications for status
 
 ## Possible Features to be added
 - [ ] Chocolately integration
-- [ ] VirusTotal check button next to each app
-- [ ] Scheduled, auto updates
+- [ ] VirusTotal check button next to each app - (requires user to make a free virustotal account prior however)
+- [ ] Scheduled, auto updates - (might not be possible to do via python)
 
 # Fluorite Store
 https://user-images.githubusercontent.com/83690012/190864219-1a7856e3-d629-4103-9063-aa05eb71d0ea.mp4
