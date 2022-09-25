@@ -162,12 +162,18 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
                 try:
                     # getting app description from the scoop cat commands
-                    app_desc_1 = powershell_do_cat_1.stdout
-                    app_desc_1 = app_desc_1.split('\n')
-                    app_desc_1 = app_desc_1[2]
+                    getting_stdout_1 = powershell_do_cat_1.stdout
+                    splitting_stdout_1 = getting_stdout_1.split('\n')
+                    app_desc_1 = splitting_stdout_1[2]
+
+                    # since desc is sometimes 3 instead of 2, so this check is done
+                    if 'version":' in app_desc_1:
+                        app_desc_1 = splitting_stdout_1[3]
+
                     app_desc_1 = app_desc_1.strip(" ")
                     app_desc_1 = app_desc_1.strip('",')
                     app_desc_1 = app_desc_1.strip('description": ')
+
                 except:
                     pass
 
@@ -188,12 +194,17 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     pass
 
                 try:
-                    app_desc_2 = powershell_do_cat_2.stdout
-                    app_desc_2 = app_desc_2.split('\n')
-                    app_desc_2 = app_desc_2[2]
+                    getting_stdout_2 = powershell_do_cat_2.stdout
+                    splitting_stdout_2 = getting_stdout_2.split('\n')
+                    app_desc_2 = splitting_stdout_2[2]
+
+                    if 'version":' in app_desc_2:
+                        app_desc_2 = splitting_stdout_2[3]
+
                     app_desc_2 = app_desc_2.strip(" ")
                     app_desc_2 = app_desc_2.strip('",')
                     app_desc_2 = app_desc_2.strip('description": ')
+
                 except:
                     pass
 
@@ -214,12 +225,17 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     pass
 
                 try:
-                    app_desc_3 = powershell_do_cat_3.stdout
-                    app_desc_3 = app_desc_3.split('\n')
-                    app_desc_3 = app_desc_3[2]
+                    getting_stdout_3 = powershell_do_cat_3.stdout
+                    splitting_stdout_3 = getting_stdout_3.split('\n')
+                    app_desc_3 = splitting_stdout_3[2]
+
+                    if 'version":' in app_desc_3:
+                        app_desc_3 = splitting_stdout_3[3]
+
                     app_desc_3 = app_desc_3.strip(" ")
                     app_desc_3 = app_desc_3.strip('",')
                     app_desc_3 = app_desc_3.strip('description": ')
+
                 except:
                     pass
 
@@ -240,12 +256,17 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     pass
 
                 try:
-                    app_desc_4 = powershell_do_cat_4.stdout
-                    app_desc_4 = app_desc_4.split('\n')
-                    app_desc_4 = app_desc_4[2]
+                    getting_stdout_4 = powershell_do_cat_4.stdout
+                    splitting_stdout_4 = getting_stdout_4.split('\n')
+                    app_desc_4 = splitting_stdout_4[2]
+
+                    if 'version":' in app_desc_4:
+                        app_desc_4 = splitting_stdout_4[3]
+
                     app_desc_4 = app_desc_4.strip(" ")
                     app_desc_4 = app_desc_4.strip('",')
                     app_desc_4 = app_desc_4.strip('description": ')
+
                 except:
                     pass
 
@@ -266,12 +287,17 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     pass
 
                 try:
-                    app_desc_5 = powershell_do_cat_5.stdout
-                    app_desc_5 = app_desc_5.split('\n')
-                    app_desc_5 = app_desc_5[2]
+                    getting_stdout_5 = powershell_do_cat_5.stdout
+                    splitting_stdout_5 = getting_stdout_5.split('\n')
+                    app_desc_5 = splitting_stdout_5[2]
+
+                    if 'version":' in app_desc_5:
+                        app_desc_5 = splitting_stdout_5[3]
+
                     app_desc_5 = app_desc_5.strip(" ")
                     app_desc_5 = app_desc_5.strip('",')
                     app_desc_5 = app_desc_5.strip('description": ')
+
                 except:
                     pass
 
