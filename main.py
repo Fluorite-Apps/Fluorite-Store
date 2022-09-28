@@ -47,6 +47,8 @@ import plyer
 
 from plyer import *
 
+import webbrowser
+
 from plyer import notification
 
 
@@ -308,6 +310,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     pass
 
             # setting previous app names to blank, so if the user searches again, it'll remove previous searches
+            global final_app_one, final_app_two, final_app_three, final_app_four, final_app_five
             final_app_one = " "
             final_app_two = " "
             final_app_three = " "
@@ -483,6 +486,110 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.install_search_app_btn_3.clicked.connect(lambda: install_search_app_three_thread())
             self.install_search_app_btn_4.clicked.connect(lambda: install_search_app_four_thread())
             self.install_search_app_btn_5.clicked.connect(lambda: install_search_app_five_thread())
+
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # VIRUS TOTAL APP CHECKING                            #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+        def app_is_safe_notif():
+            notification.notify(
+                title='App is Safe',
+                message='no malware detections found from 58 sources - VirusTotal',
+                app_icon="fluorite.ico",
+                timeout=10,
+            )
+
+
+        def vt_function_1():
+            vt_command_1 = ("scoop virustotal "+final_app_one)
+            vt_ps_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (vt_command_1)]
+            vt_do_ps_1 = subprocess.run(vt_ps_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+
+            vt_output = vt_do_ps_1.stdout
+            vt_output = vt_output.split(" ")
+            print (vt_output)
+
+            # checking for WARN word, if it exists then vt returned at least 1 detection and the virustotal link is opened in a browser for the user to check
+            # else its safe
+            if vt_output[0] == "WARN":
+                vt_output_url = vt_output[5]
+                webbrowser.open(vt_output_url)
+            else:
+                app_is_safe_notif()
+
+
+        def vt_function_2():
+            vt_command_1 = ("scoop virustotal "+final_app_two)
+            vt_ps_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (vt_command_1)]
+            vt_do_ps_1 = subprocess.run(vt_ps_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+
+            vt_output = vt_do_ps_1.stdout
+            vt_output = vt_output.split(" ")
+            print (vt_output)
+
+            # checking for WARN word, if it exists then vt returned at least 1 detection and the virustotal link is opened in a browser for the user to check
+            # else its safe
+            if vt_output[0] == "WARN":
+                vt_output_url = vt_output[5]
+                webbrowser.open(vt_output_url)
+            else:
+                app_is_safe_notif()
+
+        def vt_function_3():
+            vt_command_1 = ("scoop virustotal "+final_app_three)
+            vt_ps_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (vt_command_1)]
+            vt_do_ps_1 = subprocess.run(vt_ps_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+
+            vt_output = vt_do_ps_1.stdout
+            vt_output = vt_output.split(" ")
+            print (vt_output)
+
+            # checking for WARN word, if it exists then vt returned at least 1 detection and the virustotal link is opened in a browser for the user to check
+            # else its safe
+            if vt_output[0] == "WARN":
+                vt_output_url = vt_output[5]
+                webbrowser.open(vt_output_url)
+            else:
+                app_is_safe_notif()
+
+        def vt_function_4():
+            vt_command_1 = ("scoop virustotal "+final_app_four)
+            vt_ps_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (vt_command_1)]
+            vt_do_ps_1 = subprocess.run(vt_ps_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+
+            vt_output = vt_do_ps_1.stdout
+            vt_output = vt_output.split(" ")
+            print (vt_output)
+
+            # checking for WARN word, if it exists then vt returned at least 1 detection and the virustotal link is opened in a browser for the user to check
+            # else its safe
+            if vt_output[0] == "WARN":
+                vt_output_url = vt_output[5]
+                webbrowser.open(vt_output_url)
+            else:
+                app_is_safe_notif()
+
+        def vt_function_5():
+            vt_command_1 = ("scoop virustotal "+final_app_five)
+            vt_ps_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (vt_command_1)]
+            vt_do_ps_1 = subprocess.run(vt_ps_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True)
+
+            vt_output = vt_do_ps_1.stdout
+            vt_output = vt_output.split(" ")
+            print (vt_output)
+
+            # checking for WARN word, if it exists then vt returned at least 1 detection and the virustotal link is opened in a browser for the user to check
+            # else its safe
+            if vt_output[0] == "WARN":
+                vt_output_url = vt_output[5]
+                webbrowser.open(vt_output_url)
+            else:
+                app_is_safe_notif()
 
 
         def remove_app_function():
@@ -850,6 +957,49 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # self.recc_app_install_button_30.setMinimumHeight(71)
         # self.recc_app_install_button_30.setFixedWidth(131)
 
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # VIRUS TOTAL BUTTON NEXT TO EACH APP                #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+        self.vt_btn_1 = custompushbutton('check', parent=self)
+        self.vt_btn_1.setMinimumHeight(71)
+        self.vt_btn_1.setFixedWidth(91)
+
+        self.vt_btn_2 = custompushbutton('check', parent=self)
+        self.vt_btn_2.setMinimumHeight(71)
+        self.vt_btn_2.setFixedWidth(91)
+
+        self.vt_btn_3 = custompushbutton('check', parent=self)
+        self.vt_btn_3.setMinimumHeight(71)
+        self.vt_btn_3.setFixedWidth(91)
+
+        self.vt_btn_4 = custompushbutton('check', parent=self)
+        self.vt_btn_4.setMinimumHeight(71)
+        self.vt_btn_4.setFixedWidth(91)
+
+        self.vt_btn_5 = custompushbutton('check', parent=self)
+        self.vt_btn_5.setMinimumHeight(71)
+        self.vt_btn_5.setFixedWidth(91)
+
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # ATTACHING VIRUS TOTAL BUTTONS TO LAYOUT             #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+        self.vt_button_1_layout.addWidget(self.vt_btn_1, Qt.AlignCenter, Qt.AlignCenter)
+        self.vt_button_2_layout.addWidget(self.vt_btn_2, Qt.AlignCenter, Qt.AlignCenter)
+        self.vt_button_3_layout.addWidget(self.vt_btn_3, Qt.AlignCenter, Qt.AlignCenter)
+        self.vt_button_4_layout.addWidget(self.vt_btn_4, Qt.AlignCenter, Qt.AlignCenter)
+        self.vt_button_5_layout.addWidget(self.vt_btn_5, Qt.AlignCenter, Qt.AlignCenter)
+
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # CONNECTING VIRUS TOTAL BUTTONS TO THEIR FUNCTIONS   #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+        self.vt_btn_1.clicked.connect(lambda: vt_function_1())
+        self.vt_btn_2.clicked.connect(lambda: vt_function_2())
+        self.vt_btn_3.clicked.connect(lambda: vt_function_3())
+        self.vt_btn_4.clicked.connect(lambda: vt_function_4())
+        self.vt_btn_5.clicked.connect(lambda: vt_function_5())
 
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         # ATTACHING STARRED INSTALL BUTTONS TO LAYOUT         #
