@@ -1,5 +1,7 @@
 import sys
 
+import os
+
 from ui_scoopgui import *
 
 from PySide6.QtGui import *
@@ -51,6 +53,8 @@ import webbrowser
 
 from plyer import notification
 
+import subprocess
+
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None , *args, obj=None, **kwargs):
@@ -97,11 +101,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             #update scoop repo
             powershell_do_update = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', "scoop update"]
             powershell_do_update_1 = subprocess.run(powershell_do_update, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                     universal_newlines=True)
+                                                     universal_newlines=True, shell="False")
 
             powershell_do_update2 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', "scoop status"]
             powershell_do_update_2 = subprocess.run(powershell_do_update2, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                     universal_newlines=True)
+                                                     universal_newlines=True, shell="False")
             status_output = powershell_do_update_2.stdout
 
             # check number of updates
@@ -158,7 +162,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     scoop_cat_command_1 = ("scoop cat "+final_app_one)
                     powershell_cat_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_cat_command_1)]
                     powershell_do_cat_1 = subprocess.run(powershell_cat_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                     universal_newlines=True)
+                                                     universal_newlines=True, shell="False")
                 except:
                     pass
 
@@ -191,7 +195,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     scoop_cat_command_2 = ("scoop cat "+final_app_two)
                     powershell_cat_2 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_cat_command_2)]
                     powershell_do_cat_2 = subprocess.run(powershell_cat_2, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                         universal_newlines=True)
+                                                         universal_newlines=True, shell="False")
                 except:
                     pass
 
@@ -222,7 +226,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     scoop_cat_command_3 = ("scoop cat "+final_app_three)
                     powershell_cat_3 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_cat_command_3)]
                     powershell_do_cat_3 = subprocess.run(powershell_cat_3, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                     universal_newlines=True)
+                                                     universal_newlines=True, shell="False")
                 except:
                     pass
 
@@ -253,7 +257,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     scoop_cat_command_4 = ("scoop cat "+final_app_four)
                     powershell_cat_4 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_cat_command_4)]
                     powershell_do_cat_4 = subprocess.run(powershell_cat_4, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                     universal_newlines=True)
+                                                     universal_newlines=True, shell="False")
                 except:
                     pass
 
@@ -284,7 +288,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     scoop_cat_command_5 = ("scoop cat "+final_app_five)
                     powershell_cat_5 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_cat_command_5)]
                     powershell_do_cat_5 = subprocess.run(powershell_cat_5, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                     universal_newlines=True)
+                                                     universal_newlines=True, shell="False")
                 except:
                     pass
 
@@ -331,7 +335,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
             powershell_scoop_search_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_search_command)]
             powershell_scoop_search_2 = subprocess.run(powershell_scoop_search_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
 
             print (powershell_scoop_search_2)
             powershell_scoop_search_2 = str(powershell_scoop_search_2)
@@ -428,31 +432,31 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             def install_search_app_one():
                 powershell_install_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_1)]
                 powershell_do_install_1 = subprocess.run(powershell_install_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                universal_newlines=True)
+                                                universal_newlines=True, shell="False")
                 installed_app_notif_1()
 
             def install_search_app_two():
                 powershell_install_2 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_2)]
                 powershell_do_install_2 = subprocess.run(powershell_install_2, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                universal_newlines=True)
+                                                universal_newlines=True, shell="False")
                 installed_app_notif_1()
 
             def install_search_app_three():
                 powershell_install_3 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_3)]
                 powershell_do_install_3 = subprocess.run(powershell_install_3, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                universal_newlines=True)
+                                                universal_newlines=True, shell="False")
                 installed_app_notif_1()
 
             def install_search_app_four():
                 powershell_install_4 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_4)]
                 powershell_do_install_4 = subprocess.run(powershell_install_4, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                universal_newlines=True)
+                                                universal_newlines=True, shell="False")
                 installed_app_notif_1()
 
             def install_search_app_five():
                 powershell_install_5 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_5)]
                 powershell_do_install_5 = subprocess.run(powershell_install_5, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                universal_newlines=True)
+                                                universal_newlines=True, shell="False")
                 installed_app_notif_1()
 
             def install_search_app_one_thread():
@@ -504,7 +508,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             vt_command_1 = ("scoop virustotal "+final_app_one)
             vt_ps_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (vt_command_1)]
             vt_do_ps_1 = subprocess.run(vt_ps_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
 
             vt_output = vt_do_ps_1.stdout
             vt_output = vt_output.split(" ")
@@ -523,7 +527,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             vt_command_1 = ("scoop virustotal "+final_app_two)
             vt_ps_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (vt_command_1)]
             vt_do_ps_1 = subprocess.run(vt_ps_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
 
             vt_output = vt_do_ps_1.stdout
             vt_output = vt_output.split(" ")
@@ -541,7 +545,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             vt_command_1 = ("scoop virustotal "+final_app_three)
             vt_ps_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (vt_command_1)]
             vt_do_ps_1 = subprocess.run(vt_ps_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
 
             vt_output = vt_do_ps_1.stdout
             vt_output = vt_output.split(" ")
@@ -559,7 +563,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             vt_command_1 = ("scoop virustotal "+final_app_four)
             vt_ps_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (vt_command_1)]
             vt_do_ps_1 = subprocess.run(vt_ps_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
 
             vt_output = vt_do_ps_1.stdout
             vt_output = vt_output.split(" ")
@@ -577,7 +581,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             vt_command_1 = ("scoop virustotal "+final_app_five)
             vt_ps_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (vt_command_1)]
             vt_do_ps_1 = subprocess.run(vt_ps_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
 
             vt_output = vt_do_ps_1.stdout
             vt_output = vt_output.split(" ")
@@ -602,7 +606,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
             powershell_scoop_remove_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_remove_command)]
             powershell_scoop_remove_2 = subprocess.run(powershell_scoop_remove_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
 
             notification.notify(
                 title='Finished',
@@ -1057,7 +1061,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         def install_recc_app_1():
             # toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install hwinfo']
             # process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-            #                                 universal_newlines=True)
+            #                                 universal_newlines=True, shell="False")
             print ("unfortunately portmaster isn't on scoop yet, so i'll have to find some other way to install this later. Coming soon..")
             installed_app_notif()
 
@@ -1065,7 +1069,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_1.setText("Installing... fluent-reader")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install fluent-reader']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_1.setText("Installed")
             installed_app_notif()
 
@@ -1073,7 +1077,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_1.setText("Installing... flameshot")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install flameshot']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_1.setText("Installed")
             installed_app_notif()
 
@@ -1081,7 +1085,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_1.setText("Installing... ludusavi")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install ludusavi']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_1.setText("Installed")
             installed_app_notif()
 
@@ -1089,7 +1093,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_1.setText("Installing... compactgui")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install compactgui']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_1.setText("Installed")
             installed_app_notif()
 
@@ -1097,7 +1101,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_2.setText("Installing... peazip")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install peazip']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_2.setText("Installed")
             installed_app_notif()
 
@@ -1105,7 +1109,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_2.setText("Installing... librewolf")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install librewolf']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_2.setText("Installed")
             installed_app_notif()
 
@@ -1113,7 +1117,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_2.setText("Installing... freetube")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install freetube']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_2.setText("Installed")
             installed_app_notif()
 
@@ -1121,7 +1125,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_2.setText("Installing... geekuninstaller")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install geekuninstaller']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_2.setText("Installed")
             installed_app_notif()
 
@@ -1129,7 +1133,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_2.setText("Installing... simplewall")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install simplewall']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_2.setText("Installed")
             installed_app_notif()
 
@@ -1137,7 +1141,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_3.setText("Installing... sandboxie-plus-np")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install sandboxie-plus-np']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_3.setText("Installed")
             installed_app_notif()
 
@@ -1145,7 +1149,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_3.setText("Installing... playnite")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install playnite']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_3.setText("Installed")
             installed_app_notif()
 
@@ -1153,7 +1157,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_3.setText("Installing... crystaldiskinfo")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install crystaldiskinfo']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_3.setText("Installed")
             installed_app_notif()
 
@@ -1161,14 +1165,14 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_3.setText("Installing... hwinfo")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install hwinfo']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_3.setText("Installed")
             installed_app_notif()
 
         def install_recc_app_15():
             # toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install hwinfo']
             # process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-            #                                 universal_newlines=True)
+            #                                 universal_newlines=True, shell="False")
             self.status_indicator_3.setText("OOCT is unavaliable")
             print(
                 "unfortunately OCCT isn't on scoop yet, so i'll have to find some other way to install this later. Coming soon..")
@@ -1178,7 +1182,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_4.setText("Installing... shutup10")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install shutup10']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_4.setText("Installed")
             installed_app_notif()
 
@@ -1186,7 +1190,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_4.setText("Installing... mpv")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install mpv']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_4.setText("Installed")
             installed_app_notif()
 
@@ -1194,7 +1198,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_4.setText("Installing... tabby")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install tabby']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_4.setText("Installed")
             installed_app_notif()
 
@@ -1202,7 +1206,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_4.setText("Installing... eartrumpet")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install eartrumpet']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_4.setText("Installed")
             installed_app_notif()
 
@@ -1210,7 +1214,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_4.setText("Installing... ryujinx")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install ryujinx']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_4.setText("Installed")
             installed_app_notif()
 
@@ -1218,7 +1222,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_5.setText("Installing... modernflouts")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install modernflyouts']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_5.setText("Installed")
             installed_app_notif()
 
@@ -1226,7 +1230,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_5.setText("Installing... espanso-pre")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install espanso-pre']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_5.setText("Installed")
             installed_app_notif()
 
@@ -1234,7 +1238,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_5.setText("Installing... lively-wallpaper")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop bucket add HUMORCE_nuke https://github.com/HUMORCE/nuke; scoop install lively-wallpaper']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_5.setText("Installed")
             installed_app_notif()
 
@@ -1242,7 +1246,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_5.setText("Installing... obsidian")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install obsidian']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_5.setText("Installed")
             installed_app_notif()
 
@@ -1250,7 +1254,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_5.setText("Installing... snappy-driver-installer-origin")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install snappy-driver-installer-origin']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_5.setText("Installed")
             installed_app_notif()
 
@@ -1258,7 +1262,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_6.setText("Installing... Fancontrol-Portable")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', "scoop bucket add ACooper81_scoop-apps https://github.com/ACooper81/scoop-apps; scoop install FanControl-Portable"]
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_6.setText("Installed")
             installed_app_notif()
 
@@ -1266,7 +1270,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.status_indicator_6.setText("Installing... openrgb")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install openrgb']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             self.status_indicator_6.setText("Installed")
             installed_app_notif()
 
@@ -1531,13 +1535,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             print("Installing")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install aria2']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             print("Installed")
 
         def install_scoop_search():
             toggle_command_2 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install scoop-search']
             process_result = subprocess.run(toggle_command_2, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
 
         # checking if toggle has been toggled, looped on thread
         # loop ends if ticked, only runs if never ran before
@@ -1553,10 +1557,12 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                         file.truncate(0)
                         file.write(str(1))
                     # checking if has_ran_before_one exists, if not runs and creates
-                    check_manager_command = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop list']
-                    process_result = subprocess.run(check_manager_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                    universal_newlines=True)
-                    check_installed = process_result.stdout
+                    check_installed = subprocess.run(['scoop list'], stdout=subprocess.PIPE)
+                    # check_manager_command = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop list']
+                    # process_result = subprocess.run(check_manager_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                    #                                 universal_newlines=True, shell="False")
+                    check_installed = check_installed.stdout
+                    print(check_installed)
                     word = ("aria2")
                     if word not in check_installed:
                         # install aria2c in a seperate thread
@@ -1579,7 +1585,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                         file.write(str(1))
                     check_fast_command = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop-search firefox']
                     process_result = subprocess.run(check_fast_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                    universal_newlines=True)
+                                                    universal_newlines=True, shell="False")
                     check_install = process_result.stdout
                     if str(check_install) == (""):
                         t = Thread(target=install_scoop_search)
@@ -1622,7 +1628,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def update_all_apps_function(self):
         update_all_apps_powershell = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop update *']
         update_all_apps_powershell2 = subprocess.run(update_all_apps_powershell, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                        universal_newlines=True)
+                                        universal_newlines=True, shell="False")
 
 
         notification.notify(
@@ -1641,7 +1647,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def cleanup_old_app_versions_function(self):
         update_all_apps_powershell = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop cleanup *']
         update_all_apps_powershell2 = subprocess.run(update_all_apps_powershell, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                        universal_newlines=True)
+                                        universal_newlines=True, shell="False")
         notification.notify(
             title='Finished',
             message='Cleaned up old app versions',
@@ -1664,7 +1670,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         def function():
             commandline_options = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop bucket list']
             process_result = subprocess.run(commandline_options, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
             res = process_result.stdout.split()
 
             # Manipulate list
@@ -1709,7 +1715,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         def function2():
             commandline_options = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop list']
             process_result = subprocess.run(commandline_options, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True)
+                                            universal_newlines=True, shell="False")
 
             res2 = process_result.stdout
             res2 = str(res2)
@@ -1770,7 +1776,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         command = 'scoop bucket add ' + str(bucketname)
         commandline_options = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', command]
         process_result = subprocess.run(commandline_options, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                        universal_newlines=True)
+                                        universal_newlines=True, shell="False")
         self.status_indicator_bucket.setText("Added: " + str(bucketname))
 
         notification.notify(
@@ -1800,7 +1806,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         command = 'scoop bucket rm ' + str(bucketname)
         commandline_options = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', command]
         process_result = subprocess.run(commandline_options, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                        universal_newlines=True)
+                                        universal_newlines=True, shell="False")
         # choice = QtWidgets.QMessageBox.question(self, 'Finished',
         #                                         "We're not sure if the process was successful \nReload Buckets?",
         #                                         QtWidgets.QMessageBox.Yes | QtWidgets.QMessageBox.No)
