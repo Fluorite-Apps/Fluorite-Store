@@ -27,9 +27,6 @@ Also previously known as scoop-gui, and Vanilla.py which was re-designed to Fluo
 - [x] Notifications for status
 
 ## TODO
-- [ ] indicator if no apps found
-- [ ] install scoop-search on first run, else the app won't work
-- [ ] polishing up the UI
 - [ ] GUI virustotal instructions if no api key set using the method below
 
 ## Checking apps via virustotal - Work in Progress
