@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguiIqXRPa.ui'
+## Form generated from reading UI file 'scoopguiBaLHmI.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -35,7 +35,7 @@ class Ui_MainWindow(object):
         self.home.setObjectName(u"home")
         self.search_layout = QFrame(self.home)
         self.search_layout.setObjectName(u"search_layout")
-        self.search_layout.setGeometry(QRect(509, 200, 251, 91))
+        self.search_layout.setGeometry(QRect(510, 200, 251, 91))
         self.search_layout.setCursor(QCursor(Qt.PointingHandCursor))
         self.search_layout.setStyleSheet(u"QPushButton {\n"
 "\n"
@@ -54,7 +54,7 @@ class Ui_MainWindow(object):
         self.enter_search_layout.setContentsMargins(0, 0, 0, 0)
         self.recommend_apps_frame = QFrame(self.home)
         self.recommend_apps_frame.setObjectName(u"recommend_apps_frame")
-        self.recommend_apps_frame.setGeometry(QRect(509, 300, 251, 91))
+        self.recommend_apps_frame.setGeometry(QRect(510, 300, 251, 91))
         self.recommend_apps_frame.setCursor(QCursor(Qt.PointingHandCursor))
         self.recommend_apps_frame.setStyleSheet(u"QPushButton {\n"
 "\n"
@@ -73,7 +73,7 @@ class Ui_MainWindow(object):
         self.enter_recommended_apps_frame.setContentsMargins(0, 0, 0, 0)
         self.settings_frame = QFrame(self.home)
         self.settings_frame.setObjectName(u"settings_frame")
-        self.settings_frame.setGeometry(QRect(509, 400, 251, 91))
+        self.settings_frame.setGeometry(QRect(510, 400, 251, 91))
         self.settings_frame.setCursor(QCursor(Qt.PointingHandCursor))
         self.settings_frame.setStyleSheet(u"QPushButton {\n"
 "\n"
@@ -92,7 +92,7 @@ class Ui_MainWindow(object):
         self.settings_page_layout.setContentsMargins(0, 0, 0, 0)
         self.label_19 = QLabel(self.home)
         self.label_19.setObjectName(u"label_19")
-        self.label_19.setGeometry(QRect(330, 90, 441, 91))
+        self.label_19.setGeometry(QRect(331, 90, 441, 91))
         self.label_19.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -103,7 +103,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_20 = QLabel(self.home)
         self.label_20.setObjectName(u"label_20")
-        self.label_20.setGeometry(QRect(330, 300, 171, 91))
+        self.label_20.setGeometry(QRect(331, 300, 171, 91))
         self.label_20.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -114,12 +114,12 @@ class Ui_MainWindow(object):
 "        }")
         self.label_4 = QLabel(self.home)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setGeometry(QRect(350, 230, 141, 31))
+        self.label_4.setGeometry(QRect(351, 230, 141, 31))
         self.label_4.setStyleSheet(u"color: gray")
         self.label_4.setWordWrap(True)
         self.title_3 = QLabel(self.home)
         self.title_3.setObjectName(u"title_3")
-        self.title_3.setGeometry(QRect(370, 120, 351, 41))
+        self.title_3.setGeometry(QRect(371, 120, 351, 41))
         font = QFont()
         font.setPointSize(16)
         self.title_3.setFont(font)
@@ -127,11 +127,11 @@ class Ui_MainWindow(object):
         self.title_3.setAlignment(Qt.AlignCenter)
         self.label_5 = QLabel(self.home)
         self.label_5.setObjectName(u"label_5")
-        self.label_5.setGeometry(QRect(350, 430, 131, 31))
+        self.label_5.setGeometry(QRect(351, 430, 131, 31))
         self.label_5.setStyleSheet(u"color: gray")
         self.label_21 = QLabel(self.home)
         self.label_21.setObjectName(u"label_21")
-        self.label_21.setGeometry(QRect(330, 400, 171, 91))
+        self.label_21.setGeometry(QRect(331, 400, 171, 91))
         self.label_21.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -142,7 +142,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_23 = QLabel(self.home)
         self.label_23.setObjectName(u"label_23")
-        self.label_23.setGeometry(QRect(330, 200, 171, 91))
+        self.label_23.setGeometry(QRect(331, 200, 171, 91))
         self.label_23.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -153,7 +153,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_24 = QLabel(self.home)
         self.label_24.setObjectName(u"label_24")
-        self.label_24.setGeometry(QRect(290, 70, 521, 551))
+        self.label_24.setGeometry(QRect(291, 70, 521, 551))
         self.label_24.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -164,17 +164,17 @@ class Ui_MainWindow(object):
 "        }")
         self.label_6 = QLabel(self.home)
         self.label_6.setObjectName(u"label_6")
-        self.label_6.setGeometry(QRect(350, 330, 141, 31))
+        self.label_6.setGeometry(QRect(351, 330, 141, 31))
         self.label_6.setStyleSheet(u"color: gray")
         self.label_6.setWordWrap(True)
         self.label_10 = QLabel(self.home)
         self.label_10.setObjectName(u"label_10")
-        self.label_10.setGeometry(QRect(350, 530, 131, 31))
+        self.label_10.setGeometry(QRect(351, 530, 131, 31))
         self.label_10.setStyleSheet(u"color: gray")
         self.label_10.setWordWrap(True)
         self.manage_appsbuckets_frame_2 = QFrame(self.home)
         self.manage_appsbuckets_frame_2.setObjectName(u"manage_appsbuckets_frame_2")
-        self.manage_appsbuckets_frame_2.setGeometry(QRect(509, 500, 251, 91))
+        self.manage_appsbuckets_frame_2.setGeometry(QRect(510, 500, 251, 91))
         self.manage_appsbuckets_frame_2.setCursor(QCursor(Qt.PointingHandCursor))
         self.manage_appsbuckets_frame_2.setStyleSheet(u"QPushButton {\n"
 "\n"
@@ -193,7 +193,7 @@ class Ui_MainWindow(object):
         self.enter_manage_buckets_layout.setContentsMargins(0, 0, 0, 0)
         self.label_57 = QLabel(self.home)
         self.label_57.setObjectName(u"label_57")
-        self.label_57.setGeometry(QRect(330, 500, 171, 91))
+        self.label_57.setGeometry(QRect(331, 500, 171, 91))
         self.label_57.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -305,7 +305,7 @@ class Ui_MainWindow(object):
         self.title_2.setAlignment(Qt.AlignCenter)
         self.label = QLabel(self.settings_page)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(380, 260, 81, 31))
+        self.label.setGeometry(QRect(360, 260, 101, 31))
         self.label.setStyleSheet(u"color: gray")
         self.label_2 = QLabel(self.settings_page)
         self.label_2.setObjectName(u"label_2")
@@ -1453,35 +1453,6 @@ class Ui_MainWindow(object):
         self.enter_search_term_layout.setSpacing(0)
         self.enter_search_term_layout.setObjectName(u"enter_search_term_layout")
         self.enter_search_term_layout.setContentsMargins(0, 0, 0, 0)
-        self.app_search_frame = QFrame(self.search)
-        self.app_search_frame.setObjectName(u"app_search_frame")
-        self.app_search_frame.setGeometry(QRect(690, 70, 91, 51))
-        self.app_search_frame.setCursor(QCursor(Qt.PointingHandCursor))
-        self.app_search_frame.setStyleSheet(u"QPushButton{\n"
-"	padding: 12px;\n"
-"	border-radius: 25px;\n"
-"	border-bottom: 30px shadow;\n"
-"}\n"
-"QPushButton:pressed:hover{\n"
-"	background-color: rgb(46, 49, 63);\n"
-"	padding: 12px;\n"
-"	border-radius: 25px;\n"
-"	border-bottom: 30px shadow;\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"	background-color: rgb(60, 64, 82);\n"
-"	padding: 12px;\n"
-"	border-radius: 25px;\n"
-"	border-bottom: 30px shadow;\n"
-"}")
-        self.app_search_frame.setFrameShape(QFrame.NoFrame)
-        self.app_search_frame.setFrameShadow(QFrame.Raised)
-        self.app_search_frame.setLineWidth(0)
-        self.app_search_layout_ = QHBoxLayout(self.app_search_frame)
-        self.app_search_layout_.setSpacing(0)
-        self.app_search_layout_.setObjectName(u"app_search_layout_")
-        self.app_search_layout_.setContentsMargins(0, 0, 0, 0)
         self.vt_button_2 = QFrame(self.search)
         self.vt_button_2.setObjectName(u"vt_button_2")
         self.vt_button_2.setGeometry(QRect(980, 280, 91, 71))
@@ -1602,6 +1573,33 @@ class Ui_MainWindow(object):
         self.vt_button_5_layout.setSpacing(0)
         self.vt_button_5_layout.setObjectName(u"vt_button_5_layout")
         self.vt_button_5_layout.setContentsMargins(0, 0, 0, 0)
+        self.recc_app_install_frame_31 = QFrame(self.search)
+        self.recc_app_install_frame_31.setObjectName(u"recc_app_install_frame_31")
+        self.recc_app_install_frame_31.setGeometry(QRect(800, 70, 151, 51))
+        self.recc_app_install_frame_31.setCursor(QCursor(Qt.PointingHandCursor))
+        self.recc_app_install_frame_31.setStyleSheet(u"QPushButton{\n"
+"	color: gray;\n"
+"	background-color: rgb(51, 58, 70);\n"
+"	border-radius: 15px;\n"
+"}\n"
+"QPushButton:pressed:hover{\n"
+"	background-color: rgb(89, 93, 117);\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"	background-color: rgb(71, 86, 94);\n"
+"	border-radius: 25px;\n"
+"	border-bottom: 30px shadow;\n"
+"}")
+        self.recc_app_install_frame_31.setFrameShape(QFrame.NoFrame)
+        self.recc_app_install_frame_31.setFrameShadow(QFrame.Raised)
+        self.recc_app_install_frame_31.setLineWidth(0)
+        self.back_search_page_layout = QHBoxLayout(self.recc_app_install_frame_31)
+        self.back_search_page_layout.setSpacing(0)
+        self.back_search_page_layout.setObjectName(u"back_search_page_layout")
+        self.back_search_page_layout.setContentsMargins(0, 0, 0, 0)
         self.stackedWidget.addWidget(self.search)
         self.label_28.raise_()
         self.search_bar_input.raise_()
@@ -1640,11 +1638,11 @@ class Ui_MainWindow(object):
         self.label_45.raise_()
         self.vt_button_1.raise_()
         self.app_install_frame_6.raise_()
-        self.app_search_frame.raise_()
         self.vt_button_2.raise_()
         self.vt_button_3.raise_()
         self.vt_button_4.raise_()
         self.vt_button_5.raise_()
+        self.recc_app_install_frame_31.raise_()
         self.recommended_apps_page_2 = QWidget()
         self.recommended_apps_page_2.setObjectName(u"recommended_apps_page_2")
         self.label_58 = QLabel(self.recommended_apps_page_2)
@@ -4639,7 +4637,7 @@ class Ui_MainWindow(object):
         self.label_13.setText("")
         self.label_14.setText("")
         self.title_2.setText(QCoreApplication.translate("MainWindow", u"Settings", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"Faster Search", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"Some other setting", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Use Download Manager", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Some other setting", None))
         self.label_15.setText("")

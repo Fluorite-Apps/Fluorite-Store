@@ -55,6 +55,7 @@ from plyer import notification
 
 import subprocess
 
+from os.path import exists
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None , *args, obj=None, **kwargs):
@@ -96,7 +97,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # UPDATING SCOOP REPO WHEN LAUNCHING                    #
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-
         def do_update_and_show_status():
             #update scoop repo
             powershell_do_update = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', "scoop update"]
@@ -124,7 +124,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 number = str(number)
                 message = (number+" out of date apps found, please update")
                 message = str(message)
-                print (message)
                 notification.notify(
                     title='Out of date apps',
                     message=message,
@@ -135,6 +134,37 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         t = Thread(target=do_update_and_show_status)
         t.daemon = True
         t.start()
+
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        # INSTALL SCOOP-SEARCH IF NOT ALREADY                 #
+        # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        def check_if_scoop_search_installed():
+            if exists('fluorite_store_config.txt') == False:
+
+                notification.notify(
+                    title='Installing one dependency please wait',
+                    message='getting the scoop-search package from scoop',
+                    app_icon="fluorite.ico",
+                    timeout=10,
+                )
+                install_scoop_search_command = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', "scoop install scoop-search"]
+                install_scoop_search = subprocess.run(install_scoop_search_command, stdout=subprocess.PIPE,
+                                                        stderr=subprocess.PIPE,
+                                                        universal_newlines=True, shell="False")
+                with open("fluorite_store_config", 'w') as file:
+                    file.write("")
+                    file.close()
+
+                notification.notify(
+                    title='Finished',
+                    message='installed scoop-search dependency',
+                    app_icon="fluorite.ico",
+                    timeout=10,
+                )
+
+        t2 = Thread(target=check_if_scoop_search_installed)
+        t2.daemon = True
+        t2.start()
 
         def do_search():
 
@@ -149,6 +179,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 self.app_label_3.setText(" ")
                 self.app_label_4.setText(" ")
                 self.app_label_5.setText(" ")
+                self.install_search_app_btn_1.setText(" ")
+                self.install_search_app_btn_2.setText(" ")
+                self.install_search_app_btn_3.setText(" ")
+                self.install_search_app_btn_4.setText(" ")
+                self.install_search_app_btn_5.setText(" ")
 
             t = Thread(target=clear_previous_description)
             t.daemon = True
@@ -183,6 +218,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 except:
                     pass
 
+                if successful_1:
+                    self.install_search_app_btn_1.setText("install")
+
                 # putting app description onto qt description box
                 try:
                     self.app_desc_1_lbl.setText(str(app_desc_1))
@@ -213,6 +251,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
                 except:
                     pass
+
+                if successful_2:
+                    self.install_search_app_btn_2.setText("install")
 
                 try:
                     self.app_desc_2_lbl.setText(str(app_desc_2))
@@ -245,6 +286,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 except:
                     pass
 
+                if successful_3:
+                    self.install_search_app_btn_3.setText("install")
+
                 try:
                     self.app_desc_3_lbl.setText(str(app_desc_3))
                     self.app_label_3.setText(str(final_app_three))
@@ -275,6 +319,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
                 except:
                     pass
+
+                if successful_4:
+                    self.install_search_app_btn_4.setText("install")
 
                 try:
                     self.app_desc_4_lbl.setText(str(app_desc_4))
@@ -307,6 +354,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 except:
                     pass
 
+                if successful_5:
+                    self.install_search_app_btn_5.setText("install")
+
                 try:
                     self.app_desc_5_lbl.setText(str(app_desc_5))
                     self.app_label_5.setText(str(final_app_five))
@@ -323,7 +373,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
             # getting search bar text
             search_bar_text = self.search_bar_input.text()
-            print (search_bar_text)
 
             # making scoop search command
             scoop_search_command = ("scoop-search " + str(search_bar_text))
@@ -337,13 +386,10 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             powershell_scoop_search_2 = subprocess.run(powershell_scoop_search_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True, shell="False")
 
-            print (powershell_scoop_search_2)
             powershell_scoop_search_2 = str(powershell_scoop_search_2)
             split_result = powershell_scoop_search_2.split('\\n')
-            print (split_result)
 
             split_result = str(split_result).split(',')
-            print (split_result)
 
             del split_result[0]
             del split_result[0]
@@ -357,7 +403,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
             stringVal = '('
             simplified = [x for x in split_result if stringVal in x]
-            print (simplified)
 
             # only keeping the left of the bracket, which is the appname
             try:
@@ -365,28 +410,49 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 final_app_one = final_app_one.strip("'")
                 final_app_one = final_app_one.strip('"')
                 final_app_one = final_app_one.strip(" ")
+                successful_1 = True
+            except:
+                # if the try for finding the first app fails, then no apps were found, hence notifying the user
+                self.app_desc_1_lbl.setText("no apps found")
+                # then skipping the rest of the function
+                return None
 
+            try:
                 final_app_two = (simplified[1].split("(")[0]).strip()
                 final_app_two = final_app_two.strip("'")
                 final_app_two = final_app_two.strip('"')
                 final_app_two = final_app_two.strip(" ")
+                # then adding text to install buttons if app exists for that row
+                successful_2 = True
+            except:
+                successful_2 = False
 
+            try:
                 final_app_three = (simplified[2].split("(")[0]).strip()
                 final_app_three = final_app_three.strip("'")
                 final_app_three = final_app_three.strip('"')
                 final_app_three = final_app_three.strip(" ")
+                successful_3 = True
+            except:
+                successful_3 = False
 
+            try:
                 final_app_four = (simplified[3].split("(")[0]).strip()
                 final_app_four = final_app_four.strip("'")
                 final_app_four = final_app_four.strip('"')
                 final_app_four = final_app_four.strip(" ")
+                successful_4 = True
+            except:
+                successful_4 = False
 
+            try:
                 final_app_five = (simplified[4].split("(")[0]).strip()
                 final_app_five = final_app_five.strip("'")
                 final_app_five = final_app_five.strip('"')
                 final_app_five = final_app_five.strip(" ")
+                successful_5 = True
             except:
-                pass
+                successful_5 = False
 
             try:
                 # making scoop install commands
@@ -397,7 +463,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 scoop_install_command_5 =  ("scoop install "+final_app_five)
             except:
                 pass
-
 
             # getting app descriptions - to speed this part up as its quite slow, there'll be 5 threads, 1 for getting each app description
             t = Thread(target=app_desc_1_function)
@@ -512,7 +577,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
             vt_output = vt_do_ps_1.stdout
             vt_output = vt_output.split(" ")
-            print (vt_output)
 
             # checking for WARN word, if it exists then vt returned at least 1 detection and the virustotal link is opened in a browser for the user to check
             # else its safe
@@ -531,7 +595,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
             vt_output = vt_do_ps_1.stdout
             vt_output = vt_output.split(" ")
-            print (vt_output)
 
             # checking for WARN word, if it exists then vt returned at least 1 detection and the virustotal link is opened in a browser for the user to check
             # else its safe
@@ -549,7 +612,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
             vt_output = vt_do_ps_1.stdout
             vt_output = vt_output.split(" ")
-            print (vt_output)
 
             # checking for WARN word, if it exists then vt returned at least 1 detection and the virustotal link is opened in a browser for the user to check
             # else its safe
@@ -567,7 +629,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
             vt_output = vt_do_ps_1.stdout
             vt_output = vt_output.split(" ")
-            print (vt_output)
 
             # checking for WARN word, if it exists then vt returned at least 1 detection and the virustotal link is opened in a browser for the user to check
             # else its safe
@@ -585,7 +646,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
             vt_output = vt_do_ps_1.stdout
             vt_output = vt_output.split(" ")
-            print (vt_output)
 
             # checking for WARN word, if it exists then vt returned at least 1 detection and the virustotal link is opened in a browser for the user to check
             # else its safe
@@ -598,11 +658,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         def remove_app_function():
             remove_app_input_text = self.apps_list.currentText()
-            print (remove_app_input_text)
 
             # making scoop remove command
             scoop_remove_command = ("scoop uninstall " + str(remove_app_input_text))
-            print (scoop_remove_command)
 
             powershell_scoop_remove_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_remove_command)]
             powershell_scoop_remove_2 = subprocess.run(powershell_scoop_remove_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
@@ -664,7 +722,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
 
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-        # SEARCH BAR AND BUTTON                                #
+        # SEARCH BAR & SEARCH BUTTON                          #
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         self.enter_search_term_button = custompushbutton('Enter', parent=self)
         self.enter_search_term_button.setMinimumHeight(51)
@@ -701,8 +759,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.status_indicator_layout_6.addWidget(self.status_indicator_6, Qt.AlignCenter, Qt.AlignCenter)
 
         self.status_indicator_layout_buckets.addWidget(self.status_indicator_bucket, Qt.AlignCenter, Qt.AlignCenter)
-
-
 
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         # NEXT PAGE BUTTON - STARRED/RECOMMENDED APPS PAGE    #
@@ -781,10 +837,17 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.return_home_7.setMinimumHeight(61)
         self.return_home_7.setFixedWidth(261)
 
+        # return home page button on search page#
+        self.back_search_page = custompushbutton('Home', parent=self)
+        self.back_search_page.setMinimumHeight(51)
+        self.back_search_page.setFixedWidth(131)
+
         # Adding back button to layout
         self.bucket_back_layout.addWidget(self.return_home, Qt.AlignCenter, Qt.AlignCenter)
 
         self.return_home_layout_settings.addWidget(self.return_home, Qt.AlignCenter, Qt.AlignCenter)
+
+        self.back_search_page_layout.addWidget(self.back_search_page, Qt.AlignCenter, Qt.AlignCenter)
 
         self.return_home_layout_1.addWidget(self.return_home_1, Qt.AlignCenter, Qt.AlignCenter)
         self.return_home_layout_two.addWidget(self.return_home_2, Qt.AlignCenter, Qt.AlignCenter)
@@ -797,6 +860,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         # connecting back button to function
         self.return_home.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
+
+        self.back_search_page.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
 
         self.return_home_1.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.home))
         self.return_home_2.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_1))
@@ -1497,26 +1562,18 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # SETTINGS PAGE
         ###################################################################################################################
 
-        # download manager setting - aria2c
-        self.fast_search_toggle = PyToggle(
-            width=50
-        )
-        # fast search - scoop-search
-        self.download_manager_toggle = PyToggle(
-            width=50
-        )
-        # something else
-        self.a_thing = PyToggle(
+        self.other_toggle = PyToggle(
             width=50
         )
 
-        with open('fastsearch.txt', 'r') as file:
-            fastsearchToggled = file.read()
-            fastsearchToggled = str(fastsearchToggled)
-            if fastsearchToggled == str(1):
-                self.fast_search_toggle.setChecked(True)
-            else:
-                self.fast_search_toggle.setChecked(False)
+        # the other 2 toggles don't do anything, yet, placeholders.
+        self.download_manager_toggle = PyToggle(
+            width=50
+        )
+
+        self.a_thing = PyToggle(
+            width=50
+        )
 
         with open('downloadmanager.txt', 'r') as file:
             dmToggled = file.read()
@@ -1527,20 +1584,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 self.download_manager_toggle.setChecked(False)
 
         # adding widgets to layout
-        self.settings_toggle_1_layout.addWidget(self.fast_search_toggle, Qt.AlignCenter, Qt.AlignCenter)
+        self.settings_toggle_1_layout.addWidget(self.other_toggle, Qt.AlignCenter, Qt.AlignCenter)
         self.settings_toggle_2_layout.addWidget(self.download_manager_toggle, Qt.AlignCenter, Qt.AlignCenter)
         self.settings_toggle_3_layout.addWidget(self.a_thing, Qt.AlignCenter, Qt.AlignCenter)
 
         def install_aria2c():
-            print("Installing")
             toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install aria2']
             process_result = subprocess.run(toggle_command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                            universal_newlines=True, shell="False")
-            print("Installed")
-
-        def install_scoop_search():
-            toggle_command_2 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install scoop-search']
-            process_result = subprocess.run(toggle_command_2, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True, shell="False")
 
         # checking if toggle has been toggled, looped on thread
@@ -1562,7 +1612,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     # process_result = subprocess.run(check_manager_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                     #                                 universal_newlines=True, shell="False")
                     check_installed = check_installed.stdout
-                    print(check_installed)
                     word = ("aria2")
                     if word not in check_installed:
                         # install aria2c in a seperate thread
@@ -1574,48 +1623,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                         file.truncate(0)
                         file.write(str(0))
 
-
-        def continuous_checking_fastsearch_toggle_status():
-            while True:
-                time.sleep(1)
-                if self.fast_search_toggle.isChecked() == True:
-                    # checking if has_ran_before_two exists, if not runs and creates
-                    with open('fastsearch.txt', 'w') as file:
-                        file.truncate(0)
-                        file.write(str(1))
-                    check_fast_command = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop-search firefox']
-                    process_result = subprocess.run(check_fast_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                    universal_newlines=True, shell="False")
-                    check_install = process_result.stdout
-                    if str(check_install) == (""):
-                        t = Thread(target=install_scoop_search)
-                        t.daemon = True
-                        t.start()
-                if self.fast_search_toggle.isChecked() == False:
-                    with open('fastsearch.txt', 'w') as file:
-                        file.truncate(0)
-                        file.write(str(0))
-
-        def continuous_checking_other_toggle_status():
-            while True:
-                time.sleep(1)
-                if self.a_thing.isChecked() == True:
-                    # placeholder for future 3rd toggle
-                    print ("thing 3")
-                    break
-
-
-
         # concurrently run 3 toggle checks when opening settings
         t = Thread(target=continuous_checking_downloadmanager_toggle_status)
-        t.daemon = True
-        t.start()
-
-        t = Thread(target=continuous_checking_fastsearch_toggle_status)
-        t.daemon = True
-        t.start()
-
-        t = Thread(target=continuous_checking_other_toggle_status)
         t.daemon = True
         t.start()
 
@@ -1818,13 +1827,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         #     self.list_buckets_layout.removeWidget(self.list_buckets_label)
         #     self.stackedWidget.setCurrentWidget(self.home)
 
-
-if exists('fastsearch.txt'):
-    pass
-else:
-    file = open('fastsearch.txt', 'w+')
-    file.write('1')
-    file.close()
 if exists('downloadmanager.txt'):
     pass
 else:

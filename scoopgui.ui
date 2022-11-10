@@ -30,7 +30,7 @@
      <widget class="QFrame" name="search_layout">
       <property name="geometry">
        <rect>
-        <x>509</x>
+        <x>510</x>
         <y>200</y>
         <width>251</width>
         <height>91</height>
@@ -79,7 +79,7 @@
      <widget class="QFrame" name="recommend_apps_frame">
       <property name="geometry">
        <rect>
-        <x>509</x>
+        <x>510</x>
         <y>300</y>
         <width>251</width>
         <height>91</height>
@@ -128,7 +128,7 @@
      <widget class="QFrame" name="settings_frame">
       <property name="geometry">
        <rect>
-        <x>509</x>
+        <x>510</x>
         <y>400</y>
         <width>251</width>
         <height>91</height>
@@ -177,7 +177,7 @@
      <widget class="QLabel" name="label_19">
       <property name="geometry">
        <rect>
-        <x>330</x>
+        <x>331</x>
         <y>90</y>
         <width>441</width>
         <height>91</height>
@@ -200,7 +200,7 @@
      <widget class="QLabel" name="label_20">
       <property name="geometry">
        <rect>
-        <x>330</x>
+        <x>331</x>
         <y>300</y>
         <width>171</width>
         <height>91</height>
@@ -223,7 +223,7 @@
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
-        <x>350</x>
+        <x>351</x>
         <y>230</y>
         <width>141</width>
         <height>31</height>
@@ -242,7 +242,7 @@
      <widget class="QLabel" name="title_3">
       <property name="geometry">
        <rect>
-        <x>370</x>
+        <x>371</x>
         <y>120</y>
         <width>351</width>
         <height>41</height>
@@ -266,7 +266,7 @@
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
-        <x>350</x>
+        <x>351</x>
         <y>430</y>
         <width>131</width>
         <height>31</height>
@@ -282,7 +282,7 @@
      <widget class="QLabel" name="label_21">
       <property name="geometry">
        <rect>
-        <x>330</x>
+        <x>331</x>
         <y>400</y>
         <width>171</width>
         <height>91</height>
@@ -305,7 +305,7 @@
      <widget class="QLabel" name="label_23">
       <property name="geometry">
        <rect>
-        <x>330</x>
+        <x>331</x>
         <y>200</y>
         <width>171</width>
         <height>91</height>
@@ -328,7 +328,7 @@
      <widget class="QLabel" name="label_24">
       <property name="geometry">
        <rect>
-        <x>290</x>
+        <x>291</x>
         <y>70</y>
         <width>521</width>
         <height>551</height>
@@ -351,7 +351,7 @@
      <widget class="QLabel" name="label_6">
       <property name="geometry">
        <rect>
-        <x>350</x>
+        <x>351</x>
         <y>330</y>
         <width>141</width>
         <height>31</height>
@@ -370,7 +370,7 @@
      <widget class="QLabel" name="label_10">
       <property name="geometry">
        <rect>
-        <x>350</x>
+        <x>351</x>
         <y>530</y>
         <width>131</width>
         <height>31</height>
@@ -389,7 +389,7 @@
      <widget class="QFrame" name="manage_appsbuckets_frame_2">
       <property name="geometry">
        <rect>
-        <x>509</x>
+        <x>510</x>
         <y>500</y>
         <width>251</width>
         <height>91</height>
@@ -438,7 +438,7 @@
      <widget class="QLabel" name="label_57">
       <property name="geometry">
        <rect>
-        <x>330</x>
+        <x>331</x>
         <y>500</y>
         <width>171</width>
         <height>91</height>
@@ -711,9 +711,9 @@
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>380</x>
+        <x>360</x>
         <y>260</y>
-        <width>81</width>
+        <width>101</width>
         <height>31</height>
        </rect>
       </property>
@@ -721,7 +721,7 @@
        <string notr="true">color: gray</string>
       </property>
       <property name="text">
-       <string>Faster Search</string>
+       <string>Some other setting</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_2">
@@ -3374,65 +3374,6 @@ QPushButton:hover {
        </property>
       </layout>
      </widget>
-     <widget class="QFrame" name="app_search_frame">
-      <property name="geometry">
-       <rect>
-        <x>690</x>
-        <y>70</y>
-        <width>91</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="cursor">
-       <cursorShape>PointingHandCursor</cursorShape>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton{
-	padding: 12px;
-	border-radius: 25px;
-	border-bottom: 30px shadow;
-}
-QPushButton:pressed:hover{
-	background-color: rgb(46, 49, 63);
-	padding: 12px;
-	border-radius: 25px;
-	border-bottom: 30px shadow;
-}
-
-QPushButton:hover {
-	background-color: rgb(60, 64, 82);
-	padding: 12px;
-	border-radius: 25px;
-	border-bottom: 30px shadow;
-}</string>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::NoFrame</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <property name="lineWidth">
-       <number>0</number>
-      </property>
-      <layout class="QHBoxLayout" name="app_search_layout_">
-       <property name="spacing">
-        <number>0</number>
-       </property>
-       <property name="leftMargin">
-        <number>0</number>
-       </property>
-       <property name="topMargin">
-        <number>0</number>
-       </property>
-       <property name="rightMargin">
-        <number>0</number>
-       </property>
-       <property name="bottomMargin">
-        <number>0</number>
-       </property>
-      </layout>
-     </widget>
      <widget class="QFrame" name="vt_button_2">
       <property name="geometry">
        <rect>
@@ -3673,6 +3614,63 @@ QPushButton:hover {
        </property>
       </layout>
      </widget>
+     <widget class="QFrame" name="recc_app_install_frame_31">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>70</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	color: gray;
+	background-color: rgb(51, 58, 70);
+	border-radius: 15px;
+}
+QPushButton:pressed:hover{
+	background-color: rgb(89, 93, 117);
+	border-radius: 25px;
+	border-bottom: 30px shadow;
+}
+
+QPushButton:hover {
+	background-color: rgb(71, 86, 94);
+	border-radius: 25px;
+	border-bottom: 30px shadow;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="back_search_page_layout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
      <zorder>label_28</zorder>
      <zorder>search_bar_input</zorder>
      <zorder>label_29</zorder>
@@ -3710,11 +3708,11 @@ QPushButton:hover {
      <zorder>label_45</zorder>
      <zorder>vt_button_1</zorder>
      <zorder>app_install_frame_6</zorder>
-     <zorder>app_search_frame</zorder>
      <zorder>vt_button_2</zorder>
      <zorder>vt_button_3</zorder>
      <zorder>vt_button_4</zorder>
      <zorder>vt_button_5</zorder>
+     <zorder>recc_app_install_frame_31</zorder>
     </widget>
     <widget class="QWidget" name="recommended_apps_page_2">
      <widget class="QLabel" name="label_58">
