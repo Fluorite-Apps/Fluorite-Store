@@ -28,6 +28,8 @@ Also previously known as scoop-gui, and Vanilla.py which was re-designed to Fluo
 
 ## TODO
 - [ ] GUI virustotal instructions if no api key set using the method below
+- [ ] When uninstalling an app check if already running, if so either kill it automatically, or warn the user
+- [ ] When searching, place indicator beside apps which are already installed
 
 ## Checking apps via virustotal - Work in Progress
 
@@ -40,6 +42,7 @@ Also note that virustotal limits to 4 checks per minute for free users.
 ## Possible Features to be added
 - [ ] Chocolately integration
 - [ ] Scheduled, auto updates - (might not be possible to do via python)
+- [ ] Possibly re-writing the search function to instead scrape https://scoop.sh/#/apps?s=0&d=1&o=true as it also contains unofficial repositories (more apps), would be a bit more complex to implement, however it'd include more apps. (if implemented, place warning beside apps that it comes from an unofficial repo)
 
 # Fluorite Store
 https://user-images.githubusercontent.com/83690012/190864219-1a7856e3-d629-4103-9063-aa05eb71d0ea.mp4
