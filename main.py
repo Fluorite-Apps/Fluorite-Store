@@ -57,6 +57,18 @@ import subprocess
 
 from os.path import exists
 
+# \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+# Reusable notification function                      #
+# \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+def notify_function(title_prompt, message_prompt):
+    notification.notify(
+        title=(title_prompt),
+        message=(message_prompt),
+        app_icon="fluorite.ico",
+        timeout=10,
+    )
+
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None , *args, obj=None, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs, parent=parent)
@@ -94,7 +106,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.go_recommended_apps_page_button.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.recommended_apps_page_1))
 
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-        # UPDATING SCOOP REPO WHEN LAUNCHING                    #
+        # UPDATING SCOOP REPO WHEN LAUNCHING                  #
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
         def do_update_and_show_status():
@@ -114,22 +126,12 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             number = number - 6
 
             if number == 0:
-                notification.notify(
-                    title='Scoop is up to date',
-                    message="All apps up to date, no need to update",
-                    app_icon="fluorite.ico",
-                    timeout=10,
-                )
+                notify_function(title_prompt="Scoop is up to date",message_prompt=("All apps up to date, no need to update"))
             else:
                 number = str(number)
                 message = (number+" out of date apps found, please update")
                 message = str(message)
-                notification.notify(
-                    title='Out of date apps',
-                    message=message,
-                    app_icon="fluorite.ico",
-                    timeout=10,
-                )
+                notify_function(title_prompt="Out of date apps",message_prompt=(message))
 
         t = Thread(target=do_update_and_show_status)
         t.daemon = True
@@ -140,13 +142,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         def check_if_scoop_search_installed():
             if exists('fluorite_store_config.txt') == False:
-
-                notification.notify(
-                    title='Installing one dependency please wait',
-                    message='getting the scoop-search package from scoop',
-                    app_icon="fluorite.ico",
-                    timeout=10,
-                )
+                notify_function(title_prompt="Installing one dependency please wait",message_prompt=("getting the scoop-search package from scoop"))
                 install_scoop_search_command = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', "scoop install scoop-search"]
                 install_scoop_search = subprocess.run(install_scoop_search_command, stdout=subprocess.PIPE,
                                                         stderr=subprocess.PIPE,
@@ -154,13 +150,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 with open("fluorite_store_config", 'w') as file:
                     file.write("")
                     file.close()
-
-                notification.notify(
-                    title='Finished',
-                    message='installed scoop-search dependency',
-                    app_icon="fluorite.ico",
-                    timeout=10,
-                )
+                notify_function(title_prompt="Finished",message_prompt=("installed scoop-search dependency"))
 
         t2 = Thread(target=check_if_scoop_search_installed)
         t2.daemon = True
@@ -184,6 +174,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 self.install_search_app_btn_3.setText(" ")
                 self.install_search_app_btn_4.setText(" ")
                 self.install_search_app_btn_5.setText(" ")
+                self.vt_btn_1.setText(" ")
+                self.vt_btn_2.setText(" ")
+                self.vt_btn_3.setText(" ")
+                self.vt_btn_4.setText(" ")
+                self.vt_btn_5.setText(" ")
 
             t = Thread(target=clear_previous_description)
             t.daemon = True
@@ -220,6 +215,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
                 if successful_1:
                     self.install_search_app_btn_1.setText("install")
+                    self.vt_btn_1.setText("check")
 
                 # putting app description onto qt description box
                 try:
@@ -254,6 +250,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
                 if successful_2:
                     self.install_search_app_btn_2.setText("install")
+                    self.vt_btn_2.setText("check")
 
                 try:
                     self.app_desc_2_lbl.setText(str(app_desc_2))
@@ -288,6 +285,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
                 if successful_3:
                     self.install_search_app_btn_3.setText("install")
+                    self.vt_btn_3.setText("check")
 
                 try:
                     self.app_desc_3_lbl.setText(str(app_desc_3))
@@ -322,6 +320,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
                 if successful_4:
                     self.install_search_app_btn_4.setText("install")
+                    self.vt_btn_4.setText("check")
 
                 try:
                     self.app_desc_4_lbl.setText(str(app_desc_4))
@@ -356,6 +355,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
                 if successful_5:
                     self.install_search_app_btn_5.setText("install")
+                    self.vt_btn_5.setText("check")
 
                 try:
                     self.app_desc_5_lbl.setText(str(app_desc_5))
@@ -455,6 +455,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 successful_5 = False
 
             try:
+                global scoop_install_command_1,scoop_install_command_2,scoop_install_command_3,scoop_install_command_4,scoop_install_command_5
                 # making scoop install commands
                 scoop_install_command_1 =  ("scoop install "+final_app_one)
                 scoop_install_command_2 =  ("scoop install "+final_app_two)
@@ -485,89 +486,71 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             c.daemon = True
             c.start()
 
-            def installed_app_notif_1():
-                notification.notify(
-                    title='Finished',
-                    message='Installed app',
-                    app_icon="fluorite.ico",
-                    timeout=10,
-                )
+        def installed_app_notif_1():
+            notify_function(title_prompt="Finished", message_prompt=("Installed app"))
 
-            # installing corresponding apps when install button is pressed
-            def install_search_app_one():
-                powershell_install_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_1)]
-                powershell_do_install_1 = subprocess.run(powershell_install_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                universal_newlines=True, shell="False")
-                installed_app_notif_1()
+        # installing corresponding apps when install button is pressed
+        def install_search_app_one():
+            print (scoop_install_command_1)
+            powershell_install_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_1)]
+            powershell_do_install_1 = subprocess.run(powershell_install_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True, shell="False")
+            installed_app_notif_1()
 
-            def install_search_app_two():
-                powershell_install_2 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_2)]
-                powershell_do_install_2 = subprocess.run(powershell_install_2, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                universal_newlines=True, shell="False")
-                installed_app_notif_1()
+        def install_search_app_two():
+            powershell_install_2 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_2)]
+            powershell_do_install_2 = subprocess.run(powershell_install_2, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True, shell="False")
+            installed_app_notif_1()
 
-            def install_search_app_three():
-                powershell_install_3 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_3)]
-                powershell_do_install_3 = subprocess.run(powershell_install_3, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                universal_newlines=True, shell="False")
-                installed_app_notif_1()
+        def install_search_app_three():
+            powershell_install_3 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_3)]
+            powershell_do_install_3 = subprocess.run(powershell_install_3, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True, shell="False")
+            installed_app_notif_1()
 
-            def install_search_app_four():
-                powershell_install_4 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_4)]
-                powershell_do_install_4 = subprocess.run(powershell_install_4, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                universal_newlines=True, shell="False")
-                installed_app_notif_1()
+        def install_search_app_four():
+            powershell_install_4 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_4)]
+            powershell_do_install_4 = subprocess.run(powershell_install_4, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True, shell="False")
+            installed_app_notif_1()
 
-            def install_search_app_five():
-                powershell_install_5 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_5)]
-                powershell_do_install_5 = subprocess.run(powershell_install_5, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                                universal_newlines=True, shell="False")
-                installed_app_notif_1()
+        def install_search_app_five():
+            powershell_install_5 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', (scoop_install_command_5)]
+            powershell_do_install_5 = subprocess.run(powershell_install_5, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            universal_newlines=True, shell="False")
+            installed_app_notif_1()
 
-            def install_search_app_one_thread():
-                t = Thread(target=install_search_app_one)
-                t.daemon = True
-                t.start()
+        def install_search_app_one_thread():
+            t = Thread(target=install_search_app_one)
+            t.daemon = True
+            t.start()
 
-            def install_search_app_two_thread():
-                t = Thread(target=install_search_app_two)
-                t.daemon = True
-                t.start()
+        def install_search_app_two_thread():
+            t = Thread(target=install_search_app_two)
+            t.daemon = True
+            t.start()
 
-            def install_search_app_three_thread():
-                t = Thread(target=install_search_app_three)
-                t.daemon = True
-                t.start()
+        def install_search_app_three_thread():
+            t = Thread(target=install_search_app_three)
+            t.daemon = True
+            t.start()
 
-            def install_search_app_four_thread():
-                t = Thread(target=install_search_app_four)
-                t.daemon = True
-                t.start()
+        def install_search_app_four_thread():
+            t = Thread(target=install_search_app_four)
+            t.daemon = True
+            t.start()
 
-            def install_search_app_five_thread():
-                t = Thread(target=install_search_app_five)
-                t.daemon = True
-                t.start()
+        def install_search_app_five_thread():
+            t = Thread(target=install_search_app_five)
+            t.daemon = True
+            t.start()
 
-            # connecting search page install buttons to install function
-            self.install_search_app_btn_1.clicked.connect(lambda: install_search_app_one_thread())
-            self.install_search_app_btn_2.clicked.connect(lambda: install_search_app_two_thread())
-            self.install_search_app_btn_3.clicked.connect(lambda: install_search_app_three_thread())
-            self.install_search_app_btn_4.clicked.connect(lambda: install_search_app_four_thread())
-            self.install_search_app_btn_5.clicked.connect(lambda: install_search_app_five_thread())
+
 
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         # VIRUS TOTAL APP CHECKING                            #
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-        def app_is_safe_notif():
-            notification.notify(
-                title='App is Safe',
-                message='no malware detections found from 58 sources - VirusTotal',
-                app_icon="fluorite.ico",
-                timeout=10,
-            )
-
 
         def vt_function_1():
             vt_command_1 = ("scoop virustotal "+final_app_one)
@@ -584,7 +567,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 vt_output_url = vt_output[5]
                 webbrowser.open(vt_output_url)
             else:
-                app_is_safe_notif()
+                notify_function(title_prompt="App is Safe", message_prompt=("no malware detections found from ~60 sources - VirusTotal"))
 
 
         def vt_function_2():
@@ -602,7 +585,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 vt_output_url = vt_output[5]
                 webbrowser.open(vt_output_url)
             else:
-                app_is_safe_notif()
+                notify_function(title_prompt="App is Safe", message_prompt=("no malware detections found from ~60 sources - VirusTotal"))
 
         def vt_function_3():
             vt_command_1 = ("scoop virustotal "+final_app_three)
@@ -619,7 +602,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 vt_output_url = vt_output[5]
                 webbrowser.open(vt_output_url)
             else:
-                app_is_safe_notif()
+                notify_function(title_prompt="App is Safe", message_prompt=("no malware detections found from ~60 sources - VirusTotal"))
 
         def vt_function_4():
             vt_command_1 = ("scoop virustotal "+final_app_four)
@@ -636,7 +619,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 vt_output_url = vt_output[5]
                 webbrowser.open(vt_output_url)
             else:
-                app_is_safe_notif()
+                notify_function(title_prompt="App is Safe", message_prompt=("no malware detections found from ~60 sources - VirusTotal"))
 
         def vt_function_5():
             vt_command_1 = ("scoop virustotal "+final_app_five)
@@ -653,8 +636,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 vt_output_url = vt_output[5]
                 webbrowser.open(vt_output_url)
             else:
-                app_is_safe_notif()
-
+                notify_function(title_prompt="App is Safe", message_prompt=("no malware detections found from ~60 sources - VirusTotal"))
 
         def remove_app_function():
             remove_app_input_text = self.apps_list.currentText()
@@ -666,12 +648,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             powershell_scoop_remove_2 = subprocess.run(powershell_scoop_remove_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             universal_newlines=True, shell="False")
 
-            notification.notify(
-                title='Finished',
-                message='uninstalled app',
-                app_icon="fluorite.ico",
-                timeout=10,
-            )
+            notify_function(title_prompt="Finished", message_prompt=("uninstalled app"))
 
         def remove_app_function_thread():
             t = Thread(target=remove_app_function)
@@ -708,6 +685,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.app_install_3_layout.addWidget(self.install_search_app_btn_3, Qt.AlignCenter, Qt.AlignCenter)
         self.app_install_4_layout.addWidget(self.install_search_app_btn_4, Qt.AlignCenter, Qt.AlignCenter)
         self.app_install_5_layout.addWidget(self.install_search_app_btn_5, Qt.AlignCenter, Qt.AlignCenter)
+
+        # connecting search page install buttons to install function
+        self.install_search_app_btn_1.clicked.connect(lambda: install_search_app_one_thread())
+        self.install_search_app_btn_2.clicked.connect(lambda: install_search_app_two_thread())
+        self.install_search_app_btn_3.clicked.connect(lambda: install_search_app_three_thread())
+        self.install_search_app_btn_4.clicked.connect(lambda: install_search_app_four_thread())
+        self.install_search_app_btn_5.clicked.connect(lambda: install_search_app_five_thread())
 
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         # REMOVE APP AND INPUT BOX                            #
@@ -1030,23 +1014,23 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # VIRUS TOTAL BUTTON NEXT TO EACH APP                #
         # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-        self.vt_btn_1 = custompushbutton('check', parent=self)
+        self.vt_btn_1 = custompushbutton(' ', parent=self)
         self.vt_btn_1.setMinimumHeight(71)
         self.vt_btn_1.setFixedWidth(91)
 
-        self.vt_btn_2 = custompushbutton('check', parent=self)
+        self.vt_btn_2 = custompushbutton(' ', parent=self)
         self.vt_btn_2.setMinimumHeight(71)
         self.vt_btn_2.setFixedWidth(91)
 
-        self.vt_btn_3 = custompushbutton('check', parent=self)
+        self.vt_btn_3 = custompushbutton(' ', parent=self)
         self.vt_btn_3.setMinimumHeight(71)
         self.vt_btn_3.setFixedWidth(91)
 
-        self.vt_btn_4 = custompushbutton('check', parent=self)
+        self.vt_btn_4 = custompushbutton(' ', parent=self)
         self.vt_btn_4.setMinimumHeight(71)
         self.vt_btn_4.setFixedWidth(91)
 
-        self.vt_btn_5 = custompushbutton('check', parent=self)
+        self.vt_btn_5 = custompushbutton(' ', parent=self)
         self.vt_btn_5.setMinimumHeight(71)
         self.vt_btn_5.setFixedWidth(91)
 
@@ -1116,12 +1100,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         # functions for installing recommended apps on button click
 
         def installed_app_notif():
-            notification.notify(
-                title='Finished',
-                message='Installed app',
-                app_icon="fluorite.ico",
-                timeout=10,
-            )
+            notify_function(title_prompt="Finished", message_prompt=("Installed app"))
 
         def install_recc_app_1():
             # toggle_command_1 = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop install hwinfo']
@@ -1639,13 +1618,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         update_all_apps_powershell2 = subprocess.run(update_all_apps_powershell, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                         universal_newlines=True, shell="False")
 
-
-        notification.notify(
-            title='Finished',
-            message='Updated Apps',
-            app_icon="fluorite.ico",
-            timeout=10,
-        )
+        notify_function(title_prompt="Finished", message_prompt=("Updated Apps"))
 
     def update_all_apps_thread(self):
         t = Thread(target=self.update_all_apps_function)
@@ -1657,12 +1630,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         update_all_apps_powershell = [POWERSHELL_PATH, '-ExecutionPolicy', 'Unrestricted', 'scoop cleanup *']
         update_all_apps_powershell2 = subprocess.run(update_all_apps_powershell, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                         universal_newlines=True, shell="False")
-        notification.notify(
-            title='Finished',
-            message='Cleaned up old app versions',
-            app_icon="fluorite.ico",
-            timeout=10,
-        )
+
+        notify_function(title_prompt="Finished", message_prompt=("Cleaned up old app versions"))
+
 
     def cleanup_old_app_versions_thread(self):
         t = Thread(target=self.cleanup_old_app_versions_function)
@@ -1788,12 +1758,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                                         universal_newlines=True, shell="False")
         self.status_indicator_bucket.setText("Added: " + str(bucketname))
 
-        notification.notify(
-            title='Finished',
-            message='Added Bucket',
-            app_icon="fluorite.ico",
-            timeout=10,
-        )
+        notify_function(title_prompt="Finished", message_prompt=("Added Bucket"))
 
     def thread_add_bucket(self):
         t = Thread(target=self.addBucket)
@@ -1833,8 +1798,6 @@ else:
     file = open('downloadmanager.txt', 'w+')
     file.write('0')
     file.close()
-
-
 
 app = QtWidgets.QApplication(sys.argv)
 window = MainWindow()

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguiBaLHmI.ui'
+## Form generated from reading UI file 'scoopguiYLlouo.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -551,7 +551,7 @@ class Ui_MainWindow(object):
         self.title_buckets.setAlignment(Qt.AlignCenter)
         self.bucket_input_add = QLineEdit(self.buckets)
         self.bucket_input_add.setObjectName(u"bucket_input_add")
-        self.bucket_input_add.setGeometry(QRect(40, 150, 341, 81))
+        self.bucket_input_add.setGeometry(QRect(60, 150, 321, 81))
         self.bucket_input_add.setStyleSheet(u"background-color: rgb(89, 93, 117);\n"
 "border-radius: 25px;\n"
 "border-bottom: 30px shadow;")
@@ -578,7 +578,7 @@ class Ui_MainWindow(object):
 "}")
         self.cb = QComboBox(self.buckets)
         self.cb.setObjectName(u"cb")
-        self.cb.setGeometry(QRect(50, 270, 311, 41))
+        self.cb.setGeometry(QRect(70, 270, 291, 41))
         font3 = QFont()
         font3.setFamilies([u"Arial"])
         font3.setPointSize(12)
@@ -837,7 +837,7 @@ class Ui_MainWindow(object):
 "}")
         self.label_56 = QLabel(self.buckets)
         self.label_56.setObjectName(u"label_56")
-        self.label_56.setGeometry(QRect(40, 250, 341, 81))
+        self.label_56.setGeometry(QRect(60, 250, 321, 81))
         self.label_56.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"

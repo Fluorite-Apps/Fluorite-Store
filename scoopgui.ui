@@ -1280,9 +1280,9 @@ border-bottom: 30px shadow;</string>
      <widget class="QLineEdit" name="bucket_input_add">
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>60</x>
         <y>150</y>
-        <width>341</width>
+        <width>321</width>
         <height>81</height>
        </rect>
       </property>
@@ -1336,9 +1336,9 @@ QPushButton:hover {
      <widget class="QComboBox" name="cb">
       <property name="geometry">
        <rect>
-        <x>50</x>
+        <x>70</x>
         <y>270</y>
-        <width>311</width>
+        <width>291</width>
         <height>41</height>
        </rect>
       </property>
@@ -1976,9 +1976,9 @@ QPushButton:hover {
      <widget class="QLabel" name="label_56">
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>60</x>
         <y>250</y>
-        <width>341</width>
+        <width>321</width>
         <height>81</height>
        </rect>
       </property>
