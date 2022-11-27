@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'scoopguiYLlouo.ui'
+## Form generated from reading UI file 'scoopguiSFdgUw.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.1
 ##
@@ -1656,7 +1656,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_59 = QLabel(self.recommended_apps_page_2)
         self.label_59.setObjectName(u"label_59")
-        self.label_59.setGeometry(QRect(80, 130, 891, 511))
+        self.label_59.setGeometry(QRect(60, 130, 891, 511))
         self.label_59.setStyleSheet(u"QLabel {\n"
 "	        background-color: rgb(70, 74, 95);\n"
 "			padding: 12px;\n"
@@ -1665,7 +1665,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_61 = QLabel(self.recommended_apps_page_2)
         self.label_61.setObjectName(u"label_61")
-        self.label_61.setGeometry(QRect(280, 170, 450, 71))
+        self.label_61.setGeometry(QRect(260, 170, 450, 71))
         self.label_61.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -1674,7 +1674,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_62 = QLabel(self.recommended_apps_page_2)
         self.label_62.setObjectName(u"label_62")
-        self.label_62.setGeometry(QRect(160, 170, 91, 71))
+        self.label_62.setGeometry(QRect(140, 170, 91, 71))
         self.label_62.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -1685,7 +1685,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_64 = QLabel(self.recommended_apps_page_2)
         self.label_64.setObjectName(u"label_64")
-        self.label_64.setGeometry(QRect(280, 260, 450, 71))
+        self.label_64.setGeometry(QRect(260, 260, 450, 71))
         self.label_64.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -1694,7 +1694,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_65 = QLabel(self.recommended_apps_page_2)
         self.label_65.setObjectName(u"label_65")
-        self.label_65.setGeometry(QRect(160, 260, 91, 71))
+        self.label_65.setGeometry(QRect(140, 260, 91, 71))
         self.label_65.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -1703,7 +1703,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_67 = QLabel(self.recommended_apps_page_2)
         self.label_67.setObjectName(u"label_67")
-        self.label_67.setGeometry(QRect(280, 350, 450, 71))
+        self.label_67.setGeometry(QRect(260, 350, 450, 71))
         self.label_67.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -1712,7 +1712,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_68 = QLabel(self.recommended_apps_page_2)
         self.label_68.setObjectName(u"label_68")
-        self.label_68.setGeometry(QRect(160, 350, 91, 71))
+        self.label_68.setGeometry(QRect(140, 350, 91, 71))
         self.label_68.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -1721,7 +1721,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_70 = QLabel(self.recommended_apps_page_2)
         self.label_70.setObjectName(u"label_70")
-        self.label_70.setGeometry(QRect(280, 440, 450, 71))
+        self.label_70.setGeometry(QRect(260, 440, 450, 71))
         self.label_70.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -1730,7 +1730,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_71 = QLabel(self.recommended_apps_page_2)
         self.label_71.setObjectName(u"label_71")
-        self.label_71.setGeometry(QRect(160, 440, 91, 71))
+        self.label_71.setGeometry(QRect(140, 440, 91, 71))
         self.label_71.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -1739,7 +1739,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_73 = QLabel(self.recommended_apps_page_2)
         self.label_73.setObjectName(u"label_73")
-        self.label_73.setGeometry(QRect(280, 530, 450, 71))
+        self.label_73.setGeometry(QRect(260, 530, 450, 71))
         self.label_73.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -1748,7 +1748,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_74 = QLabel(self.recommended_apps_page_2)
         self.label_74.setObjectName(u"label_74")
-        self.label_74.setGeometry(QRect(160, 530, 91, 71))
+        self.label_74.setGeometry(QRect(140, 530, 91, 71))
         self.label_74.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -1757,12 +1757,12 @@ class Ui_MainWindow(object):
 "        }")
         self.label_76 = QLabel(self.recommended_apps_page_2)
         self.label_76.setObjectName(u"label_76")
-        self.label_76.setGeometry(QRect(180, 190, 71, 31))
+        self.label_76.setGeometry(QRect(160, 190, 71, 31))
         self.label_76.setFont(font6)
         self.label_76.setStyleSheet(u"")
         self.label_77 = QLabel(self.recommended_apps_page_2)
         self.label_77.setObjectName(u"label_77")
-        self.label_77.setGeometry(QRect(300, 190, 411, 31))
+        self.label_77.setGeometry(QRect(280, 190, 411, 31))
         font7 = QFont()
         font7.setPointSize(8)
         self.label_77.setFont(font7)
@@ -1770,53 +1770,53 @@ class Ui_MainWindow(object):
         self.label_77.setWordWrap(True)
         self.label_78 = QLabel(self.recommended_apps_page_2)
         self.label_78.setObjectName(u"label_78")
-        self.label_78.setGeometry(QRect(170, 280, 71, 31))
+        self.label_78.setGeometry(QRect(150, 280, 71, 31))
         self.label_78.setFont(font6)
         self.label_78.setStyleSheet(u"")
         self.label_79 = QLabel(self.recommended_apps_page_2)
         self.label_79.setObjectName(u"label_79")
-        self.label_79.setGeometry(QRect(300, 280, 411, 31))
+        self.label_79.setGeometry(QRect(280, 280, 411, 31))
         self.label_79.setFont(font7)
         self.label_79.setStyleSheet(u"color: gray")
         self.label_79.setWordWrap(True)
         self.label_80 = QLabel(self.recommended_apps_page_2)
         self.label_80.setObjectName(u"label_80")
-        self.label_80.setGeometry(QRect(170, 370, 71, 31))
+        self.label_80.setGeometry(QRect(150, 370, 71, 31))
         self.label_80.setFont(font6)
         self.label_80.setStyleSheet(u"")
         self.label_81 = QLabel(self.recommended_apps_page_2)
         self.label_81.setObjectName(u"label_81")
-        self.label_81.setGeometry(QRect(300, 370, 411, 31))
+        self.label_81.setGeometry(QRect(280, 370, 411, 31))
         self.label_81.setFont(font7)
         self.label_81.setStyleSheet(u"color: gray")
         self.label_81.setWordWrap(True)
         self.label_82 = QLabel(self.recommended_apps_page_2)
         self.label_82.setObjectName(u"label_82")
-        self.label_82.setGeometry(QRect(170, 450, 71, 51))
+        self.label_82.setGeometry(QRect(150, 450, 71, 51))
         self.label_82.setFont(font6)
         self.label_82.setStyleSheet(u"")
         self.label_82.setWordWrap(True)
         self.label_83 = QLabel(self.recommended_apps_page_2)
         self.label_83.setObjectName(u"label_83")
-        self.label_83.setGeometry(QRect(290, 460, 411, 31))
+        self.label_83.setGeometry(QRect(270, 460, 411, 31))
         self.label_83.setFont(font7)
         self.label_83.setStyleSheet(u"color: gray")
         self.label_83.setWordWrap(True)
         self.label_84 = QLabel(self.recommended_apps_page_2)
         self.label_84.setObjectName(u"label_84")
-        self.label_84.setGeometry(QRect(170, 540, 81, 51))
+        self.label_84.setGeometry(QRect(150, 540, 81, 51))
         self.label_84.setFont(font6)
         self.label_84.setStyleSheet(u"")
         self.label_84.setWordWrap(True)
         self.label_85 = QLabel(self.recommended_apps_page_2)
         self.label_85.setObjectName(u"label_85")
-        self.label_85.setGeometry(QRect(290, 550, 411, 31))
+        self.label_85.setGeometry(QRect(270, 550, 411, 31))
         self.label_85.setFont(font7)
         self.label_85.setStyleSheet(u"color: gray")
         self.label_85.setWordWrap(True)
         self.recc_app_install_frame_6 = QFrame(self.recommended_apps_page_2)
         self.recc_app_install_frame_6.setObjectName(u"recc_app_install_frame_6")
-        self.recc_app_install_frame_6.setGeometry(QRect(770, 170, 131, 71))
+        self.recc_app_install_frame_6.setGeometry(QRect(750, 170, 131, 71))
         self.recc_app_install_frame_6.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_6.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -1846,7 +1846,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_6.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_7 = QFrame(self.recommended_apps_page_2)
         self.recc_app_install_frame_7.setObjectName(u"recc_app_install_frame_7")
-        self.recc_app_install_frame_7.setGeometry(QRect(770, 260, 131, 71))
+        self.recc_app_install_frame_7.setGeometry(QRect(750, 260, 131, 71))
         self.recc_app_install_frame_7.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_7.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -1876,7 +1876,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_7.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_8 = QFrame(self.recommended_apps_page_2)
         self.recc_app_install_frame_8.setObjectName(u"recc_app_install_frame_8")
-        self.recc_app_install_frame_8.setGeometry(QRect(770, 350, 131, 71))
+        self.recc_app_install_frame_8.setGeometry(QRect(750, 350, 131, 71))
         self.recc_app_install_frame_8.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_8.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -1906,7 +1906,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_8.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_9 = QFrame(self.recommended_apps_page_2)
         self.recc_app_install_frame_9.setObjectName(u"recc_app_install_frame_9")
-        self.recc_app_install_frame_9.setGeometry(QRect(770, 440, 131, 71))
+        self.recc_app_install_frame_9.setGeometry(QRect(750, 440, 131, 71))
         self.recc_app_install_frame_9.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_9.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -1936,7 +1936,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_9.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_10 = QFrame(self.recommended_apps_page_2)
         self.recc_app_install_frame_10.setObjectName(u"recc_app_install_frame_10")
-        self.recc_app_install_frame_10.setGeometry(QRect(770, 530, 131, 71))
+        self.recc_app_install_frame_10.setGeometry(QRect(750, 530, 131, 71))
         self.recc_app_install_frame_10.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_10.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -1966,12 +1966,12 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_10.setContentsMargins(0, 0, 0, 0)
         self.label_172 = QLabel(self.recommended_apps_page_2)
         self.label_172.setObjectName(u"label_172")
-        self.label_172.setGeometry(QRect(590, 80, 51, 31))
+        self.label_172.setGeometry(QRect(570, 80, 51, 31))
         self.label_172.setFont(font6)
         self.label_172.setStyleSheet(u"color: gray")
         self.title_8 = QLabel(self.recommended_apps_page_2)
         self.title_8.setObjectName(u"title_8")
-        self.title_8.setGeometry(QRect(160, 75, 331, 41))
+        self.title_8.setGeometry(QRect(140, 75, 331, 41))
         font8 = QFont()
         font8.setPointSize(13)
         self.title_8.setFont(font8)
@@ -1979,7 +1979,7 @@ class Ui_MainWindow(object):
         self.title_8.setAlignment(Qt.AlignCenter)
         self.label_173 = QLabel(self.recommended_apps_page_2)
         self.label_173.setObjectName(u"label_173")
-        self.label_173.setGeometry(QRect(110, 70, 441, 51))
+        self.label_173.setGeometry(QRect(90, 70, 441, 51))
         self.label_173.setStyleSheet(u"QLabel {\n"
 "			background-color: #21252d;\n"
 "			padding: 12px;\n"
@@ -1988,7 +1988,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_174 = QLabel(self.recommended_apps_page_2)
         self.label_174.setObjectName(u"label_174")
-        self.label_174.setGeometry(QRect(580, 70, 361, 51))
+        self.label_174.setGeometry(QRect(560, 70, 361, 51))
         self.label_174.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -1999,7 +1999,7 @@ class Ui_MainWindow(object):
 "        }")
         self.status_indicator_frame_2 = QFrame(self.recommended_apps_page_2)
         self.status_indicator_frame_2.setObjectName(u"status_indicator_frame_2")
-        self.status_indicator_frame_2.setGeometry(QRect(640, 70, 281, 51))
+        self.status_indicator_frame_2.setGeometry(QRect(620, 70, 281, 51))
         self.status_indicator_frame_2.setCursor(QCursor(Qt.PointingHandCursor))
         self.status_indicator_frame_2.setStyleSheet(u"")
         self.status_indicator_frame_2.setFrameShape(QFrame.NoFrame)
@@ -2011,7 +2011,7 @@ class Ui_MainWindow(object):
         self.status_indicator_layout_2.setContentsMargins(0, 0, 0, 0)
         self.label_331 = QLabel(self.recommended_apps_page_2)
         self.label_331.setObjectName(u"label_331")
-        self.label_331.setGeometry(QRect(1000, 140, 71, 201))
+        self.label_331.setGeometry(QRect(980, 140, 71, 201))
         self.label_331.setStyleSheet(u"QLabel {\n"
 "			background-color: rgb(60, 64, 82);\n"
 "			padding: 12px;\n"
@@ -2020,7 +2020,7 @@ class Ui_MainWindow(object):
 "        }")
         self.back_button_frame_5 = QFrame(self.recommended_apps_page_2)
         self.back_button_frame_5.setObjectName(u"back_button_frame_5")
-        self.back_button_frame_5.setGeometry(QRect(1010, 150, 51, 181))
+        self.back_button_frame_5.setGeometry(QRect(990, 150, 51, 181))
         self.back_button_frame_5.setCursor(QCursor(Qt.PointingHandCursor))
         self.back_button_frame_5.setStyleSheet(u"QPushButton{\n"
 "	\n"
@@ -2050,7 +2050,7 @@ class Ui_MainWindow(object):
         self.return_home_layout_two.setContentsMargins(0, 0, 0, 0)
         self.label_332 = QLabel(self.recommended_apps_page_2)
         self.label_332.setObjectName(u"label_332")
-        self.label_332.setGeometry(QRect(1000, 350, 71, 281))
+        self.label_332.setGeometry(QRect(980, 350, 71, 281))
         self.label_332.setStyleSheet(u"QLabel {\n"
 "			background-color: rgb(60, 64, 82);\n"
 "			padding: 12px;\n"
@@ -2059,7 +2059,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_333 = QLabel(self.recommended_apps_page_2)
         self.label_333.setObjectName(u"label_333")
-        self.label_333.setGeometry(QRect(980, 130, 111, 511))
+        self.label_333.setGeometry(QRect(960, 130, 111, 511))
         self.label_333.setStyleSheet(u"QLabel {\n"
 "        	\n"
 "			\n"
@@ -2070,7 +2070,7 @@ class Ui_MainWindow(object):
 "        }")
         self.recc_next_page_frame_3 = QFrame(self.recommended_apps_page_2)
         self.recc_next_page_frame_3.setObjectName(u"recc_next_page_frame_3")
-        self.recc_next_page_frame_3.setGeometry(QRect(1010, 360, 51, 261))
+        self.recc_next_page_frame_3.setGeometry(QRect(990, 360, 51, 261))
         self.recc_next_page_frame_3.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_next_page_frame_3.setStyleSheet(u"QPushButton{\n"
 "	\n"
@@ -2140,7 +2140,7 @@ class Ui_MainWindow(object):
         self.recommended_apps_page_3.setObjectName(u"recommended_apps_page_3")
         self.label_114 = QLabel(self.recommended_apps_page_3)
         self.label_114.setObjectName(u"label_114")
-        self.label_114.setGeometry(QRect(280, 260, 450, 71))
+        self.label_114.setGeometry(QRect(260, 260, 450, 71))
         self.label_114.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -2149,7 +2149,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_115 = QLabel(self.recommended_apps_page_3)
         self.label_115.setObjectName(u"label_115")
-        self.label_115.setGeometry(QRect(280, 350, 450, 71))
+        self.label_115.setGeometry(QRect(260, 350, 450, 71))
         self.label_115.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -2158,18 +2158,18 @@ class Ui_MainWindow(object):
 "        }")
         self.label_116 = QLabel(self.recommended_apps_page_3)
         self.label_116.setObjectName(u"label_116")
-        self.label_116.setGeometry(QRect(170, 280, 71, 31))
+        self.label_116.setGeometry(QRect(150, 280, 71, 31))
         self.label_116.setFont(font6)
         self.label_116.setStyleSheet(u"")
         self.label_118 = QLabel(self.recommended_apps_page_3)
         self.label_118.setObjectName(u"label_118")
-        self.label_118.setGeometry(QRect(300, 370, 411, 31))
+        self.label_118.setGeometry(QRect(280, 370, 411, 31))
         self.label_118.setFont(font7)
         self.label_118.setStyleSheet(u"color: gray")
         self.label_118.setWordWrap(True)
         self.label_119 = QLabel(self.recommended_apps_page_3)
         self.label_119.setObjectName(u"label_119")
-        self.label_119.setGeometry(QRect(160, 530, 91, 71))
+        self.label_119.setGeometry(QRect(140, 530, 91, 71))
         self.label_119.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -2178,19 +2178,19 @@ class Ui_MainWindow(object):
 "        }")
         self.label_120 = QLabel(self.recommended_apps_page_3)
         self.label_120.setObjectName(u"label_120")
-        self.label_120.setGeometry(QRect(170, 180, 71, 51))
+        self.label_120.setGeometry(QRect(150, 180, 71, 51))
         self.label_120.setFont(font6)
         self.label_120.setStyleSheet(u"")
         self.label_120.setWordWrap(True)
         self.label_121 = QLabel(self.recommended_apps_page_3)
         self.label_121.setObjectName(u"label_121")
-        self.label_121.setGeometry(QRect(290, 550, 411, 31))
+        self.label_121.setGeometry(QRect(270, 550, 411, 31))
         self.label_121.setFont(font7)
         self.label_121.setStyleSheet(u"color: gray")
         self.label_121.setWordWrap(True)
         self.label_122 = QLabel(self.recommended_apps_page_3)
         self.label_122.setObjectName(u"label_122")
-        self.label_122.setGeometry(QRect(280, 530, 450, 71))
+        self.label_122.setGeometry(QRect(260, 530, 450, 71))
         self.label_122.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -2208,13 +2208,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_125 = QLabel(self.recommended_apps_page_3)
         self.label_125.setObjectName(u"label_125")
-        self.label_125.setGeometry(QRect(290, 460, 411, 31))
+        self.label_125.setGeometry(QRect(270, 460, 411, 31))
         self.label_125.setFont(font7)
         self.label_125.setStyleSheet(u"color: gray")
         self.label_125.setWordWrap(True)
         self.label_126 = QLabel(self.recommended_apps_page_3)
         self.label_126.setObjectName(u"label_126")
-        self.label_126.setGeometry(QRect(80, 130, 891, 511))
+        self.label_126.setGeometry(QRect(60, 130, 891, 511))
         self.label_126.setStyleSheet(u"QLabel {\n"
 "	        background-color: rgb(70, 74, 95);\n"
 "			padding: 12px;\n"
@@ -2223,13 +2223,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_128 = QLabel(self.recommended_apps_page_3)
         self.label_128.setObjectName(u"label_128")
-        self.label_128.setGeometry(QRect(300, 190, 411, 31))
+        self.label_128.setGeometry(QRect(280, 190, 411, 31))
         self.label_128.setFont(font7)
         self.label_128.setStyleSheet(u"color: gray")
         self.label_128.setWordWrap(True)
         self.label_130 = QLabel(self.recommended_apps_page_3)
         self.label_130.setObjectName(u"label_130")
-        self.label_130.setGeometry(QRect(160, 170, 91, 71))
+        self.label_130.setGeometry(QRect(140, 170, 91, 71))
         self.label_130.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -2238,19 +2238,19 @@ class Ui_MainWindow(object):
 "        }")
         self.label_131 = QLabel(self.recommended_apps_page_3)
         self.label_131.setObjectName(u"label_131")
-        self.label_131.setGeometry(QRect(170, 360, 71, 51))
+        self.label_131.setGeometry(QRect(150, 360, 71, 51))
         self.label_131.setFont(font6)
         self.label_131.setStyleSheet(u"")
         self.label_131.setWordWrap(True)
         self.label_132 = QLabel(self.recommended_apps_page_3)
         self.label_132.setObjectName(u"label_132")
-        self.label_132.setGeometry(QRect(170, 450, 71, 51))
+        self.label_132.setGeometry(QRect(150, 450, 71, 51))
         self.label_132.setFont(font6)
         self.label_132.setStyleSheet(u"")
         self.label_132.setWordWrap(True)
         self.label_133 = QLabel(self.recommended_apps_page_3)
         self.label_133.setObjectName(u"label_133")
-        self.label_133.setGeometry(QRect(280, 440, 450, 71))
+        self.label_133.setGeometry(QRect(260, 440, 450, 71))
         self.label_133.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -2259,7 +2259,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_134 = QLabel(self.recommended_apps_page_3)
         self.label_134.setObjectName(u"label_134")
-        self.label_134.setGeometry(QRect(280, 170, 450, 71))
+        self.label_134.setGeometry(QRect(260, 170, 450, 71))
         self.label_134.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -2268,13 +2268,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_136 = QLabel(self.recommended_apps_page_3)
         self.label_136.setObjectName(u"label_136")
-        self.label_136.setGeometry(QRect(170, 540, 81, 51))
+        self.label_136.setGeometry(QRect(150, 540, 81, 51))
         self.label_136.setFont(font6)
         self.label_136.setStyleSheet(u"")
         self.label_136.setWordWrap(True)
         self.label_137 = QLabel(self.recommended_apps_page_3)
         self.label_137.setObjectName(u"label_137")
-        self.label_137.setGeometry(QRect(160, 350, 91, 71))
+        self.label_137.setGeometry(QRect(140, 350, 91, 71))
         self.label_137.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -2283,7 +2283,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_138 = QLabel(self.recommended_apps_page_3)
         self.label_138.setObjectName(u"label_138")
-        self.label_138.setGeometry(QRect(160, 440, 91, 71))
+        self.label_138.setGeometry(QRect(140, 440, 91, 71))
         self.label_138.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -2292,7 +2292,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_140 = QLabel(self.recommended_apps_page_3)
         self.label_140.setObjectName(u"label_140")
-        self.label_140.setGeometry(QRect(160, 260, 91, 71))
+        self.label_140.setGeometry(QRect(140, 260, 91, 71))
         self.label_140.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -2301,13 +2301,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_141 = QLabel(self.recommended_apps_page_3)
         self.label_141.setObjectName(u"label_141")
-        self.label_141.setGeometry(QRect(300, 280, 411, 31))
+        self.label_141.setGeometry(QRect(280, 280, 411, 31))
         self.label_141.setFont(font7)
         self.label_141.setStyleSheet(u"color: gray")
         self.label_141.setWordWrap(True)
         self.recc_app_install_frame_11 = QFrame(self.recommended_apps_page_3)
         self.recc_app_install_frame_11.setObjectName(u"recc_app_install_frame_11")
-        self.recc_app_install_frame_11.setGeometry(QRect(770, 170, 131, 71))
+        self.recc_app_install_frame_11.setGeometry(QRect(750, 170, 131, 71))
         self.recc_app_install_frame_11.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_11.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -2337,7 +2337,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_11.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_12 = QFrame(self.recommended_apps_page_3)
         self.recc_app_install_frame_12.setObjectName(u"recc_app_install_frame_12")
-        self.recc_app_install_frame_12.setGeometry(QRect(770, 260, 131, 71))
+        self.recc_app_install_frame_12.setGeometry(QRect(750, 260, 131, 71))
         self.recc_app_install_frame_12.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_12.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -2367,7 +2367,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_12.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_13 = QFrame(self.recommended_apps_page_3)
         self.recc_app_install_frame_13.setObjectName(u"recc_app_install_frame_13")
-        self.recc_app_install_frame_13.setGeometry(QRect(770, 350, 131, 71))
+        self.recc_app_install_frame_13.setGeometry(QRect(750, 350, 131, 71))
         self.recc_app_install_frame_13.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_13.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -2397,7 +2397,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_13.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_14 = QFrame(self.recommended_apps_page_3)
         self.recc_app_install_frame_14.setObjectName(u"recc_app_install_frame_14")
-        self.recc_app_install_frame_14.setGeometry(QRect(770, 440, 131, 71))
+        self.recc_app_install_frame_14.setGeometry(QRect(750, 440, 131, 71))
         self.recc_app_install_frame_14.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_14.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -2427,7 +2427,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_14.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_15 = QFrame(self.recommended_apps_page_3)
         self.recc_app_install_frame_15.setObjectName(u"recc_app_install_frame_15")
-        self.recc_app_install_frame_15.setGeometry(QRect(770, 530, 131, 71))
+        self.recc_app_install_frame_15.setGeometry(QRect(750, 530, 131, 71))
         self.recc_app_install_frame_15.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_15.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -2457,18 +2457,18 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_15.setContentsMargins(0, 0, 0, 0)
         self.label_175 = QLabel(self.recommended_apps_page_3)
         self.label_175.setObjectName(u"label_175")
-        self.label_175.setGeometry(QRect(590, 80, 51, 31))
+        self.label_175.setGeometry(QRect(570, 80, 51, 31))
         self.label_175.setFont(font6)
         self.label_175.setStyleSheet(u"color: gray")
         self.title_9 = QLabel(self.recommended_apps_page_3)
         self.title_9.setObjectName(u"title_9")
-        self.title_9.setGeometry(QRect(160, 75, 331, 41))
+        self.title_9.setGeometry(QRect(140, 75, 331, 41))
         self.title_9.setFont(font8)
         self.title_9.setStyleSheet(u"color: gray")
         self.title_9.setAlignment(Qt.AlignCenter)
         self.status_indicator_frame_3 = QFrame(self.recommended_apps_page_3)
         self.status_indicator_frame_3.setObjectName(u"status_indicator_frame_3")
-        self.status_indicator_frame_3.setGeometry(QRect(640, 70, 281, 51))
+        self.status_indicator_frame_3.setGeometry(QRect(620, 70, 281, 51))
         self.status_indicator_frame_3.setCursor(QCursor(Qt.PointingHandCursor))
         self.status_indicator_frame_3.setStyleSheet(u"")
         self.status_indicator_frame_3.setFrameShape(QFrame.NoFrame)
@@ -2480,7 +2480,7 @@ class Ui_MainWindow(object):
         self.status_indicator_layout_3.setContentsMargins(0, 0, 0, 0)
         self.label_176 = QLabel(self.recommended_apps_page_3)
         self.label_176.setObjectName(u"label_176")
-        self.label_176.setGeometry(QRect(110, 70, 441, 51))
+        self.label_176.setGeometry(QRect(90, 70, 441, 51))
         self.label_176.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -2491,7 +2491,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_177 = QLabel(self.recommended_apps_page_3)
         self.label_177.setObjectName(u"label_177")
-        self.label_177.setGeometry(QRect(580, 70, 361, 51))
+        self.label_177.setGeometry(QRect(560, 70, 361, 51))
         self.label_177.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -2502,7 +2502,7 @@ class Ui_MainWindow(object):
 "        }")
         self.recc_next_page_frame_4 = QFrame(self.recommended_apps_page_3)
         self.recc_next_page_frame_4.setObjectName(u"recc_next_page_frame_4")
-        self.recc_next_page_frame_4.setGeometry(QRect(1010, 360, 51, 261))
+        self.recc_next_page_frame_4.setGeometry(QRect(990, 360, 51, 261))
         self.recc_next_page_frame_4.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_next_page_frame_4.setStyleSheet(u"QPushButton{\n"
 "	\n"
@@ -2532,7 +2532,7 @@ class Ui_MainWindow(object):
         self.recc_next_page_layout_3.setContentsMargins(0, 0, 0, 0)
         self.label_334 = QLabel(self.recommended_apps_page_3)
         self.label_334.setObjectName(u"label_334")
-        self.label_334.setGeometry(QRect(980, 130, 111, 511))
+        self.label_334.setGeometry(QRect(960, 130, 111, 511))
         self.label_334.setStyleSheet(u"QLabel {\n"
 "        	\n"
 "			\n"
@@ -2543,7 +2543,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_335 = QLabel(self.recommended_apps_page_3)
         self.label_335.setObjectName(u"label_335")
-        self.label_335.setGeometry(QRect(1000, 140, 71, 201))
+        self.label_335.setGeometry(QRect(980, 140, 71, 201))
         self.label_335.setStyleSheet(u"QLabel {\n"
 "			background-color: rgb(60, 64, 82);\n"
 "			padding: 12px;\n"
@@ -2552,7 +2552,7 @@ class Ui_MainWindow(object):
 "        }")
         self.back_button_frame_6 = QFrame(self.recommended_apps_page_3)
         self.back_button_frame_6.setObjectName(u"back_button_frame_6")
-        self.back_button_frame_6.setGeometry(QRect(1010, 150, 51, 181))
+        self.back_button_frame_6.setGeometry(QRect(990, 150, 51, 181))
         self.back_button_frame_6.setCursor(QCursor(Qt.PointingHandCursor))
         self.back_button_frame_6.setStyleSheet(u"QPushButton{\n"
 "	\n"
@@ -2582,7 +2582,7 @@ class Ui_MainWindow(object):
         self.return_home_layout_3.setContentsMargins(0, 0, 0, 0)
         self.label_336 = QLabel(self.recommended_apps_page_3)
         self.label_336.setObjectName(u"label_336")
-        self.label_336.setGeometry(QRect(1000, 350, 71, 281))
+        self.label_336.setGeometry(QRect(980, 350, 71, 281))
         self.label_336.setStyleSheet(u"QLabel {\n"
 "			background-color: rgb(60, 64, 82);\n"
 "			padding: 12px;\n"
@@ -2631,7 +2631,7 @@ class Ui_MainWindow(object):
         self.recommended_apps_page_4.setObjectName(u"recommended_apps_page_4")
         self.label_142 = QLabel(self.recommended_apps_page_4)
         self.label_142.setObjectName(u"label_142")
-        self.label_142.setGeometry(QRect(280, 260, 450, 71))
+        self.label_142.setGeometry(QRect(260, 260, 450, 71))
         self.label_142.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -2640,7 +2640,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_143 = QLabel(self.recommended_apps_page_4)
         self.label_143.setObjectName(u"label_143")
-        self.label_143.setGeometry(QRect(280, 350, 450, 71))
+        self.label_143.setGeometry(QRect(260, 350, 450, 71))
         self.label_143.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -2649,18 +2649,18 @@ class Ui_MainWindow(object):
 "        }")
         self.label_144 = QLabel(self.recommended_apps_page_4)
         self.label_144.setObjectName(u"label_144")
-        self.label_144.setGeometry(QRect(170, 280, 71, 31))
+        self.label_144.setGeometry(QRect(150, 280, 71, 31))
         self.label_144.setFont(font6)
         self.label_144.setStyleSheet(u"")
         self.label_146 = QLabel(self.recommended_apps_page_4)
         self.label_146.setObjectName(u"label_146")
-        self.label_146.setGeometry(QRect(300, 370, 411, 31))
+        self.label_146.setGeometry(QRect(280, 370, 411, 31))
         self.label_146.setFont(font7)
         self.label_146.setStyleSheet(u"color: gray")
         self.label_146.setWordWrap(True)
         self.label_147 = QLabel(self.recommended_apps_page_4)
         self.label_147.setObjectName(u"label_147")
-        self.label_147.setGeometry(QRect(160, 530, 91, 71))
+        self.label_147.setGeometry(QRect(140, 530, 91, 71))
         self.label_147.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -2669,18 +2669,18 @@ class Ui_MainWindow(object):
 "        }")
         self.label_148 = QLabel(self.recommended_apps_page_4)
         self.label_148.setObjectName(u"label_148")
-        self.label_148.setGeometry(QRect(170, 190, 71, 31))
+        self.label_148.setGeometry(QRect(150, 190, 71, 31))
         self.label_148.setFont(font6)
         self.label_148.setStyleSheet(u"")
         self.label_149 = QLabel(self.recommended_apps_page_4)
         self.label_149.setObjectName(u"label_149")
-        self.label_149.setGeometry(QRect(290, 550, 411, 31))
+        self.label_149.setGeometry(QRect(270, 550, 411, 31))
         self.label_149.setFont(font7)
         self.label_149.setStyleSheet(u"color: gray")
         self.label_149.setWordWrap(True)
         self.label_150 = QLabel(self.recommended_apps_page_4)
         self.label_150.setObjectName(u"label_150")
-        self.label_150.setGeometry(QRect(280, 530, 450, 71))
+        self.label_150.setGeometry(QRect(260, 530, 450, 71))
         self.label_150.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -2698,13 +2698,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_153 = QLabel(self.recommended_apps_page_4)
         self.label_153.setObjectName(u"label_153")
-        self.label_153.setGeometry(QRect(290, 460, 411, 31))
+        self.label_153.setGeometry(QRect(270, 460, 411, 31))
         self.label_153.setFont(font7)
         self.label_153.setStyleSheet(u"color: gray")
         self.label_153.setWordWrap(True)
         self.label_154 = QLabel(self.recommended_apps_page_4)
         self.label_154.setObjectName(u"label_154")
-        self.label_154.setGeometry(QRect(80, 130, 891, 511))
+        self.label_154.setGeometry(QRect(60, 130, 891, 511))
         self.label_154.setStyleSheet(u"QLabel {\n"
 "	        background-color: rgb(70, 74, 95);\n"
 "			padding: 12px;\n"
@@ -2713,13 +2713,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_156 = QLabel(self.recommended_apps_page_4)
         self.label_156.setObjectName(u"label_156")
-        self.label_156.setGeometry(QRect(300, 190, 411, 31))
+        self.label_156.setGeometry(QRect(280, 190, 411, 31))
         self.label_156.setFont(font7)
         self.label_156.setStyleSheet(u"color: gray")
         self.label_156.setWordWrap(True)
         self.label_158 = QLabel(self.recommended_apps_page_4)
         self.label_158.setObjectName(u"label_158")
-        self.label_158.setGeometry(QRect(160, 170, 91, 71))
+        self.label_158.setGeometry(QRect(140, 170, 91, 71))
         self.label_158.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -2730,18 +2730,18 @@ class Ui_MainWindow(object):
 "        }")
         self.label_159 = QLabel(self.recommended_apps_page_4)
         self.label_159.setObjectName(u"label_159")
-        self.label_159.setGeometry(QRect(170, 370, 71, 31))
+        self.label_159.setGeometry(QRect(150, 370, 71, 31))
         self.label_159.setFont(font6)
         self.label_159.setStyleSheet(u"")
         self.label_160 = QLabel(self.recommended_apps_page_4)
         self.label_160.setObjectName(u"label_160")
-        self.label_160.setGeometry(QRect(170, 450, 71, 51))
+        self.label_160.setGeometry(QRect(150, 450, 71, 51))
         self.label_160.setFont(font6)
         self.label_160.setStyleSheet(u"")
         self.label_160.setWordWrap(True)
         self.label_161 = QLabel(self.recommended_apps_page_4)
         self.label_161.setObjectName(u"label_161")
-        self.label_161.setGeometry(QRect(280, 440, 450, 71))
+        self.label_161.setGeometry(QRect(260, 440, 450, 71))
         self.label_161.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -2750,7 +2750,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_162 = QLabel(self.recommended_apps_page_4)
         self.label_162.setObjectName(u"label_162")
-        self.label_162.setGeometry(QRect(280, 170, 450, 71))
+        self.label_162.setGeometry(QRect(260, 170, 450, 71))
         self.label_162.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -2759,13 +2759,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_164 = QLabel(self.recommended_apps_page_4)
         self.label_164.setObjectName(u"label_164")
-        self.label_164.setGeometry(QRect(170, 540, 71, 51))
+        self.label_164.setGeometry(QRect(150, 540, 71, 51))
         self.label_164.setFont(font6)
         self.label_164.setStyleSheet(u"")
         self.label_164.setWordWrap(True)
         self.label_165 = QLabel(self.recommended_apps_page_4)
         self.label_165.setObjectName(u"label_165")
-        self.label_165.setGeometry(QRect(160, 350, 91, 71))
+        self.label_165.setGeometry(QRect(140, 350, 91, 71))
         self.label_165.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -2774,7 +2774,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_166 = QLabel(self.recommended_apps_page_4)
         self.label_166.setObjectName(u"label_166")
-        self.label_166.setGeometry(QRect(160, 440, 91, 71))
+        self.label_166.setGeometry(QRect(140, 440, 91, 71))
         self.label_166.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -2783,7 +2783,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_168 = QLabel(self.recommended_apps_page_4)
         self.label_168.setObjectName(u"label_168")
-        self.label_168.setGeometry(QRect(160, 260, 91, 71))
+        self.label_168.setGeometry(QRect(140, 260, 91, 71))
         self.label_168.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -2794,13 +2794,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_169 = QLabel(self.recommended_apps_page_4)
         self.label_169.setObjectName(u"label_169")
-        self.label_169.setGeometry(QRect(300, 280, 411, 31))
+        self.label_169.setGeometry(QRect(280, 280, 411, 31))
         self.label_169.setFont(font7)
         self.label_169.setStyleSheet(u"color: gray")
         self.label_169.setWordWrap(True)
         self.recc_app_install_frame_16 = QFrame(self.recommended_apps_page_4)
         self.recc_app_install_frame_16.setObjectName(u"recc_app_install_frame_16")
-        self.recc_app_install_frame_16.setGeometry(QRect(770, 170, 131, 71))
+        self.recc_app_install_frame_16.setGeometry(QRect(750, 170, 131, 71))
         self.recc_app_install_frame_16.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_16.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -2830,7 +2830,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_16.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_17 = QFrame(self.recommended_apps_page_4)
         self.recc_app_install_frame_17.setObjectName(u"recc_app_install_frame_17")
-        self.recc_app_install_frame_17.setGeometry(QRect(770, 260, 131, 71))
+        self.recc_app_install_frame_17.setGeometry(QRect(750, 260, 131, 71))
         self.recc_app_install_frame_17.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_17.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -2860,7 +2860,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_17.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_18 = QFrame(self.recommended_apps_page_4)
         self.recc_app_install_frame_18.setObjectName(u"recc_app_install_frame_18")
-        self.recc_app_install_frame_18.setGeometry(QRect(770, 350, 131, 71))
+        self.recc_app_install_frame_18.setGeometry(QRect(750, 350, 131, 71))
         self.recc_app_install_frame_18.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_18.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -2890,7 +2890,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_18.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_19 = QFrame(self.recommended_apps_page_4)
         self.recc_app_install_frame_19.setObjectName(u"recc_app_install_frame_19")
-        self.recc_app_install_frame_19.setGeometry(QRect(770, 440, 131, 71))
+        self.recc_app_install_frame_19.setGeometry(QRect(750, 440, 131, 71))
         self.recc_app_install_frame_19.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_19.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -2920,7 +2920,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_19.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_20 = QFrame(self.recommended_apps_page_4)
         self.recc_app_install_frame_20.setObjectName(u"recc_app_install_frame_20")
-        self.recc_app_install_frame_20.setGeometry(QRect(770, 530, 131, 71))
+        self.recc_app_install_frame_20.setGeometry(QRect(750, 530, 131, 71))
         self.recc_app_install_frame_20.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_20.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -2950,12 +2950,12 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_20.setContentsMargins(0, 0, 0, 0)
         self.label_178 = QLabel(self.recommended_apps_page_4)
         self.label_178.setObjectName(u"label_178")
-        self.label_178.setGeometry(QRect(590, 80, 51, 31))
+        self.label_178.setGeometry(QRect(570, 80, 51, 31))
         self.label_178.setFont(font6)
         self.label_178.setStyleSheet(u"color: gray")
         self.status_indicator_frame_4 = QFrame(self.recommended_apps_page_4)
         self.status_indicator_frame_4.setObjectName(u"status_indicator_frame_4")
-        self.status_indicator_frame_4.setGeometry(QRect(640, 70, 281, 51))
+        self.status_indicator_frame_4.setGeometry(QRect(620, 70, 281, 51))
         self.status_indicator_frame_4.setCursor(QCursor(Qt.PointingHandCursor))
         self.status_indicator_frame_4.setStyleSheet(u"")
         self.status_indicator_frame_4.setFrameShape(QFrame.NoFrame)
@@ -2967,7 +2967,7 @@ class Ui_MainWindow(object):
         self.status_indicator_layout_4.setContentsMargins(0, 0, 0, 0)
         self.label_179 = QLabel(self.recommended_apps_page_4)
         self.label_179.setObjectName(u"label_179")
-        self.label_179.setGeometry(QRect(110, 70, 441, 51))
+        self.label_179.setGeometry(QRect(90, 70, 441, 51))
         self.label_179.setStyleSheet(u"QLabel {\n"
 "			background-color: #21252d;\n"
 "			padding: 12px;\n"
@@ -2976,13 +2976,13 @@ class Ui_MainWindow(object):
 "        }")
         self.title_10 = QLabel(self.recommended_apps_page_4)
         self.title_10.setObjectName(u"title_10")
-        self.title_10.setGeometry(QRect(160, 75, 331, 41))
+        self.title_10.setGeometry(QRect(140, 75, 331, 41))
         self.title_10.setFont(font8)
         self.title_10.setStyleSheet(u"color: gray")
         self.title_10.setAlignment(Qt.AlignCenter)
         self.label_180 = QLabel(self.recommended_apps_page_4)
         self.label_180.setObjectName(u"label_180")
-        self.label_180.setGeometry(QRect(580, 70, 361, 51))
+        self.label_180.setGeometry(QRect(560, 70, 361, 51))
         self.label_180.setStyleSheet(u"QLabel {\n"
 "			background-color: #21252d;\n"
 "			padding: 12px;\n"
@@ -2991,7 +2991,7 @@ class Ui_MainWindow(object):
 "        }")
         self.recc_next_page_frame_5 = QFrame(self.recommended_apps_page_4)
         self.recc_next_page_frame_5.setObjectName(u"recc_next_page_frame_5")
-        self.recc_next_page_frame_5.setGeometry(QRect(1010, 360, 51, 261))
+        self.recc_next_page_frame_5.setGeometry(QRect(990, 360, 51, 261))
         self.recc_next_page_frame_5.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_next_page_frame_5.setStyleSheet(u"QPushButton{\n"
 "	\n"
@@ -3021,7 +3021,7 @@ class Ui_MainWindow(object):
         self.recc_next_page_layout_4.setContentsMargins(0, 0, 0, 0)
         self.label_337 = QLabel(self.recommended_apps_page_4)
         self.label_337.setObjectName(u"label_337")
-        self.label_337.setGeometry(QRect(980, 130, 111, 511))
+        self.label_337.setGeometry(QRect(960, 130, 111, 511))
         self.label_337.setStyleSheet(u"QLabel {\n"
 "        	\n"
 "			\n"
@@ -3032,7 +3032,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_338 = QLabel(self.recommended_apps_page_4)
         self.label_338.setObjectName(u"label_338")
-        self.label_338.setGeometry(QRect(1000, 140, 71, 201))
+        self.label_338.setGeometry(QRect(980, 140, 71, 201))
         self.label_338.setStyleSheet(u"QLabel {\n"
 "			background-color: rgb(60, 64, 82);\n"
 "			padding: 12px;\n"
@@ -3041,7 +3041,7 @@ class Ui_MainWindow(object):
 "        }")
         self.back_button_frame_7 = QFrame(self.recommended_apps_page_4)
         self.back_button_frame_7.setObjectName(u"back_button_frame_7")
-        self.back_button_frame_7.setGeometry(QRect(1010, 150, 51, 181))
+        self.back_button_frame_7.setGeometry(QRect(990, 150, 51, 181))
         self.back_button_frame_7.setCursor(QCursor(Qt.PointingHandCursor))
         self.back_button_frame_7.setStyleSheet(u"QPushButton{\n"
 "	\n"
@@ -3071,7 +3071,7 @@ class Ui_MainWindow(object):
         self.return_home_layout_4.setContentsMargins(0, 0, 0, 0)
         self.label_339 = QLabel(self.recommended_apps_page_4)
         self.label_339.setObjectName(u"label_339")
-        self.label_339.setGeometry(QRect(1000, 350, 71, 281))
+        self.label_339.setGeometry(QRect(980, 350, 71, 281))
         self.label_339.setStyleSheet(u"QLabel {\n"
 "			background-color: rgb(60, 64, 82);\n"
 "			padding: 12px;\n"
@@ -3120,7 +3120,7 @@ class Ui_MainWindow(object):
         self.recommended_apps_page_5.setObjectName(u"recommended_apps_page_5")
         self.recc_app_install_frame_21 = QFrame(self.recommended_apps_page_5)
         self.recc_app_install_frame_21.setObjectName(u"recc_app_install_frame_21")
-        self.recc_app_install_frame_21.setGeometry(QRect(770, 440, 131, 71))
+        self.recc_app_install_frame_21.setGeometry(QRect(750, 440, 131, 71))
         self.recc_app_install_frame_21.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_21.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -3150,19 +3150,19 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_1_24.setContentsMargins(0, 0, 0, 0)
         self.label_117 = QLabel(self.recommended_apps_page_5)
         self.label_117.setObjectName(u"label_117")
-        self.label_117.setGeometry(QRect(300, 280, 411, 31))
+        self.label_117.setGeometry(QRect(280, 280, 411, 31))
         self.label_117.setFont(font7)
         self.label_117.setStyleSheet(u"color: gray")
         self.label_117.setWordWrap(True)
         self.label_95 = QLabel(self.recommended_apps_page_5)
         self.label_95.setObjectName(u"label_95")
-        self.label_95.setGeometry(QRect(300, 370, 411, 31))
+        self.label_95.setGeometry(QRect(280, 370, 411, 31))
         self.label_95.setFont(font7)
         self.label_95.setStyleSheet(u"color: gray")
         self.label_95.setWordWrap(True)
         self.label_123 = QLabel(self.recommended_apps_page_5)
         self.label_123.setObjectName(u"label_123")
-        self.label_123.setGeometry(QRect(80, 130, 891, 511))
+        self.label_123.setGeometry(QRect(60, 130, 891, 511))
         self.label_123.setStyleSheet(u"QLabel {\n"
 "	        background-color: rgb(70, 74, 95);\n"
 "			padding: 12px;\n"
@@ -3171,17 +3171,17 @@ class Ui_MainWindow(object):
 "        }")
         self.label_181 = QLabel(self.recommended_apps_page_5)
         self.label_181.setObjectName(u"label_181")
-        self.label_181.setGeometry(QRect(590, 80, 51, 31))
+        self.label_181.setGeometry(QRect(570, 80, 51, 31))
         self.label_181.setFont(font6)
         self.label_181.setStyleSheet(u"color: gray")
         self.label_127 = QLabel(self.recommended_apps_page_5)
         self.label_127.setObjectName(u"label_127")
-        self.label_127.setGeometry(QRect(170, 370, 71, 31))
+        self.label_127.setGeometry(QRect(150, 370, 71, 31))
         self.label_127.setFont(font6)
         self.label_127.setStyleSheet(u"")
         self.recc_app_install_frame_22 = QFrame(self.recommended_apps_page_5)
         self.recc_app_install_frame_22.setObjectName(u"recc_app_install_frame_22")
-        self.recc_app_install_frame_22.setGeometry(QRect(770, 530, 131, 71))
+        self.recc_app_install_frame_22.setGeometry(QRect(750, 530, 131, 71))
         self.recc_app_install_frame_22.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_22.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -3211,7 +3211,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_1_25.setContentsMargins(0, 0, 0, 0)
         self.label_129 = QLabel(self.recommended_apps_page_5)
         self.label_129.setObjectName(u"label_129")
-        self.label_129.setGeometry(QRect(160, 350, 91, 71))
+        self.label_129.setGeometry(QRect(140, 350, 91, 71))
         self.label_129.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -3220,7 +3220,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_135 = QLabel(self.recommended_apps_page_5)
         self.label_135.setObjectName(u"label_135")
-        self.label_135.setGeometry(QRect(280, 170, 450, 71))
+        self.label_135.setGeometry(QRect(260, 170, 450, 71))
         self.label_135.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -3229,7 +3229,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_139 = QLabel(self.recommended_apps_page_5)
         self.label_139.setObjectName(u"label_139")
-        self.label_139.setGeometry(QRect(980, 130, 111, 511))
+        self.label_139.setGeometry(QRect(960, 130, 111, 511))
         self.label_139.setStyleSheet(u"QLabel {\n"
 "        	\n"
 "			\n"
@@ -3240,7 +3240,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_145 = QLabel(self.recommended_apps_page_5)
         self.label_145.setObjectName(u"label_145")
-        self.label_145.setGeometry(QRect(1000, 140, 71, 201))
+        self.label_145.setGeometry(QRect(980, 140, 71, 201))
         self.label_145.setStyleSheet(u"QLabel {\n"
 "			background-color: rgb(60, 64, 82);\n"
 "			padding: 12px;\n"
@@ -3249,13 +3249,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_151 = QLabel(self.recommended_apps_page_5)
         self.label_151.setObjectName(u"label_151")
-        self.label_151.setGeometry(QRect(290, 530, 411, 31))
+        self.label_151.setGeometry(QRect(270, 530, 411, 31))
         self.label_151.setFont(font7)
         self.label_151.setStyleSheet(u"color: gray")
         self.label_151.setWordWrap(True)
         self.label_155 = QLabel(self.recommended_apps_page_5)
         self.label_155.setObjectName(u"label_155")
-        self.label_155.setGeometry(QRect(170, 180, 71, 51))
+        self.label_155.setGeometry(QRect(150, 180, 71, 51))
         self.label_155.setFont(font6)
         self.label_155.setStyleSheet(u"")
         self.label_155.setWordWrap(True)
@@ -3270,7 +3270,7 @@ class Ui_MainWindow(object):
 "        }")
         self.status_indicator_frame_5 = QFrame(self.recommended_apps_page_5)
         self.status_indicator_frame_5.setObjectName(u"status_indicator_frame_5")
-        self.status_indicator_frame_5.setGeometry(QRect(640, 70, 281, 51))
+        self.status_indicator_frame_5.setGeometry(QRect(620, 70, 281, 51))
         self.status_indicator_frame_5.setCursor(QCursor(Qt.PointingHandCursor))
         self.status_indicator_frame_5.setStyleSheet(u"")
         self.status_indicator_frame_5.setFrameShape(QFrame.NoFrame)
@@ -3282,7 +3282,7 @@ class Ui_MainWindow(object):
         self.status_indicator_layout_5.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_23 = QFrame(self.recommended_apps_page_5)
         self.recc_app_install_frame_23.setObjectName(u"recc_app_install_frame_23")
-        self.recc_app_install_frame_23.setGeometry(QRect(770, 170, 131, 71))
+        self.recc_app_install_frame_23.setGeometry(QRect(750, 170, 131, 71))
         self.recc_app_install_frame_23.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_23.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -3312,7 +3312,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_1_21.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_24 = QFrame(self.recommended_apps_page_5)
         self.recc_app_install_frame_24.setObjectName(u"recc_app_install_frame_24")
-        self.recc_app_install_frame_24.setGeometry(QRect(770, 350, 131, 71))
+        self.recc_app_install_frame_24.setGeometry(QRect(750, 350, 131, 71))
         self.recc_app_install_frame_24.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_24.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -3342,13 +3342,13 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_1_23.setContentsMargins(0, 0, 0, 0)
         self.title_7 = QLabel(self.recommended_apps_page_5)
         self.title_7.setObjectName(u"title_7")
-        self.title_7.setGeometry(QRect(160, 75, 331, 41))
+        self.title_7.setGeometry(QRect(140, 75, 331, 41))
         self.title_7.setFont(font8)
         self.title_7.setStyleSheet(u"color: gray")
         self.title_7.setAlignment(Qt.AlignCenter)
         self.label_163 = QLabel(self.recommended_apps_page_5)
         self.label_163.setObjectName(u"label_163")
-        self.label_163.setGeometry(QRect(160, 530, 91, 81))
+        self.label_163.setGeometry(QRect(140, 530, 91, 81))
         self.label_163.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -3357,13 +3357,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_167 = QLabel(self.recommended_apps_page_5)
         self.label_167.setObjectName(u"label_167")
-        self.label_167.setGeometry(QRect(180, 540, 51, 61))
+        self.label_167.setGeometry(QRect(160, 540, 51, 61))
         self.label_167.setFont(font6)
         self.label_167.setStyleSheet(u"")
         self.label_167.setWordWrap(True)
         self.label_182 = QLabel(self.recommended_apps_page_5)
         self.label_182.setObjectName(u"label_182")
-        self.label_182.setGeometry(QRect(280, 440, 450, 71))
+        self.label_182.setGeometry(QRect(260, 440, 450, 71))
         self.label_182.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -3372,7 +3372,7 @@ class Ui_MainWindow(object):
 "        }")
         self.back_button_frame_3 = QFrame(self.recommended_apps_page_5)
         self.back_button_frame_3.setObjectName(u"back_button_frame_3")
-        self.back_button_frame_3.setGeometry(QRect(1010, 150, 51, 181))
+        self.back_button_frame_3.setGeometry(QRect(990, 150, 51, 181))
         self.back_button_frame_3.setCursor(QCursor(Qt.PointingHandCursor))
         self.back_button_frame_3.setStyleSheet(u"QPushButton{\n"
 "	\n"
@@ -3402,13 +3402,13 @@ class Ui_MainWindow(object):
         self.return_home_layout_5.setContentsMargins(0, 0, 0, 0)
         self.label_89 = QLabel(self.recommended_apps_page_5)
         self.label_89.setObjectName(u"label_89")
-        self.label_89.setGeometry(QRect(170, 270, 71, 51))
+        self.label_89.setGeometry(QRect(150, 270, 71, 51))
         self.label_89.setFont(font6)
         self.label_89.setStyleSheet(u"")
         self.label_89.setWordWrap(True)
         self.label_183 = QLabel(self.recommended_apps_page_5)
         self.label_183.setObjectName(u"label_183")
-        self.label_183.setGeometry(QRect(280, 530, 450, 91))
+        self.label_183.setGeometry(QRect(260, 530, 450, 91))
         self.label_183.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -3417,7 +3417,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_184 = QLabel(self.recommended_apps_page_5)
         self.label_184.setObjectName(u"label_184")
-        self.label_184.setGeometry(QRect(280, 350, 450, 71))
+        self.label_184.setGeometry(QRect(260, 350, 450, 71))
         self.label_184.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -3426,7 +3426,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_185 = QLabel(self.recommended_apps_page_5)
         self.label_185.setObjectName(u"label_185")
-        self.label_185.setGeometry(QRect(110, 70, 441, 51))
+        self.label_185.setGeometry(QRect(90, 70, 441, 51))
         self.label_185.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -3437,7 +3437,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_186 = QLabel(self.recommended_apps_page_5)
         self.label_186.setObjectName(u"label_186")
-        self.label_186.setGeometry(QRect(280, 260, 450, 71))
+        self.label_186.setGeometry(QRect(260, 260, 450, 71))
         self.label_186.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -3446,13 +3446,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_187 = QLabel(self.recommended_apps_page_5)
         self.label_187.setObjectName(u"label_187")
-        self.label_187.setGeometry(QRect(300, 190, 411, 31))
+        self.label_187.setGeometry(QRect(280, 190, 411, 31))
         self.label_187.setFont(font7)
         self.label_187.setStyleSheet(u"color: gray")
         self.label_187.setWordWrap(True)
         self.recc_app_install_frame_25 = QFrame(self.recommended_apps_page_5)
         self.recc_app_install_frame_25.setObjectName(u"recc_app_install_frame_25")
-        self.recc_app_install_frame_25.setGeometry(QRect(770, 260, 131, 71))
+        self.recc_app_install_frame_25.setGeometry(QRect(750, 260, 131, 71))
         self.recc_app_install_frame_25.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_25.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -3482,7 +3482,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_1_22.setContentsMargins(0, 0, 0, 0)
         self.label_188 = QLabel(self.recommended_apps_page_5)
         self.label_188.setObjectName(u"label_188")
-        self.label_188.setGeometry(QRect(160, 260, 91, 71))
+        self.label_188.setGeometry(QRect(140, 260, 91, 71))
         self.label_188.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -3491,7 +3491,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_189 = QLabel(self.recommended_apps_page_5)
         self.label_189.setObjectName(u"label_189")
-        self.label_189.setGeometry(QRect(160, 440, 91, 71))
+        self.label_189.setGeometry(QRect(140, 440, 91, 71))
         self.label_189.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -3500,7 +3500,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_190 = QLabel(self.recommended_apps_page_5)
         self.label_190.setObjectName(u"label_190")
-        self.label_190.setGeometry(QRect(580, 70, 361, 51))
+        self.label_190.setGeometry(QRect(560, 70, 361, 51))
         self.label_190.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -3511,7 +3511,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_191 = QLabel(self.recommended_apps_page_5)
         self.label_191.setObjectName(u"label_191")
-        self.label_191.setGeometry(QRect(160, 170, 91, 71))
+        self.label_191.setGeometry(QRect(140, 170, 91, 71))
         self.label_191.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -3520,19 +3520,19 @@ class Ui_MainWindow(object):
 "        }")
         self.label_192 = QLabel(self.recommended_apps_page_5)
         self.label_192.setObjectName(u"label_192")
-        self.label_192.setGeometry(QRect(170, 450, 71, 51))
+        self.label_192.setGeometry(QRect(150, 450, 71, 51))
         self.label_192.setFont(font6)
         self.label_192.setStyleSheet(u"")
         self.label_192.setWordWrap(True)
         self.label_193 = QLabel(self.recommended_apps_page_5)
         self.label_193.setObjectName(u"label_193")
-        self.label_193.setGeometry(QRect(290, 460, 411, 31))
+        self.label_193.setGeometry(QRect(270, 460, 411, 31))
         self.label_193.setFont(font7)
         self.label_193.setStyleSheet(u"color: gray")
         self.label_193.setWordWrap(True)
         self.recc_next_page_frame_6 = QFrame(self.recommended_apps_page_5)
         self.recc_next_page_frame_6.setObjectName(u"recc_next_page_frame_6")
-        self.recc_next_page_frame_6.setGeometry(QRect(1010, 360, 51, 261))
+        self.recc_next_page_frame_6.setGeometry(QRect(990, 360, 51, 261))
         self.recc_next_page_frame_6.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_next_page_frame_6.setStyleSheet(u"QPushButton{\n"
 "	\n"
@@ -3562,7 +3562,7 @@ class Ui_MainWindow(object):
         self.recc_next_page_layout_5.setContentsMargins(0, 0, 0, 0)
         self.label_340 = QLabel(self.recommended_apps_page_5)
         self.label_340.setObjectName(u"label_340")
-        self.label_340.setGeometry(QRect(1000, 350, 71, 281))
+        self.label_340.setGeometry(QRect(980, 350, 71, 281))
         self.label_340.setStyleSheet(u"QLabel {\n"
 "			background-color: rgb(60, 64, 82);\n"
 "			padding: 12px;\n"
@@ -3571,7 +3571,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_22 = QLabel(self.recommended_apps_page_5)
         self.label_22.setObjectName(u"label_22")
-        self.label_22.setGeometry(QRect(290, 560, 421, 61))
+        self.label_22.setGeometry(QRect(270, 560, 421, 61))
         self.label_22.setStyleSheet(u"color: rgb(80, 107, 107);")
         self.label_22.setWordWrap(True)
         self.stackedWidget.addWidget(self.recommended_apps_page_5)
@@ -3617,7 +3617,7 @@ class Ui_MainWindow(object):
         self.recommended_apps_page_6.setObjectName(u"recommended_apps_page_6")
         self.status_indicator_frame_6 = QFrame(self.recommended_apps_page_6)
         self.status_indicator_frame_6.setObjectName(u"status_indicator_frame_6")
-        self.status_indicator_frame_6.setGeometry(QRect(640, 70, 281, 51))
+        self.status_indicator_frame_6.setGeometry(QRect(620, 70, 281, 51))
         self.status_indicator_frame_6.setCursor(QCursor(Qt.PointingHandCursor))
         self.status_indicator_frame_6.setStyleSheet(u"")
         self.status_indicator_frame_6.setFrameShape(QFrame.NoFrame)
@@ -3629,7 +3629,7 @@ class Ui_MainWindow(object):
         self.status_indicator_layout_6.setContentsMargins(0, 0, 0, 0)
         self.label_194 = QLabel(self.recommended_apps_page_6)
         self.label_194.setObjectName(u"label_194")
-        self.label_194.setGeometry(QRect(160, 260, 91, 71))
+        self.label_194.setGeometry(QRect(140, 260, 91, 71))
         self.label_194.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -3640,18 +3640,18 @@ class Ui_MainWindow(object):
 "        }")
         self.label_195 = QLabel(self.recommended_apps_page_6)
         self.label_195.setObjectName(u"label_195")
-        self.label_195.setGeometry(QRect(300, 190, 411, 31))
+        self.label_195.setGeometry(QRect(280, 190, 411, 31))
         self.label_195.setFont(font7)
         self.label_195.setStyleSheet(u"color: gray")
         self.label_195.setWordWrap(True)
         self.label_196 = QLabel(self.recommended_apps_page_6)
         self.label_196.setObjectName(u"label_196")
-        self.label_196.setGeometry(QRect(170, 190, 71, 31))
+        self.label_196.setGeometry(QRect(150, 190, 71, 31))
         self.label_196.setFont(font6)
         self.label_196.setStyleSheet(u"")
         self.label_197 = QLabel(self.recommended_apps_page_6)
         self.label_197.setObjectName(u"label_197")
-        self.label_197.setGeometry(QRect(280, 440, 450, 71))
+        self.label_197.setGeometry(QRect(260, 440, 450, 71))
         self.label_197.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -3662,7 +3662,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_198 = QLabel(self.recommended_apps_page_6)
         self.label_198.setObjectName(u"label_198")
-        self.label_198.setGeometry(QRect(280, 170, 450, 71))
+        self.label_198.setGeometry(QRect(260, 170, 450, 71))
         self.label_198.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -3673,7 +3673,7 @@ class Ui_MainWindow(object):
 "        }")
         self.recc_app_install_frame_26 = QFrame(self.recommended_apps_page_6)
         self.recc_app_install_frame_26.setObjectName(u"recc_app_install_frame_26")
-        self.recc_app_install_frame_26.setGeometry(QRect(770, 170, 131, 71))
+        self.recc_app_install_frame_26.setGeometry(QRect(750, 170, 131, 71))
         self.recc_app_install_frame_26.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_26.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -3703,13 +3703,13 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_1_26.setContentsMargins(0, 0, 0, 0)
         self.title_11 = QLabel(self.recommended_apps_page_6)
         self.title_11.setObjectName(u"title_11")
-        self.title_11.setGeometry(QRect(160, 75, 331, 41))
+        self.title_11.setGeometry(QRect(140, 75, 331, 41))
         self.title_11.setFont(font8)
         self.title_11.setStyleSheet(u"color: gray")
         self.title_11.setAlignment(Qt.AlignCenter)
         self.label_199 = QLabel(self.recommended_apps_page_6)
         self.label_199.setObjectName(u"label_199")
-        self.label_199.setGeometry(QRect(160, 440, 91, 71))
+        self.label_199.setGeometry(QRect(140, 440, 91, 71))
         self.label_199.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -3718,7 +3718,7 @@ class Ui_MainWindow(object):
 "        }")
         self.back_button_frame_9 = QFrame(self.recommended_apps_page_6)
         self.back_button_frame_9.setObjectName(u"back_button_frame_9")
-        self.back_button_frame_9.setGeometry(QRect(1010, 150, 51, 181))
+        self.back_button_frame_9.setGeometry(QRect(990, 150, 51, 181))
         self.back_button_frame_9.setCursor(QCursor(Qt.PointingHandCursor))
         self.back_button_frame_9.setStyleSheet(u"QPushButton{\n"
 "	\n"
@@ -3757,7 +3757,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_201 = QLabel(self.recommended_apps_page_6)
         self.label_201.setObjectName(u"label_201")
-        self.label_201.setGeometry(QRect(280, 350, 450, 71))
+        self.label_201.setGeometry(QRect(260, 350, 450, 71))
         self.label_201.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -3768,13 +3768,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_202 = QLabel(self.recommended_apps_page_6)
         self.label_202.setObjectName(u"label_202")
-        self.label_202.setGeometry(QRect(290, 550, 411, 31))
+        self.label_202.setGeometry(QRect(270, 550, 411, 31))
         self.label_202.setFont(font7)
         self.label_202.setStyleSheet(u"")
         self.label_202.setWordWrap(True)
         self.recc_next_page_frame_7 = QFrame(self.recommended_apps_page_6)
         self.recc_next_page_frame_7.setObjectName(u"recc_next_page_frame_7")
-        self.recc_next_page_frame_7.setGeometry(QRect(1010, 360, 51, 261))
+        self.recc_next_page_frame_7.setGeometry(QRect(990, 360, 51, 261))
         self.recc_next_page_frame_7.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_next_page_frame_7.setStyleSheet(u"QPushButton{\n"
 "	\n"
@@ -3804,7 +3804,7 @@ class Ui_MainWindow(object):
         self.recc_next_page_layout_6.setContentsMargins(0, 0, 0, 0)
         self.label_203 = QLabel(self.recommended_apps_page_6)
         self.label_203.setObjectName(u"label_203")
-        self.label_203.setGeometry(QRect(160, 170, 91, 71))
+        self.label_203.setGeometry(QRect(140, 170, 91, 71))
         self.label_203.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -3815,13 +3815,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_204 = QLabel(self.recommended_apps_page_6)
         self.label_204.setObjectName(u"label_204")
-        self.label_204.setGeometry(QRect(300, 370, 411, 31))
+        self.label_204.setGeometry(QRect(280, 370, 411, 31))
         self.label_204.setFont(font7)
         self.label_204.setStyleSheet(u"")
         self.label_204.setWordWrap(True)
         self.label_205 = QLabel(self.recommended_apps_page_6)
         self.label_205.setObjectName(u"label_205")
-        self.label_205.setGeometry(QRect(160, 530, 91, 71))
+        self.label_205.setGeometry(QRect(140, 530, 91, 71))
         self.label_205.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -3830,7 +3830,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_206 = QLabel(self.recommended_apps_page_6)
         self.label_206.setObjectName(u"label_206")
-        self.label_206.setGeometry(QRect(160, 350, 91, 71))
+        self.label_206.setGeometry(QRect(140, 350, 91, 71))
         self.label_206.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -3841,13 +3841,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_207 = QLabel(self.recommended_apps_page_6)
         self.label_207.setObjectName(u"label_207")
-        self.label_207.setGeometry(QRect(290, 460, 411, 31))
+        self.label_207.setGeometry(QRect(270, 460, 411, 31))
         self.label_207.setFont(font7)
         self.label_207.setStyleSheet(u"")
         self.label_207.setWordWrap(True)
         self.recc_app_install_frame_27 = QFrame(self.recommended_apps_page_6)
         self.recc_app_install_frame_27.setObjectName(u"recc_app_install_frame_27")
-        self.recc_app_install_frame_27.setGeometry(QRect(770, 260, 131, 71))
+        self.recc_app_install_frame_27.setGeometry(QRect(750, 260, 131, 71))
         self.recc_app_install_frame_27.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_27.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -3877,7 +3877,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_1_27.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_28 = QFrame(self.recommended_apps_page_6)
         self.recc_app_install_frame_28.setObjectName(u"recc_app_install_frame_28")
-        self.recc_app_install_frame_28.setGeometry(QRect(770, 530, 131, 71))
+        self.recc_app_install_frame_28.setGeometry(QRect(750, 530, 131, 71))
         self.recc_app_install_frame_28.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_28.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -3907,7 +3907,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_25.setContentsMargins(0, 0, 0, 0)
         self.label_341 = QLabel(self.recommended_apps_page_6)
         self.label_341.setObjectName(u"label_341")
-        self.label_341.setGeometry(QRect(980, 130, 111, 511))
+        self.label_341.setGeometry(QRect(960, 130, 111, 511))
         self.label_341.setStyleSheet(u"QLabel {\n"
 "        	\n"
 "			\n"
@@ -3918,7 +3918,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_208 = QLabel(self.recommended_apps_page_6)
         self.label_208.setObjectName(u"label_208")
-        self.label_208.setGeometry(QRect(80, 130, 891, 511))
+        self.label_208.setGeometry(QRect(60, 130, 891, 511))
         self.label_208.setStyleSheet(u"QLabel {\n"
 "	        background-color: rgb(70, 74, 95);\n"
 "			padding: 12px;\n"
@@ -3927,13 +3927,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_209 = QLabel(self.recommended_apps_page_6)
         self.label_209.setObjectName(u"label_209")
-        self.label_209.setGeometry(QRect(170, 450, 71, 51))
+        self.label_209.setGeometry(QRect(150, 450, 71, 51))
         self.label_209.setFont(font6)
         self.label_209.setStyleSheet(u"")
         self.label_209.setWordWrap(True)
         self.label_342 = QLabel(self.recommended_apps_page_6)
         self.label_342.setObjectName(u"label_342")
-        self.label_342.setGeometry(QRect(1000, 350, 71, 281))
+        self.label_342.setGeometry(QRect(980, 350, 71, 281))
         self.label_342.setStyleSheet(u"QLabel {\n"
 "			background-color: rgb(60, 64, 82);\n"
 "			padding: 12px;\n"
@@ -3942,12 +3942,12 @@ class Ui_MainWindow(object):
 "        }")
         self.label_210 = QLabel(self.recommended_apps_page_6)
         self.label_210.setObjectName(u"label_210")
-        self.label_210.setGeometry(QRect(590, 80, 51, 31))
+        self.label_210.setGeometry(QRect(570, 80, 51, 31))
         self.label_210.setFont(font6)
         self.label_210.setStyleSheet(u"color: gray")
         self.label_211 = QLabel(self.recommended_apps_page_6)
         self.label_211.setObjectName(u"label_211")
-        self.label_211.setGeometry(QRect(280, 530, 450, 71))
+        self.label_211.setGeometry(QRect(260, 530, 450, 71))
         self.label_211.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -3958,13 +3958,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_212 = QLabel(self.recommended_apps_page_6)
         self.label_212.setObjectName(u"label_212")
-        self.label_212.setGeometry(QRect(170, 540, 71, 51))
+        self.label_212.setGeometry(QRect(150, 540, 71, 51))
         self.label_212.setFont(font6)
         self.label_212.setStyleSheet(u"")
         self.label_212.setWordWrap(True)
         self.label_213 = QLabel(self.recommended_apps_page_6)
         self.label_213.setObjectName(u"label_213")
-        self.label_213.setGeometry(QRect(280, 260, 450, 71))
+        self.label_213.setGeometry(QRect(260, 260, 450, 71))
         self.label_213.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -3975,12 +3975,12 @@ class Ui_MainWindow(object):
 "        }")
         self.label_214 = QLabel(self.recommended_apps_page_6)
         self.label_214.setObjectName(u"label_214")
-        self.label_214.setGeometry(QRect(170, 370, 71, 31))
+        self.label_214.setGeometry(QRect(150, 370, 71, 31))
         self.label_214.setFont(font6)
         self.label_214.setStyleSheet(u"")
         self.recc_app_install_frame_29 = QFrame(self.recommended_apps_page_6)
         self.recc_app_install_frame_29.setObjectName(u"recc_app_install_frame_29")
-        self.recc_app_install_frame_29.setGeometry(QRect(770, 440, 131, 71))
+        self.recc_app_install_frame_29.setGeometry(QRect(750, 440, 131, 71))
         self.recc_app_install_frame_29.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_29.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -4010,7 +4010,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_26.setContentsMargins(0, 0, 0, 0)
         self.label_215 = QLabel(self.recommended_apps_page_6)
         self.label_215.setObjectName(u"label_215")
-        self.label_215.setGeometry(QRect(110, 70, 441, 51))
+        self.label_215.setGeometry(QRect(90, 70, 441, 51))
         self.label_215.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -4021,7 +4021,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_216 = QLabel(self.recommended_apps_page_6)
         self.label_216.setObjectName(u"label_216")
-        self.label_216.setGeometry(QRect(580, 70, 361, 51))
+        self.label_216.setGeometry(QRect(560, 70, 361, 51))
         self.label_216.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -4032,18 +4032,18 @@ class Ui_MainWindow(object):
 "        }")
         self.label_217 = QLabel(self.recommended_apps_page_6)
         self.label_217.setObjectName(u"label_217")
-        self.label_217.setGeometry(QRect(300, 280, 411, 31))
+        self.label_217.setGeometry(QRect(280, 280, 411, 31))
         self.label_217.setFont(font7)
         self.label_217.setStyleSheet(u"color: gray")
         self.label_217.setWordWrap(True)
         self.label_218 = QLabel(self.recommended_apps_page_6)
         self.label_218.setObjectName(u"label_218")
-        self.label_218.setGeometry(QRect(170, 280, 71, 31))
+        self.label_218.setGeometry(QRect(150, 280, 71, 31))
         self.label_218.setFont(font6)
         self.label_218.setStyleSheet(u"")
         self.recc_app_install_frame_30 = QFrame(self.recommended_apps_page_6)
         self.recc_app_install_frame_30.setObjectName(u"recc_app_install_frame_30")
-        self.recc_app_install_frame_30.setGeometry(QRect(770, 350, 131, 71))
+        self.recc_app_install_frame_30.setGeometry(QRect(750, 350, 131, 71))
         self.recc_app_install_frame_30.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_30.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -4073,7 +4073,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_27.setContentsMargins(0, 0, 0, 0)
         self.label_343 = QLabel(self.recommended_apps_page_6)
         self.label_343.setObjectName(u"label_343")
-        self.label_343.setGeometry(QRect(1000, 140, 71, 201))
+        self.label_343.setGeometry(QRect(980, 140, 71, 201))
         self.label_343.setStyleSheet(u"QLabel {\n"
 "			background-color: rgb(60, 64, 82);\n"
 "			padding: 12px;\n"
@@ -4122,7 +4122,7 @@ class Ui_MainWindow(object):
         self.recommended_apps_page_1.setObjectName(u"recommended_apps_page_1")
         self.label_86 = QLabel(self.recommended_apps_page_1)
         self.label_86.setObjectName(u"label_86")
-        self.label_86.setGeometry(QRect(280, 260, 450, 71))
+        self.label_86.setGeometry(QRect(260, 260, 450, 71))
         self.label_86.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -4131,7 +4131,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_87 = QLabel(self.recommended_apps_page_1)
         self.label_87.setObjectName(u"label_87")
-        self.label_87.setGeometry(QRect(280, 350, 450, 71))
+        self.label_87.setGeometry(QRect(260, 350, 450, 71))
         self.label_87.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -4140,19 +4140,19 @@ class Ui_MainWindow(object):
 "        }")
         self.label_88 = QLabel(self.recommended_apps_page_1)
         self.label_88.setObjectName(u"label_88")
-        self.label_88.setGeometry(QRect(170, 270, 71, 51))
+        self.label_88.setGeometry(QRect(150, 270, 71, 51))
         self.label_88.setFont(font6)
         self.label_88.setStyleSheet(u"")
         self.label_88.setWordWrap(True)
         self.label_90 = QLabel(self.recommended_apps_page_1)
         self.label_90.setObjectName(u"label_90")
-        self.label_90.setGeometry(QRect(300, 370, 411, 31))
+        self.label_90.setGeometry(QRect(280, 370, 411, 31))
         self.label_90.setFont(font7)
         self.label_90.setStyleSheet(u"color: gray")
         self.label_90.setWordWrap(True)
         self.label_91 = QLabel(self.recommended_apps_page_1)
         self.label_91.setObjectName(u"label_91")
-        self.label_91.setGeometry(QRect(160, 530, 91, 71))
+        self.label_91.setGeometry(QRect(140, 530, 91, 71))
         self.label_91.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -4161,18 +4161,18 @@ class Ui_MainWindow(object):
 "        }")
         self.label_92 = QLabel(self.recommended_apps_page_1)
         self.label_92.setObjectName(u"label_92")
-        self.label_92.setGeometry(QRect(170, 190, 71, 31))
+        self.label_92.setGeometry(QRect(150, 190, 71, 31))
         self.label_92.setFont(font6)
         self.label_92.setStyleSheet(u"")
         self.label_93 = QLabel(self.recommended_apps_page_1)
         self.label_93.setObjectName(u"label_93")
-        self.label_93.setGeometry(QRect(290, 550, 411, 31))
+        self.label_93.setGeometry(QRect(270, 550, 411, 31))
         self.label_93.setFont(font7)
         self.label_93.setStyleSheet(u"color: gray")
         self.label_93.setWordWrap(True)
         self.label_94 = QLabel(self.recommended_apps_page_1)
         self.label_94.setObjectName(u"label_94")
-        self.label_94.setGeometry(QRect(280, 530, 450, 71))
+        self.label_94.setGeometry(QRect(260, 530, 450, 71))
         self.label_94.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -4192,13 +4192,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_97 = QLabel(self.recommended_apps_page_1)
         self.label_97.setObjectName(u"label_97")
-        self.label_97.setGeometry(QRect(290, 460, 411, 31))
+        self.label_97.setGeometry(QRect(270, 460, 411, 31))
         self.label_97.setFont(font7)
         self.label_97.setStyleSheet(u"color: gray")
         self.label_97.setWordWrap(True)
         self.label_98 = QLabel(self.recommended_apps_page_1)
         self.label_98.setObjectName(u"label_98")
-        self.label_98.setGeometry(QRect(80, 130, 891, 511))
+        self.label_98.setGeometry(QRect(60, 130, 891, 511))
         self.label_98.setStyleSheet(u"QLabel {\n"
 "        	\n"
 "	background-color: rgb(70, 74, 95);\n"
@@ -4208,13 +4208,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_100 = QLabel(self.recommended_apps_page_1)
         self.label_100.setObjectName(u"label_100")
-        self.label_100.setGeometry(QRect(300, 190, 411, 31))
+        self.label_100.setGeometry(QRect(280, 190, 411, 31))
         self.label_100.setFont(font7)
         self.label_100.setStyleSheet(u"color: gray")
         self.label_100.setWordWrap(True)
         self.label_101 = QLabel(self.recommended_apps_page_1)
         self.label_101.setObjectName(u"label_101")
-        self.label_101.setGeometry(QRect(110, 70, 441, 51))
+        self.label_101.setGeometry(QRect(90, 70, 441, 51))
         self.label_101.setStyleSheet(u"QLabel {\n"
 "			background-color: #21252d;\n"
 "			padding: 12px;\n"
@@ -4223,7 +4223,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_102 = QLabel(self.recommended_apps_page_1)
         self.label_102.setObjectName(u"label_102")
-        self.label_102.setGeometry(QRect(160, 170, 91, 71))
+        self.label_102.setGeometry(QRect(140, 170, 91, 71))
         self.label_102.setStyleSheet(u"QLabel {\n"
 "\n"
 "\n"
@@ -4234,18 +4234,18 @@ class Ui_MainWindow(object):
 "        }")
         self.label_103 = QLabel(self.recommended_apps_page_1)
         self.label_103.setObjectName(u"label_103")
-        self.label_103.setGeometry(QRect(170, 370, 71, 31))
+        self.label_103.setGeometry(QRect(150, 370, 71, 31))
         self.label_103.setFont(font6)
         self.label_103.setStyleSheet(u"")
         self.label_104 = QLabel(self.recommended_apps_page_1)
         self.label_104.setObjectName(u"label_104")
-        self.label_104.setGeometry(QRect(170, 450, 71, 51))
+        self.label_104.setGeometry(QRect(150, 450, 71, 51))
         self.label_104.setFont(font6)
         self.label_104.setStyleSheet(u"")
         self.label_104.setWordWrap(True)
         self.label_105 = QLabel(self.recommended_apps_page_1)
         self.label_105.setObjectName(u"label_105")
-        self.label_105.setGeometry(QRect(280, 440, 450, 71))
+        self.label_105.setGeometry(QRect(260, 440, 450, 71))
         self.label_105.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -4254,7 +4254,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_106 = QLabel(self.recommended_apps_page_1)
         self.label_106.setObjectName(u"label_106")
-        self.label_106.setGeometry(QRect(280, 170, 450, 71))
+        self.label_106.setGeometry(QRect(260, 170, 450, 71))
         self.label_106.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -4263,13 +4263,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_108 = QLabel(self.recommended_apps_page_1)
         self.label_108.setObjectName(u"label_108")
-        self.label_108.setGeometry(QRect(170, 540, 71, 51))
+        self.label_108.setGeometry(QRect(150, 540, 71, 51))
         self.label_108.setFont(font6)
         self.label_108.setStyleSheet(u"")
         self.label_108.setWordWrap(True)
         self.label_109 = QLabel(self.recommended_apps_page_1)
         self.label_109.setObjectName(u"label_109")
-        self.label_109.setGeometry(QRect(160, 350, 91, 71))
+        self.label_109.setGeometry(QRect(140, 350, 91, 71))
         self.label_109.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -4278,7 +4278,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_110 = QLabel(self.recommended_apps_page_1)
         self.label_110.setObjectName(u"label_110")
-        self.label_110.setGeometry(QRect(160, 440, 91, 71))
+        self.label_110.setGeometry(QRect(140, 440, 91, 71))
         self.label_110.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -4287,13 +4287,13 @@ class Ui_MainWindow(object):
 "        }")
         self.title_5 = QLabel(self.recommended_apps_page_1)
         self.title_5.setObjectName(u"title_5")
-        self.title_5.setGeometry(QRect(160, 75, 331, 41))
+        self.title_5.setGeometry(QRect(140, 75, 331, 41))
         self.title_5.setFont(font8)
         self.title_5.setStyleSheet(u"color: gray")
         self.title_5.setAlignment(Qt.AlignCenter)
         self.label_112 = QLabel(self.recommended_apps_page_1)
         self.label_112.setObjectName(u"label_112")
-        self.label_112.setGeometry(QRect(160, 260, 91, 71))
+        self.label_112.setGeometry(QRect(140, 260, 91, 71))
         self.label_112.setStyleSheet(u"QLabel {\n"
 "			background-color: #595D75;\n"
 "			padding: 12px;\n"
@@ -4302,13 +4302,13 @@ class Ui_MainWindow(object):
 "        }")
         self.label_113 = QLabel(self.recommended_apps_page_1)
         self.label_113.setObjectName(u"label_113")
-        self.label_113.setGeometry(QRect(300, 280, 411, 31))
+        self.label_113.setGeometry(QRect(280, 280, 411, 31))
         self.label_113.setFont(font7)
         self.label_113.setStyleSheet(u"color: gray")
         self.label_113.setWordWrap(True)
         self.recc_app_install_frame_2 = QFrame(self.recommended_apps_page_1)
         self.recc_app_install_frame_2.setObjectName(u"recc_app_install_frame_2")
-        self.recc_app_install_frame_2.setGeometry(QRect(770, 260, 131, 71))
+        self.recc_app_install_frame_2.setGeometry(QRect(750, 260, 131, 71))
         self.recc_app_install_frame_2.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_2.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -4338,7 +4338,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_2.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_3 = QFrame(self.recommended_apps_page_1)
         self.recc_app_install_frame_3.setObjectName(u"recc_app_install_frame_3")
-        self.recc_app_install_frame_3.setGeometry(QRect(770, 350, 131, 71))
+        self.recc_app_install_frame_3.setGeometry(QRect(750, 350, 131, 71))
         self.recc_app_install_frame_3.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_3.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -4368,7 +4368,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_3.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_4 = QFrame(self.recommended_apps_page_1)
         self.recc_app_install_frame_4.setObjectName(u"recc_app_install_frame_4")
-        self.recc_app_install_frame_4.setGeometry(QRect(770, 440, 131, 71))
+        self.recc_app_install_frame_4.setGeometry(QRect(750, 440, 131, 71))
         self.recc_app_install_frame_4.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_4.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -4398,7 +4398,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_4.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_5 = QFrame(self.recommended_apps_page_1)
         self.recc_app_install_frame_5.setObjectName(u"recc_app_install_frame_5")
-        self.recc_app_install_frame_5.setGeometry(QRect(770, 530, 131, 71))
+        self.recc_app_install_frame_5.setGeometry(QRect(750, 530, 131, 71))
         self.recc_app_install_frame_5.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_5.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -4428,7 +4428,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_5.setContentsMargins(0, 0, 0, 0)
         self.label_170 = QLabel(self.recommended_apps_page_1)
         self.label_170.setObjectName(u"label_170")
-        self.label_170.setGeometry(QRect(580, 70, 361, 51))
+        self.label_170.setGeometry(QRect(560, 70, 361, 51))
         self.label_170.setStyleSheet(u"QLabel {\n"
 "			background-color: #21252d;\n"
 "			padding: 12px;\n"
@@ -4437,12 +4437,12 @@ class Ui_MainWindow(object):
 "        }")
         self.label_171 = QLabel(self.recommended_apps_page_1)
         self.label_171.setObjectName(u"label_171")
-        self.label_171.setGeometry(QRect(590, 80, 51, 31))
+        self.label_171.setGeometry(QRect(570, 80, 51, 31))
         self.label_171.setFont(font6)
         self.label_171.setStyleSheet(u"color: gray")
         self.status_indicator_frame_1 = QFrame(self.recommended_apps_page_1)
         self.status_indicator_frame_1.setObjectName(u"status_indicator_frame_1")
-        self.status_indicator_frame_1.setGeometry(QRect(640, 70, 281, 51))
+        self.status_indicator_frame_1.setGeometry(QRect(620, 70, 281, 51))
         self.status_indicator_frame_1.setCursor(QCursor(Qt.PointingHandCursor))
         self.status_indicator_frame_1.setStyleSheet(u"")
         self.status_indicator_frame_1.setFrameShape(QFrame.NoFrame)
@@ -4454,7 +4454,7 @@ class Ui_MainWindow(object):
         self.status_indicator_layout_1.setContentsMargins(0, 0, 0, 0)
         self.recc_app_install_frame_1 = QFrame(self.recommended_apps_page_1)
         self.recc_app_install_frame_1.setObjectName(u"recc_app_install_frame_1")
-        self.recc_app_install_frame_1.setGeometry(QRect(770, 170, 131, 71))
+        self.recc_app_install_frame_1.setGeometry(QRect(750, 170, 131, 71))
         self.recc_app_install_frame_1.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_app_install_frame_1.setStyleSheet(u"QPushButton{\n"
 "	background-color: #595D75;\n"
@@ -4484,7 +4484,7 @@ class Ui_MainWindow(object):
         self.recc_app_install_layout_1.setContentsMargins(0, 0, 0, 0)
         self.back_button_frame_2 = QFrame(self.recommended_apps_page_1)
         self.back_button_frame_2.setObjectName(u"back_button_frame_2")
-        self.back_button_frame_2.setGeometry(QRect(1010, 150, 51, 181))
+        self.back_button_frame_2.setGeometry(QRect(990, 150, 51, 181))
         self.back_button_frame_2.setCursor(QCursor(Qt.PointingHandCursor))
         self.back_button_frame_2.setStyleSheet(u"QPushButton{\n"
 "	\n"
@@ -4514,7 +4514,7 @@ class Ui_MainWindow(object):
         self.return_home_layout_1.setContentsMargins(0, 0, 0, 0)
         self.recc_next_page_frame_1 = QFrame(self.recommended_apps_page_1)
         self.recc_next_page_frame_1.setObjectName(u"recc_next_page_frame_1")
-        self.recc_next_page_frame_1.setGeometry(QRect(1010, 360, 51, 261))
+        self.recc_next_page_frame_1.setGeometry(QRect(990, 360, 51, 261))
         self.recc_next_page_frame_1.setCursor(QCursor(Qt.PointingHandCursor))
         self.recc_next_page_frame_1.setStyleSheet(u"QPushButton{\n"
 "	\n"
@@ -4544,7 +4544,7 @@ class Ui_MainWindow(object):
         self.recc_next_page_layout_1.setContentsMargins(0, 0, 0, 0)
         self.label_99 = QLabel(self.recommended_apps_page_1)
         self.label_99.setObjectName(u"label_99")
-        self.label_99.setGeometry(QRect(1000, 140, 71, 201))
+        self.label_99.setGeometry(QRect(980, 140, 71, 201))
         self.label_99.setStyleSheet(u"QLabel {\n"
 "			background-color: rgb(60, 64, 82);\n"
 "			padding: 12px;\n"
@@ -4553,7 +4553,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_107 = QLabel(self.recommended_apps_page_1)
         self.label_107.setObjectName(u"label_107")
-        self.label_107.setGeometry(QRect(1000, 350, 71, 281))
+        self.label_107.setGeometry(QRect(980, 350, 71, 281))
         self.label_107.setStyleSheet(u"QLabel {\n"
 "			background-color: rgb(60, 64, 82);\n"
 "			padding: 12px;\n"
@@ -4562,7 +4562,7 @@ class Ui_MainWindow(object):
 "        }")
         self.label_111 = QLabel(self.recommended_apps_page_1)
         self.label_111.setObjectName(u"label_111")
-        self.label_111.setGeometry(QRect(980, 130, 111, 511))
+        self.label_111.setGeometry(QRect(960, 130, 111, 511))
         self.label_111.setStyleSheet(u"QLabel {\n"
 "        	\n"
 "			\n"
