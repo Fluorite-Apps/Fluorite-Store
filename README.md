@@ -1,16 +1,16 @@
 # Fluorite Store
-An unofficial Graphical User Interface for [Scoop](https://scoop.sh/)
+A windows appstore, powered with [scoop](https://scoop.sh/) in the backend, a windows package manager.
 
+### Why scoop?
 
-## Credits
+* its safe - since it downloads directly from official sources rather than a host, as long as you check the download url (in the app's more info page), matches the official website, theres no chance of downloading a fake app, e.g firefox is coming from mozilla.org. 
+  * also has a built in virustotal checker
+* apps are portable
+  * which makes versioning possible, unless running the cleanup command, you can revert to previous app versions after updates, (some folders like the apps data is symlinked between all versions).
+  * allows for fully uninstalling apps
+  * allows for transferring the entire scoop directory (with installed apps) between windows installs. 
 
-Main Devs:
-- [Thomas Kerby (TXOG)](https://github.com/TXOG)
-- [Faraz Ahary (t3dium)](https://github.com/t3dium)
-
-Also previously known as scoop-gui, and Vanilla.py which was re-designed to Fluorite Store
-
-# Features 
+## Features 
 
 - [x] Managing installed scoop apps
 - [x] Managing installed buckets
@@ -23,12 +23,12 @@ Also previously known as scoop-gui, and Vanilla.py which was re-designed to Fluo
 
 ### Misc Features
 - [x] App descriptions
-- [ ] Clicking on description box opens the app's homepage in a browser
+- [ ] Clicking on description box opens a more info page about the app
 - [x] Notifications for status
 
-## TODO
+### TODO
 - [ ] GUI virustotal instructions if no api key set using the method below
-- [ ] When uninstalling an app check if already running, if so either kill it automatically, or warn the user
+- [ ] When uninstalling an app check if it's currently open, if so either kill it automatically, or warn the user
 - [ ] When searching, place indicator beside apps which are already installed
 
 ## Checking apps via virustotal - Work in Progress
@@ -44,7 +44,7 @@ Also note that virustotal limits to 4 checks per minute for free users.
 - [ ] Scheduled, auto updates - (might not be possible to do via python)
 - [ ] Possibly re-writing the search function to instead scrape https://scoop.sh/#/apps?s=0&d=1&o=true as it also contains unofficial repositories (more apps), would be a bit more complex to implement, however it'd include more apps. (if implemented, place warning beside apps that it comes from an unofficial repo)
 
-# Fluorite Store
+## Screenshots
 https://user-images.githubusercontent.com/83690012/190864219-1a7856e3-d629-4103-9063-aa05eb71d0ea.mp4
 
 ![image](https://user-images.githubusercontent.com/83690012/200650749-71f51ff8-d982-4658-b728-68485564c3df.png)
@@ -66,4 +66,12 @@ If an app comes up with several detections, then you should look into it.
 ![image](https://user-images.githubusercontent.com/83690012/200665690-cbe68828-3136-4ee7-8461-3f5185e47ccd.png)
 ![image](https://user-images.githubusercontent.com/83690012/200650325-03480b17-6c6a-41ff-b935-08882b6b34d1.png)
 ![image](https://user-images.githubusercontent.com/83690012/200650515-6b064abb-37db-44fd-99d0-4662b726e91e.png)
+
+## Credits
+
+Main Devs:
+- [Thomas Kerby (TXOG)](https://github.com/TXOG)
+- [Faraz Ahary (t3dium)](https://github.com/t3dium)
+
+Also previously known as scoop-gui, and Vanilla.py which was re-designed to Fluorite Store
 
