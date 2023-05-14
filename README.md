@@ -1,14 +1,11 @@
 # Fluorite Store
-A windows appstore, powered with [scoop](https://scoop.sh/) in the backend, a windows package manager.
+Fluorite Store is a user-friendly Windows app store that utilizes the powerful scoop package manager in the backend. Unlike other app stores that download apps from hosts, Fluorite Store downloads apps directly from either official sources, ensuring safety and reliability.
 
 ### Why scoop?
 
-* its safe - since it downloads directly from official sources rather than a host, as long as you check the download url (in the app's more info page), matches the official website, theres no chance of downloading a fake app, e.g firefox is coming from mozilla.org. 
-  * also has a built in virustotal checker
-* apps are portable
-  * which makes versioning possible, unless running the cleanup command, you can revert to previous app versions after updates, (some folders like the apps data is symlinked between all versions).
-  * allows for fully uninstalling apps
-  * allows for transferring the entire scoop directory (with installed apps) between windows installs. 
+Scoop is a trusted Windows package manager that offers several benefits, such as:
+* Safe downloads - Since Scoop downloads apps directly from official sources, there is no chance of downloading a fake app. Fluorite Store also has a built-in virustotal checker to further ensure safety.
+* Portable apps - Scoop enables versioning, so you can revert to previous app versions after updates, allowing you to fully uninstall apps, and transfer the entire scoop directory (with installed apps) between Windows installs.
 
 ## Features 
 
@@ -33,15 +30,13 @@ A windows appstore, powered with [scoop](https://scoop.sh/) in the backend, a wi
 
 ## Checking apps via virustotal - Work in Progress
 
-Next to each install button there's a virustotal check button to scan apps for malware, if theres any detections found it'll open the virustotal url in a browser.
+Fluorite Store features a virustotal check button next to each install button to scan apps for malware. If any malware is detected, it will open the virustotal URL in a browser. To use this feature, users must first create a free virustotal account and obtain an [api key](https://www.virustotal.com/gui/my-apikey).
 
-This does require [creating a free virustotal account prior](https://www.virustotal.com/gui/join-us) however, in order to get an [api key](https://www.virustotal.com/gui/my-apikey).
-
-Also note that virustotal limits to 4 checks per minute for free users.
+Note that virustotal limits free users to four checks per minute.
 
 ## Possible Features to be added
 - [ ] Chocolately integration
-- [ ] Scheduled, auto updates - (might not be possible to do via python)
+- [ ] Scheduled, auto updates
 - [ ] Possibly re-writing the search function to instead scrape https://scoop.sh/#/apps?s=0&d=1&o=true as it also contains unofficial repositories (more apps), would be a bit more complex to implement, however it'd include more apps. (if implemented, place warning beside apps that it comes from an unofficial repo)
 
 ## Screenshots
@@ -72,6 +67,3 @@ If an app comes up with several detections, then you should look into it.
 Main Devs:
 - [Thomas Kerby (TXOG)](https://github.com/TXOG)
 - [Faraz Ahary (t3dium)](https://github.com/t3dium)
-
-Also previously known as scoop-gui, and Vanilla.py which was re-designed to Fluorite Store
-
